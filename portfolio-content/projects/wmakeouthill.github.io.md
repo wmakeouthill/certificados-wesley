@@ -44,36 +44,36 @@ Este repositório contém o **portfólio profissional do Wesley Correia (wmakeou
 %%{title: "Arquitetura Geral do Portfólio Profissional"}%%
 flowchart LR
     subgraph Browser
-        A[SPA Angular 20<br/>(hero, projects, chat-widget, contact)]
+        A[SPA Angular 20]
     end
 
     subgraph Backend[Backend Spring Boot 3.2.3]
-        B1[ChatController<br/>\n/api/chat]
-        B2[ContactController<br/>\n/api/contact]
-        B3[ProjectsController<br/>\n/api/projects]
-        B4[SpaController<br/>\nServiço do build Angular]
+        B1[ChatController]
+        B2[ContactController]
+        B3[ProjectsController]
+        B4[SpaController]
 
         UC_CHAT[ChatUseCase]
         UC_CONTACT[EnviarEmailContatoUseCase]
-        UC_PROJECTS[ListarProjetosGithubUseCase<br/>+ ObterMarkdownProjetoUseCase]
+        UC_PROJECTS[ListarProjetosGithubUseCase]
 
         B1 --> UC_CHAT
         B2 --> UC_CONTACT
         B3 --> UC_PROJECTS
     end
 
-    subgraph Domínio
-        D1[PortfolioPromptService<br/>\nMonta system prompt com markdowns]
-        D2[ContextSearchService<br/>\nBusca trechos relevantes dos .md]
+    subgraph Dominio[Domínio]
+        D1[PortfolioPromptService]
+        D2[ContextSearchService]
     end
 
-    subgraph Infra[Infraestrutura / Adaptadores]
-        AI[OpenAIAdapter<br/>\nAIChatPort + Fallback]
-        GH[GithubApiAdapter<br/>\nProjetos + Linguagens]
-        GH_CONTENT[GithubPortfolioContentAdapter<br/>\nBusca markdowns do GitHub]
-        CACHE[GithubContentCache<br/>\nTTL 5min]
+    subgraph Infra[Infraestrutura]
+        AI[OpenAIAdapter]
+        GH[GithubApiAdapter]
+        GH_CONTENT[GithubPortfolioContentAdapter]
+        CACHE[GithubContentCache]
         MAIL[GmailAdapter]
-        BUDGET[TokenBudgetService<br/>\nOtimiza tokens]
+        BUDGET[TokenBudgetService]
     end
 
     subgraph Cloud[Google Cloud]
@@ -434,62 +434,60 @@ Esses arquivos são a **fonte de verdade** que alimenta:
 ```mermaid
 %%{title: "Fluxo do Chat com IA e Integração GitHub"}%%
 sequenceDiagram
-    participant U as Usuário (Browser)
-    participant FW as Frontend Angular<br/>chat-widget
-    participant C as ChatController<br/>(/api/chat)
+    participant U as Usuario
+    participant FW as Frontend Angular
+    participant C as ChatController
     participant UC as ChatUseCase
-    participant TB as TokenBudgetService<br/>(Otimiza tokens)
-    participant PS as PortfolioPromptService<br/>+ ContextSearchService
-    participant GH_MD as GithubPortfolioMarkdownAdapter<br/>(Busca do GitHub)
-    participant CACHE as GithubContentCache<br/>(TTL 5min)
-    participant GH_API as GitHub API<br/>(certificados-wesley)
-    participant AI as OpenAIAdapter<br/>(Fallback de modelos)
+    participant TB as TokenBudgetService
+    participant PS as PortfolioPromptService
+    participant GH_MD as GithubMarkdownAdapter
+    participant CACHE as GithubContentCache
+    participant GH_API as GitHub API
+    participant AI as OpenAIAdapter
     participant OA as OpenAI API
 
     U->>FW: Digita mensagem no chat
-    FW->>C: POST /api/chat<br/>body: ChatRequest<br/>header: X-Session-ID
-    C->>UC: execute(request, sessionId)
+    FW->>C: POST /api/chat
+    C->>UC: execute request
     
-    UC->>PS: montarSystemPrompt(historico, contexto)
-    PS->>GH_MD: carregar markdowns do GitHub<br/>(README, STACKS, projects/*.md)
+    UC->>PS: montarSystemPrompt
+    PS->>GH_MD: carregar markdowns
     
     alt Cache hit
         GH_MD->>CACHE: busca cache
-        CACHE-->>GH_MD: conteúdo cacheado
+        CACHE-->>GH_MD: conteudo cacheado
     else Cache miss
-        GH_MD->>GH_API: GET /repos/certificados-wesley/contents/portfolio-content
-        GH_API-->>GH_MD: lista de arquivos .md
-        GH_MD->>GH_API: GET raw content (cada .md)
-        GH_API-->>GH_MD: conteúdo markdown
+        GH_MD->>GH_API: GET contents
+        GH_API-->>GH_MD: lista de arquivos
+        GH_MD->>GH_API: GET raw content
+        GH_API-->>GH_MD: conteudo markdown
         GH_MD->>CACHE: armazena no cache
     end
     
-    GH_MD-->>PS: conteúdo markdown relevante
+    GH_MD-->>PS: conteudo relevante
     PS-->>UC: system prompt final
 
-    UC->>TB: otimizar(systemPrompt, historico, mensagemAtual)
+    UC->>TB: otimizar tokens
     alt Tokens acima do threshold
-        TB->>TB: reduz histórico (mantém recentes)
-        TB->>TB: reduz contextos (mantém relevantes)
-        TB->>TB: trunca system prompt (último recurso)
-        Note over TB: Log: "Token budget otimizado"
+        TB->>TB: reduz historico
+        TB->>TB: reduz contextos
     end
-    TB-->>UC: TokenBudgetResult<br/>(systemPrompt otimizado, historico otimizado)
+    TB-->>UC: TokenBudgetResult
 
-    UC->>AI: chat(systemPrompt otimizado, historico otimizado, mensagemAtual)
-    AI->>OA: chamada com model principal<br/>(gpt-5-mini)
-    alt Rate limit / erro recuperável
-        OA-->>AI: erro 429/5xx ou unsupported_parameter
-        AI->>OA: tenta próximo modelo de fallback<br/>(gpt-4o-mini, gpt-3.5-turbo, ...)
-        OA-->>AI: resposta com conteúdo
-    else Sucesso direto
-        OA-->>AI: resposta com conteúdo
+    UC->>AI: chat com prompt otimizado
+    AI->>OA: chamada modelo principal
+    alt Rate limit
+        OA-->>AI: erro 429
+        AI->>OA: tenta fallback
+        OA-->>AI: resposta
+    else Sucesso
+        OA-->>AI: resposta
     end
 
-    AI-->>UC: ChatResponse (reply)
+    AI-->>UC: ChatResponse
     UC-->>C: ChatResponse
-    C-->>FW: 200 OK + resposta da IA
-    FW-->>U: Renderiza mensagem da IA no chat
+    C-->>FW: 200 OK
+    FW-->>U: Renderiza resposta
 ```
 
 ---
