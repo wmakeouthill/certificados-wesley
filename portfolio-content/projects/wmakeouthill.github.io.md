@@ -1,4 +1,4 @@
-## 🌐 Portfólio Profissional Full‑Stack
+# 🌐 Portfólio Profissional Full‑Stack
 
 Este repositório contém o **portfólio profissional do Wesley Correia (wmakeouthill)**, composto por:
 
@@ -41,7 +41,7 @@ Este repositório contém o **portfólio profissional do Wesley Correia (wmakeou
 ### Diagrama de Arquitetura (Mermaid)
 
 ```mermaid
-%%{title: "Arquitetura Geral do Portfólio Profissional"}%%
+%%{title: "Arquitetura Geral do Portfolio Profissional"}%%
 flowchart LR
     subgraph Browser
         A[SPA Angular 20]
@@ -62,7 +62,7 @@ flowchart LR
         B3 --> UC_PROJECTS
     end
 
-    subgraph Dominio[Domínio]
+    subgraph Dominio[Dominio]
         D1[PortfolioPromptService]
         D2[ContextSearchService]
     end
