@@ -18,14 +18,22 @@ The **Experimenta AI - Soneca** project is a full desktop platform for counter-s
 ## 🏗️ System Architecture (Desktop ↔ Backend ↔ DB)
 
 ```mermaid
-%%{title: "Experimenta AI - Soneca Architecture"}%%
 graph TB
-    A[Electron Desktop] --> B[Angular 17+ Frontend]
-    A --> C[Print Server]
-    B --> D[Spring Boot Backend]
-    D --> E[MySQL + Liquibase]
-    D --> F[Clean Architecture]
-    C --> G[ESC/POS Printers]
+    A[Electron Desktop App] --> B[Spring Boot Backend]
+    B --> C[MySQL Database]
+    B --> D[Clean Architecture]
+    A --> E[Orders]
+    A --> F[Menu]
+    A --> G[Customers]
+    A --> H[Fiscal Receipt Printing]
+    A --> I[Authentication]
+    
+    subgraph "Desktop Environment"
+        A
+        J[Angular 17+ Frontend]
+        K[Electron Print Server]
+        L[Hardware Integration]
+    end
 ```
 
 ### Main Flow
