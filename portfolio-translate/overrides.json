@@ -1,0 +1,64 @@
+{
+  "projects": {
+    "aa_space": {
+      "description": "Integrative educational social project to support people in recovery, with a closed forum and chat system (Angular + backend)."
+    },
+    "certificados-wesley": {
+      "description": "My certificates repository."
+    },
+    "experimenta-ai---soneca": {
+      "description": "Full management system for snack bars with Clean Architecture, Java 17, modular Spring Boot, Angular 17+, and MySQL."
+    },
+    "first-angular-app": {
+      "description": "Task management system in Angular 19 with standalone components, services, reactive forms, routing, and local persistence."
+    },
+    "investment_calculator": {
+      "description": "Investment calculator in Angular 18 with compound interest projections, Signals, and year-by-year results."
+    },
+    "lobby-pedidos": {
+      "description": "Order lobby migrated from React to Angular and integrated with a snack bar's core production app (marked for deletion)."
+    },
+    "lol-matchmaking-fazenda": {
+      "description": "End-to-end scalable system for queue, matchmaking, draft, player management, and leaderboard with automations for Discord and LoL."
+    },
+    "mercearia-r-v": {
+      "description": "Complete cash register, inventory, and sales system with reports and advanced features, developed as a service swap."
+    },
+    "obaid-with-bro": {
+      "description": "Obaid 2.0 — AI chatbot for pranks, built to practice AI API integration using Spring Boot and Angular."
+    },
+    "pintarapp": {
+      "description": "App to import and color SVGs on a tablet; ongoing project worked on when time allows."
+    },
+    "traffic_manager": {
+      "description": "Real-time monitoring dashboard in Angular 18 with standalone components, Signals, and a ticketing system."
+    },
+    "wmakeouthill": {
+      "description": "Repository containing my GitHub profile README."
+    },
+    "wmakeouthill.github.io": {
+      "description": "Full-stack portfolio (Java 17 + Spring Boot + Angular 20) with AI chat; backend fetches content dynamically from GitHub; deployed on GitHub Pages and Google Cloud Run."
+    }
+  },
+  "certs": {
+    "Acelere o Desenvolvimento Backend com Java e SpringBoot.pdf": {
+      "title": "Accelerate Backend Development with Java and Spring Boot"
+    },
+    "Diploma - Bacharel em Direito.pdf": {
+      "title": "Bachelor of Law Diploma"
+    },
+    "Feedback - A arte de dar e receber feedbacks mais efetivos.pdf": {
+      "title": "Feedback: The Art of Giving and Receiving More Effective Feedback"
+    },
+    "Infraestrutura e Plataforma como Servico (Pos-graduacao).pdf": {
+      "title": "Infrastructure and Platform as a Service (Postgraduate)"
+    },
+    "Qualidade do Código Fonte (Clean Code).pdf": {
+      "title": "Source Code Quality (Clean Code)"
+    },
+    "Wesley de Carvalho Augusto Correia - Resume.pdf": {
+      "title": "Resume (English)"
+    }
+  }
+}
+
