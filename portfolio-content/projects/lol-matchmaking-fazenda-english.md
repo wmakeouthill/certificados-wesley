@@ -15,16 +15,21 @@ A full desktop+cloud platform for custom League of Legends matchmaking with draf
 ## 🏗️ High-Level Architecture
 
 ```mermaid
-%%{title: "LOL Matchmaking Architecture"}%%
 graph TB
-    A[Electron Desktop] --> B[Spring Boot Backend]
-    B --> C[MySQL]
+    A[Electron Desktop App] --> B[Spring Boot Backend]
+    B --> C[MySQL Database]
     B --> D[Redis Cache]
-    B --> E[Discord Bot (JDA)]
+    B --> E[Discord Bot JDA]
     B --> F[Angular Frontend]
-    F --> G[WebSocket]
-    A --> H[League Client (LCU)]
+    F --> G[WebSocket Connection]
+    G --> B
+    A --> H[League Client LCU]
     E --> I[Discord Server]
+    H --> J[League of Legends Game]
+
+    %% Communication flow
+    B -.->|Ping| A
+    A -.->|Pong| F
 ```
 
 ### Core Flow
