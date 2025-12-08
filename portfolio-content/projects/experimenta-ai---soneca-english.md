@@ -24,7 +24,7 @@ graph TB
     A --> C[Print Server]
     B --> D[Spring Boot Backend]
     D --> E[MySQL + Liquibase]
-    D --> F[Clean Architecture (Use Cases, Ports, Adapters)]
+    D --> F[Clean Architecture]
     C --> G[ESC/POS Printers]
 ```
 
