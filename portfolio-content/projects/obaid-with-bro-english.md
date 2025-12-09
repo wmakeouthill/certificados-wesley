@@ -24,6 +24,42 @@ graph TB
     A --> F[Character Display]
 ```
 
+### Communication Flow
+
+```mermaid
+%%{title: "AI Chat Communication Flow"}%%
+sequenceDiagram
+    participant U as User
+    participant F as Angular Frontend
+    participant B as Spring Boot Backend
+    participant UC as Chat Use Case
+    participant A as OpenAI Adapter
+    participant O as OpenAI API
+    
+    Note over U,O: Conversation Flow
+    
+    U->>F: Types message
+    F->>B: POST /api/chat (message)
+    B->>UC: Process request
+    UC->>A: Send message to AI
+    A->>O: API Call (Chat Completions)
+    O-->>A: AI response
+    A-->>UC: Processed response
+    UC-->>B: Response DTO
+    B-->>F: JSON with response
+    F->>U: Shows answer in chat
+    
+    Note over U,O: Error Handling
+    
+    alt API error
+        O-->>A: Error (401, 429, etc.)
+        A-->>UC: Handled exception
+        UC-->>B: Friendly error message
+        B-->>F: Formatted error
+        F->>U: Displays error message
+    end
+```
+
 ### Chat Flow
 
 1. User types → frontend posts to `/api/chat`
