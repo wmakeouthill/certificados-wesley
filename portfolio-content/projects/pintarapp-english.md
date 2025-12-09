@@ -1,83 +1,172 @@
-# 🎨 PintarApp — SVG Coloring App for Android
+# 🎨 PintarApp — SVG Painting App for Android
 
 ## 🚀 Overview
 
-**PintarApp** is an SVG coloring app built with React Native, designed to work 100% offline on Android. The codebase emphasizes clean separation, strong typing, and decoupled components, prepared for ads and a premium tier.
+**PintarApp** is an SVG painting app built with React Native, designed to run 100% offline on Android. The focus is on a clean codebase from day one: well-separated layers, strong typing, and decoupled components. The app is prepared to evolve with ads and a premium version.
 
 ### 🎯 Value Proposition
 
-- **SVG coloring** with touch interactions
-- **Offline-first** experience
-- **Clean architecture** with well-defined layers
-- **TypeScript-first** codebase
-- **Monetization-ready** (ads/premium)
+- **SVG Painting:** Apply colors to SVG vectors
+- **100% Offline:** Full functionality without connectivity
+- **Clean Architecture:** Well-separated layers and decoupled components
+- **TypeScript:** Strong typing across the codebase
+- **Monetization-ready:** Base prepared for ads and premium tier
 
 ## 🏗️ Tech Stack
 
-### Mobile (React Native 0.76)
+### Mobile (React Native)
 
-- TypeScript
-- `react-native-svg` + transformer
-- Safe Area Context
-- Hooks + reducers for immutable state
+- **React Native 0.76** – Cross-platform mobile framework
+- **TypeScript** – Static typing for safer development
+- **react-native-svg** – SVG rendering and manipulation
+- **react-native-svg-transformer** – SVG vector loading
+- **Safe Area Context** – Safe area handling
+- **Hooks and Reducers** – Immutable state management
 
 ### Architecture
 
-- `@/*` alias for short imports (Babel/TS)
-- Feature-based structure
-- Clean Code and testability
+- **`@/*` alias** – Short imports configured in Babel/TS
+- **Feature-based Structure** – Organized by feature
+- **Clean Code** – Separation of concerns
+- **Testability** – Decoupled components
 
-## 📁 Structure
+## 📁 Project Structure
 
 ```text
 src/
-  app/            # composition root
-  core/           # design system, utilities
+  app/            # Composition root (App, providers)
+  core/           # Design system and generic utilities
   features/
-    coloring/     # domain (components, hooks, state)
-  types/          # global declarations (e.g., SVG)
-assets/svgs/      # bundled vectors inside APK
+    coloring/     # Painting domain (components, hooks, state)
+  types/          # Global declarations (e.g., SVG)
+assets/svgs/      # Local vectors bundled in the APK
 ```
+
+Each feature keeps its own data, models, hooks, components, and reducers to favor cohesion and testability.
 
 ## 🎯 Current Features
 
-- **ColoringScreen**: header, painting surface, toolbox
-- **SvgColoringSurface**: tap-to-fill, eraser, touch-friendly controls
-- **ColorPalette**: horizontal swatches, visual selection, custom colors
-- **Toolbox**: switch tools, reset drawing
-- **State mgmt**: `useColoringSession` hook + pure reducer, ready for persistence
+### 1. Painting Screen (`ColoringScreen`)
 
-## 🚀 Install & Run
+- **Header:** Navigation interface
+- **Painting Screen:** Main work area
+- **Toolbox:** Painting tools
 
-Prereqs: Node 18+, Android Studio/SDK, emulator or device.
+### 2. SVG Painting Surface (`SvgColoringSurface`)
+
+- **Color Application:** Via `Path.onPress`
+- **Fill Tool:** Bucket fill simulation
+- **Eraser Tool:** Remove colors
+- **Touch Interaction:** Controls optimized for touch
+
+### 3. Color Palette (`ColorPalette`)
+
+- **Horizontal List:** Color swatches
+- **Visual Selection:** Intuitive interface
+- **Custom Colors:** Support for custom palettes
+
+### 4. Toolbox
+
+- **Tool Switching:** Fill and erase
+- **Reset Drawing:** Full clear
+- **Intuitive Controls:** Touch-friendly UI
+
+### 5. State Management
+
+- **`useColoringSession` hook:** Session-scoped state
+- **Pure Reducer (`coloringReducer`):** Immutable state logic
+- **Local Persistence:** Prepared for AsyncStorage/SQLite
+
+## 🚀 Installation & Run
+
+### Prerequisites
+
+- **Node 18+** — JavaScript runtime
+- **Android Studio + SDKs** — Android environment configured
+- **Android Emulator or Device** — To run the app
+
+### Installation
 
 ```bash
 npm install
-npm start          # start Metro
-npm run android    # install/run on device or emulator
-# optional (macOS): npm run ios
-
-npm run lint
-npm run test
-npm run typecheck
 ```
 
-### Configure Android emulator as tablet
+### Run
 
-1. Open Android Studio → AVD Manager → create tablet device (API 33+).
-2. Start emulator and run `npm run android`.
+```bash
+# Start Metro bundler
+npm start
 
-## 🔮 Next Steps
+# In another terminal, install/run on device or emulator
+npm run android
 
-- AsyncStorage/SQLite persistence
-- Import external SVGs + page library
-- Advanced tools (zoom/pan, brush, eyedropper)
-- Monetization (AdMob, premium)
-- Sharing, gamification, achievements
+# Optional: run on iOS (macOS)
+npm run ios
+```
 
-## 🛠️ Skills Demonstrated
+### Code Quality
 
-React Native, TypeScript, SVG manipulation, hooks/reducers, offline-first UX, feature-based architecture, strong typing.
+```bash
+npm run lint       # Lint check
+npm run test       # Run tests
+npm run typecheck  # TypeScript type checking
+```
+
+### Configure Android Emulator as Tablet
+
+The app is configured in `AndroidManifest.xml` to support tablets with large screens (`largeScreens` and `xlargeScreens`). To create a tablet emulator:
+
+1. Open Android Studio
+2. Go to AVD Manager
+3. Create a new virtual device in **Tablets**
+4. Choose a system image (API 33+ recommended)
+5. Start the emulator and run `npm run android`
+
+## 🔮 Next Steps Suggested
+
+### Future Features
+
+- **Local Persistence:** AsyncStorage/SQLite to save sessions
+- **SVG Import:** Import external SVGs and build a page library
+- **Advanced Tools:** Zoom/pan, brush, eyedropper
+- **Monetization:** AdMob integration and premium no-ads version
+
+### Product Evolution
+
+- **Page Library:** Collection of SVGs to color
+- **Sharing:** Export and share artwork
+- **Gamification:** Achievements and challenges
+- **Premium Version:** Remove ads and add exclusive features
+
+## 🛠️ Technical Skills Demonstrated
+
+### Mobile Development
+
+- **React Native 0.76** – Modern mobile framework
+- **TypeScript** – Static typing
+- **SVG Manipulation** – Rendering and interaction with vectors
+- **State Management** – Hooks and reducers for immutable state
+
+### Architecture & Design
+
+- **Feature-based Architecture** – Domain organization
+- **Clean Code** – Separation of responsibilities
+- **Component Design** – Decoupled, reusable components
+- **Type Safety** – TypeScript throughout the code
+
+### Mobile UX
+
+- **Touch Interactions** – Optimized for touch
+- **Offline-first** – Works without connectivity
+- **Tablet Support** – Large-screen support
+- **Performance** – Optimized for mobile devices
+
+## 📝 Conclusion
+
+**PintarApp** showcases mobile development skills with React Native, focusing on clean architecture, strong typing, and an optimized user experience for Android. The foundation is ready to evolve while maintaining Clean Code and separation of concerns.
 
 ---
-Built with ❤️ for Android, with clean architecture and offline-first focus.
+
+## Built with ❤️
+
+SVG painting app for Android, focused on clean architecture and offline-first experience.

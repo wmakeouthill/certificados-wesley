@@ -2,7 +2,7 @@
 
 This repository is used to store and organize:
 
-- **Résumé:** Professional documentation and updated CV
+- **Curriculum:** Professional documentation and updated résumé
 - **Documentations:** Technical and project documentation
 - **Course Certificates:** Certificates from courses, training, and education
 - **Portfolio:** Content related to projects and professional experiences

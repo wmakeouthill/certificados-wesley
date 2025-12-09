@@ -1,6 +1,6 @@
 # 🌐 Full‑Stack Professional Portfolio
 
-This repo hosts **Wesley Correia’s (wmakeouthill) professional portfolio**, composed of:
+This repository contains **Wesley Correia’s (wmakeouthill) professional portfolio**, composed of:
 
 - **Backend** in Java 17 + Spring Boot 3.2.3 that:
   - exposes REST APIs for AI chat, contact, and projects;
@@ -9,11 +9,11 @@ This repo hosts **Wesley Correia’s (wmakeouthill) professional portfolio**, co
 - **Frontend** in Angular 20 + TypeScript that:
   - presents the portfolio in a modern, responsive, accessible UI;
   - integrates with the backend and GitHub API;
-  - provides an **AI chat** trained on the portfolio content itself.
+  - has an **AI chat** trained on the portfolio’s own content.
 
 ---
 
-## 🧱 High-Level Architecture
+## 🧱 General Architecture
 
 - **Backend**
   - Java 17
@@ -41,7 +41,7 @@ This repo hosts **Wesley Correia’s (wmakeouthill) professional portfolio**, co
 ### Architecture Diagram (Mermaid)
 
 ```mermaid
-%%{title: "High-Level Portfolio Architecture"}%%
+%%{title: "General Architecture of the Professional Portfolio"}%%
 flowchart LR
     subgraph Browser
         A[SPA Angular 20]
@@ -115,7 +115,7 @@ flowchart LR
 .
 ├── backend/                          # Spring Boot API + SPA server
 │   ├── src/main/java/com/wmakeouthill/portfolio
-│   │   ├── application/              # DTOs, ports, use cases
+│   │   ├── application/              # DTOs, ports, use cases (application layer)
 │   │   ├── domain/                   # Domain entities, models, services
 │   │   └── infrastructure/           # Web, OpenAI, GitHub, Email adapters
 │   ├── src/main/resources/
@@ -169,7 +169,7 @@ The backend follows a **clean architecture** (application / domain / infrastruct
 - **Contact**
   - `POST /api/contact`
     - Request: `ContactRequest`
-    - Sends email via `EnviarEmailContatoUseCase` + email adapter (Gmail/SMTP).
+    - Sends email using `EnviarEmailContatoUseCase` + email adapter (Gmail/SMTP).
 
 - **Projects**
   - `GET /api/projects`
@@ -194,7 +194,7 @@ The backend follows a **clean architecture** (application / domain / infrastruct
     - treats rate limit and transient errors (429, 502, 503, 504) as recoverable;
     - logs estimated token usage via `TokenCounter` and structured logs.
   - **TokenBudgetService** (budget optimization):
-    - monitors estimated tokens before sending to AI;
+    - monitors estimated tokens before sending to the AI;
     - trims chat history (keeps the most recent messages);
     - trims documentation contexts when needed;
     - truncates system prompt only as a last resort;
@@ -272,7 +272,7 @@ For a much more detailed description of technologies, proficiency levels, and pr
 
 ---
 
-## 🛠️ How to Run Locally
+## 🛠️ How to Run the Project Locally
 
 ### 1. Prerequisites
 
@@ -280,7 +280,7 @@ For a much more detailed description of technologies, proficiency levels, and pr
 - **Maven 3.8+**
 - **(Optional)** Node 20+ / npm if you want to run the frontend alone
 
-### 2. Run everything via backend (Angular build included)
+### 2. Run everything via backend (automatic Angular build)
 
 In the `backend/` directory:
 
@@ -288,7 +288,7 @@ In the `backend/` directory:
 cd backend
 mvn clean package
 
-# Run the app
+# Run the application
 mvn spring-boot:run
 ```
 
@@ -299,12 +299,12 @@ Maven will:
 - run `npm run build -- --configuration=production`;
 - copy the build to `src/main/resources/static` and `target/classes/static`.
 
-Then access:
+After that, access:
 
 - Web app: `http://localhost:8080`
 - APIs: `http://localhost:8080/api/...`
 
-### 3. Run frontend in dev mode (optional)
+### 3. Run frontend in development mode (optional)
 
 In the `frontend/` directory:
 
@@ -316,7 +316,7 @@ npm run start:local   # or: npm start
 # Frontend: http://localhost:4200
 ```
 
-If you want the frontend to hit a local backend, make sure services use the right URL in `api-url.util.ts` (default: `http://localhost:8080`).
+If you want the frontend to hit a local backend, ensure services use the right URL in `api-url.util.ts` (default: `http://localhost:8080`).
 
 ---
 
@@ -324,7 +324,7 @@ If you want the frontend to hit a local backend, make sure services use the righ
 
 ### GitHub Pages (docs/)
 
-The repo includes `docs/` for GitHub Pages. Typical flow:
+The repo includes the `docs/` folder for GitHub Pages. Typical flow:
 
 1. Build the frontend:
 
@@ -346,11 +346,11 @@ The repo contains:
 - `deploy.sh` and `deploy-completo-projeto-wesley.ps1`
 - `DEPLOY-GOOGLE-CLOUD-RUN.md`
 
-These describe how to:
+These files describe how to:
 
 - build the backend image (with Angular build copied to `static/`);
 - publish the image to a registry (e.g., GCR/Artifact Registry);
-- create/update the Cloud Run service with required env vars.
+- create/update the Cloud Run service with the required environment variables.
 
 ### Google Secret Manager
 
@@ -361,13 +361,13 @@ For Cloud Run deploys, secrets **aren't hardcoded**; they are:
 - read by the app through:
   - `OPENAI_API_KEY`, `GMAIL_USERNAME`, `GMAIL_APP_PASSWORD`, `EMAIL_RECIPIENT`, `GITHUB_API_TOKEN`.
 
-This keeps sensitive management (rotation, replacement) in Secret Manager without changing code or rebuilding images.
+This way, sensitive management (key rotation, token changes) is handled directly in Secret Manager, without changing code or rebuilding images.
 
 ---
 
 ## 📚 Portfolio Content (Markdown via GitHub)
 
-Portfolio markdowns live in the **`certificados-wesley`** GitHub repo and are fetched dynamically via API:
+Portfolio markdowns are stored in the **`certificados-wesley`** GitHub repo and fetched dynamically via API:
 
 - **GitHub structure:**
   - `portfolio-content/README.md` – overview
@@ -387,7 +387,7 @@ Portfolio markdowns live in the **`certificados-wesley`** GitHub repo and are fe
     - `obaid-with-bro.md`
   - `portfolio-content/trabalhos/*.md` – professional experiences
 
-These files are the **source of truth** powering:
+These files are the **source of truth** that feed:
 
 - the **AI chat** (base context from root files, with smart search via `ContextSearchService`), and
 - the **project pages/modals** in the frontend (via `/api/projects/{projectName}/markdown`).
@@ -402,9 +402,9 @@ These files are the **source of truth** powering:
   - Open the published URL (GitHub Pages or Cloud Run).
   - The landing (`hero`) already shows profile summary and key links.
 
-- **2. Browse sections**
+- **2. Browse the sections**
   - Scroll through: `about`, `skills`, `experience`, `education`, `certifications`, `projects`, `contact`.
-  - Each section is a standalone Angular component, rendering content from `portfolio-content/`.
+  - Each section is a standalone Angular component, reflecting the contents of `portfolio-content/`.
 
 - **3. Use the AI Chat**
   - Click the floating/chat widget (`chat-widget`).
@@ -416,18 +416,18 @@ These files are the **source of truth** powering:
     - fetches relevant markdowns from `certificados-wesley` (with cache);
     - `ContextSearchService` finds the most relevant excerpts;
     - `TokenBudgetService` optimizes tokens (reduces history/contexts if needed);
-    - `PortfolioPromptService` builds the **system prompt** with selected contexts;
+    - `PortfolioPromptService` builds the **system prompt** with the selected contexts;
     - `OpenAIAdapter` picks the best available model with automatic fallback;
-    - returns the response for the frontend to render as chat.
+    - returns the response for the frontend to render in chat format.
 
 - **4. Explore projects**
   - In `projects`, click a project to open the modal/README.
-  - Frontend calls `/api/projects/{projectName}/markdown`.
-  - Backend fetches markdown from GitHub (`certificados-wesley/portfolio-content/projects/{projectName}.md`) and returns it.
+  - The frontend calls `/api/projects/{projectName}/markdown`.
+  - The backend fetches markdown from GitHub (`certificados-wesley/portfolio-content/projects/{projectName}.md`) and returns it.
 
 - **5. Send a contact message**
   - Fill out the form in `contact` and send.
-  - Frontend triggers `POST /api/contact`; backend sends email using Gmail + secrets from Secret Manager.
+  - The frontend triggers `POST /api/contact`, and the backend sends email using Gmail + secrets from Secret Manager.
 
 ### AI Chat Flow (Mermaid)
 

@@ -2,21 +2,21 @@
 
 ## 🚀 Overview
 
-**AA Space** is a complete community and real-time communication platform built with a modern full-stack architecture. The solution provides a safe environment to share experiences, with an advanced chat system, interactive forum, and user management— all integrated into a responsive web experience.
+**AA Space** is a complete community and real-time communication platform built with a modern full-stack architecture. It provides a safe environment to share experiences, with an advanced chat system, interactive forum, and user management, all integrated into a responsive web experience.
 
 ### 🎯 Key Features
 
 - **Complete Chat System:** Private and group conversations with advanced control
-- **Interactive Forum:** Posts, comments, and like system
+- **Interactive Forum:** Posts, comments, and likes system
 - **User Management:** Customizable profiles with image uploads
-- **Real-Time Communication:** Via WebSockets with Socket.IO
+- **Real-Time Communication:** WebSockets with Socket.IO
 - **Modern Interface:** Responsive design with Angular 19
 - **Robust Backend:** RESTful API with Node.js and Express
 
 ## 🏗️ System Architecture
 
 ```mermaid
-%%{title: "AA_Space General Architecture"}%%
+%%{title: "Arquitetura Geral do AA_Space"}%%
 graph TB
     A[Angular 19 Frontend] --> B[Node.js + Express Backend]
     B --> C[SQLite Database]
@@ -44,7 +44,7 @@ graph TB
 ### Hybrid Chat System (Private + Group)
 
 ```mermaid
-%%{title: "Real-Time Chat with WebSockets"}%%
+%%{title: "Chat em Tempo Real com WebSockets"}%%
 sequenceDiagram
     participant U1 as User 1
     participant U2 as User 2
@@ -82,7 +82,7 @@ sequenceDiagram
 ### Interactive Forum System
 
 ```mermaid
-%%{title: "Forum Flow with Interactions"}%%
+%%{title: "Fluxo do Sistema de Fórum com Interações"}%%
 sequenceDiagram
     participant U as User
     participant F as Frontend
@@ -124,7 +124,7 @@ sequenceDiagram
     B->>DB: Save comment
     DB-->>B: Comment saved
     B->>WS: Broadcast new comment
-    WS->>F: Everyone sees comment instantly
+    WS->>F: Everyone sees the comment instantly
 ```
 
 ## 🔐 Authentication and Sessions
@@ -132,7 +132,7 @@ sequenceDiagram
 ### JWT Flow with Refresh Tokens
 
 ```mermaid
-%%{title: "JWT Authentication System with Refresh Tokens"}%%
+%%{title: "Sistema de Autenticação JWT com Refresh Tokens"}%%
 sequenceDiagram
     participant U as User
     participant F as Frontend
@@ -141,7 +141,7 @@ sequenceDiagram
     
     Note over U,DB: Initial Login
     
-    U->>F: Enters credentials
+    U->>F: Enter credentials
     F->>B: POST /api/auth/login
     B->>B: Validate credentials
     B->>DB: SELECT user WHERE email/password
@@ -184,72 +184,72 @@ sequenceDiagram
 
 ### Frontend
 
-- **Angular 19** - Enterprise framework with TypeScript 5.7
-- **RxJS 7.8** - Reactive programming
-- **Socket.IO Client** - WebSocket communication
-- **CSS3** - Responsive, modern interface
+- **Angular 19** – Enterprise framework with TypeScript 5.7
+- **RxJS 7.8** – Reactive programming
+- **Socket.IO Client** – WebSocket communication
+- **CSS3** – Responsive, modern interface
 
 ### Backend
 
-- **Node.js** - Server-side JavaScript runtime
-- **Express.js 4.18** - Web framework
-- **TypeScript 5.8** - Static typing
-- **Socket.IO 4.8** - WebSocket server
+- **Node.js** – Server-side JavaScript runtime
+- **Express.js 4.18** – Web framework
+- **TypeScript 5.8** – Static typing
+- **Socket.IO 4.8** – WebSocket server
 
 ### Database
 
-- **SQLite3** - Embedded relational database
-- **TypeORM 0.3.22** - Modern ORM with TypeScript
-- **Migrations** - Schema version control
+- **SQLite3** – Embedded relational database
+- **TypeORM 0.3.22** – Modern ORM with TypeScript
+- **Migrations** – Schema versioning
 
-### Security & Authentication
+### Security & Auth
 
-- **JWT** - Secure tokens for authentication
-- **bcrypt** - Password hashing
-- **CORS** - Cross-origin access control
-- **Input Validation** - Robust data validation
+- **JWT** – Secure tokens for auth
+- **bcrypt** – Password hashing
+- **CORS** – Cross-origin access control
+- **Input Validation** – Robust data validation
 
 ### DevOps & Development
 
-- **TypeScript Compiler** - Type-safe compilation
-- **ts-node** - TypeScript execution in development
-- **nodemon** - Hot reload
-- **Concurrently** - Parallel process execution
+- **TypeScript Compiler** – Type-safe compilation
+- **ts-node** – TS execution in development
+- **nodemon** – Hot reload
+- **Concurrently** – Parallel process execution
 
 ## 🎯 Technical Features
 
 ### 1. Advanced Chat System
 
-- **Private Conversations:** One-to-one with persistent history
-- **Group Chat:** Multiple participants with customizable avatars
-- **Real Time:** Instant communication via WebSockets
-- **Message Status:** Delivery and read receipts in real time
+- **Private Chats:** One-to-one with persistent history
+- **Group Chat:** Multiple participants with custom avatars
+- **Real Time:** Instant WebSocket communication
+- **Message Status:** Delivery/read in real time
 - **Participant Management:** Add/remove users
 
 ### 2. Forum System
 
-- **Posts and Comments:** Complete interaction system
+- **Posts and Comments:** Full interaction system
 - **Like System:** For posts and comments
 - **Real-Time Updates:** Instant notifications
-- **Content Moderation:** Administrative control
+- **Content Moderation:** Admin controls
 
 ### 3. User Management
 
-- **JWT Authentication:** Secure stateless system
-- **Image Upload:** Profile pictures and group avatars
-- **Contact Information:** Email and phone
-- **Role System:** Admins and regular users
+- **JWT Auth:** Stateless, secure system
+- **Image Upload:** Profile photos and group avatars
+- **Contact Info:** Email and phone
+- **Roles:** Admins and regular users
 
-### 4. File Upload and Management
+### 4. File Upload & Management
 
 - **File Validation:** Allowed types and sizes
-- **Local Storage:** Integration with file system
+- **Local Storage:** File system integration
 - **Image Processing:** Automatic optimization
 
 #### Upload Flow with Validation
 
 ```mermaid
-%%{title: "Upload System with Validation and Processing"}%%
+%%{title: "Sistema de Upload com Validação e Processamento"}%%
 sequenceDiagram
     participant U as User
     participant F as Frontend
@@ -259,117 +259,84 @@ sequenceDiagram
     
     Note over U,DB: Profile Image Upload
     
-    U->>F: Selects image file
-    F->>F: Client-side validation (type, size)
-    F->>B: POST /api/upload/profile-image (multipart/form-data)
-    B->>B: Validation middleware
-    alt Valid file
-        B->>FS: Save temporary file
-        FS-->>B: File saved
-        B->>B: Process image (resize, optimize)
-        B->>FS: Save optimized version
-        FS-->>B: Processed image saved
-        B->>DB: UPDATE user SET profile_image = filename
-        DB-->>B: Database updated
-        B-->>F: {success: true, imageUrl: '/uploads/profile_123.jpg'}
-        F->>F: Update interface with new image
-    else Invalid file
-        B-->>F: {error: 'File type not allowed'}
-        F->>U: Show validation error
+    U->>F: Selects profile image
+    F->>B: POST /api/upload/profile (multipart/form-data)
+    B->>B: Validate mimetype/size
+    alt Invalid file
+        B-->>F: 400 Bad Request
+    else Valid file
+        B->>FS: Save file locally
+        FS-->>B: Path saved (e.g., uploads/profile/abc.png)
+        B->>DB: UPDATE users SET avatarPath = ...
+        DB-->>B: Avatar updated
+        B-->>F: 200 OK (avatar URL)
     end
-    
-    Note over U,DB: Group Avatar Upload
-    
-    U->>F: Selects group avatar
-    F->>B: POST /api/upload/group-avatar
-    B->>FS: Save group avatar
-    FS-->>B: Avatar saved
-    B->>DB: UPDATE groups SET avatar = filename
-    DB-->>B: Group updated
-    B->>B: Broadcast to group members
-    B-->>F: Avatar updated
-    F->>F: Update group interface
 ```
 
-## 🔧 Technical Implementations
+## 🔒 Reliability, Performance, and Monitoring
 
-### WebSocket Communication
+### Reliability
 
-```typescript
-// Socket.IO server
-io.on('connection', (socket) => {
-  socket.on('join_room', (roomId) => {
-    socket.join(roomId);
-  });
-  
-  socket.on('send_message', (data) => {
-    io.to(data.roomId).emit('new_message', data);
-  });
-});
+- **Atomic Operations:** Transactions via TypeORM
+- **Error Handling:** Centralized middleware
+- **Retries & Timeouts:** Socket reconnection strategies
+
+### Performance
+
+- **WebSockets:** Real-time, low-latency communication
+- **Indexed Queries:** Optimized SQLite queries
+- **Resource Optimization:** Lightweight stack (SQLite + Node)
+
+### Monitoring
+
+- **Logs:** Structured logging
+- **Health Checks:** Basic readiness checks for API
+- **Metrics (suggested):** Integrate with a lightweight metrics tool if needed
+
+## 🧭 Product Flows & UX
+
+### 1. Onboarding & Auth
+
+- Login, token storage, automatic refresh, logout flow
+
+### 2. Chat (Private/Group)
+
+- Send/receive in real time, message status, room management
+
+### 3. Forum
+
+- Create/edit/delete posts, comments, likes, moderation
+
+### 4. Profiles
+
+- Edit profile, upload avatar, contact info
+
+### 5. Notifications
+
+- Real-time updates for new posts, likes, comments, messages
+
+## 🚀 Build & Run (Suggested)
+
+```bash
+# Backend
+npm install
+npm run dev   # nodemon + ts-node
+
+# Frontend
+cd frontend
+npm install
+npm start     # Angular dev server
 ```
 
-### TypeORM Entities
+## 🛠️ Skills Demonstrated
 
-```typescript
-@Entity()
-export class User {
-  @PrimaryGeneratedColumn()
-  id: number;
-  
-  @Column({ unique: true })
-  username: string;
-  
-  @OneToMany(() => ChatMessage, message => message.sender)
-  messages: ChatMessage[];
-}
-```
+- Full-stack TypeScript (Angular + Node/Express)
+- WebSockets with Socket.IO
+- JWT auth + refresh tokens
+- File upload with validation/processing
+- ORM (TypeORM) with migrations
+- Reactive frontend (RxJS) and modern Angular
 
-### JWT Authentication
+---
 
-```typescript
-// Authentication middleware
-const authenticateToken = (req, res, next) => {
-  const token = req.headers['authorization'];
-  if (!token) return res.sendStatus(401);
-  
-  jwt.verify(token, process.env.JWT_SECRET, (err, user) => {
-    if (err) return res.sendStatus(403);
-    req.user = user;
-    next();
-  });
-};
-```
-
-## 📊 Technical Differentials
-
-### Implemented Innovations
-
-1. **Hybrid chat system** with private and group conversations
-2. **WebSocket integration** for real-time communication
-3. **Full TypeScript architecture** with static typing
-4. **Upload system** with security validation
-5. **Responsive interface** adaptable to all devices
-
-### Skills Demonstrated
-
-- **Full-stack Development** with Angular and Node.js
-- **Real-time Communication** with WebSockets
-- **TypeScript** on frontend and backend
-- **Modern ORM** with TypeORM
-- **Secure Authentication** with JWT
-- **Component Architecture** with Angular
-- **Reactive Programming** with RxJS
-- **Database Versioning** control
-
-## 🚀 Final Result
-
-**AA Space** demonstrates advanced capability in:
-
-- **Modern Full-stack Development**
-- **Real-Time Communication** with WebSockets
-- **TypeScript Architecture** with type safety
-- **Complex Chat Systems**
-- **User Management** and authentication
-- **Responsive and modern Interface**
-
-A complete solution that brings together modern market technologies to create a robust and scalable community experience.
+## Built with ❤️ for real-time, community-driven experiences

@@ -2,90 +2,125 @@
 
 ## 🚀 Overview
 
-**Lobby Pedidos** is a full-stack order management solution with a Java backend and modern web frontend, aimed at restaurants and snack bars.
+**Lobby Pedidos** is an order management system with a full-stack architecture, separating a Java backend from a modern web frontend. It provides a complete interface for managing orders, enabling efficient control of operations in restaurants, snack bars, or food establishments.
 
 ### 🎯 Value Proposition
 
-- **End-to-end order control**
-- **Full-stack architecture** separating backend/frontend
-- **Robust backend** with Java + Maven
-- **Modern responsive UI**
-- **Automated build/deploy scripts**
+- **Order Management:** Complete system for order control
+- **Full-Stack Architecture:** Backend and frontend separated
+- **Robust Backend:** Java with Maven
+- **Modern Interface:** Responsive frontend
+- **Simplified Deploy:** Automated build scripts
 
 ## 🏗️ Tech Stack
 
 ### Backend
 
-- Java (Spring Boot expected)
-- Maven for build/dependencies
-- Database for persistence
+- **Java** – Main language
+- **Maven** – Build tool and dependency management
+- **Spring Boot** (likely) – Enterprise framework
+- **Database** – Data persistence
 
 ### Frontend
 
-- HTML/CSS/JavaScript
-- Responsive layout
+- **HTML/CSS/JavaScript** – Modern web stack
+- **Responsive UI** – Adaptive design
+- **Web Technologies** – Full web application
 
-### Infra
+### Infrastructure
 
-- PowerShell and Shell scripts for build
-- DNS configuration helpers
-- Icon generation scripts
+- **Build Scripts:** PowerShell and Shell scripts
+- **DNS Configuration:** DNS setup scripts
+- **Icon Management:** App icon generation
+- **Build Automation:** Automated build scripts
 
 ## 📁 Project Structure
 
 ```text
 Lobby-pedidos/
-├── .mvn/
-├── META-INF/
-├── backend/
-├── frontend/
-├── icon/
-├── README-BUILD.md
-├── SOLUCAO-DNS.md
-├── build.ps1 / build.sh
-├── configure-dns.ps1 / configure-dns.sh
-└── create-icon.ps1
+├── .mvn/              # Maven configs
+├── META-INF/          # App metadata
+├── backend/           # Java backend
+├── frontend/          # Frontend app
+├── icon/              # App icons
+├── README-BUILD.md    # Build documentation
+├── SOLUCAO-DNS.md     # DNS configuration solution
+├── build.ps1          # PowerShell build script
+├── build.sh           # Shell build script
+├── configure-dns.ps1  # DNS config (PowerShell)
+├── configure-dns.sh   # DNS config (Shell)
+└── create-icon.ps1    # Icon creation
 ```
 
 ## 🎯 Key Features
 
-### 1) Order Management
+### 1. Order Management
 
-- Create new orders
-- Track status in real time
-- Order history and reporting
+- **Order Creation:** UI to create new orders
+- **Tracking:** Real-time order status
+- **History:** Full order log
+- **Reports:** Sales analysis
 
-### 2) Operations Control
+### 2. Operations Control
 
-- Status lifecycle
-- Notifications for new orders
-- Table/seat management
+- **Order Status:** Lifecycle tracking
+- **Notifications:** New-order alerts
+- **Table Management:** Control of tables and service
 
-### 3) Infrastructure
+### 3. Infrastructure
 
-- Automated build scripts (PS1/SH)
-- DNS configuration helpers
-- Icon management
-- Cross-platform tooling
+- **Automated Build:** Scripts for full build
+- **DNS Configuration:** Tools for DNS setup
+- **Icon Management:** Icon creation/application
+- **Cross-platform:** Scripts for Windows (PowerShell) and Linux/Mac (Shell)
 
 ## 🚀 Build & Deploy
 
+### Build with PowerShell
+
 ```powershell
-# Windows
-./build.ps1
-./configure-dns.ps1
-./check-dns.ps1
+.\build.ps1
 ```
 
+### Build with Shell
+
 ```bash
-# Linux/macOS
 ./build.sh
+```
+
+### DNS Configuration
+
+```powershell
+# Windows
+.\configure-dns.ps1
+
+# Linux/Mac
 ./configure-dns.sh
+```
+
+### DNS Check
+
+```powershell
+.\check-dns.ps1
 ```
 
 ## 🛠️ Skills Demonstrated
 
-Java + Maven backend, modern web frontend, scripting (PowerShell/Shell), DevOps automation, and domain knowledge for order management.
+- **Java** – Backend development
+- **Maven** – Build automation
+- **Full-Stack Development** – Backend and frontend
+- **Scripting** – PowerShell and Shell scripts
+- **DevOps** – Automated build and deploy
+- **Order Management** – Complex business logic
+- **Software Architecture** – System design
+- **Database** – Data persistence
+
+## 📝 Conclusion
+
+**Lobby Pedidos** demonstrates full-stack development focused on order and operations control for food-service businesses. The project includes full build/deploy automation and infrastructure configuration tools.
 
 ---
-Developed with ❤️ for streamlined food-service operations.
+
+## Built with ❤️
+
+Order management system built to optimize operations in food establishments.
