@@ -51,7 +51,7 @@ O trabalho é realizado através de um **convênio entre ANBIMA e Banco Central 
 
 ### 1. Estagiário Desenvolvedor Fullstack
 
-*Período: Abril 2025 - Atual | Brasília, DF*
+*Período: Abril 2025 - Atual | Rio de Janeiro, RJ*
 
 #### Modernização de Infraestrutura Financeira Crítica
 
@@ -106,7 +106,7 @@ O trabalho é realizado através de um **convênio entre ANBIMA e Banco Central 
 
 ### 2. Estagiário - Projetos / Governança
 
-*Período: Abril 2024 - Abril 2025 | Brasília, DF*
+*Período: Abril 2024 - Abril 2025 | Rio de Janeiro, RJ*
 
 #### Gestão de Projetos e Governança
 
