@@ -51,7 +51,7 @@ The work is carried out through an **agreement between ANBIMA and the Central Ba
 
 ### 1. Fullstack Developer Intern
 
-*Period: April 2025 - Present | Brasília, DF*
+*Period: April 2025 - Present | Rio de Janeiro, RJ*
 
 #### Modernizing Critical Financial Infrastructure
 
@@ -106,7 +106,7 @@ The work is carried out through an **agreement between ANBIMA and the Central Ba
 
 ### 2. Intern - Projects / Governance
 
-*Period: April 2024 - April 2025 | Brasília, DF*
+*Period: April 2024 - April 2025 | Rio de Janeiro, RJ*
 
 #### Project Management and Governance
 
