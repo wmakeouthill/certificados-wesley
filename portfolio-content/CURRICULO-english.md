@@ -19,7 +19,7 @@ Curious, focused on continuous learning, always with a new project in mind. Spec
 
 ### Fullstack Developer Intern — ANBIMA/Selic (Central Bank Partnership)
 
-**Period:** April 2025 - Present | Brasília, DF
+**Period:** April 2025 - Present | Rio de Janeiro, RJ
 
 #### Modernizing Critical Financial Infrastructure
 
@@ -33,7 +33,7 @@ Curious, focused on continuous learning, always with a new project in mind. Spec
 
 ### Intern - Projects / Governance — ANBIMA/Selic (Central Bank Partnership)
 
-**Period:** April 2024 - April 2025 | Brasília, DF
+**Period:** April 2024 - April 2025 | Rio de Janeiro, RJ
 
 #### Project Management and Governance
 
