@@ -19,7 +19,7 @@ Perfil curioso, focado em aprendizado contínuo e sempre com um projeto novo em 
 
 ### Estagiário Desenvolvedor Fullstack - ANBIMA/Selic (Convênio com Banco Central)
 
-*Período: Abril 2025 - Atual | Brasília, DF*
+*Período: Abril 2025 - Atual | Rio de Janeiro, RJ*
 
 **Modernização de Infraestrutura Financeira Crítica:**
 
@@ -33,7 +33,7 @@ Perfil curioso, focado em aprendizado contínuo e sempre com um projeto novo em 
 
 ### Estagiário - Projetos / Governança - ANBIMA/Selic (Convênio com Banco Central)
 
-*Período: Abril 2024 - Abril 2025 | Brasília, DF*
+*Período: Abril 2024 - Abril 2025 | Rio de Janeiro, RJ*
 
 **Gestão de Projetos e Governança:**
 

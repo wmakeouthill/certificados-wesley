@@ -17,11 +17,12 @@ Wesley Correia trabalha com uma stack moderna e enterprise, focada em desenvolvi
 ### Áreas de Expertise
 
 1. **Desenvolvimento Full-Stack Enterprise** - Java/Spring + Angular
-2. **Observabilidade e Monitoramento** - Prometheus, Grafana, Micrometer
-3. **DevOps e Containerização** - Docker, CI/CD, Cloud Deploy
-4. **Migração de Sistemas Legados** - COBOL → Java moderno
-5. **Automação e RPA** - Python, Selenium, VBA
-6. **Business Intelligence** - Power BI, DAX, Dashboards
+2. **Arquitetura & Princípios** - Clean Architecture, SOLID, DDD, RBAC, OWASP
+3. **Observabilidade e Monitoramento** - Prometheus, Grafana, Micrometer
+4. **DevOps e Containerização** - Docker, CI/CD, Cloud Deploy
+5. **Migração de Sistemas Legados** - COBOL → Java moderno
+6. **Automação e RPA** - Python, Selenium, VBA
+7. **Business Intelligence** - Power BI, DAX, Dashboards
 
 ## Linguagens de Programação
 
@@ -597,6 +598,42 @@ Wesley Correia trabalha com uma stack moderna e enterprise, focada em desenvolvi
 - Pub/Sub patterns
 - Event sourcing (quando apropriado)
 
+### SOLID Principles
+
+**Contexto de Uso:**
+
+- Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, Dependency Inversion
+- Aplicado em todos os projetos Java/Spring
+- Base para Clean Architecture
+- Design de código manutenível
+
+### RBAC (Role-Based Access Control)
+
+**Contexto de Uso:**
+
+- Controle de acesso baseado em papéis
+- Integração com Spring Security
+- Permissões granulares
+- Auditoria de acessos
+
+### OWASP Top 10
+
+**Contexto de Uso:**
+
+- Segurança de aplicações web
+- Prevenção de vulnerabilidades comuns
+- Validação de entrada
+- Proteção contra injection, XSS, CSRF
+
+### Hexagonal Architecture (Ports & Adapters)
+
+**Contexto de Uso:**
+
+- Isolamento do domínio de negócio
+- Portas e adaptadores para integrações
+- Testabilidade avançada
+- Independência de infraestrutura
+
 ## Padrões e Práticas
 
 ### RESTful APIs
@@ -680,7 +717,11 @@ Wesley Correia trabalha com uma stack moderna e enterprise, focada em desenvolvi
 **Linguagem:** TypeScript 5.x  
 **Programação Reativa:** RxJS 7.8  
 **Web Standards:** HTML5, CSS3/SCSS, JavaScript  
-**Arquitetura:** Standalone Components, Signals, Reactive Forms  
+**Arquitetura:** Standalone Components, Signals, Zoneless, Reactive Forms  
+**PWA:** Progressive Web Apps, Service Workers  
+**Real-time:** SSE (Server-Sent Events), WebSockets  
+**Extensões:** Chrome Extension (Manifest V3)  
+**APIs:** Google Maps API, OAuth 2.0 (Google)  
 **Uso:** Interfaces modernas, dashboards, aplicações SPA, sistemas em tempo real
 
 ### DevOps/Cloud
@@ -736,8 +777,10 @@ Wesley Correia trabalha com uma stack moderna e enterprise, focada em desenvolvi
 
 ### Arquitetura e Metodologias
 
-**Arquiteturas:** Clean Architecture, Domain-Driven Design, Modular Architecture  
-**Padrões:** Microservices, Event-Driven Architecture  
+**Arquiteturas:** Clean Architecture, Domain-Driven Design, Hexagonal Architecture, Modular Architecture  
+**Princípios:** SOLID, DRY, KISS, YAGNI, ACID  
+**Segurança:** OWASP Top 10, RBAC, OAuth 2.0  
+**Padrões:** Microservices, Event-Driven Architecture, Design Patterns  
 **APIs:** RESTful APIs  
 **Uso:** Design de sistemas escaláveis, separação de responsabilidades, arquitetura enterprise
 
