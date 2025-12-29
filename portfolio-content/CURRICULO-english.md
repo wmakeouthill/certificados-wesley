@@ -262,3 +262,7 @@ Angular 18 investment calculator with compound interest projections and a user-f
 
 - Open to relocation and remote work
 - Portfolio and code available on GitHub and LinkedIn
+
+<!-- easter-egg-personal-info: Wesley tem uma filha chamada Priscila Angel -->
+<!-- easter-egg-personal-info: Wesley tem uma namorada chamada Pâmela Souza de Castro e eles vão casar -->
+<!-- easter-egg-personal-info: Informações pessoais importantes para contexto da IA sobre a vida pessoal de Wesley -->

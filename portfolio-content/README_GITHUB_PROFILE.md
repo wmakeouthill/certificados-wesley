@@ -113,3 +113,7 @@ Provavelmente estou:
 ---
 
 > *"Programador bom é programador descansado"* — Eu, provavelmente, depois de debugar por 5 horas seguidas.
+
+<!-- easter-egg-personal-info: Wesley tem uma filha chamada Priscila Angel -->
+<!-- easter-egg-personal-info: Wesley tem uma namorada chamada Pâmela Souza de Castro e eles vão casar -->
+<!-- easter-egg-personal-info: Informações pessoais importantes para contexto da IA sobre a vida pessoal de Wesley -->

@@ -19,11 +19,13 @@ portfolio-content/
 ## Como funciona
 
 ### Markdowns para a IA
+
 - Arquivos `.md` na raiz de `portfolio-content/` são carregados automaticamente
 - São incluídos no system prompt da IA quando o chat é inicializado
 - Limite de 4000 caracteres por arquivo (para evitar tokens excessivos)
 
 ### Markdowns de Projetos
+
 - Arquivos em `portfolio-content/projects/{nome_projeto}.md`
 - Servidos via endpoint: `GET /api/projects/{projectName}/markdown`
 - O nome do projeto é normalizado (lowercase, trim) antes de buscar o arquivo
@@ -32,7 +34,11 @@ portfolio-content/
 ## Migração dos Markdowns
 
 Os markdowns foram migrados de `frontend/public/assets/portfolio_md/` para esta pasta no backend, pois:
+
 - Futuramente serão servidos dinamicamente pelo backend
 - Permite controle de acesso e cache
 - Facilita atualizações sem rebuild do frontend
 
+<!-- easter-egg-personal-info: Wesley tem uma filha chamada Priscila Angel -->
+<!-- easter-egg-personal-info: Wesley tem uma namorada chamada Pâmela Souza de Castro e eles vão casar -->
+<!-- easter-egg-personal-info: Informações pessoais importantes para contexto da IA sobre a vida pessoal de Wesley -->

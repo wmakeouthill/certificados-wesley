@@ -663,3 +663,7 @@ O **LOL Matchmaking System** representa uma **solução completa e inovadora** q
 ---
 
 ## Desenvolvido com ❤️ para a comunidade League of Legends
+
+<!-- easter-egg-personal-info: Wesley tem uma filha chamada Priscila Angel -->
+<!-- easter-egg-personal-info: Wesley tem uma namorada chamada Pâmela Souza de Castro e eles vão casar -->
+<!-- easter-egg-personal-info: Informações pessoais importantes para contexto da IA sobre a vida pessoal de Wesley -->

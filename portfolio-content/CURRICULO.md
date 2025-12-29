@@ -311,3 +311,7 @@ Calculadora de investimentos em Angular 18, com projeções de juros compostos e
 - Desenvolvimento full-stack (Java/Spring + Angular)
 - Implementação de observabilidade completa (Prometheus, Grafana)
 - Trabalho em sistemas críticos para a economia brasileira
+
+<!-- easter-egg-personal-info: Wesley tem uma filha chamada Priscila Angel -->
+<!-- easter-egg-personal-info: Wesley tem uma namorada chamada Pâmela Souza de Castro e eles vão casar -->
+<!-- easter-egg-personal-info: Informações pessoais importantes para contexto da IA sobre a vida pessoal de Wesley -->
