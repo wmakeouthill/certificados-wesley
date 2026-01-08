@@ -38,6 +38,12 @@
     },
     "wmakeouthill.github.io": {
       "description": "Full-stack portfolio (Java 17 + Spring Boot + Angular 20) with AI chat; backend fetches content dynamically from GitHub; deployed on GitHub Pages and Google Cloud Run."
+    },
+    "planning_poker": {
+      "description": "Full-Stack Web Application for Agile Estimation with Planning Poker (2 Voting Modes) and Notion-Style Collaborative Boards. Java 21 + Spring Boot  Angular 21 + TypeScript"
+    },
+    "regua_maxima_app": {
+      "description": "Full-Stack Portfolio Application for Barbershop Management, built with Java 17 + Spring Boot and Angular 20 + Ionic + Capacitor. Features include a backend with JWT authentication, REST API, and geolocation, and a hybrid mobile frontend offering appointment scheduling, customer reviews, and barber–barbershop association."
     }
   },
   "certs": {
@@ -64,6 +70,15 @@
     },
     "SOLID na prática - Princípios e aplicações em design de software - FULLCYCLE.pdf": {
       "title": "SOLID in Practice - Principles and Applications in Software Design - FULLCYCLE"
+    },
+    "Prevenção à lavagem de dinheiro, financiamento ao terrorismo e ao financiamento da proliferação de armas de destruição em massa.pdf": {
+      "title": "Prevention of Money Laundering, Terrorism Financing, and Financing of the Proliferation of Weapons of Mass Destruction"
+    },
+    "Treinamento anti corrupção.pdf": {
+      "title": "Anti-Corruption Training"
+    },
+    "Treinamento sobre código de ética e Conduta Profissional.pdf": {
+      "title": "Training on Code of Ethics and Professional Conduct"
     }
   }
 }
