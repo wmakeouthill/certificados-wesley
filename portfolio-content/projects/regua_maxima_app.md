@@ -91,8 +91,11 @@ sequenceDiagram
     B->>B: Verifica horário do agendamento
     B->>F: Push notification (se app aberto)
     F->>C: Notificação de lembrete
-Gestão de Barbearias
-Mermaid
+```
+
+### Gestão de Barbearias
+
+```mermaid
 %%{title: "Fluxo de Gestão de Barbearias"}%%
 sequenceDiagram
     participant A as Admin Barbearia
@@ -125,8 +128,12 @@ sequenceDiagram
     DB-->>B: Vínculo ativo
     B-->>F: Notificação para admin
     F->>A: Barbeiro vinculado
-🏗️ Stack Tecnológica
-Backend (Java 17 + Spring Boot 3)
+```
+
+## 🏗️ Stack Tecnológica
+
+### Backend (Java 17 + Spring Boot 3)
+
 Spring Boot 3.x: Framework enterprise para microserviços
 Spring Security: Autenticação JWT stateless
 Spring Data JPA: ORM com Hibernate
@@ -177,6 +184,7 @@ regua_maxima_app/
 │   ├── capacitor.config.ts       # Config Capacitor
 │   └── package.json
 🎯 Principais Funcionalidades
+
 1. Sistema de Agendamentos
 Busca por Geolocalização: Encontre barbeiros próximos usando GPS
 Reserva de Horários: Agendamento em tempo real com confirmação
@@ -210,32 +218,43 @@ MySQL 8.0
 Docker (opcional para ambiente isolado)
 Backend
 bash
+
 # Navegar para o diretório do orquestrador
+
 cd backend/sistema-orquestrador
 
 # Executar com Maven
+
 ./mvnw spring-boot:run
 
 # Ou com Docker
+
 docker build -t regua-maxima-backend .
 docker run -p 8080:8080 regua-maxima-backend
 Frontend
 bash
+
 # Instalar dependências
+
 npm install
 
 # Executar em desenvolvimento
+
 npm run start
 
 # Build para produção
+
 npm run build:prod
 
 # Build mobile
+
 npm run cap:sync
 npm run cap:android  # ou cap:ios
 Ambiente Completo com Docker
 bash
+
 # Subir tudo com docker-compose
+
 docker-compose up -d
 📊 Status do Desenvolvimento
 ✅ Backend Core: API REST completa com autenticação
@@ -276,6 +295,7 @@ Make these code changes?
 README.md
 
 md
+
 # ✂️ Régua Máxima — Sistema de Gestão de Barbearias
 
 ## 🚀 Visão Geral
