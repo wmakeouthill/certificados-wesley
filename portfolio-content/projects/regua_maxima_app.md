@@ -351,9 +351,13 @@ graph TB
         D
         T[Google Maps Integration]
     end
-🔄 Fluxos Principais do Sistema
-Agendamento de Serviços
-Mermaid
+```
+
+## 🔄 Fluxos Principais do Sistema
+
+### Agendamento de Serviços
+
+```mermaid
 %%{title: "Fluxo de Agendamento de Serviços"}%%
 sequenceDiagram
     participant C as Cliente
@@ -385,8 +389,11 @@ sequenceDiagram
     B->>B: Verifica horário do agendamento
     B->>F: Push notification (se app aberto)
     F->>C: Notificação de lembrete
-Gestão de Barbearias
-Mermaid
+```
+
+### Gestão de Barbearias
+
+```mermaid
 %%{title: "Fluxo de Gestão de Barbearias"}%%
 sequenceDiagram
     participant A as Admin Barbearia
@@ -419,8 +426,12 @@ sequenceDiagram
     DB-->>B: Vínculo ativo
     B-->>F: Notificação para admin
     F->>A: Barbeiro vinculado
-🏗️ Stack Tecnológica
-Backend (Java 17 + Spring Boot 3)
+```
+
+## 🏗️ Stack Tecnológica
+
+### Backend (Java 17 + Spring Boot 3)
+
 Spring Boot 3.x: Framework enterprise para microserviços
 Spring Security: Autenticação JWT stateless
 Spring Data JPA: ORM com Hibernate
