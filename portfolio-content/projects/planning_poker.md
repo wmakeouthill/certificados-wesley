@@ -43,6 +43,7 @@ graph TB
     subgraph "External Services"
         G
     end
+```
 
 ### Fluxo Principal do Sistema
 
@@ -467,7 +468,7 @@ A aplicação suporta dois tipos de jogos de poker planning:
 - Valores disponíveis: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, ☕
 - Ideal para definir prioridades de backlog e sprints
 
-#### Recursos das sessões:
+#### Recursos das sessões
 
 - Criação de sessões com código de convite único
 - Participação em tempo real via WebSocket
@@ -589,7 +590,7 @@ git clone <repository-url>
 cd planning_poker
 ```
 
-2. Configure as variáveis de ambiente: Crie um arquivo `.env` na raiz do projeto:
+1. Configure as variáveis de ambiente: Crie um arquivo `.env` na raiz do projeto:
 
 ```env
 MYSQL_DATABASE=planningpoker
@@ -602,47 +603,76 @@ GOOGLE_CLIENT_ID=seu_google_client_id (opcional)
 GOOGLE_CLIENT_SECRET=seu_google_client_secret (opcional)
 NG_APP_API_URL=http://localhost:8080/api
 NG_APP_GOOGLE_CLIENT_ID=seu_google_client_id (opcional)
-Execute com Docker Compose:
-bash
+```
+
+1. Execute com Docker Compose:
+
+```bash
 docker-compose up -d
-Acesse a aplicação:
-Frontend: http://localhost:4200
-Backend API: http://localhost:8080/api
-Swagger/OpenAPI: http://localhost:8080/swagger-ui.html
-phpMyAdmin (opcional): http://localhost:8081 (use --profile tools)
-Opção 2: Execução Local
-Backend
-Configure o banco de dados MySQL:
-SQL
+```
+
+1. Acesse a aplicação:
+   - Frontend: <http://localhost:4200>
+   - Backend API: <http://localhost:8080/api>
+   - Swagger/OpenAPI: <http://localhost:8080/swagger-ui.html>
+   - phpMyAdmin (opcional): <http://localhost:8081> (use --profile tools)
+
+### Opção 2: Execução Local
+
+#### Backend
+
+1. Configure o banco de dados MySQL:
+
+```sql
 CREATE DATABASE planningpoker;
-Configure application.yml:
-YAML
+```
+
+1. Configure application.yml:
+
+```yaml
 spring:
   datasource:
     url: jdbc:mysql://localhost:3306/planningpoker
     username: seu_usuario
     password: sua_senha
-Execute o backend:
-bash
+```
+
+1. Execute o backend:
+
+```bash
 cd backend
 mvn spring-boot:run
-Frontend
-Instale as dependências:
-bash
+```
+
+#### Frontend
+
+1. Instale as dependências:
+
+```bash
 cd frontend
 npm install
-Configure as variáveis de ambiente: Crie frontend/public/assets/env.js:
-JavaScript
+```
+
+1. Configure as variáveis de ambiente: Crie `frontend/public/assets/env.js`:
+
+```javascript
 window['env'] = {
   API_URL: 'http://localhost:8080/api',
   GOOGLE_CLIENT_ID: 'seu_google_client_id' // opcional
 };
-Execute o frontend:
-bash
+```
+
+1. Execute o frontend:
+
+```bash
 npm start
-Acesse: http://localhost:4200
-📁 Estrutura do Projeto
-Code
+```
+
+1. Acesse: <http://localhost:4200>
+
+## 📁 Estrutura do Projeto
+
+```
 planning_poker/
 ├── backend/                 # API Spring Boot
 │   ├── src/main/java/      # Código fonte Java
@@ -656,54 +686,76 @@ planning_poker/
 ├── Dockerfile.cloud-run     # Dockerfile para produção
 ├── regras-desenvolvimento/ # Documentação de regras
 └── README.md               # Este arquivo
-🚢 Deploy
-Google Cloud Run
+```
+
+## 🚢 Deploy
+
+### Google Cloud Run
+
 O projeto inclui scripts e configurações para deploy no Google Cloud Run:
 
-Scripts de deploy:
-deploy-cloud-run.sh (Linux/Mac)
-deploy-cloud-run.ps1 (Windows)
-Documentação: Veja DEPLOY_CLOUD_RUN.md
-GitHub Pages
+- Scripts de deploy:
+  - `deploy-cloud-run.sh` (Linux/Mac)
+  - `deploy-cloud-run.ps1` (Windows)
+- Documentação: Veja `DEPLOY_CLOUD_RUN.md`
+
+### GitHub Pages
+
 Para deploy do frontend no GitHub Pages:
 
-Script: deploy-github-pages.ps1
-Documentação: Veja DEPLOY_GITHUB_PAGES.md
-📚 Documentação
-Regras de Desenvolvimento
+- Script: `deploy-github-pages.ps1`
+- Documentação: Veja `DEPLOY_GITHUB_PAGES.md`
+
+## 📚 Documentação
+
+### Regras de Desenvolvimento
+
 O projeto segue padrões rigorosos de desenvolvimento documentados em:
 
-regras-desenvolvimento/rules.md - Índice geral
-regras-desenvolvimento/regras-backend.md - Padrões backend
-regras-desenvolvimento/regras-frontend.md - Padrões frontend
-API Documentation
+- `regras-desenvolvimento/rules.md` - Índice geral
+- `regras-desenvolvimento/regras-backend.md` - Padrões backend
+- `regras-desenvolvimento/regras-frontend.md` - Padrões frontend
+
+### API Documentation
+
 A documentação da API está disponível via Swagger/OpenAPI:
 
-Local: http://localhost:8080/swagger-ui.html
-Produção: {API_URL}/swagger-ui.html
-🎮 Como Usar
-Criando um Board
-Faça login na aplicação
-Acesse a página de Boards
-Clique em "Novo Board"
-Digite / para ver os comandos disponíveis
-Comece a escrever e formatar seu conteúdo
-Criando uma Sessão de Poker
-Acesse a página de Poker
-Clique em "Nova Sessão"
-Escolha o modo:
-Estimativa de Esforço (Fibonacci)
-Votação de Prioridade (1-12)
-Opcionalmente, vincule uma Story de um Board
-Compartilhe o código de convite com os participantes
-Inicie a votação e revele os resultados quando todos votarem
-🤝 Contribuindo
+- Local: <http://localhost:8080/swagger-ui.html>
+- Produção: `{API_URL}/swagger-ui.html`
+
+## 🎮 Como Usar
+
+### Criando um Board
+
+1. Faça login na aplicação
+2. Acesse a página de Boards
+3. Clique em "Novo Board"
+4. Digite `/` para ver os comandos disponíveis
+5. Comece a escrever e formatar seu conteúdo
+
+### Criando uma Sessão de Poker
+
+1. Acesse a página de Poker
+2. Clique em "Nova Sessão"
+3. Escolha o modo:
+   - Estimativa de Esforço (Fibonacci)
+   - Votação de Prioridade (1-12)
+4. Opcionalmente, vincule uma Story de um Board
+5. Compartilhe o código de convite com os participantes
+6. Inicie a votação e revele os resultados quando todos votarem
+
+## 🤝 Contribuindo
+
 Este projeto segue padrões de Clean Architecture e Clean Code. Antes de contribuir, leia:
 
-regras-desenvolvimento/rules.md
-regras-desenvolvimento/regras-backend.md
-regras-desenvolvimento/regras-frontend.md
-📄 Licença
+- `regras-desenvolvimento/rules.md`
+- `regras-desenvolvimento/regras-backend.md`
+- `regras-desenvolvimento/regras-frontend.md`
+
+## 📄 Licença
+
 [Adicione informações de licença aqui]
+
+---
 
 Desenvolvido com ❤️ para facilitar estimativas ágeis
