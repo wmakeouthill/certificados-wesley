@@ -14,6 +14,16 @@
 
 ---
 
+## 🌐 Production Demo
+
+- **Frontend (Vercel)**: [https://email-classifier-frontend-delta.vercel.app](https://email-classifier-frontend-delta.vercel.app)
+- **Backend (Cloud Run)**: [https://email-classifier-api-881402891442.southamerica-east1.run.app](https://email-classifier-api-881402891442.southamerica-east1.run.app) *(private - only via Vercel)*
+- **API Docs**: [https://email-classifier-api-881402891442.southamerica-east1.run.app/docs](https://email-classifier-api-881402891442.southamerica-east1.run.app/docs) *(requires authentication)*
+
+> ⚠️ **Note:** The backend is configured as private and only accepts authenticated requests from Vercel. Direct access returns 403 Forbidden.
+
+---
+
 ## 📋 About the Project
 
 Digital solution for companies in the financial sector that deal with high volumes of emails daily. The application automates email reading and classification, suggesting classifications and automatic responses, freeing up the team's time for more strategic activities.
@@ -893,10 +903,55 @@ services:
 | Component | Platform | Region | Technology | URL |
 |-----------|----------|--------|------------|-----|
 | **Frontend** | Vercel | Global CDN | Angular 20+ SSR | [email-classifier-frontend-delta.vercel.app](https://email-classifier-frontend-delta.vercel.app) |
-| **Backend** | Google Cloud Run | São Paulo | FastAPI + Python | [email-classifier-api-xxx.run.app](https://email-classifier-api-881402891442.southamerica-east1.run.app) |
+| **Backend** | Google Cloud Run | São Paulo | FastAPI + Python | Private (only via Vercel) |
 | **Secrets** | Google Secret Manager | - | - | OpenAI and Gemini keys |
-| **Proxy** | Vercel Rewrites | - | - | `/api/*` → Cloud Run |
+| **Proxy** | Vercel Serverless Functions | - | Node.js | `/api/*` → Cloud Run (authenticated) |
 | **Persistence** | LocalStorage | Browser | - | Conversation history |
+
+### 🔒 Security Architecture
+
+The backend on Cloud Run is **private** and only accepts authenticated requests from Vercel, protecting against misuse of the AI API.
+
+```
+┌─────────────────────────────────────────────────────────────────────────┐
+│                        SECURE ARCHITECTURE                              │
+├─────────────────────────────────────────────────────────────────────────┤
+│                                                                         │
+│   ┌──────────┐     ┌─────────────────────┐     ┌──────────────────┐    │
+│   │ Browser  │────►│  Vercel (Proxy)     │────►│  Cloud Run       │    │
+│   │  User    │     │  Serverless Funcs   │     │  (Private)       │    │
+│   └──────────┘     └─────────────────────┘     └──────────────────┘    │
+│                              │                         ▲               │
+│                              │    JWT Token            │               │
+│                              └── Service Account ──────┘               │
+│                                                                         │
+├─────────────────────────────────────────────────────────────────────────┤
+│   ✅ User via Vercel      → Works (authenticated automatically)         │
+│   ❌ Direct access (curl) → Blocked (403 Forbidden)                    │
+│   ❌ Postman without auth → Blocked (403 Forbidden)                    │
+└─────────────────────────────────────────────────────────────────────────┘
+```
+
+**Security Components:**
+
+| Component | Description |
+|-----------|-------------|
+| **Service Account** | `vercel-invoker@classificador-email-desafio.iam.gserviceaccount.com` |
+| **IAM Role** | `roles/run.invoker` (only Cloud Run invocation) |
+| **Authentication** | Identity Token (JWT) generated automatically |
+| **Proxy Functions** | Vercel Serverless Functions that add authentication |
+
+**Proxy Structure (Vercel Serverless Functions):**
+
+```
+frontend/api/
+└── v1/
+    └── emails/
+        ├── providers.js           # GET  /api/v1/emails/providers
+        ├── classificar.js         # POST /api/v1/emails/classificar
+        └── classificar/
+            └── arquivo.js         # POST /api/v1/emails/classificar/arquivo
+```
 
 ### Backend Deployment (Cloud Run)
 
@@ -909,34 +964,59 @@ gcloud run deploy email-classifier-api \
     --region southamerica-east1 \
     --port 8000 \
     --memory 512Mi --cpu 1 --max-instances 1 \
-    --allow-unauthenticated \
+    --no-allow-unauthenticated \
     --set-secrets "OPENAI_API_KEY=openai-api-key:latest,GEMINI_API_KEY=gemini-api-key:latest"
-
-# Allow public access
-gcloud run services add-iam-policy-binding email-classifier-api \
-    --region=southamerica-east1 \
-    --member="allUsers" \
-    --role="roles/run.invoker"
-
-# Configure CORS
-gcloud run services update email-classifier-api \
-    --region southamerica-east1 \
-    --update-env-vars "^@^CORS_ORIGINS=http://localhost:4200,https://email-classifier-frontend-delta.vercel.app"
 ```
 
+### Configure Security (Private Cloud Run)
+
+```bash
+# 1. Create Service Account for Vercel
+gcloud iam service-accounts create vercel-invoker \
+    --display-name="Vercel Cloud Run Invoker"
+
+# 2. Grant invoker permission
+gcloud run services add-iam-policy-binding email-classifier-api \
+    --member="serviceAccount:vercel-invoker@YOUR_PROJECT.iam.gserviceaccount.com" \
+    --role="roles/run.invoker" \
+    --region=southamerica-east1
+
+# 3. Generate JSON key
+gcloud iam service-accounts keys create vercel-service-account-key.json \
+    --iam-account=vercel-invoker@YOUR_PROJECT.iam.gserviceaccount.com
+
+# 4. (Optional) Remove public access if it exists
+gcloud run services remove-iam-policy-binding email-classifier-api \
+    --member="allUsers" \
+    --role="roles/run.invoker" \
+    --region=southamerica-east1
+```
+
+> ⚠️ **Important:** The `vercel-service-account-key.json` file contains sensitive credentials. Never commit it to Git!
+
 ### Frontend Deployment (Vercel)
+
+**1. Configure environment variable in Vercel Dashboard:**
+
+- Go to: <https://vercel.com/dashboard> → Your project → Settings → Environment Variables
+- Add:
+  - **Name:** `GOOGLE_SERVICE_ACCOUNT_KEY`
+  - **Value:** Complete content of the `vercel-service-account-key.json` file
+  - **Environments:** Production, Preview, Development
+
+**2. Deploy:**
 
 ```bash
 cd frontend
 
-# Build
-npm run build
+# Install dependencies (includes google-auth-library)
+npm install
 
 # Deploy
 vercel --prod
 ```
 
-> For more details, see the [DEPLOY.md](DEPLOY.md) file.
+> For more details, see the [DEPLOY.md](DEPLOY.md) file and [docs/CLOUD-RUN-PRIVADO.md](docs/CLOUD-RUN-PRIVADO.md).
 
 ---
 
@@ -1000,6 +1080,8 @@ Developed as part of the fullstack technical challenge for **AutoU**.
 **Frontend - Vercel:** The frontend is deployed on Vercel, leveraging the global CDN and automatic deployment via Git. The platform offers excellent performance and ease of configuration.
 
 **Backend - Cloud Run:** The backend is running on Google Cloud Run in the São Paulo region (southamerica-east1). It's important to note that the service has a hibernation/wake behavior based on usage - this means that on the first request after a period of inactivity, the service may take approximately **5 seconds to fully initialize** before processing the request. This is expected behavior from Cloud Run for cost optimization.
+
+**Security - Private Cloud Run:** Cloud Run has been configured as **private** (no direct public access) to protect against misuse of the AI API. Only Vercel can invoke the backend through a Google Cloud Service Account with the `roles/run.invoker` role. Requests go through Vercel Serverless Functions that automatically add JWT authentication. This means attempts to access the API directly (via curl, Postman, etc.) return **403 Forbidden**, while users accessing normally through the Vercel site work perfectly.
 
 **Docker Compose for Development:** I configured a separate `docker-compose.dev.yml` to facilitate local development, with hot reload configured for both backend and frontend. This allows for a smoother development experience, with changes being automatically reflected without needing to rebuild containers.
 
