@@ -50,6 +50,15 @@
     },
     "desafio_fullstack": {
       "description": "Fullstack web application for automatic email classification using AI. Angular 20+ frontend with Signals, FastAPI backend, support for OpenAI GPT and Google Gemini. Interactive chat interface with file upload (.txt, .pdf, .eml, .msg, .mbox)."
+    },
+    "chrome_extensao_skip_video": {
+      "description": "High-performance extension for automating skip of short videos to prevent automatic looping (Shorts/Reels/TikTok), developed with pure JavaScript, Manifest V3, event-driven architecture, and zero polling."
+    },
+    "experimenta_ai_soneca_delivery": {
+      "description": "Complete delivery and real-time tracking system developed with Clean Architecture, Java 17, modular Spring Boot, Angular 17+, Google Maps API, and MySQL."
+    },
+    "glm-4.7-down-config-pc-fraco": {
+      "description": "Automated scripts to install and configure GLM-4.7 AI model on low-end PCs. Supports multiple quantizations (Q2-Q5), CPU/GPU offloading, and cross-platform setup (Windows/Linux/Mac). Optimized for limited hardware resources."
     }
   },
   "certs": {
