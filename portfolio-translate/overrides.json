@@ -44,6 +44,12 @@
     },
     "regua_maxima_app": {
       "description": "Full-Stack Portfolio Application for Barbershop Management, built with Java 17 + Spring Boot and Angular 20 + Ionic + Capacitor. Features include a backend with JWT authentication, REST API, and geolocation, and a hybrid mobile frontend offering appointment scheduling, customer reviews, and barber–barbershop association."
+    },
+    "teleprompter_stealth_mode": {
+      "description": "Electron desktop application for invisible and discreet teleprompter, ideal for online meetings, OBS Studio recordings, and live presentations. Supports Markdown, configurable auto-scroll, adjustable transparency, and multiple screens."
+    },
+    "desafio_fullstack": {
+      "description": "Fullstack web application for automatic email classification using AI. Angular 20+ frontend with Signals, FastAPI backend, support for OpenAI GPT and Google Gemini. Interactive chat interface with file upload (.txt, .pdf, .eml, .msg, .mbox)."
     }
   },
   "certs": {
@@ -82,6 +88,15 @@
     },
     "Docker na Prática - FULLCYCLE.pdf": {
       "title": "Docker in Practice - FULLCYCLE"
+    },
+    "Front-End com HTML, CSS, JavaScript e Angular.pdf": {
+      "title": "Front-End with HTML, CSS, JavaScript and Angular"
+    },
+    "Docker para desenvolvimento - FULL CYCLE 4.0.pdf": {
+      "title": "Docker for Development - FULL CYCLE 4.0"
+    },
+    "Agilidade e TDD - um dia no desenvolvimento de software.pdf": {
+      "title": "Agility and TDD - A Day in Software Development"
     }
   }
 }
