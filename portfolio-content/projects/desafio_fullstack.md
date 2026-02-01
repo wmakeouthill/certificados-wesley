@@ -138,7 +138,7 @@ O projeto segue os princípios de **Clean Architecture** e **DDD (Domain-Driven 
 ### 🏗️ Arquitetura Geral do Sistema
 
 ```mermaid
-%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#4f46e5', 'primaryTextColor': '#fff', 'primaryBorderColor': '#4338ca', 'lineColor': '#6366f1'}}}%%
+%%{title: "Arquitetura Geral do Sistema"}%%
 graph TB
     subgraph "Frontend - Vercel CDN Global"
         A[Angular 20+ SSR] --> B[EmailClassifierChat]
@@ -194,7 +194,7 @@ graph TB
 ### 🔄 Fluxo de Comunicação
 
 ```mermaid
-%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#4f46e5'}}}%%
+%%{title: "Fluxo de Comunicação da Classificação de Email"}%%
 sequenceDiagram
     participant U as Usuário
     participant F as Frontend Angular
@@ -246,7 +246,7 @@ sequenceDiagram
 ### Arquitetura do Frontend (Angular 20+)
 
 ```mermaid
-%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#dd0031'}}}%%
+%%{title: "Arquitetura do Frontend (Angular 20+)"}%%
 graph TD
     A[AppComponent] --> B[EmailClassifierChatComponent]
     B --> C[ChatHeaderComponent]
@@ -378,7 +378,7 @@ A aplicação oferece uma interface de chat moderna e interativa:
 ### 🔄 Fluxo de Persistência (LocalStorage)
 
 ```mermaid
-%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#22c55e'}}}%%
+%%{title: "Fluxo de Persistência (LocalStorage)"}%%
 flowchart TD
     subgraph "Inicialização"
         A[App Inicia] --> B{LocalStorage existe?}

@@ -174,9 +174,7 @@ Star-Wars-App/
 The solution was designed with an obsessive focus on performance and fluid UX, using an intelligent loading strategy and multi-level caching.
 
 ```mermaid
----
-title: Performance and Cache Strategy
----
+%%{title: "Performance and Cache Strategy"}%%
 flowchart TD
     Init["🚀 App Initialization"] --> FastLoad["🔥 Critical Load"]
     FastLoad --> Render["🖥️ Immediate Render (Optimized LCP)"]
@@ -200,9 +198,7 @@ flowchart TD
 The AI integration is not just a “wrapper”. It actively fills data gaps and generates content.
 
 ```mermaid
----
-title: AI Data Enrichment Pipeline
----
+%%{title: "AI Data Enrichment Pipeline"}%%
 sequenceDiagram
     participant C as Client
     participant B as Backend
@@ -917,9 +913,7 @@ The project was audited following strict software security principles, aligned w
 This graph shows how backend access is locked down.
 
 ```mermaid
----
-title: Cloud Run Private Access & API Shielding
----
+%%{title: "Cloud Run Private Access & API Shielding"}%%
 flowchart LR
     subgraph External_World ["External World"]
         User[User]

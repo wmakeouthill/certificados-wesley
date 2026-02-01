@@ -1,4 +1,4 @@
-﻿# 🌌 HOLOCRON ANALYTICS
+# 🌌 HOLOCRON ANALYTICS
 
 > **"Onde a Força dos Dados se Encontra com a Sabedoria da Galáxia"**
 
@@ -174,9 +174,7 @@ Star-Wars-App/
 A solução foi projetada com foco obsessivo em performance e fluidez (UX), utilizando uma estratégia de carregamento inteligente e cache multinível.
 
 ```mermaid
----
-title: Estratégia de Performance e Cache
----
+%%{title: "Estratégia de Performance e Cache"}%%
 flowchart TD
     Init["🚀 Inicialização do App"] --> FastLoad["🔥 Carregamento Crítico"]
     FastLoad --> Render["🖥️ Renderização Imediata (LCP Otimizado)"]
@@ -200,9 +198,7 @@ flowchart TD
 A integração com a IA não é apenas um "wrapper". Ela atua ativamente para cobrir lacunas de dados e gerar conteúdo.
 
 ```mermaid
----
-title: Pipeline de Enriquecimento de Dados com IA
----
+%%{title: "Pipeline de Enriquecimento de Dados com IA"}%%
 sequenceDiagram
     participant C as Client
     participant B as Backend
@@ -917,9 +913,7 @@ O projeto foi auditado seguindo princípios rigorosos de segurança de software,
 Este grafo mostra como o acesso ao backend é blindado.
 
 ```mermaid
----
-title: Cloud Run Private Access & API Shielding
----
+%%{title: "Cloud Run Private Access & API Shielding"}%%
 flowchart LR
     subgraph External_World ["External World"]
         User[Usuário]
