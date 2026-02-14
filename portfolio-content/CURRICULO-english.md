@@ -11,11 +11,23 @@
 
 ## Professional Summary
 
-Brazilian developer passionate about building innovative solutions and tackling technical challenges. Currently a Fullstack Developer Intern at ANBIMA/Selic (in partnership with the Central Bank), working on modernizing critical financial infrastructure, specifically migrating the Selic system from mainframe (COBOL) to a modern Java architecture.
+Brazilian developer passionate about building innovative solutions and tackling technical challenges. Since early February 2026, working at **AutoU** startup on disruptive projects in gamification, artificial intelligence, monitoring, management, and insights — core stack Python and React 19 + Vite, environments on AWS and Google Cloud, GitHub Actions pipelines, Vercel deploy, and predictive algorithms (Prophet). In parallel, experience as Fullstack Developer Intern at ANBIMA/Selic (Central Bank partnership), modernizing critical financial infrastructure (Selic mainframe COBOL to Java migration).
 
-Curious, focused on continuous learning, always with a new project in mind. Specialized in full-stack development with emphasis on modern architectures, Clean Architecture, and enterprise technologies. Diverse experience across sectors: legal, tobacco, energy, and critical financial infrastructure.
+Curious, focused on continuous learning, always with a new project in mind. Specialized in full-stack development with emphasis on modern architectures, Clean Architecture, and enterprise technologies. Diverse experience across sectors: legal, tobacco, energy, critical financial infrastructure, and high-impact startups.
 
 ## Professional Experience
+
+### Fullstack Developer — AutoU (Startup)
+
+**Period:** February 2026 - Present | Remote
+
+**Disruptive projects in gamification, AI, monitoring, and insights:**
+
+- Core stack: **Python** and **React 19 + Vite** in a fast-paced environment with high client exposure
+- Configured environments on **AWS** and **Google Cloud**; deploy, **GitHub Actions** pipelines, and **Vercel** deploy
+- Fixed and evolved predictive algorithm with **Prophet** (Python); new prediction features for transfer recommendations, purchases, and substitutes based on demand
+- Configured **Docker Compose**; full cycle delivery on 2 projects for large enterprises
+- Quality delivery at high velocity in a startup environment
 
 ### Fullstack Developer Intern — ANBIMA/Selic (Central Bank Partnership)
 
@@ -112,15 +124,19 @@ Curious, focused on continuous learning, always with a new project in mind. Spec
 
 **Intermediate/Advanced (Regular professional use):**
 
+- **React 19 + Vite:** Core stack in startup projects (modern frontend)
+- **Python:** Automations, scripts, web scraping, and predictive algorithms (Prophet)
 - **JavaScript/HTML5/CSS3/SCSS:** Frontend fundamentals
 - **Node.js:** Backend JS when needed
 - **Electron:** Cross-platform desktop apps
 - **Redis:** Distributed cache
 - **Power BI/DAX:** Executive dashboards and data analysis
-- **Python:** Automations, scripts, web scraping
 - **Selenium:** Web scraping and browser automation
 - **VBA:** Excel/MS automations
 - **Spring Actuator/Micrometer:** Health checks and metrics
+- **AWS / Google Cloud:** Cloud environments and deploy
+- **Vercel:** Frontend and app deploy
+- **Prophet (Python):** Predictive algorithms and time series
 
 **Intermediate (Knowledge and occasional use):**
 
@@ -150,6 +166,7 @@ Curious, focused on continuous learning, always with a new project in mind. Spec
 ### Frontend
 
 - **Angular 17+/18/19/20** — modern enterprise framework
+- **React 19 + Vite** — core stack in startup projects (modern, performant frontend)
 - **TypeScript 5.x** — static typing (5.4.2, 5.7.2, 5.8)
 - **RxJS 7.8** — reactive programming
 - **HTML5** — semantic structure
@@ -163,11 +180,12 @@ Curious, focused on continuous learning, always with a new project in mind. Spec
 ### DevOps/CI/CD
 
 - **Docker** — containerization (standard), used in all projects
-- **Docker Compose** — local orchestration
+- **Docker Compose** — container orchestration (production setup)
+- **GitHub Actions** — CI/CD pipelines and workflow automation
+- **Vercel** — frontend and serverless app deploy
 - **Google Cloud Run** — serverless containers, production deploy
 - **Cloud Build** — automated CI/CD on GCP
 - **CI/CD Pipelines** — automated deploy (GitLab, GitHub Actions)
-- **GitHub Actions** — workflow automation
 - **GitLab CI/CD** — professional pipelines
 - **NGINX** — web server/reverse proxy
 - **Kubernetes** — container orchestration (knowledge)
@@ -176,6 +194,7 @@ Curious, focused on continuous learning, always with a new project in mind. Spec
 
 ### Infrastructure & Observability
 
+- **AWS (Amazon Web Services)** — cloud environments, deploy, managed services
 - **Google Cloud Platform** — cloud computing/managed services
 - **Serverless Containers** — Cloud Run
 - **Cloud Databases** — managed DBs
@@ -199,7 +218,8 @@ Curious, focused on continuous learning, always with a new project in mind. Spec
 - **OpenAI API** — AI/chatbot integration
 - **Markdown** — technical docs
 - **Electron** — desktop apps (27, 28)
-- **Python** — automation/data scripts
+- **Python** — automation scripts, data analysis, web scraping, predictive algorithms (Prophet)
+- **Prophet (Facebook)** — time series and forecasting (Python)
 - **VBA** — Excel/MS automations
 - **SharePoint** — corporate web development
 - **Notion** — knowledge management
