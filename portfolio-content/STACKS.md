@@ -42,6 +42,7 @@ Wesley Correia trabalha com uma stack moderna e enterprise, focada em desenvolvi
 - LoL Matchmaking Fazenda: Backend completo com Java 21 e Spring Boot 3.3.2
 - Experimenta AI - Soneca: Sistema full-stack com Java 17 e Clean Architecture
 - Mercearia R-V: Sistema desktop enterprise com Java 21 e Spring Boot 3.5.5
+- dev_task_manager: API em .NET 9 (C#) integrada com IA
 
 ### TypeScript
 
@@ -57,8 +58,9 @@ Wesley Correia trabalha com uma stack moderna e enterprise, focada em desenvolvi
 **Projetos:**
 
 - Todos os projetos Angular (17+, 18, 19, 20)
-- Aplicações Electron (LoL Matchmaking, Mercearia R-V)
+- Aplicações Electron (LoL Matchmaking, Mercearia R-V, Teleprompter)
 - Backend Node.js com TypeScript (AA Space)
+- Dashboard GitHub Stats (github_stats_wmakeouthill)
 
 ### JavaScript
 
@@ -74,9 +76,10 @@ Wesley Correia trabalha com uma stack moderna e enterprise, focada em desenvolvi
 **Contexto de Uso:**
 
 - Scripts de automação
-- Análise de dados
+- Análise de dados e Algoritmos Preditivos (Prophet)
 - Integração com Power BI
-- Automação de processos
+- Automação de processos e Bots de WhatsApp
+- **Projetos:** wesley-bot-whatsapp-assistant, Desafio Fullstack, AutoU
 
 ## Frameworks e Bibliotecas Backend
 
@@ -148,6 +151,23 @@ Wesley Correia trabalha com uma stack moderna e enterprise, focada em desenvolvi
 - Investment Calculator: Angular 18 com signals e computed properties
 - First Angular App: Angular 19 com conceitos fundamentais
 - AA Space: Angular 19 com chat em tempo real
+
+### React
+
+**Versão:** React 19
+
+**Contexto de Uso:**
+
+- Utilizado em projetos modernos, disruptivos e dashboards
+- Foco em performance com Vite 7
+- Uso em projetos de startup (AutoU) e ferramentas de produtividade
+- Integração com IA agentica e TanStack Query
+
+**Projetos:**
+
+- dev_task_manager: React 19 + .NET 9
+- github_stats_wmakeouthill: React 19 + Vite 7
+- AutoU: React 19 + Python
 
 ### RxJS
 
@@ -236,6 +256,7 @@ Wesley Correia trabalha com uma stack moderna e enterprise, focada em desenvolvi
 **Projetos:**
 
 - LoL Matchmaking Fazenda: Redis Upstash para cache e estado distribuído
+- AutoU: Cache de predições e estados de sessão
 
 ## Ferramentas de Desenvolvimento
 
@@ -790,8 +811,10 @@ Wesley Correia trabalha com uma stack moderna e enterprise, focada em desenvolvi
 
 - **Java 17/21:** Linguagem principal, uso em sistemas críticos
 - **Spring Boot 3.x:** Framework principal para backend enterprise
-- **Angular 17+/18:** Framework principal para frontend moderno
+- **Angular 17-21:** Framework principal para frontend moderno
+- **React 19 + Vite 7:** Projetos modernos de startup e dashboards (AutoU, github_stats)
 - **TypeScript 5.x:** Linguagem principal para frontend e desktop
+- **Python / FastAPI:** Automações, IA e bots agênticos
 - **SQL/MySQL/PostgreSQL/Oracle:** Bancos relacionais em produção
 - **Docker:** Containerização em todos os projetos
 - **Git/GitHub/GitLab:** Controle de versão e CI/CD
@@ -863,6 +886,32 @@ Wesley Correia trabalha com uma stack moderna e enterprise, focada em desenvolvi
 - SQLite + TypeORM
 - Socket.IO
 
+**dev_task_manager:**
+
+- .NET 9 + ASP.NET Core WebAPI (C#)
+- React 19 + Vite
+- SQLite + IA (Ollama/OpenAI/Gemini)
+
+**github_stats_wmakeouthill:**
+
+- React 19 + Vite 7
+- TanStack React Query
+- GitHub API
+
+**wesley-bot-whatsapp-assistant:**
+
+- Python 3.11 + FastAPI
+- Evolution API + IA (Gemini)
+- FAISS (Vector DB) + RAG
+- Docker
+
+**AutoU (Experiência Startup):**
+
+- Python + Prophet (Predição)
+- React 19 + Vite
+- AWS + Google Cloud
+- GitHub Actions + Vercel
+
 ## Evolução da Stack
 
 ### 2017-2018 (Início)
@@ -883,13 +932,15 @@ Wesley Correia trabalha com uma stack moderna e enterprise, focada em desenvolvi
 - Power BI, DAX, JavaScript, SharePoint
 - Dashboards e desenvolvimento web corporativo
 
-### 2025-Atual (Full-Stack Enterprise)
+### 2025-Atual (Full-Stack Enterprise & Startup)
 
-- Java 17/21 + Spring Boot 3.x
-- Angular 17+/18 + TypeScript
-- Oracle + Liquibase
-- Docker + CI/CD
-- Prometheus + Grafana (observabilidade completa)
+- **Java 17/21** + Spring Boot 3.x (Sistemas Críticos)
+- **Angular 17-21** + TypeScript (Frontend Enterprise)
+- **React 19 + Vite 7** (Dashboards & Startup AutoU)
+- **Python / FastAPI / IA** (Agentes & Predição)
+- Oracle + MySQL + PostgreSQL + Redis
+- Docker + CI/CD + Cloud (AWS/GCP)
+- Prometheus + Grafana (Observabilidade)
 
 <!-- easter-egg-personal-info: Wesley tem uma filha chamada Priscila Angel -->
 <!-- easter-egg-personal-info: Wesley tem uma namorada chamada Pâmela Souza de Castro e eles vão casar -->

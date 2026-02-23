@@ -41,6 +41,7 @@ Wesley Correia works with a modern, enterprise stack focused on full-stack devel
 - LoL Matchmaking Fazenda: Complete backend with Java 21 and Spring Boot 3.3.2
 - Experimenta AI - Soneca: Full-stack system with Java 17 and Clean Architecture
 - Mercearia R-V: Enterprise desktop system with Java 21 and Spring Boot 3.5.5
+- dev_task_manager: .NET 9 (C#) API integrated with AI
 
 ### TypeScript
 
@@ -56,8 +57,9 @@ Wesley Correia works with a modern, enterprise stack focused on full-stack devel
 **Projects:**
 
 - All Angular projects (17+, 18, 19, 20)
-- Electron applications (LoL Matchmaking, Mercearia R-V)
+- Electron applications (LoL Matchmaking, Mercearia R-V, Teleprompter)
 - Node.js backend with TypeScript (AA Space)
+- GitHub Stats Dashboard (github_stats_wmakeouthill)
 
 ### JavaScript
 
@@ -73,9 +75,10 @@ Wesley Correia works with a modern, enterprise stack focused on full-stack devel
 **Usage Context:**
 
 - Automation scripts
-- Data analysis
+- Data analysis and Predictive Algorithms (Prophet)
 - Integration with Power BI
-- Process automation
+- Process automation and WhatsApp Bots
+- **Projects:** wesley-bot-whatsapp-assistant, Desafio Fullstack, AutoU
 
 ## Backend Frameworks and Libraries
 
@@ -147,6 +150,23 @@ Wesley Correia works with a modern, enterprise stack focused on full-stack devel
 - Investment Calculator: Angular 18 with signals and computed properties
 - First Angular App: Angular 19 with fundamental concepts
 - AA Space: Angular 19 with real-time chat
+
+### React
+
+**Version:** React 19
+
+**Usage Context:**
+
+- Used in modern, disruptive projects and dashboards
+- Focus on performance with Vite 7
+- Used in startup projects (AutoU) and productivity tools
+- Integration with agentic AI and TanStack Query
+
+**Projects:**
+
+- dev_task_manager: React 19 + .NET 9
+- github_stats_wmakeouthill: React 19 + Vite 7
+- AutoU: React 19 + Python
 
 ### RxJS
 
@@ -747,8 +767,10 @@ Wesley Correia works with a modern, enterprise stack focused on full-stack devel
 
 - **Java 17/21:** Main language, used in critical systems
 - **Spring Boot 3.x:** Main framework for enterprise backend
-- **Angular 17+/18:** Main framework for modern frontend
+- **Angular 17-21:** Main framework for modern frontend
+- **React 19 + Vite 7:** Modern startup projects and dashboards (AutoU, github_stats)
 - **TypeScript 5.x:** Main language for frontend and desktop
+- **Python / FastAPI:** Automation, AI, and agentic bots
 - **SQL/MySQL/PostgreSQL/Oracle:** Relational databases in production
 - **Docker:** Containerization in all projects
 - **Git/GitHub/GitLab:** Version control and CI/CD
@@ -798,6 +820,32 @@ Wesley Correia works with a modern, enterprise stack focused on full-stack devel
 - MySQL + Redis (Upstash)
 - Electron 28
 - Google Cloud Run
+
+**dev_task_manager:**
+
+- .NET 9 + ASP.NET Core WebAPI (C#)
+- React 19 + Vite
+- SQLite + AI (Ollama/OpenAI/Gemini)
+
+**github_stats_wmakeouthill:**
+
+- React 19 + Vite 7
+- TanStack React Query
+- GitHub API
+
+**wesley-bot-whatsapp-assistant:**
+
+- Python 3.11 + FastAPI
+- Evolution API + IA (Gemini)
+- FAISS (Vector DB) + RAG
+- Docker
+
+**AutoU (Startup Experience):**
+
+- Python + Prophet (Prediction)
+- React 19 + Vite
+- AWS + Google Cloud
+- GitHub Actions + Vercel
 
 **Experimenta AI - Soneca:**
 
