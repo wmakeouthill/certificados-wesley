@@ -10,7 +10,7 @@ Wesley Correia trabalha com uma stack moderna e enterprise, focada em desenvolvi
 
 **Backend:** Java 17/21 + Spring Boot 3.x + Oracle/MySQL/PostgreSQL  
 **Frontend:** Angular 17+/18/19/20 + TypeScript + RxJS  
-**DevOps:** Docker + GitLab CI/CD + Google Cloud Run  
+**DevOps:** Docker + GitLab CI/CD + Google Cloud Run + AWS (ec2) + Oracle Cloud (VPS)
 **Observabilidade:** Prometheus + Grafana + Spring Actuator  
 **Banco de Dados:** Oracle, MySQL, PostgreSQL, SQLite, Redis
 
