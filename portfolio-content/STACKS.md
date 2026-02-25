@@ -4,7 +4,7 @@ Documentação completa das tecnologias, linguagens, frameworks e ferramentas ut
 
 ## Visão Geral
 
-Wesley Correia trabalha com uma stack moderna e enterprise, focada em desenvolvimento full-stack com Java/Spring no backend e Angular no frontend. Possui experiência diversificada em diferentes setores, desde automações simples até sistemas críticos de infraestrutura financeira.
+Wesley Correia trabalha com uma stack moderna e enterprise, focada em desenvolvimento full-stack com Java/Spring no backend e Angular no frontend. Possui experiência diversificada em diferentes setores, desde automações simples até sistemas críticos de infraestrutura financeira e sistemas de algoritmo preditivo com prophet (python) e sistemas de chatbots, análises de imagens e monitoramento com I.A.
 
 ### Stack Principal Atual
 
