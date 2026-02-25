@@ -36,7 +36,7 @@ This repository contains **Wesley Correia’s (wmakeouthill) professional portfo
   - Node 20.19.0 (auto-downloaded by Maven on backend build)
   - Deploy targets:
     - **GitHub Pages** (via `docs/`)
-    - **Oracle Cloud Always Free** (VPS — Docker backend serving the SPA)
+    - **Oracle Cloud Always Free** (VPS — Docker backend serving the SPA, instead old cloud run)
 
 ### Architecture Diagram (Mermaid)
 
