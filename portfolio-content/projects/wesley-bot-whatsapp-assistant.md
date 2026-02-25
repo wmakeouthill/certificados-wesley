@@ -13,6 +13,7 @@ O grande diferencial deste bot é a implementação de **RAG (Retrieval-Augmente
 - **Fluxo Agêntico**: Detecta automaticamente a necessidade do usuário (responde via texto, envia áudio ou exporta dados para planilha).
 - **Integração Robusta**: Comunicação estável via **Evolution API**.
 - **Pronto para Produção**: Totalmente containerizado com **Docker**.
+- **Deploy**: Rodando em **Oracle Cloud Always Free** (instâncias Always Free Tier), em VPS dedicada para disponibilidade contínua do bot.
 
 ## 🏗️ Arquitetura do Sistema
 
@@ -88,6 +89,10 @@ graph TB
    ```bash
    docker-compose up -d --build
    ```
+
+### Deploy (Produção)
+
+O bot está em produção em **Oracle Cloud Always Free** (Always Free Tier), utilizando instâncias VPS para rodar os containers (backend FastAPI + Evolution API quando aplicável). A escolha do Always Free permite manter o assistente disponível 24/7 sem custo de infraestrutura.
 
 ---
 Potencializando a comunicação via WhatsApp com Inteligência Artificial.

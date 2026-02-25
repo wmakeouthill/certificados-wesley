@@ -37,7 +37,7 @@
       "description": "Repository containing my GitHub profile README."
     },
     "wmakeouthill.github.io": {
-      "description": "Full-stack portfolio (Java 17 + Spring Boot + Angular 20) with AI chat; backend fetches content dynamically from GitHub; deployed on GitHub Pages and Google Cloud Run."
+      "description": "Full-stack portfolio (Java 17 + Spring Boot + Angular 20) with AI chat; backend fetches content dynamically from GitHub; deployed on GitHub Pages and Oracle Cloud Always Free (VPS)."
     },
     "planning_poker": {
       "description": "Full-Stack Web Application for Agile Estimation with Planning Poker (2 Voting Modes) and Notion-Style Collaborative Boards. Java 21 + Spring Boot  Angular 21 + TypeScript"

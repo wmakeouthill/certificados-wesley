@@ -344,8 +344,20 @@ Wesley Correia trabalha com uma stack moderna e enterprise, focada em desenvolvi
 
 **Projetos:**
 
-- Portfolio Wesley: Deploy no Google Cloud Run
 - LoL Matchmaking Fazenda: Backend no Cloud Run
+
+### Oracle Cloud Always Free
+
+**Contexto de Uso:**
+
+- VPS e instâncias Always Free Tier
+- Deploy de backend e bots 24/7 sem custo de infraestrutura
+- Docker em instâncias dedicadas
+
+**Projetos:**
+
+- Portfolio Wesley: Deploy em Oracle Cloud Always Free (VPS)
+- Wesley Bot WhatsApp: Deploy em Oracle Always Free (instâncias VPS)
 
 ### Cloud Build
 
@@ -904,6 +916,7 @@ Wesley Correia trabalha com uma stack moderna e enterprise, focada em desenvolvi
 - Evolution API + IA (Gemini)
 - FAISS (Vector DB) + RAG
 - Docker
+- Deploy: Oracle Cloud Always Free (VPS)
 
 **AutoU (Experiência Startup):**
 
