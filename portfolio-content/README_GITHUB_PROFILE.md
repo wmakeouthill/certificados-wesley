@@ -161,7 +161,7 @@ Sistema completo de delivery com **rastreamento GPS em tempo real** (Google Maps
 
 ### 🎮 **LoL Matchmaking Fazenda**
 Sistema enterprise de matchmaking com **estado distribuído** (Redis), **distributed locks** (Redisson), **circuit breaker** (Resilience4j), automação Discord (JDA), integração LCU (League Client), WebSocket real-time e cliente desktop Electron.
-> `Java 21` `Spring Boot 3.3` `Angular 20` `Redis` `Redisson` `Caffeine` `JDA Discord` `Electron` `Google Cloud Run`
+> `Java 21` `Spring Boot 3.3` `Angular 20` `Redis` `Redisson` `Caffeine` `JDA Discord` `Electron` `Oracle Cloud Always Free`
 
 ### 🍔 **Experimenta AI - Soneca**
 Sistema completo de gestão para lanchonetes com **Clean Architecture**, impressão de cupons fiscais (ESC/POS), gestão de pedidos em tempo real e aplicação desktop nativa com Electron.
