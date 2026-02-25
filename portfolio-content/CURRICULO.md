@@ -334,7 +334,7 @@ Calculadora de investimentos em Angular 18, com projeções de juros compostos e
 
 **2026-Atual:** Desenvolvimento Full-Stack em startup (AutoU)
 
-- Stack Python + React 19 + Vite em projetos de gamificação, IA e insights
+- Stack Python + React 19 + Vite em projetos de gamificação, IA e insights, monitoramento de imagens com IA, e análises preditivas.
 - Ambientes AWS e Google Cloud; GitHub Actions, Vercel, Docker Compose
 - Algoritmos preditivos (Prophet): recomendações de transferência, compras e substitutos
 - Full cycle em projetos para grandes empresas; entrega veloz e alta exposição a clientes
