@@ -36,7 +36,7 @@ Este repositório contém o **portfólio profissional do Wesley Correia (wmakeou
   - Node 20.19.0 (baixado automaticamente pelo Maven no build do backend)
   - Deploy em:
     - **GitHub Pages** (via pasta `docs/`)
-    - **Oracle Cloud Always Free** (VPS — backend em Docker servindo o SPA)
+    - **Oracle Cloud Always Free** (VPS — backend em Docker servindo o SPA, substituindo o Google Cloud Run)
 
 ### Diagrama de Arquitetura (Mermaid)
 
