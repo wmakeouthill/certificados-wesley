@@ -4,13 +4,13 @@ Documentação completa das tecnologias, linguagens, frameworks e ferramentas ut
 
 ## Visão Geral
 
-Wesley Correia trabalha com uma stack moderna e enterprise, focada em desenvolvimento full-stack com Java/Spring no backend e Angular no frontend. Possui experiência diversificada em diferentes setores, desde automações simples até sistemas críticos de infraestrutura financeira.
+Wesley Correia trabalha com uma stack moderna e enterprise, focada em desenvolvimento full-stack com Java/Spring no backend e Angular no frontend. Possui experiência diversificada em diferentes setores, desde automações simples até sistemas críticos de infraestrutura financeira e sistemas de algoritmo preditivo com prophet (python) e sistemas de chatbots, análises de imagens e monitoramento com I.A.
 
 ### Stack Principal Atual
 
 **Backend:** Java 17/21 + Spring Boot 3.x + Oracle/MySQL/PostgreSQL  
 **Frontend:** Angular 17+/18/19/20 + TypeScript + RxJS  
-**DevOps:** Docker + GitLab CI/CD + Google Cloud Run  
+**DevOps:** Docker + GitLab CI/CD + Google Cloud Run + AWS (ec2) + Oracle Cloud (VPS)
 **Observabilidade:** Prometheus + Grafana + Spring Actuator  
 **Banco de Dados:** Oracle, MySQL, PostgreSQL, SQLite, Redis
 
@@ -344,8 +344,20 @@ Wesley Correia trabalha com uma stack moderna e enterprise, focada em desenvolvi
 
 **Projetos:**
 
-- Portfolio Wesley: Deploy no Google Cloud Run
 - LoL Matchmaking Fazenda: Backend no Cloud Run
+
+### Oracle Cloud Always Free
+
+**Contexto de Uso:**
+
+- VPS e instâncias Always Free Tier
+- Deploy de backend e bots 24/7 sem custo de infraestrutura
+- Docker em instâncias dedicadas
+
+**Projetos:**
+
+- Portfolio Wesley: Deploy em Oracle Cloud Always Free (VPS)
+- Wesley Bot WhatsApp: Deploy em Oracle Always Free (instâncias VPS)
 
 ### Cloud Build
 
@@ -904,6 +916,7 @@ Wesley Correia trabalha com uma stack moderna e enterprise, focada em desenvolvi
 - Evolution API + IA (Gemini)
 - FAISS (Vector DB) + RAG
 - Docker
+- Deploy: Oracle Cloud Always Free (VPS)
 
 **AutoU (Experiência Startup):**
 

@@ -36,7 +36,7 @@ Este repositório contém o **portfólio profissional do Wesley Correia (wmakeou
   - Node 20.19.0 (baixado automaticamente pelo Maven no build do backend)
   - Deploy em:
     - **GitHub Pages** (via pasta `docs/`)
-    - **Google Cloud Run** (via imagem Docker do backend servindo o SPA)
+    - **Oracle Cloud Always Free** (VPS — backend em Docker servindo o SPA, substituindo o Google Cloud Run)
 
 ### Diagrama de Arquitetura (Mermaid)
 
@@ -76,9 +76,9 @@ flowchart LR
         BUDGET[TokenBudgetService]
     end
 
-    subgraph Cloud[Google Cloud]
-        SM[(Secret Manager)]
-        CR[(Cloud Run)]
+    subgraph Cloud[Oracle Cloud / Externo]
+        SM[(Secrets / Env)]
+        VPS[(Oracle VPS Always Free)]
         OA[(OpenAI API)]
         GITHUB[(GitHub API)]
     end
@@ -103,8 +103,8 @@ flowchart LR
     GH_CONTENT --> GITHUB
     MAIL --> SM
 
-    Backend --> CR
-    CR --> Browser
+    Backend --> VPS
+    VPS --> Browser
 ```
 
 ---
@@ -265,8 +265,8 @@ Este projeto utiliza apenas um **subconjunto** da stack completa descrita em `ba
 - **DevOps / Deploy**
   - Build: **Maven** (integração com `frontend-maven-plugin`)
   - Containerização: **Docker**
-  - Cloud: **Google Cloud Run**
-  - Secrets: **Google Secret Manager** (via `DEPLOY-GOOGLE-CLOUD-RUN.md`).
+  - Deploy: **Oracle Cloud Always Free** (VPS — backend em Docker servindo o SPA)
+  - Secrets: variáveis de ambiente no servidor (ou Google Secret Manager, conforme configuração).
 
 Para uma descrição bem mais detalhada de tecnologias, níveis de proficiência e contexto por projeto, consulte `STACKS.md`.
 
@@ -338,30 +338,19 @@ O repositório possui a pasta `docs/`, utilizada pelo GitHub Pages. O fluxo típ
 
 3. Fazer commit e push na branch configurada do GitHub Pages (normalmente `main`).
 
-### Google Cloud Run (backend + SPA)
+### Google Cloud Run (backend + SPA) — legado
 
-O repositório contém:
+O repositório ainda contém documentação e scripts para deploy no Google Cloud Run (opcional):
 
 - `Dockerfile.cloud-run.projeto-wesley`
 - `deploy.sh` e `deploy-completo-projeto-wesley.ps1`
 - `DEPLOY-GOOGLE-CLOUD-RUN.md`
 
-Esses arquivos descrevem como:
+**Deploy atual:** o backend + SPA estão hospedados em **Oracle Cloud Always Free** (VPS), com a imagem Docker do backend servindo o SPA. Os segredos são configurados como variáveis de ambiente no servidor.
 
-- construir a imagem Docker do backend (já com o build do Angular copiado para `static/`);
-- publicar a imagem em um registry (por exemplo, GCR/Artifact Registry);
-- criar/atualizar o serviço do Cloud Run com as variáveis de ambiente necessárias.
+### Google Secret Manager (opcional)
 
-### Google Secret Manager
-
-No deploy para Cloud Run, os segredos **não ficam hardcoded no código**; eles são:
-
-- criados no **Google Secret Manager** (`openai-api-key`, `gmail-username`, `gmail-app-password`, `email-recipient`, `github-api-token`);
-- vinculados como variáveis de ambiente via `--set-secrets` no comando `gcloud run deploy` (ver tabela em `DEPLOY-GOOGLE-CLOUD-RUN.md`);
-- lidos pela aplicação através dessas variáveis:
-  - `OPENAI_API_KEY`, `GMAIL_USERNAME`, `GMAIL_APP_PASSWORD`, `EMAIL_RECIPIENT`, `GITHUB_API_TOKEN`.
-
-Assim, o gerenciamento sensível (rotacionar chaves, trocar tokens, etc.) é feito diretamente no Secret Manager, sem alterar o código nem fazer novos deploys de imagem.
+Se usar Cloud Run ou outro ambiente que integre com GCP, os segredos podem ser gerenciados no **Google Secret Manager**. No deploy em **Oracle VPS**, os segredos são configurados como **variáveis de ambiente** no servidor.
 
 ---
 
@@ -399,7 +388,7 @@ Esses arquivos são a **fonte de verdade** que alimenta:
 ## 🧪 Fluxo de Demonstração (Experiência do Usuário)
 
 - **1. Acessar o portfólio**
-  - Abra a URL publicada (GitHub Pages ou Cloud Run).
+  - Abra a URL publicada (GitHub Pages ou Oracle VPS).
   - A página inicial (`hero`) já carrega resumo do perfil e links principais.
 
 - **2. Navegar pelas seções**

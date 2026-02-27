@@ -36,7 +36,7 @@ This repository contains **Wesley Correia’s (wmakeouthill) professional portfo
   - Node 20.19.0 (auto-downloaded by Maven on backend build)
   - Deploy targets:
     - **GitHub Pages** (via `docs/`)
-    - **Google Cloud Run** (Docker image of the backend serving the SPA)
+    - **Oracle Cloud Always Free** (VPS — Docker backend serving the SPA, replacing the old Google Cloud Run)
 
 ### Architecture Diagram (Mermaid)
 
@@ -76,9 +76,9 @@ flowchart LR
         BUDGET[TokenBudgetService]
     end
 
-    subgraph Cloud[Google Cloud]
-        SM[(Secret Manager)]
-        CR[(Cloud Run)]
+    subgraph Cloud[Oracle Cloud / External]
+        SM[(Secrets / Env)]
+        VPS[(Oracle VPS Always Free)]
         OA[(OpenAI API)]
         GITHUB[(GitHub API)]
     end
@@ -103,8 +103,8 @@ flowchart LR
     GH_CONTENT --> GITHUB
     MAIL --> SM
 
-    Backend --> CR
-    CR --> Browser
+    Backend --> VPS
+    VPS --> Browser
 ```
 
 ---
@@ -265,8 +265,8 @@ This project uses only a **subset** of the full stack described in `backend/src/
 - **DevOps / Deploy**
   - Build: **Maven** (integration with `frontend-maven-plugin`)
   - Containerization: **Docker**
-  - Cloud: **Google Cloud Run**
-  - Secrets: **Google Secret Manager** (see `DEPLOY-GOOGLE-CLOUD-RUN.md`).
+  - Deploy: **Oracle Cloud Always Free** (VPS — Docker backend serving the SPA)
+  - Secrets: environment variables on the server (or Google Secret Manager, depending on setup).
 
 For a much more detailed description of technologies, proficiency levels, and project context, see `STACKS.md`.
 
@@ -338,30 +338,19 @@ The repo includes the `docs/` folder for GitHub Pages. Typical flow:
 
 3. Commit and push to the configured GitHub Pages branch (usually `main`).
 
-### Google Cloud Run (backend + SPA)
+### Google Cloud Run (backend + SPA) — legacy
 
-The repo contains:
+The repo still includes documentation and scripts for optional Google Cloud Run deploy:
 
 - `Dockerfile.cloud-run.projeto-wesley`
 - `deploy.sh` and `deploy-completo-projeto-wesley.ps1`
 - `DEPLOY-GOOGLE-CLOUD-RUN.md`
 
-These files describe how to:
+**Current deploy:** the backend + SPA are hosted on **Oracle Cloud Always Free** (VPS), with the Docker backend image serving the SPA. Secrets are configured as environment variables on the server.
 
-- build the backend image (with Angular build copied to `static/`);
-- publish the image to a registry (e.g., GCR/Artifact Registry);
-- create/update the Cloud Run service with the required environment variables.
+### Google Secret Manager (optional)
 
-### Google Secret Manager
-
-For Cloud Run deploys, secrets **aren't hardcoded**; they are:
-
-- created in **Google Secret Manager** (`openai-api-key`, `gmail-username`, `gmail-app-password`, `email-recipient`, `github-api-token`);
-- bound as environment variables via `--set-secrets` in `gcloud run deploy` (see table in `DEPLOY-GOOGLE-CLOUD-RUN.md`);
-- read by the app through:
-  - `OPENAI_API_KEY`, `GMAIL_USERNAME`, `GMAIL_APP_PASSWORD`, `EMAIL_RECIPIENT`, `GITHUB_API_TOKEN`.
-
-This way, sensitive management (key rotation, token changes) is handled directly in Secret Manager, without changing code or rebuilding images.
+If using Cloud Run or another GCP-integrated environment, secrets can be managed in **Google Secret Manager**. For **Oracle VPS** deploy, secrets are configured as **environment variables** on the server.
 
 ---
 
@@ -399,7 +388,7 @@ These files are the **source of truth** that feed:
 ## 🧪 Demo Flow (User Experience)
 
 - **1. Access the portfolio**
-  - Open the published URL (GitHub Pages or Cloud Run).
+  - Open the published URL (GitHub Pages or Oracle VPS).
   - The landing (`hero`) already shows profile summary and key links.
 
 - **2. Browse the sections**
@@ -427,7 +416,7 @@ These files are the **source of truth** that feed:
 
 - **5. Send a contact message**
   - Fill out the form in `contact` and send.
-  - The frontend triggers `POST /api/contact`, and the backend sends email using Gmail + secrets from Secret Manager.
+  - The frontend triggers `POST /api/contact`, and the backend sends email using Gmail + secrets from the server environment.
 
 ### AI Chat Flow (Mermaid)
 

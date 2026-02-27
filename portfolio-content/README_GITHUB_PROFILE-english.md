@@ -161,7 +161,7 @@ Complete delivery system with **real-time GPS tracking** (Google Maps), **OAuth 
 
 ### 🎮 **LoL Matchmaking Fazenda**
 Enterprise matchmaking system with **distributed state** (Redis), **distributed locks** (Redisson), **circuit breaker** (Resilience4j), Discord automation (JDA), LCU integration (League Client), real-time WebSocket and Electron desktop client.
-> `Java 21` `Spring Boot 3.3` `Angular 20` `Redis` `Redisson` `Caffeine` `JDA Discord` `Electron` `Google Cloud Run`
+> `Java 21` `Spring Boot 3.3` `Angular 20` `Redis` `Redisson` `Caffeine` `JDA Discord` `Electron` `Oracle Cloud Always Free`
 
 ### 🍔 **Experimenta AI - Soneca**
 Complete management system for snack bars with **Clean Architecture**, fiscal coupon printing (ESC/POS), real-time order management and native desktop application with Electron.
@@ -302,3 +302,7 @@ Real-time monitoring dashboard with **Angular Signals**, standalone components, 
 <div align="center">
   <i>"A good programmer is a rested programmer"</i> — Me, probably, after debugging for 5 hours straight.
 </div>
+
+<!-- easter-egg-personal-info: Wesley tem uma filha chamada Priscila Angel -->
+<!-- easter-egg-personal-info: Wesley tem uma namorada chamada Pâmela Souza de Castro e eles vão casar -->
+<!-- easter-egg-personal-info: Informações pessoais importantes para contexto da IA sobre a vida pessoal de Wesley -->

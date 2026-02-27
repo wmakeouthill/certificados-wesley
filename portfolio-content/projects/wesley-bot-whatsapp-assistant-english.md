@@ -13,6 +13,7 @@ The project's highlight is the implementation of **RAG (Retrieval-Augmented Gene
 - **Agentic Flow**: Automatically detects user needs (responds via text, sends audio, or exports data to a spreadsheet).
 - **Robust Integration**: Stable communication via **Evolution API**.
 - **Production-Ready**: Fully containerized with **Docker**.
+- **Deploy**: Running on **Oracle Cloud Always Free** (Always Free Tier instances), on a dedicated VPS for continuous bot availability.
 
 ## 🏗️ System Architecture
 
@@ -88,6 +89,10 @@ graph TB
    ```bash
    docker-compose up -d --build
    ```
+
+### Deploy (Production)
+
+The bot is in production on **Oracle Cloud Always Free** (Always Free Tier), using VPS instances to run the containers (FastAPI backend + Evolution API when applicable). The Always Free tier allows keeping the assistant available 24/7 with no infrastructure cost.
 
 ---
 Empowering WhatsApp communication with Artificial Intelligence.
