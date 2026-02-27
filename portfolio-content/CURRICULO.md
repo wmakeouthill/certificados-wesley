@@ -99,7 +99,7 @@ Perfil curioso, focado em aprendizado contínuo e sempre com um projeto novo em 
 
 ### Pós-Graduação
 
-- **Pós-graduação em Desenvolvimento FullStack Java** - Em andamento
+- **Pós-graduação em Desenvolvimento FullStack Java** - Concluída em fevereiro de 2026
 - **MBA em Gestão de Projetos** - Em andamento
 
 ## Habilidades Técnicas
