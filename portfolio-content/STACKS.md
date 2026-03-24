@@ -1,28 +1,29 @@
-# Stacks e Tecnologias - Wesley Correia
+# Stacks e Tecnologias - Wesley de Carvalho Augusto Correia
 
 Documentação completa das tecnologias, linguagens, frameworks e ferramentas utilizadas por Wesley Correia em seus projetos profissionais e pessoais.
 
 ## Visão Geral
 
-Wesley Correia trabalha com uma stack moderna e enterprise, focada em desenvolvimento full-stack com Java/Spring no backend e Angular no frontend. Possui experiência diversificada em diferentes setores, desde automações simples até sistemas críticos de infraestrutura financeira e sistemas de algoritmo preditivo com prophet (python) e sistemas de chatbots, análises de imagens e monitoramento com I.A.
+Wesley Correia trabalha com uma stack moderna e enterprise, focada em desenvolvimento full-stack com Java/Spring e C#/.NET no backend, Angular e React no frontend, além de fortes integrações em IA generativa (RAG) e Visão Computacional. Possui experiência diversificada em diferentes setores, desde automações simples até sistemas críticos de infraestrutura financeira, pipelines em nuvem e algoritmos preditivos com Prophet (Python), processamento vetorial (FAISS, pgvector) e LLMs.
 
 ### Stack Principal Atual
 
-**Backend:** Java 17/21 + Spring Boot 3.x + Oracle/MySQL/PostgreSQL  
-**Frontend:** Angular 17+/18/19/20 + TypeScript + RxJS  
-**DevOps:** Docker + GitLab CI/CD + Google Cloud Run + AWS (ec2) + Oracle Cloud (VPS)
-**Observabilidade:** Prometheus + Grafana + Spring Actuator  
-**Banco de Dados:** Oracle, MySQL, PostgreSQL, SQLite, Redis
+**Backend:** Java 17/21 + Spring Boot 3.x, Python (FastAPI, LangGraph), C#/.NET 9  
+**Frontend:** Angular 17+/18/19/20, React 19 + Vite, TypeScript + RxJS  
+**DevOps & Infra:** Docker, GitLab CI, GitHub Actions, AWS (EC2), GCP (Cloud Run, Secret Manager), IaaC  
+**Observabilidade:** Prometheus, Grafana, Spring Actuator, Micrometer, AlertManager  
+**Banco de Dados:** Oracle, MySQL, PostgreSQL, pgvector, H2, SQLite, Redis  
+**IA & Dados:** Prophet, OpenCV/Vision, Gemini API, RAG, FAISS, LangGraph
 
 ### Áreas de Expertise
 
-1. **Desenvolvimento Full-Stack Enterprise** - Java/Spring + Angular
-2. **Arquitetura & Princípios** - Clean Architecture, SOLID, DDD, RBAC, OWASP
-3. **Observabilidade e Monitoramento** - Prometheus, Grafana, Micrometer
-4. **DevOps e Containerização** - Docker, CI/CD, Cloud Deploy
-5. **Migração de Sistemas Legados** - COBOL → Java moderno
-6. **Automação e RPA** - Python, Selenium, VBA
-7. **Business Intelligence** - Power BI, DAX, Dashboards
+1. **Desenvolvimento Full-Stack (Full Cycle)** - Entregas de ponta a ponta (Frontend, Backend e Infra)
+2. **Inteligência Artificial & Machine Learning** - RAG, Embeddings, Busca Vetorial e Algoritmos Preditivos
+3. **Arquitetura & Princípios** - Clean Architecture, SOLID, DDD, DRY/KISS/YAGNI, Design Patterns, OWASP Top 10, ACID, Hexagonal
+4. **Observabilidade e Monitoramento** - Prometheus, Grafana, Micrometer, AlertManager
+5. **DevOps, Nuvem e Containerização** - Docker, CI/CD, AWS EC2, GCP Cloud Run, IaaC
+6. **Migração de Sistemas Legados** - COBOL → Java moderno e APIs
+7. **Automação, RPA e Raspagem de Dados** - Python, Selenium, VBA, Ingestão de PDFA
 
 ## Linguagens de Programação
 
@@ -75,13 +76,34 @@ Wesley Correia trabalha com uma stack moderna e enterprise, focada em desenvolvi
 
 **Contexto de Uso:**
 
-- Scripts de automação
-- Análise de dados e Algoritmos Preditivos (Prophet)
-- Integração com Power BI
+- Scripts de automação, ingestão de dados e web scraping (Selenium)
+- Modelos Preditivos (Machine Learning) com a biblioteca Prophet
+- Construção de APIs modernas e escaláveis (FastAPI)
+- Projetos em Inteligência Artificial utilizando RAG, LangGraph e Vision
+- Desenvolvimento em ambientes cloud para startups e grandes projetos corporativos
 - Automação de processos e Bots de WhatsApp
-- **Projetos:** wesley-bot-whatsapp-assistant, Desafio Fullstack, AutoU
+
+### C# / .NET
+
+**Contexto de Uso:**
+
+- APIs de alta performance
+- C# integrado ao .NET / ASP.NET Core
+- Uso em ferramentas com Clean Architecture e integrações de IA
+
+**Projetos:**
+
+- dev_task_manager (API .NET 9 + IA)
 
 ## Frameworks e Bibliotecas Backend
+
+### FastAPI
+
+**Contexto de Uso:**
+
+- Criação de APIs robustas e de altíssima performance em Python
+- Integração nativa com validação de tipos usando Pydantic
+- Aplicação em backends que lidam com IA, modelos de visão e grandes volumes de dados (AutoU)
 
 ### Spring Boot
 

@@ -1,8 +1,8 @@
-# Currículo - Wesley Correia
+# Currículo - Wesley de Carvalho Augusto Correia
 
 ## Informações Pessoais
 
-- **Nome Completo:** Wesley Correia
+- **Nome Completo:** Wesley de Carvalho Augusto Correia
 - **GitHub:** [wmakeouthill](https://github.com/wmakeouthill)
 - **LinkedIn:** [wcacorreia](https://www.linkedin.com/in/wcacorreia)
 - **Email:** <wcacorreia1995@gmail.com>
@@ -11,96 +11,81 @@
 
 ## Resumo Profissional
 
-Desenvolvedor brasileiro apaixonado por criar soluções inovadoras e superar desafios técnicos. Desde o início de fevereiro de 2026 atuando na startup **AutoU**, em projetos disruptivos de gamificação, inteligência artificial, monitoramento, gestão e insights — com stack core em Python e React 19 + Vite, ambientes em AWS e Google Cloud, pipelines no GitHub Actions, deploy na Vercel e algoritmos preditivos (Prophet). Paralelamente, experiência como Estagiário Desenvolvedor Fullstack na ANBIMA/Selic em convênio com o Banco Central, na modernização de infraestrutura financeira crítica (migração Selic de mainframe COBOL para Java).
+Especialista em Desenvolvimento Full Stack e Governança de TI, focado na arquitetura de sistemas distribuídos e modernização de ecossistemas críticos. Possuo experiência com RAG, inovações utilizando IA (como Visão Computacional), aplicações full stack e algoritmos de predição. Domino as stacks Java (Spring Boot) e Python (FastAPI), integrando backends robustos a interfaces em Angular e React, sob rigorosos padrões de observabilidade, CI/CD e conteinerização.
 
-Perfil curioso, focado em aprendizado contínuo e sempre com um projeto novo em mente. Especializado em desenvolvimento full-stack com foco em arquiteturas modernas, Clean Architecture e tecnologias enterprise. Experiência diversificada em diferentes setores: jurídico, tabaco, energia, infraestrutura financeira crítica e startups de alto impacto.
+Entrego soluções escaláveis e automações de alto impacto, unindo forte visão analítica de dados e frameworks ágeis (Scrum) para otimizar indicadores de performance, garantir alta disponibilidade em ambientes de missão crítica e atuar com ritmo acelerado mediante uma alta curva de aprendizado (perfil autodidata).
 
 ## Experiência Profissional
 
-### Desenvolvedor Fullstack - AutoU (Startup)
+### Desenvolvedor FullStack (Full Cycle) - AutoU
 
-*Período: Fevereiro 2026 - Atual | Remoto*
+*Período: Fev 2026 - Presente | Remoto*
 
-**Projetos disruptivos de gamificação, IA, monitoramento e insights:**
+- **Visão computacional e monitoramento com IA:** implementação de pipelines de visão computacional com Vision + LLM para monitoramento inteligente em tempo real, análise de imagens e geração de insights automatizados via RAG e LangGraph.
+- **Ingestão de PDF, embeddings e raspagem de dados:** ingestão de catálogos em PDF com IA para extração e indexação de dados de produtos; geração de embeddings com Gemini e armazenamento em bancos vetoriais (pgvector, FAISS) para busca semântica; scraping automatizado para alimentar pipelines e sistemas internos.
+- **Machine Learning e otimização de estoque:** algoritmos com a biblioteca Prophet para predição de demanda, otimização de estoque de vendas, transferências entre filiais e sugestão de produtos substitutos via algoritmo preditivo.
+- **Integrações ERP Sankhya:** integrações com o ERP Sankhya (Microwork) para geração de relatórios, orçamentos e otimização de fluxos operacionais de vendas.
+- **Infraestrutura cloud e IaaC:** provisionamento de infraestrutura como código (IaaC) em AWS (EC2) e GCP (Cloud Run); deploy via SSH com scripts automatizados, Docker e ambientes de alta performance.
+- **CI/CD e deploy em produção:** pipelines completos no GitHub Actions para build, testes e deploy seguro em produção em ambientes cloud (AWS e GCP).
+- **Frontends escaláveis em React:** desenvolvimento de interfaces modernas e escaláveis em React integradas a backends de IA, sob metodologias ágeis.
 
-- Stack core: **Python** e **React 19 + Vite** em ambiente acelerado com alta exposição a clientes
-- Configuração de ambientes em **AWS** e **Google Cloud**; deploy, pipelines no **GitHub Actions** e deploy na **Vercel**
-- Correção e evolução de algoritmo preditivo com **Prophet** (Python); novas features de predição para recomendações de transferência, compras e substitutos com base em demanda
-- Configuração de **Docker Compose**; full cycle completo em 2 projetos para empresas de grande porte
-- Entrega com qualidade e ritmo veloz em ambiente de startup
+### Estagiário - Backend / FullStack / ScrumTeam - Anbima / Selic (Banco Central)
 
-### Estagiário Desenvolvedor Fullstack - ANBIMA/Selic (Convênio com Banco Central)
+*Período: Abr 2025 - Abr 2026 | Rio de Janeiro, RJ*
 
-*Período: Abril 2025 - Atual | Rio de Janeiro, RJ*
+- **Modernização de infraestrutura financeira / sistema crítico:** migração Selic mainframe (COBOL) para arquitetura Java (Novo-Selic).
+- **Observabilidade e monitoramento:** implementação de stack completa (Prometheus, Grafana, Actuator, Micrometer, Blackbox Exporter, Alertmanager), para análise de métricas de performance e healthcheck.
+- **Desenvolvimento full stack:** Java (Spring) Backend + Angular Frontend.
+- **DevOps e containerização:** Docker, CI/CD, versionamento de branches com GitLab para colaboração e práticas de deployment automatizado.
+- **Gestão de dados:** Oracle (Containerizado) Database (SQL), versionamento de schemas com Liquibase / Scripts SQL.
 
-**Modernização de Infraestrutura Financeira Crítica:**
+### Estagiário - Projetos / Governança - Anbima / Selic (Banco Central)
 
-- Migração do sistema Selic de mainframe (COBOL) para arquitetura Java moderna (Novo-Selic)
-- Desenvolvimento full-stack: Java (Spring) Backend + Angular Frontend
-- Implementação de observabilidade e monitoramento completo (Prometheus, Grafana, Actuator, Micrometer, Blackbox Exporter, Alertmanager)
-- Análise de métricas de performance e healthcheck de sistemas críticos
-- DevOps e containerização: Docker, CI/CD, versionamento com GitLab
-- Gestão de dados: Oracle Database containerizado, versionamento de schemas com Liquibase
-- Trabalho em equipe Scrum
+*Período: Abr 2024 - Abr 2025 | Rio de Janeiro, RJ*
 
-### Estagiário - Projetos / Governança - ANBIMA/Selic (Convênio com Banco Central)
-
-*Período: Abril 2024 - Abril 2025 | Rio de Janeiro, RJ*
-
-**Gestão de Projetos e Governança:**
-
-- Gestão de ciclo de desenvolvimento de artefatos, relatórios executivos e controle de iniciativas estratégicas alinhadas ao PDTIC
-- Criação de dashboards Power BI (DAX) interativos para visualização de KPIs e suporte à tomada de decisão executiva
-- Desenvolvimento de webparts customizados SharePoint (JavaScript, HTML, CSS) integrados via SharePoint API para governança corporativa
-- Desenvolvimento de soluções para C-level: expositores de documentos e notícias institucionais para chefia do Banco Central e ANBIMA
-- Aplicação prática de frameworks de gestão: PMI, Agile, MPS.BR e CMMI para padronização e melhoria contínua
-- Gestão do conhecimento: elaboração de conteúdos estratégicos e soluções low-code/no-code (Notion) para continuidade do negócio
+- **Gestão de Projetos:** ciclo de desenvolvimento de artefatos, relatórios executivos e controle de iniciativas estratégicas alinhadas ao PDTIC.
+- **Business Intelligence:** criação de dashboards Power BI (DAX) interativos para visualização de KPIs e suporte à tomada de decisão executiva.
+- **Desenvolvimento web:** webparts customizados SharePoint (JavaScript, HTML, CSS) integrados via SharePoint API para governança corporativa.
+- **Soluções para C-level:** expositores de documentos e notícias institucionais para chefia do Banco Central e ANBIMA.
+- **Frameworks de gestão:** aplicação prática de PMI, Agile, MPS.BR e CMMI para padronização e melhoria contínua de procedimentos e processos.
+- **Gestão do conhecimento:** elaboração de conteúdos estratégicos e soluções low-code/no-code (Notion), para continuidade do negócio.
 
 ### Estagiário & Assistente Jurídico - Gondim, Albuquerque e Negreiros ADV
 
-*Período: Novembro 2019 - Abril 2024 | Rio de Janeiro, RJ*
+*Período: Nov 2019 - Abr 2024 | Rio de Janeiro, RJ*
 
-**Automação e Otimização de Processos Jurídicos:**
-
-- Diligências processuais e financeiras: protocolos, questionamentos forenses, pagamentos de custas e depósitos judiciais
-- Desenvolvimento de automações em Python, VBA e Selenium para web scraping de dados de diversos tribunais do Brasil
-- RPA (Robotic Process Automation): integração automatizada entre sistema interno e plataformas judiciais
-- Otimização operacional: redução significativa do tempo de cadastro processual via scripts, melhorando fluxo de dados e produtividade
-- Análise de dados jurídicos: resumos de petições e gestão de informações processuais em sistemas internos
+- **Diligências processuais e financeiras:** protocolos, questionamentos forenses, pagamentos de custas e depósitos judiciais, controle de pagamentos entre cliente-escritório e obrigações processuais.
+- **Automação de processos:** desenvolvimento em Python, VBA e Selenium para web scraping de dados de diversos tribunais do Brasil + RPA: integração automatizada entre sistema interno e plataformas judiciais.
+- **Otimização operacional:** redução do tempo de cadastro processual via scripts, melhorando fluxo de dados e produtividade.
+- **Análise de dados jurídicos:** resumos de petições e gestão de informações processuais em sistemas internos.
 
 ### Aprendiz - Analytics / SalesForce - Phillip Morris Internacional
 
-*Período: Outubro 2018 - Outubro 2019 | Rio de Janeiro, RJ*
+*Período: Out 2018 - Out 2019 | Rio de Janeiro, RJ*
 
-**Automação e Análise de Dados:**
-
-- Automações VBA/Excel para coleta automatizada de dados, geração de relatórios e envio email gerencial
-- Controle de estoque e distribuição de materiais promocionais (trade marketing) e de escritório
-- Análise de volume de vendas, KPIs comerciais e otimização de rotinas administrativas via macros
-- Utilização de Salesforce para gestão de relacionamento com clientes
+- **Automação VBA/Excel:** automações VBA/Excel para coleta automatizada de dados, geração de relatórios e envio email gerencial.
+- **Controle de estoque:** gerenciei controle de estoque e distribuição de materiais promocionais (trade marketing) e de escritório.
+- **Análise de vendas:** realizei análises de volume de vendas, KPIs comerciais e otimização de rotinas administrativas via macros.
 
 ### Aprendiz - Auxiliar Administrativo / Produção - Liquigás / Petrobras Distribuidora S.A
 
-*Período: Abril 2017 - Setembro 2018 | Rio de Janeiro, RJ*
+*Período: Abr 2017 - Set 2018 | Duque de Caxias, RJ*
 
-**Gestão Operacional e Atendimento:**
-
-- Gestão operacional com Excel e input/leitura de dados no SAP
-- Atendimento a clientes, centro de destrocas de botijões e fornecedor de GLP
-- Apoio na gestão de filas e suporte aos vendedores
-- Controle de qualidade e fiscalização na produção de botijões
+- **Gestão operacional:** atuei com Excel na gestão operacional. Input e leitura de dados no SAP.
+- **Atendimento e apoio:** atendimento a clientes, ao centro de destrocas de botijões e fornecedor de GLP. Apoio na gestão de filas e suporte aos vendedores.
+- **Controle de qualidade:** controle de qualidade e fiscalização na produção de botijões.
 
 ## Formação Acadêmica
 
 ### Graduação
 
-- **Ciências da Computação** - Em andamento
-- **Direito** - Concluída
+- **Ciências da Computação** - 2024 a 2027 (Em andamento) - Faculdade GRAN
+- **Direito** - 2018 a 2022 (Concluído) - Centro Universitário Unigama
 
 ### Pós-Graduação
 
-- **Pós-graduação em Desenvolvimento FullStack Java** - Concluída em fevereiro de 2026
-- **MBA em Gestão de Projetos** - Em andamento
+- **Full Stack Java Developer** - 2025 a 2026 (Concluído) - Faculdade FACINT
+- **Gestão de Projetos** - 2025 (Em andamento) - Centro Universitário Unigama
 
 ## Habilidades Técnicas
 
