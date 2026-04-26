@@ -9,7 +9,7 @@
     --primary:#002E59;
     --primary-dark:#001a33;
     --primary-light:#004080;
-    --accent:#DBC27D;
+    --accent:#D4B26A;
     --accent-light:#f0e5c4;
     --accent-dark:#c5a85a;
 
@@ -24,12 +24,12 @@
     --side-3:#202020;
     --side-ink:#ffffff;
     --side-muted:#b0b0b0;
-    --side-line:rgba(219,194,125,.22);
+    --side-line:rgba(212,178,106,.22);
 
-    --tag-bg:rgba(219,194,125,.08);
-    --tag-bg-strong:rgba(219,194,125,.14);
+    --tag-bg:rgba(212,178,106,.08);
+    --tag-bg-strong:rgba(212,178,106,.14);
     --tag-ink:#e8d59b;
-    --tag-bd:rgba(219,194,125,.35);
+    --tag-bd:rgba(212,178,106,.35);
   }
 
   *{box-sizing:border-box}
@@ -54,25 +54,18 @@
   }
   .side::after{
     content:"";position:absolute;top:0;right:0;bottom:0;width:2px;
-    background:linear-gradient(180deg,transparent,var(--accent),transparent);
-    opacity:.55;
+    background:var(--accent-dark);
   }
 
   /* foto: square, foco no rosto */
   .photo-wrap{
     width:48mm;height:48mm;margin:0 auto 4mm auto;
     border-radius:8px;overflow:hidden;
-    border:2px solid var(--accent);
-    box-shadow:
-      0 0 0 3px rgba(219,194,125,.12),
-      0 10px 22px rgba(0,0,0,.45);
+    border:3px solid var(--accent);
+    outline:1px solid var(--accent-dark);
+    outline-offset:2px;
     background:#0c0c0c;
     position:relative;
-  }
-  .photo-wrap::after{
-    content:"";position:absolute;inset:0;
-    background:linear-gradient(180deg,transparent 60%,rgba(0,0,0,.30) 100%);
-    pointer-events:none;
   }
   .photo-wrap img{
     width:100%;height:100%;display:block;
@@ -155,14 +148,14 @@
   }
   .main h2::after{
     content:"";flex:1;height:1px;
-    background:linear-gradient(90deg,var(--accent),transparent);
+    background:var(--line);
     margin-left:6px;
   }
 
   .summary{
     font-size:9.6pt;color:var(--ink);margin:0 0 4mm 0;text-align:justify;
     border-left:3px solid var(--accent);padding:.8mm 0 .8mm 3.5mm;
-    background:linear-gradient(90deg,var(--bg-soft),transparent 70%);
+    background:var(--bg-soft);
     line-height:1.4;
   }
 
@@ -191,10 +184,10 @@
   }
   .xp b{color:var(--primary-dark)}
   code{
-    background:rgba(219,194,125,.18);color:#7a5f1c;
+    background:rgba(212,178,106,.18);color:#7a5f1c;
     padding:.2mm 1.1mm;border-radius:3px;
     font-family:"JetBrains Mono",ui-monospace,monospace;font-size:8.6pt;
-    border:1px solid rgba(219,194,125,.45);
+    border:1px solid rgba(212,178,106,.45);
   }
 
   .proj{margin-bottom:1.8mm;font-size:9.1pt;text-align:justify;page-break-inside:avoid;
