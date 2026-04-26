@@ -8,22 +8,28 @@ Wesley Correia trabalha com uma stack moderna e enterprise, focada em desenvolvi
 
 ### Stack Principal Atual
 
-**Backend:** Java 17/21 + Spring Boot 3.x, Python (FastAPI, LangGraph), C#/.NET 9  
-**Frontend:** Angular 17+/18/19/20, React 19 + Vite, TypeScript + RxJS  
-**DevOps & Infra:** Docker, GitLab CI, GitHub Actions, AWS (EC2), GCP (Cloud Run, Secret Manager), IaaC  
-**Observabilidade:** Prometheus, Grafana, Spring Actuator, Micrometer, AlertManager  
-**Banco de Dados:** Oracle, MySQL, PostgreSQL, pgvector, H2, SQLite, Redis  
-**IA & Dados:** Prophet, OpenCV/Vision, Gemini API, RAG, FAISS, LangGraph
+**Backend:** Java 17/21 + Spring Boot 3.x, Python (FastAPI, LangGraph), C#/.NET 9 (ASP.NET WebApi), Node.js
+**Frontend:** Angular 17+/18/19/20, React 19 + Vite, TypeScript + RxJS, Signals
+**Mobile / Desktop:** Electron 27/28, Ionic, React Native
+**DevOps & Infra:** Docker, GitLab CI, GitHub Actions, AWS (EC2), GCP (Cloud Run, Cloud Build, Secret Manager), VPS dedicada (Oracle Cloud Always Free), IaaC
+**Observabilidade:** Prometheus, Grafana, Spring Actuator, Micrometer, AlertManager, Blackbox Exporter
+**Banco de Dados:** Oracle, MySQL, PostgreSQL, pgvector, H2, SQLite, Redis, DynamoDB, Firebase
+**IA & Dados:** LLMs (Gemini, OpenAI), RAG, Embeddings, FAISS, pgvector, Prophet, Visão Computacional (Vision + YOLO), LangGraph, OpenCV
+**Segurança / DevSecOps:** OWASP Top 10, Spring Security, JWT, OAuth 2.0, RBAC, CORS, API Key (X-Header), AWS IAM, GCP IAM, VPC, Security Groups, Firewall, NAT, Secrets Manager
+**Dev Tooling & AI Coding:** IntelliJ IDEA, VS Code, Cursor, Antigravity, Claude Code (CLI), Codex (CLI), GitHub Copilot
 
 ### Áreas de Expertise
 
 1. **Desenvolvimento Full-Stack (Full Cycle)** - Entregas de ponta a ponta (Frontend, Backend e Infra)
-2. **Inteligência Artificial & Machine Learning** - RAG, Embeddings, Busca Vetorial e Algoritmos Preditivos
-3. **Arquitetura & Princípios** - Clean Architecture, SOLID, DDD, DRY/KISS/YAGNI, Design Patterns, OWASP Top 10, ACID, Hexagonal
-4. **Observabilidade e Monitoramento** - Prometheus, Grafana, Micrometer, AlertManager
-5. **DevOps, Nuvem e Containerização** - Docker, CI/CD, AWS EC2, GCP Cloud Run, IaaC
-6. **Migração de Sistemas Legados** - COBOL → Java moderno e APIs
-7. **Automação, RPA e Raspagem de Dados** - Python, Selenium, VBA, Ingestão de PDFA
+2. **Automação de Fluxos Manuais** - RPA, integração de APIs, eliminação de retrabalho
+3. **Inteligência Artificial Aplicada** - LLMs, RAG, Embeddings, Busca Vetorial, Visão Computacional (YOLO) e Algoritmos Preditivos (Prophet)
+4. **Integrações Corporativas** - ERPs (Sankhya/Microwork, SAP), Slack, Microsoft 365 / Outlook
+5. **Arquitetura & Princípios** - Clean Architecture, Clean Code, SOLID, DDD, DRY/KISS/YAGNI, Design Patterns, OWASP Top 10, ACID, Hexagonal
+6. **Observabilidade e Monitoramento** - Prometheus, Grafana, Micrometer, AlertManager
+7. **DevOps, Nuvem e Containerização** - Docker, CI/CD, AWS EC2, GCP Cloud Run, VPS dedicada, IaaC
+8. **Segurança / DevSecOps** - IAM, VPC, Firewall, NAT, JWT, OAuth 2.0
+9. **Migração de Sistemas Legados** - COBOL → Java moderno e APIs
+10. **Automação, RPA e Raspagem de Dados** - Python, Selenium, VBA, Ingestão de PDF
 
 ## Linguagens de Programação
 
@@ -444,6 +450,217 @@ Wesley Correia trabalha com uma stack moderna e enterprise, focada em desenvolvi
 - Criadores de instaladores (NSIS para Windows)
 - Distribuição multiplataforma
 - Inclusão de recursos e dependências
+
+### Ionic
+
+**Contexto de Uso:**
+
+- Apps híbridos web → iOS / Android com base em web standards
+- Reaproveitamento de componentes Angular/React em camada mobile
+- Build multiplataforma a partir de uma única base de código
+
+### React Native
+
+**Contexto de Uso:**
+
+- Apps nativos Android e iOS com componentes nativos
+- Performance e UX próximas do nativo, com mesmo time JavaScript/TypeScript
+- Integração com APIs de dispositivo (câmera, geolocalização, push)
+
+## Inteligência Artificial e Dados
+
+### LLMs (Gemini, OpenAI)
+
+**Contexto de Uso:**
+
+- Integração com modelos de linguagem para geração, classificação e extração
+- Uso em fluxos agênticos e RAG, em produção
+- Aplicação em monitoramento (Vision + LLM), assistente editorial e bots conversacionais
+
+### RAG (Retrieval-Augmented Generation)
+
+**Contexto de Uso:**
+
+- Busca contextualizada em corpus próprio (PDFs, documentação interna)
+- Combinação de embeddings + vector store + LLM pra responder com base em fonte
+- Aplicado em Wesley Bot WhatsApp e em pipelines do AutoU
+
+### Embeddings (Gemini)
+
+**Contexto de Uso:**
+
+- Conversão de texto em vetores semânticos
+- Indexação em FAISS / pgvector pra busca por similaridade
+- Enriquecimento de pipelines internos e agentes de IA
+
+### FAISS
+
+**Contexto de Uso:**
+
+- Vector store em memória da Meta para busca semântica eficiente
+- Usado em Wesley Bot WhatsApp pra RAG sobre documentos
+
+### pgvector
+
+**Contexto de Uso:**
+
+- Extensão PostgreSQL pra armazenar e consultar vetores
+- Vector store de produção em projetos do AutoU
+- Combina busca relacional + semântica em uma única base
+
+### LangGraph
+
+**Contexto de Uso:**
+
+- Orquestração de fluxos agênticos com estado
+- Construção de pipelines IA → função → IA → resposta
+- Aplicado em monitoramento Vision + LLM e em automações com agentes
+
+### Prophet (Facebook)
+
+**Contexto de Uso:**
+
+- Modelos preditivos com séries temporais
+- Predição de demanda, otimização de estoque e recomendações no AutoU
+
+### Visão Computacional (Vision + YOLO)
+
+**Contexto de Uso:**
+
+- Detecção de objetos em tempo real via YOLO
+- Pipelines Vision + LLM pra análise de imagens e geração de insights
+- Aplicado em monitoramento operacional
+
+### OpenCV
+
+**Contexto de Uso:**
+
+- Processamento de imagem em pipelines de Visão Computacional
+- Pré-processamento (resize, threshold, ROI) antes do modelo de detecção
+
+### DynamoDB
+
+**Contexto de Uso:**
+
+- NoSQL gerenciado AWS para alta escala
+- Modelos chave-valor e documentos com baixa latência
+
+### Firebase
+
+**Contexto de Uso:**
+
+- Banco realtime e auth para apps mobile/web
+- Sincronização offline-first em apps com Ionic e React Native
+
+## Segurança e DevSecOps
+
+### OWASP Top 10
+
+**Contexto de Uso:**
+
+- Prevenção de vulnerabilidades comuns (XSS, CSRF, SQLi)
+- Validação de entrada, escape de saída e configuração defensiva
+
+### Spring Security + JWT
+
+**Contexto de Uso:**
+
+- Autenticação stateless via JWT em APIs Spring Boot
+- Filtros de autorização por papel (RBAC)
+
+### OAuth 2.0
+
+**Contexto de Uso:**
+
+- Login federado (Google) e fluxos delegados
+- Aplicado em projetos como Publique Sua Notícia Popular
+
+### RBAC
+
+**Contexto de Uso:**
+
+- Controle de acesso baseado em papéis
+- Implementado com Spring Security em sistemas profissionais
+
+### API Key em header (X-API-Key)
+
+**Contexto de Uso:**
+
+- Autenticação de backends privados via shared secret em header HTTP
+- Aplicado quando o consumidor é confiável (server-to-server)
+
+### AWS IAM / GCP IAM
+
+**Contexto de Uso:**
+
+- Identidades, papéis e políticas granulares em cloud
+- Princípio do menor privilégio em recursos AWS/GCP
+
+### VPC, Security Groups, Firewall, NAT
+
+**Contexto de Uso:**
+
+- Segurança de rede em cloud — isolamento de subnets
+- Controle de tráfego inbound/outbound via Security Groups
+- NAT para egress controlado de instâncias privadas
+
+### Secrets Manager
+
+**Contexto de Uso:**
+
+- Armazenamento seguro de credenciais e tokens
+- Rotação e injeção em runtime sem expor em código
+
+## Dev Tooling & AI Coding
+
+### IntelliJ IDEA
+
+**Contexto de Uso:**
+
+- IDE principal para projetos Java / Spring Boot
+- Refatoração avançada, debug e suporte de plugins
+
+### VS Code
+
+**Contexto de Uso:**
+
+- Editor multiuso para Python, TypeScript, frontend, scripts
+- Extensões de IA e debug integrado
+
+### Cursor
+
+**Contexto de Uso:**
+
+- Editor com IA agêntica integrada
+- Refatoração e geração de código com contexto multi-arquivo
+
+### Antigravity
+
+**Contexto de Uso:**
+
+- IDE agêntica do Google
+- Workflows com agentes operando código + terminal + browser
+
+### Claude Code (CLI)
+
+**Contexto de Uso:**
+
+- Assistente de código via terminal (Anthropic)
+- Edições multi-arquivo com contexto longo, terminal embedado
+
+### Codex (CLI)
+
+**Contexto de Uso:**
+
+- Assistente de código OpenAI via terminal
+- Geração e refatoração de código direto no shell
+
+### GitHub Copilot
+
+**Contexto de Uso:**
+
+- Sugestões inline no editor
+- Copilot CLI no terminal pra comandos shell e git
 
 ## Integrações e APIs
 

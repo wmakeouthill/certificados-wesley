@@ -83,7 +83,7 @@ I deliver scalable, cloud-native software on **AWS** and **GCP** — and on **de
 
 ### Apprentice - Administrative / Production Assistant — Liquigás / Petrobras Distribuidora S.A
 
-**Period:** April 2017 - September 2018 | Rio de Janeiro, RJ
+**Period:** April 2017 - September 2018 | Duque de Caxias, RJ | On-site
 
 #### Operational Management and Customer Service
 
@@ -154,15 +154,16 @@ I deliver scalable, cloud-native software on **AWS** and **GCP** — and on **de
 - **Java 17/21** — modern LTS, used in critical systems
 - **Spring Boot 3.x** — enterprise framework (3.2.3, 3.3.2, 3.5.5)
 - **Spring Framework** — Web, Data JPA, Security, Validation, Mail, Actuator
-- **Liquibase** — schema versioning and migrations
+- **Python 3.11+** — language for AI, data, automation, and backends
+- **FastAPI** — high-performance Python APIs (Pydantic validation)
+- **LangGraph** — agentic flow orchestration with LLMs
+- **Node.js + Express** — JavaScript / TypeScript backend
+- **C# / .NET 9** — APIs in ASP.NET Core (WebApi)
+- **Liquibase / Alembic** — DB schema versioning (Java / Python)
 - **Maven** — build/dependency management
 - **Lombok** — boilerplate reduction (@RequiredArgsConstructor, @Builder, etc.)
-- **MySQL 8.0+** — production relational DB
-- **PostgreSQL** — robust relational DB (embedded in desktop apps)
-- **Oracle Database** — enterprise DB (critical systems)
-- **SQL** — queries, optimization, data management
 - **JPA/Hibernate** — industry-standard ORM
-- **REST APIs** — standard communication architecture
+- **REST APIs / gRPC / WebSockets** — sync, binary, and real-time communication
 - **Spring Security** — AuthN/AuthZ (JWT)
 
 ### Frontend
@@ -178,6 +179,37 @@ I deliver scalable, cloud-native software on **AWS** and **GCP** — and on **de
 - **Signals** — modern reactivity (Angular 18+)
 - **Reactive Forms** — reactive forms
 - **Angular Material** — Material Design components
+
+### Mobile / Desktop
+
+- **Electron 27/28** — cross-platform desktop apps (LoL Matchmaking, Mercearia R&V)
+- **Ionic** — hybrid web → iOS/Android apps
+- **React Native** — native Android/iOS apps
+
+### AI & Data
+
+- **LLMs (Gemini, OpenAI)** — language model integration
+- **RAG (Retrieval-Augmented Generation)** — contextualized search over private corpora
+- **Embeddings** — generation and semantic indexing (Gemini)
+- **FAISS** — in-memory vector store (Wesley Bot WhatsApp)
+- **pgvector** — PostgreSQL vector store (AutoU)
+- **LangGraph** — stateful agent orchestration
+- **Prophet (Facebook)** — time series and forecasting
+- **Computer Vision (Vision + YOLO)** — object detection and image-based monitoring
+- **OpenCV** — image processing in pipelines
+- **DynamoDB** — managed AWS NoSQL
+- **Firebase** — realtime DB and auth (mobile/web)
+
+### Databases
+
+- **Oracle Database** — enterprise relational DB (critical systems)
+- **PostgreSQL** — robust relational DB (embedded in desktop apps, pgvector)
+- **MySQL 8.0+** — production relational DB
+- **Redis (Upstash)** — cloud-native distributed cache
+- **SQLite** — embedded DB (AA Space, dev_task_manager)
+- **DynamoDB** — managed AWS NoSQL
+- **Firebase** — realtime DB and auth
+- **SQL** — queries, optimization, data management
 
 ### DevOps/CI/CD
 
@@ -196,72 +228,93 @@ I deliver scalable, cloud-native software on **AWS** and **GCP** — and on **de
 
 ### Infrastructure & Observability
 
-- **AWS (Amazon Web Services)** — cloud environments, deploy, managed services
-- **Google Cloud Platform** — cloud computing/managed services
+- **AWS (EC2, IAM, VPC, Security Groups, Secrets Manager)** — cloud environments
+- **Google Cloud Platform (Cloud Run, Cloud Build, IAM)** — cloud computing/managed services
+- **Dedicated VPS (Oracle Cloud Always Free)** — predictable 24/7 workloads
 - **Serverless Containers** — Cloud Run
-- **Cloud Databases** — managed DBs
-- **Redis (Upstash)** — cloud-native distributed cache
-- **Prometheus** — metrics collection
-- **Grafana** — dashboards
-- **Spring Actuator** — app health/metrics
-- **Micrometer** — custom metrics
-- **Alertmanager** — alerting
-- **Blackbox Exporter** — external endpoint monitoring
-- **Health Checks** — system health monitoring
-- **Monitoring** — full observability for critical systems
+- **Prometheus / Grafana** — metrics collection, visualization, dashboards
+- **Spring Actuator / Micrometer** — health checks and custom metrics
+- **Alertmanager / Blackbox Exporter** — alerting and external endpoint monitoring
+- **Health Checks / Observability** — full end-to-end monitoring of critical systems
 
-### Tools & Others
+### Security / DevSecOps
 
-- **Git** — version control (GitHub, GitLab)
-- **GitHub/GitLab** — collaboration platforms
-- **Node.js** — JS runtime for backend/tooling
-- **Power BI/DAX** — data analysis, executive dashboards, BI
-- **Selenium** — automation and web scraping
-- **OpenAI API** — AI/chatbot integration
-- **Markdown** — technical docs
-- **Electron** — desktop apps (27, 28)
-- **Python** — automation scripts, data analysis, web scraping, predictive algorithms (Prophet)
-- **Prophet (Facebook)** — time series and forecasting (Python)
-- **VBA** — Excel/MS automations
-- **SharePoint** — corporate web development
-- **Notion** — knowledge management
-- **Salesforce** — CRM and relationship management
+- **OWASP Top 10** — common vulnerability prevention (XSS, CSRF, injection)
+- **Spring Security** — authentication/authorization framework
+- **JWT** — stateless tokens for APIs
+- **OAuth 2.0** — federated login (Google) and delegated flows
+- **RBAC** — role-based access control
+- **CORS** — cross-origin policies
+- **API Key in header (X-API-Key)** — private backend authentication
+- **AWS IAM / GCP IAM** — cloud identity and policies
+- **VPC, Security Groups, Firewall, NAT** — cloud network security
+- **Secrets Manager** — credential management
+
+### Automation & BI
+
+- **Selenium + RPA** — web scraping and large-scale browser automation
+- **VBA** — Excel and Microsoft systems automation
+- **Power BI / DAX** — data analysis, executive dashboards
+- **SharePoint** — custom webparts (corporate governance)
+
+### Dev Tooling & AI Coding
+
+- **IntelliJ IDEA** — primary Java IDE
+- **VS Code** — multi-purpose editor
+- **Cursor** — agentic AI editor
+- **Antigravity** — Google's agentic IDE
+- **Claude Code (CLI)** — terminal-based code assistant
+- **Codex (CLI)** — OpenAI terminal-based code assistant
+- **GitHub Copilot** — inline suggestions and Copilot CLI
+- **Git, GitHub, GitLab** — version control and collaboration
 
 ### Architecture & Methodologies
 
 - **Clean Architecture** — clean, modular architecture
-- **Domain-Driven Design** — domain-oriented design
-- **Modular Architecture** — modular design
+- **Clean Code** — readable, sustainable, testable code
+- **Design Patterns** — Factory, Strategy, Observer, etc.
+- **Domain-Driven Design (DDD)** — domain-oriented design
+- **Hexagonal Architecture (Ports & Adapters)** — domain isolation
+- **SOLID** — OO design principles
+- **DRY, KISS, YAGNI** — complexity-reduction principles
+- **ACID** — transactional guarantees in relational databases
 - **Microservices patterns** — microservices patterns
-- **RESTful APIs** — RESTful APIs
-- **WebSockets** — real-time communication
+- **RESTful APIs / gRPC / WebSockets** — sync, binary, and real-time communication
 - **Event-driven architecture** — event-driven design
 
 ## Main Projects
 
-### LoL Matchmaking Fazenda
+### LoL Fazenda Inhouse
 
-Complete and scalable matchmaking system for League of Legends with Spring Boot backend, Redis, Discord Bot, Electron, and Angular in real time. Demonstrates mastery of Java/Spring backend, automations, and game domain modeling.
+Competitive matchmaking platform for League of Legends with **FastAPI + gRPC + Angular 20 + Electron 28 + PostgreSQL/Alembic**, integration with **League Client (LCU)** and Discord bot (JDA). Demonstrates end-to-end product ownership and full architectural migration from Java/Spring/Redis to Python/gRPC with in-memory state + DB.
+
+### Mercearia R&V
+
+**Offline-first** desktop system for brick-and-mortar retail (**Spring Boot 3.5 + Java 21 + embedded PostgreSQL + Angular 20 + Electron 27**). Server-side PDF generation (OpenHTMLToPDF/PDFBox), JWT, and NSIS installer bundling JDK and database — 100% operation without external dependencies.
+
+### Wesley Bot WhatsApp
+
+Conversational assistant with **RAG** (FastAPI + FAISS + Gemini + Evolution API), agentic flow, XLSX export, and TTS, in production 24/7 on **Oracle Cloud Always Free** (dedicated VPS).
+
+### Publique Sua Notícia Popular
+
+Full-stack news creation, editing, and consumption platform (**Spring Boot 3.4 + Angular 21 + PostgreSQL 16**) with Google OAuth, JWT, block-based editor, and editorial assistant powered by **LLM (Gemini)**.
+
+### Experimenta AI – Soneca
+
+Full-stack foodservice system in **Clean Architecture** (Java 17 + Spring Boot 3.2 + Angular 17 + MySQL), with complete CI/CD pipeline. Showcases layered architecture, modularization, and best practices.
 
 ### AA Space
 
-Closed support community with forum, private chats, moderation, and privacy focus. Social/educational project aimed at expanding support networks for people in recovery.
-
-### Experimenta AI - Soneca
-
-Full-stack system for snack bars with Clean Architecture (Java 17 + Angular 17) and complete pipelines. Shows layered architecture, modularization, and best practices.
-
-### Mercearia R-V
-
-Inventory, checkout, and reporting system for brick-and-mortar retail. Shows ability to understand real business needs and deliver end-to-end solutions.
+Closed support community (Node.js + Express + TypeScript + Angular 19 + SQLite + Socket.IO) with forum, real-time private chats, moderation, and privacy focus. Social/educational project aimed at expanding support networks for people in recovery.
 
 ### Traffic Manager
 
-Angular 18 real-time dashboard for traffic, tickets, and server monitoring. Focused on server monitoring, traffic, and ticketing system.
+Angular 18 real-time dashboard for traffic, tickets, and server monitoring — signals, standalone components, and Chart.js.
 
 ### Investment Calculator
 
-Angular 18 investment calculator with compound interest projections and a user-friendly UI for simulations.
+Angular 18 investment calculator with compound interest projections, signals, and computed properties.
 
 ## Certifications
 

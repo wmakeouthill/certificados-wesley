@@ -270,29 +270,37 @@ Entrego software escalável e cloud-native em **AWS** e **GCP** — e em **VPS d
 
 ## Projetos Principais
 
-### LoL Matchmaking Fazenda
+### LoL Fazenda Inhouse
 
-Sistema completo e escalável de matchmaking para League of Legends com backend Spring Boot, Redis, Discord Bot, Electron e Angular em tempo real. Demonstra domínio de backend em Java/Spring, automações e modelagem de domínio de jogo.
+Plataforma de matchmaking competitivo para League of Legends com **FastAPI + gRPC + Angular 20 + Electron 28 + PostgreSQL/Alembic**, integração com **League Client (LCU)** e bot Discord (JDA). Demonstra ownership de produto end-to-end e migração arquitetural completa de Java/Spring/Redis para Python/gRPC com estado em memória + DB.
+
+### Mercearia R&V
+
+Sistema desktop **offline-first** para varejo físico (**Spring Boot 3.5 + Java 21 + PostgreSQL embarcado + Angular 20 + Electron 27**). Geração server-side de PDFs (OpenHTMLToPDF/PDFBox), JWT e instalador NSIS empacotando JDK e banco — operação 100% sem dependências externas.
+
+### Wesley Bot WhatsApp
+
+Assistente conversacional com **RAG** (FastAPI + FAISS + Gemini + Evolution API), fluxo agêntico, exportação para XLSX e TTS, em produção 24/7 em **Oracle Cloud Always Free** (VPS dedicada).
+
+### Publique Sua Notícia Popular
+
+Plataforma full-stack para criação, edição e consumo de notícias (**Spring Boot 3.4 + Angular 21 + PostgreSQL 16**) com OAuth Google, JWT, editor em blocos e assistente editorial baseado em **LLM (Gemini)**.
+
+### Experimenta AI – Soneca
+
+Sistema full-stack para foodservice em **Clean Architecture** (Java 17 + Spring Boot 3.2 + Angular 17 + MySQL), com pipeline CI/CD completo. Demonstra arquitetura em camadas, modularização e boas práticas.
 
 ### AA Space
 
-Comunidade fechada de apoio com fórum, chats privados, moderação e foco em privacidade. Projeto social/educacional voltado para ampliar a rede de apoio a pessoas em recuperação.
-
-### Experimenta AI - Soneca
-
-Sistema full-stack para lanchonetes com Clean Architecture (Java 17 + Angular 17) e pipelines completos. Demonstra conhecimento de arquitetura em camadas, modularização e boas práticas.
-
-### Mercearia R-V
-
-Sistema de gestão de estoque, caixa e relatórios para varejo físico. Mostra capacidade de entender necessidades reais de negócio e entregar solução ponta a ponta.
+Comunidade fechada de apoio (Node.js + Express + TypeScript + Angular 19 + SQLite + Socket.IO) com fórum, chats privados em tempo real, moderação e foco em privacidade. Projeto social/educacional para ampliar rede de apoio a pessoas em recuperação.
 
 ### Traffic Manager
 
-Dashboard Angular 18 em tempo real para tráfego, tickets e monitoramento de servidores. Focado em monitoramento de servidor, tráfego e sistema de tickets.
+Dashboard Angular 18 em tempo real para tráfego, tickets e monitoramento de servidores — signals, standalone components e Chart.js.
 
 ### Investment Calculator
 
-Calculadora de investimentos em Angular 18, com projeções de juros compostos e UI amigável para simulações.
+Calculadora de investimentos em Angular 18 com projeções de juros compostos, signals e computed properties.
 
 ## Certificações
 

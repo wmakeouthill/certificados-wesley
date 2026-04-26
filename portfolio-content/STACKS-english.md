@@ -8,20 +8,28 @@ Wesley Correia works with a modern, enterprise stack focused on full-stack devel
 
 ### Current Main Stack
 
-**Backend:** Java 17/21 + Spring Boot 3.x + Oracle/MySQL/PostgreSQL  
-**Frontend:** Angular 17+/18/19/20 + TypeScript + RxJS  
-**DevOps:** Docker + GitLab CI/CD + Google Cloud Run  
-**Observability:** Prometheus + Grafana + Spring Actuator  
-**Databases:** Oracle, MySQL, PostgreSQL, SQLite, Redis
+**Backend:** Java 17/21 + Spring Boot 3.x, Python (FastAPI, LangGraph), C#/.NET 9 (ASP.NET WebApi), Node.js
+**Frontend:** Angular 17+/18/19/20, React 19 + Vite, TypeScript + RxJS, Signals
+**Mobile / Desktop:** Electron 27/28, Ionic, React Native
+**DevOps & Infra:** Docker, GitLab CI, GitHub Actions, AWS (EC2), GCP (Cloud Run, Cloud Build, Secret Manager), dedicated VPS (Oracle Cloud Always Free), IaaC
+**Observability:** Prometheus, Grafana, Spring Actuator, Micrometer, AlertManager, Blackbox Exporter
+**Databases:** Oracle, MySQL, PostgreSQL, pgvector, H2, SQLite, Redis, DynamoDB, Firebase
+**AI & Data:** LLMs (Gemini, OpenAI), RAG, Embeddings, FAISS, pgvector, Prophet, Computer Vision (Vision + YOLO), LangGraph, OpenCV
+**Security / DevSecOps:** OWASP Top 10, Spring Security, JWT, OAuth 2.0, RBAC, CORS, API Key (X-Header), AWS IAM, GCP IAM, VPC, Security Groups, Firewall, NAT, Secrets Manager
+**Dev Tooling & AI Coding:** IntelliJ IDEA, VS Code, Cursor, Antigravity, Claude Code (CLI), Codex (CLI), GitHub Copilot
 
 ### Areas of Expertise
 
-1. **Enterprise Full-Stack Development** - Java/Spring + Angular
-2. **Observability and Monitoring** - Prometheus, Grafana, Micrometer
-3. **DevOps and Containerization** - Docker, CI/CD, Cloud Deploy
-4. **Legacy System Migration** - COBOL → Modern Java
-5. **Automation and RPA** - Python, Selenium, VBA
-6. **Business Intelligence** - Power BI, DAX, Dashboards
+1. **Full-Stack Development (Full Cycle)** - End-to-end delivery (Frontend, Backend, Infra)
+2. **Manual Workflow Automation** - RPA, API integration, rework elimination
+3. **Applied AI** - LLMs, RAG, Embeddings, Vector Search, Computer Vision (YOLO), Predictive Algorithms (Prophet)
+4. **Enterprise Integrations** - ERPs (Sankhya/Microwork, SAP), Slack, Microsoft 365 / Outlook
+5. **Architecture & Principles** - Clean Architecture, Clean Code, SOLID, DDD, DRY/KISS/YAGNI, Design Patterns, OWASP Top 10, ACID, Hexagonal
+6. **Observability & Monitoring** - Prometheus, Grafana, Micrometer, AlertManager
+7. **DevOps, Cloud & Containerization** - Docker, CI/CD, AWS EC2, GCP Cloud Run, dedicated VPS, IaaC
+8. **Security / DevSecOps** - IAM, VPC, Firewall, NAT, JWT, OAuth 2.0
+9. **Legacy System Migration** - COBOL → Modern Java and APIs
+10. **Automation, RPA & Data Scraping** - Python, Selenium, VBA, PDF Ingestion
 
 ## Programming Languages
 
@@ -420,6 +428,217 @@ Wesley Correia works with a modern, enterprise stack focused on full-stack devel
 - Installer builders (NSIS for Windows)
 - Cross-platform distribution
 - Inclusion of resources and dependencies
+
+### Ionic
+
+**Usage Context:**
+
+- Hybrid web → iOS/Android apps based on web standards
+- Reuse of Angular/React components in mobile layer
+- Multi-platform build from a single codebase
+
+### React Native
+
+**Usage Context:**
+
+- Native Android and iOS apps with native components
+- Performance and UX close to native, with the same JavaScript/TypeScript team
+- Integration with device APIs (camera, geolocation, push)
+
+## Artificial Intelligence and Data
+
+### LLMs (Gemini, OpenAI)
+
+**Usage Context:**
+
+- Integration with language models for generation, classification, and extraction
+- Used in agentic flows and RAG, in production
+- Applied to monitoring (Vision + LLM), editorial assistant, and conversational bots
+
+### RAG (Retrieval-Augmented Generation)
+
+**Usage Context:**
+
+- Contextualized search over private corpora (PDFs, internal documentation)
+- Combining embeddings + vector store + LLM to answer based on source
+- Applied in Wesley Bot WhatsApp and AutoU pipelines
+
+### Embeddings (Gemini)
+
+**Usage Context:**
+
+- Conversion of text into semantic vectors
+- Indexing in FAISS / pgvector for similarity search
+- Enrichment of internal pipelines and AI agents
+
+### FAISS
+
+**Usage Context:**
+
+- In-memory vector store from Meta for efficient semantic search
+- Used in Wesley Bot WhatsApp for RAG over documents
+
+### pgvector
+
+**Usage Context:**
+
+- PostgreSQL extension to store and query vectors
+- Production vector store on AutoU projects
+- Combines relational + semantic search in a single database
+
+### LangGraph
+
+**Usage Context:**
+
+- Orchestration of stateful agentic flows
+- Building pipelines AI → function → AI → response
+- Applied to Vision + LLM monitoring and agent automations
+
+### Prophet (Facebook)
+
+**Usage Context:**
+
+- Predictive models with time series
+- Demand forecasting, inventory optimization, and recommendations at AutoU
+
+### Computer Vision (Vision + YOLO)
+
+**Usage Context:**
+
+- Real-time object detection via YOLO
+- Vision + LLM pipelines for image analysis and insight generation
+- Applied to operational monitoring
+
+### OpenCV
+
+**Usage Context:**
+
+- Image processing in Computer Vision pipelines
+- Pre-processing (resize, threshold, ROI) before the detection model
+
+### DynamoDB
+
+**Usage Context:**
+
+- Managed AWS NoSQL for high scale
+- Key-value and document models with low latency
+
+### Firebase
+
+**Usage Context:**
+
+- Realtime DB and auth for mobile/web apps
+- Offline-first sync in Ionic and React Native apps
+
+## Security and DevSecOps
+
+### OWASP Top 10
+
+**Usage Context:**
+
+- Prevention of common vulnerabilities (XSS, CSRF, SQLi)
+- Input validation, output escaping, and defensive configuration
+
+### Spring Security + JWT
+
+**Usage Context:**
+
+- Stateless JWT-based authentication on Spring Boot APIs
+- Role-based authorization filters (RBAC)
+
+### OAuth 2.0
+
+**Usage Context:**
+
+- Federated login (Google) and delegated flows
+- Applied in projects like Publique Sua Notícia Popular
+
+### RBAC
+
+**Usage Context:**
+
+- Role-based access control
+- Implemented with Spring Security on professional systems
+
+### API Key in header (X-API-Key)
+
+**Usage Context:**
+
+- Authentication of private backends via shared secret in HTTP header
+- Applied when the consumer is trusted (server-to-server)
+
+### AWS IAM / GCP IAM
+
+**Usage Context:**
+
+- Identities, roles, and granular policies in cloud
+- Principle of least privilege over AWS/GCP resources
+
+### VPC, Security Groups, Firewall, NAT
+
+**Usage Context:**
+
+- Cloud network security — subnet isolation
+- Inbound/outbound traffic control via Security Groups
+- NAT for controlled egress from private instances
+
+### Secrets Manager
+
+**Usage Context:**
+
+- Secure storage of credentials and tokens
+- Rotation and runtime injection without exposing in code
+
+## Dev Tooling & AI Coding
+
+### IntelliJ IDEA
+
+**Usage Context:**
+
+- Primary IDE for Java / Spring Boot projects
+- Advanced refactoring, debugging, and plugin support
+
+### VS Code
+
+**Usage Context:**
+
+- Multi-purpose editor for Python, TypeScript, frontend, scripts
+- AI extensions and integrated debugging
+
+### Cursor
+
+**Usage Context:**
+
+- Editor with integrated agentic AI
+- Multi-file refactoring and code generation with context
+
+### Antigravity
+
+**Usage Context:**
+
+- Google's agentic IDE
+- Workflows with agents operating code + terminal + browser
+
+### Claude Code (CLI)
+
+**Usage Context:**
+
+- Code assistant via terminal (Anthropic)
+- Multi-file edits with long context, embedded terminal
+
+### Codex (CLI)
+
+**Usage Context:**
+
+- OpenAI code assistant via terminal
+- Code generation and refactoring directly in the shell
+
+### GitHub Copilot
+
+**Usage Context:**
+
+- Inline suggestions in the editor
+- Copilot CLI in the terminal for shell and git commands
 
 ## Integrations and APIs
 

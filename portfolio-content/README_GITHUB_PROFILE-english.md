@@ -2,7 +2,7 @@
   
 # 👋 Hello! I'm Wesley ([@wmakeouthill](https://github.com/wmakeouthill))
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Inter&weight=600&size=22&pause=1000&color=DBC27D&center=true&vCenter=true&random=false&width=650&lines=Full-Stack+Developer;Java+17%2F21+%7C+Spring+Boot+3.x;Angular+17%2B+%7C+TypeScript+%7C+RxJS;Clean+Architecture+%7C+DDD+%7C+SOLID;OWASP+%7C+RBAC+%7C+Microservices;Docker+%7C+CI%2FCD+%7C+Google+Cloud+Run)](https://wmakeouthill.dev)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Inter&weight=600&size=22&pause=1000&color=DBC27D&center=true&vCenter=true&random=false&width=720&lines=Full+Stack+Engineer+%7C+Full+Cycle;Java+17%2F21+%7C+Spring+Boot+%7C+Python+%7C+FastAPI;Angular+17%E2%80%9320+%7C+React+19+%7C+TypeScript;Applied+AI+%7C+RAG+%7C+LLMs+%7C+Vision+%2B+YOLO;ERP+%7C+Slack+%7C+Microsoft+365+integrations;Clean+Architecture+%7C+SOLID+%7C+DDD;Docker+%7C+CI%2FCD+%7C+AWS+%7C+GCP+%7C+VPS)](https://wmakeouthill.dev)
 
 </div>
 
@@ -16,8 +16,8 @@
       <img src="https://preview.redd.it/one-piece-ultrawide-pack-5120x1440-v0-9iirx6dmxyd91.png?width=1080&crop=smart&auto=webp&s=c2b8e0d5f8f3b94f3ba0e4519d124fbcdaa00b28" width="100%" alt="One Piece" style="border-radius: 8px;">
     </td>
     <td valign="top">
-      <h3>🚀 Full-Stack Developer | Scalable & High-Criticality Systems</h3>
-      <p>Currently at <strong>ANBIMA/Selic</strong> (Central Bank of Brazil), contributing to the modernization of national financial infrastructure — migrating mainframe (COBOL) to modern Java architecture.</p>
+      <h3>🚀 Full Stack Engineer | Operational Efficiency, Applied AI & Enterprise Integrations</h3>
+      <p>Currently at <strong>AutoU</strong>, working full cycle on a B2B platform for people, goals, and HR management, in parallel with applied AI projects (Computer Vision + YOLO, RAG, LLMs) and predictive algorithms (Prophet). Background in modernization of systems in regulated corporate environments (Selic / Central Bank of Brazil) and in full-Python RPA in the legal sector.</p>
       <br>
       <p>
         <a href="https://wmakeouthill.dev" target="_blank"><img src="https://img.shields.io/badge/🌐_Portfolio-FF6B6B?style=for-the-badge" /></a>
@@ -40,19 +40,30 @@
 
 ## 🚀 About Me
 
-**Full-Stack Developer** specialized in **Java 17/21**, **Spring Boot 3.x** and **Angular 17+**, with experience in high-criticality systems in the financial sector.
+**Full Stack Engineer** working full cycle — from architecture design to production monitoring — focused on **operational efficiency** and on products that deliver **real productivity gains in companies' day-to-day operations**.
 
-Currently at **ANBIMA/Selic in partnership with the Central Bank of Brazil**, contributing to the modernization of national financial infrastructure — migrating mainframe (COBOL) to modern Java architecture with complete observability.
+I concentrate my delivery on three fronts:
+
+- **Manual workflow automation** — RPA, API integration, and rework elimination
+- **Applied AI** — Computer Vision (Vision + YOLO) + LLM pipelines via LangGraph, RAG with vector stores (FAISS, pgvector), embeddings (Gemini), and predictive models with Prophet. Always in production, connected to a real business pain point.
+- **Enterprise integrations** — ERPs (Sankhya/Microwork, SAP), Slack, Microsoft 365 / Outlook
+
+I currently work at **AutoU**, full cycle on a **B2B platform for people, goals, and HR management**, in parallel with applied AI and predictive algorithm projects. Background in **modernization of systems in regulated corporate environments** (Selic / Central Bank — COBOL → Java/Spring Boot, end-to-end observability, GitLab CI/CD) and in **large-scale full-Python RPA** in the legal sector.
+
+I deliver scalable, cloud-native software on **AWS**, **GCP**, and **dedicated VPS** (Oracle Cloud Always Free), with containerization, CI/CD pipelines, end-to-end observability, and applied security (OWASP, JWT, OAuth 2.0, IAM, VPC, API Key Header). Under **Clean Architecture, SOLID, DDD**, and sustainable code.
 
 ### 🏗️ Architecture & Principles
-`Clean Architecture` • `Domain-Driven Design (DDD)` • `Hexagonal Architecture` • `SOLID` • `RBAC` • `OWASP Top 10` • `Microservices`
+`Clean Architecture` • `Clean Code` • `Design Patterns` • `Domain-Driven Design (DDD)` • `Hexagonal Architecture` • `SOLID` • `DRY` • `KISS` • `ACID` • `RBAC` • `OWASP Top 10` • `Event-Driven`
 
 ### ⚡ Technical Differentiators
+- **Applied AI in production** — RAG, LangGraph, embeddings (Gemini), FAISS/pgvector, Prophet, Vision + YOLO
+- **Enterprise integrations** — ERPs (Sankhya/Microwork, SAP), Slack, Microsoft 365 / Outlook
 - **Distributed Locks** (Redisson) and **Multi-Layer Cache** (Caffeine + Redis)
 - **Circuit Breaker** and **Retry Patterns** (Resilience4j)
-- **Real-time** with WebSockets and SSE (Server-Sent Events)
-- **PWA**, Service Workers, Chrome Extensions (Manifest V3)
-- API Integrations: **Google Maps**, **OpenAI**, **Discord (JDA)**, **LCU (League of Legends)**
+- **Real-time** with WebSockets, SSE, and gRPC
+- **PWA**, Service Workers, Chrome Extensions (Manifest V3), Electron, Ionic, React Native
+- **Multi-cloud cloud-native** (AWS + GCP) + dedicated VPS for predictable 24/7 workloads
+- API Integrations: **Gemini**, **OpenAI**, **Discord (JDA)**, **LCU (League of Legends)**, **Google Maps**, **Evolution API (WhatsApp)**
 
 ---
 
