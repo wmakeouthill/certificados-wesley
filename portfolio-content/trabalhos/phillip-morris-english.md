@@ -24,6 +24,7 @@
 - **Period:** October 2018 - October 2019
 - **Duration:** 1 year
 - **Location:** Rio de Janeiro, RJ
+- **Work mode:** On-site
 
 ## Responsibilities and Activities
 

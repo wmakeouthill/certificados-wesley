@@ -17,6 +17,7 @@
 - **Período:** Novembro 2019 - Abril 2024
 - **Duração:** 4 anos e 5 meses
 - **Localização:** Rio de Janeiro, RJ
+- **Modalidade:** Presencial
 
 ## Responsabilidades e Atividades
 

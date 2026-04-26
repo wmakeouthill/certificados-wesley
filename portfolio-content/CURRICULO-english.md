@@ -8,30 +8,32 @@
 - **Email:** <wcacorreia1995@gmail.com>
 - **Phone:** +55 21 98386-6676
 - **WhatsApp:** [+55 21 98386-6676](https://wa.me/5521983866676)
+- **Portfolio:** [wmakeouthill.dev](https://wmakeouthill.dev)
 
 ## Professional Summary
 
-Brazilian developer passionate about building innovative solutions and tackling technical challenges. Since early February 2026, working at **AutoU** startup on disruptive projects in gamification, artificial intelligence, monitoring, management, and insights — core stack Python and React 19 + Vite, environments on AWS and Google Cloud, GitHub Actions pipelines, Vercel deploy, and predictive algorithms (Prophet). In parallel, experience as Fullstack Developer Intern at ANBIMA/Selic (Central Bank partnership), modernizing critical financial infrastructure (Selic mainframe COBOL to Java migration).
+Full Stack Engineer working full cycle — from architecture design to production monitoring — focused on **operational efficiency** and on products that deliver **real productivity gains in companies' day-to-day operations**. My work concentrates on **manual workflow automation**, **applied AI integration** (LLMs, RAG, Computer Vision + YOLO, predictive models with Prophet), and **integrations with corporate systems** (ERPs Sankhya/Microwork and SAP, Slack, Microsoft 365 / Outlook) — reducing rework, preventing stock-outs, accelerating commercial decisions, and shortening sales cycles.
 
-Curious, focused on continuous learning, always with a new project in mind. Specialized in full-stack development with emphasis on modern architectures, Clean Architecture, and enterprise technologies. Diverse experience across sectors: legal, tobacco, energy, critical financial infrastructure, and high-impact startups.
+I deliver scalable, cloud-native software on **AWS** and **GCP** — and on **dedicated VPS** (Oracle Cloud Always Free) for predictable 24/7 workloads — with CI/CD pipelines, containerization, and **end-to-end observability**, under **Clean Architecture, SOLID**, and sustainable code. Core stack: **Java + Spring Boot 3.x** and **Python (FastAPI, LangGraph)**, with Angular and React on the frontend. Bachelor of Laws — formation that adds analytical reading of business rules and regulated domains.
 
 ## Professional Experience
 
-### Fullstack Developer — AutoU (Startup)
+### Full Stack Developer (Full Cycle) — AutoU (Startup)
 
 **Period:** February 2026 - Present | Remote
 
-**Disruptive projects in gamification, AI, monitoring, and insights:**
+- **Computer Vision + AI monitoring:** Computer Vision (Vision + YOLO) pipelines integrated with LLMs via LangGraph and RAG, for real-time monitoring, image analysis, and automated insight generation.
+- **PDF ingestion, embeddings, and semantic search:** AI-assisted PDF catalog ingestion, embedding generation (Gemini), and indexing in pgvector/FAISS for semantic product search and AI agent enrichment.
+- **Machine Learning and inventory optimization:** Prophet algorithms for demand forecasting, inventory optimization, branch-to-branch transfers, and substitute product recommendations.
+- **Sankhya/Microwork ERP integrations** via API for report automation, quotes, and sales operational flow optimization.
+- **B2B platform for people, goals, and HR management:** full cycle on a product used by enterprise clients — FastAPI backend + React 19 + Vite frontend — delivering evaluation cycles, OKRs/goals management, and workforce administration.
+- **Enterprise integrations (Slack & Outlook/Microsoft 365):** real-time notifications and transactional emails, connecting systems to the communication channels companies already operate.
+- **Cloud infrastructure (AWS, GCP) and dedicated VPS:** IaaC on AWS (EC2) and GCP (Cloud Run), automated SSH deploy, Docker Compose, and GitHub Actions; complemented by dedicated VPS (Oracle Cloud Always Free) for predictable 24/7 workloads.
+- **Production CI/CD:** complete GitHub Actions pipelines for build, test, and secure multi-cloud deploy.
 
-- Core stack: **Python** and **React 19 + Vite** in a fast-paced environment with high client exposure
-- Configured environments on **AWS** and **Google Cloud**; deploy, **GitHub Actions** pipelines, and **Vercel** deploy
-- Fixed and evolved predictive algorithm with **Prophet** (Python); new prediction features for transfer recommendations, purchases, and substitutes based on demand
-- Configured **Docker Compose**; full cycle delivery on 2 projects for large enterprises
-- Quality delivery at high velocity in a startup environment
+### Full Stack Developer Intern | Scrum Team — ANBIMA/Selic (Central Bank Partnership)
 
-### Fullstack Developer Intern — ANBIMA/Selic (Central Bank Partnership)
-
-**Period:** April 2025 - Present | Rio de Janeiro, RJ
+**Period:** April 2025 - April 2026 | Rio de Janeiro, RJ | Hybrid
 
 #### Modernizing Critical Financial Infrastructure
 
@@ -45,7 +47,7 @@ Curious, focused on continuous learning, always with a new project in mind. Spec
 
 ### Intern - Projects / Governance — ANBIMA/Selic (Central Bank Partnership)
 
-**Period:** April 2024 - April 2025 | Rio de Janeiro, RJ
+**Period:** April 2024 - April 2025 | Rio de Janeiro, RJ | Hybrid
 
 #### Project Management and Governance
 
@@ -58,7 +60,7 @@ Curious, focused on continuous learning, always with a new project in mind. Spec
 
 ### Legal Intern & Assistant — Gondim, Albuquerque e Negreiros ADV
 
-**Period:** November 2019 - April 2024 | Rio de Janeiro, RJ
+**Period:** November 2019 - April 2024 | Rio de Janeiro, RJ | On-site
 
 #### Legal Process Automation and Optimization
 
@@ -70,7 +72,7 @@ Curious, focused on continuous learning, always with a new project in mind. Spec
 
 ### Apprentice - Analytics / Salesforce — Phillip Morris International
 
-**Period:** October 2018 - October 2019 | Rio de Janeiro, RJ
+**Period:** October 2018 - October 2019 | Rio de Janeiro, RJ | On-site
 
 #### Automation and Data Analysis
 

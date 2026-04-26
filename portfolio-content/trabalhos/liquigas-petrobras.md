@@ -21,7 +21,8 @@
 - **Cargo:** Aprendiz - Auxiliar Administrativo / Produção
 - **Período:** Abril 2017 - Setembro 2018
 - **Duração:** 1 ano e 5 meses
-- **Localização:** Rio de Janeiro, RJ
+- **Localização:** Duque de Caxias, RJ
+- **Modalidade:** Presencial
 
 ## Responsabilidades e Atividades
 

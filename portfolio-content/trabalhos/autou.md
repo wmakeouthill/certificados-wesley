@@ -7,8 +7,8 @@ A **AutoU** é uma startup com projetos disruptivos nas áreas de **gamificaçã
 ### Contexto de Atuação
 
 - Projetos para empresas de grande porte (full cycle completo em múltiplos projetos)
-- Stack core: **Python** (backend, dados, algoritmos preditivos) e **React 19 + Vite** (frontend)
-- Infraestrutura em nuvem: **AWS** e **Google Cloud**
+- Stack core: **Python (FastAPI, LangGraph)** no backend e **React 19 + Vite** no frontend
+- Infraestrutura em nuvem: **AWS (EC2)** e **Google Cloud (Cloud Run)** + **VPS dedicada (Oracle Cloud Always Free)** para cargas previsíveis 24/7
 - CI/CD e deploy: **GitHub Actions**, **Vercel**, **Docker Compose**
 
 ## Experiências na Empresa
@@ -25,28 +25,41 @@ A **AutoU** é uma startup com projetos disruptivos nas áreas de **gamificaçã
 - Configuração de **Docker Compose** para orquestração de containers
 - Participação em todo o ciclo de desenvolvimento (full cycle) em 2 projetos para empresas gigantes
 
-#### Algoritmos Preditivos e IA
+#### IA Aplicada
 
+- Pipelines de **Visão Computacional (Vision + YOLO)** integrados a **LLMs via LangGraph** e **RAG**, para monitoramento em tempo real, análise de imagens e geração de insights automatizados
+- **Ingestão de catálogos PDF com IA**, geração de **embeddings (Gemini)** e indexação em **pgvector / FAISS** para busca semântica de produtos e enriquecimento de pipelines internos / agentes de IA
 - Correção e evolução de algoritmo preditivo com **Prophet** (Python) para séries temporais
-- Novas features de algoritmo preditivo para:
-  - Recomendações de **transferência**
-  - Recomendações de **compras**
-  - Recomendações de **substitutos** com base em demanda e predições
-- Uso de Python como linguagem principal para modelos e dados
+- Novas features preditivas para recomendações de **transferência**, **compras** e **substitutos** baseadas em demanda
+
+#### Plataforma B2B de Gestão de Pessoas, Metas e RH
+
+- Atuação **full cycle** em produto usado por clientes corporativos (backend FastAPI + frontend React 19 + Vite)
+- Entregas em ciclos de avaliação, gestão de **OKRs / metas** e administração do quadro de colaboradores
+- Foco em **eficiência operacional** e **ganho de produtividade** real para o cliente
+
+#### Integrações Corporativas
+
+- **ERP Sankhya/Microwork** via API: automação de relatórios, orçamentos e fluxos operacionais de vendas
+- **Slack**: notificações em tempo real e canais de alerta
+- **Outlook / Microsoft 365**: e-mails transacionais e notificações
+- Conectando os sistemas aos canais de comunicação que as empresas já operam no dia a dia
 
 #### Desenvolvimento Full-Stack
 
-- **Backend:** Python para APIs, processamento de dados e modelos preditivos
+- **Backend:** Python (FastAPI, LangGraph) para APIs, processamento de dados, modelos preditivos e fluxos agênticos
 - **Frontend:** React 19 + Vite para interfaces modernas e performáticas
 - Entrega com qualidade e ritmo veloz em ambiente de startup com alta exposição a clientes
 
 **Tecnologias Utilizadas:**
 
-- Python, Prophet (Facebook)
+- Python, FastAPI, LangGraph, Prophet
 - React 19, Vite
-- AWS, Google Cloud
+- LLMs (Gemini), RAG, FAISS, pgvector, Vision + YOLO
+- AWS (EC2), Google Cloud (Cloud Run), Oracle Cloud (VPS)
 - GitHub Actions, Vercel
 - Docker, Docker Compose
+- Sankhya/Microwork, Slack API, Microsoft 365 / Outlook
 
 ## Conquistas e Aprendizados
 

@@ -23,7 +23,8 @@
 - **Role:** Apprentice - Administrative / Production Assistant
 - **Period:** April 2017 - September 2018
 - **Duration:** 1 year and 5 months
-- **Location:** Rio de Janeiro, RJ
+- **Location:** Duque de Caxias, RJ
+- **Work mode:** On-site
 
 ## Responsibilities and Activities
 

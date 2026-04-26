@@ -7,8 +7,8 @@
 ### Work Context
 
 - Projects for large enterprises (full cycle delivery across multiple projects)
-- Core stack: **Python** (backend, data, predictive algorithms) and **React 19 + Vite** (frontend)
-- Cloud infrastructure: **AWS** and **Google Cloud**
+- Core stack: **Python (FastAPI, LangGraph)** in the backend and **React 19 + Vite** in the frontend
+- Cloud infrastructure: **AWS (EC2)** and **Google Cloud (Cloud Run)** + **dedicated VPS (Oracle Cloud Always Free)** for predictable 24/7 workloads
 - CI/CD and deploy: **GitHub Actions**, **Vercel**, **Docker Compose**
 
 ## Experience at the Company
@@ -25,28 +25,41 @@
 - Configured **Docker Compose** for container orchestration
 - Full development cycle involvement on 2 projects for large enterprises
 
-#### Predictive Algorithms and AI
+#### Applied AI
 
+- **Computer Vision (Vision + YOLO)** pipelines integrated with **LLMs via LangGraph** and **RAG**, for real-time monitoring, image analysis, and automated insight generation
+- **PDF catalog ingestion with AI**, **embeddings (Gemini)** generation, and indexing in **pgvector / FAISS** for semantic product search and enrichment of internal pipelines / AI agents
 - Fixed and evolved predictive algorithm with **Prophet** (Python) for time series
-- New predictive algorithm features for:
-  - **Transfer** recommendations
-  - **Purchase** recommendations
-  - **Substitute** recommendations based on demand and predictions
-- Python as main language for models and data
+- New predictive features for **transfer**, **purchase**, and **substitute** recommendations based on demand
+
+#### B2B Platform for People, Goals, and HR Management
+
+- **Full cycle** ownership of a product used by enterprise clients (FastAPI backend + React 19 + Vite frontend)
+- Delivered evaluation cycles, **OKRs / goals** management, and employee roster administration
+- Focus on **operational efficiency** and **real productivity gains** for the customer
+
+#### Enterprise Integrations
+
+- **Sankhya/Microwork ERP** via API: report automation, quote generation, and sales operational flow optimization
+- **Slack**: real-time notifications and alert channels
+- **Outlook / Microsoft 365**: transactional emails and notifications
+- Connecting systems to the communication channels companies already operate in their day-to-day
 
 #### Full-Stack Development
 
-- **Backend:** Python for APIs, data processing, and predictive models
+- **Backend:** Python (FastAPI, LangGraph) for APIs, data processing, predictive models, and agentic flows
 - **Frontend:** React 19 + Vite for modern, performant interfaces
 - Quality delivery at high velocity in a startup environment with high client exposure
 
 **Technologies Used:**
 
-- Python, Prophet (Facebook)
+- Python, FastAPI, LangGraph, Prophet
 - React 19, Vite
-- AWS, Google Cloud
+- LLMs (Gemini), RAG, FAISS, pgvector, Vision + YOLO
+- AWS (EC2), Google Cloud (Cloud Run), Oracle Cloud (VPS)
 - GitHub Actions, Vercel
 - Docker, Docker Compose
+- Sankhya/Microwork, Slack API, Microsoft 365 / Outlook
 
 ## Achievements and Learnings
 

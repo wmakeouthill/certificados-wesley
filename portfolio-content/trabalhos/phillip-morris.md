@@ -24,6 +24,7 @@ A **Phillip Morris Internacional (PMI)** é uma das maiores empresas de tabaco d
 - **Período:** Outubro 2018 - Outubro 2019
 - **Duração:** 1 ano
 - **Localização:** Rio de Janeiro, RJ
+- **Modalidade:** Presencial
 
 ## Responsabilidades e Atividades
 

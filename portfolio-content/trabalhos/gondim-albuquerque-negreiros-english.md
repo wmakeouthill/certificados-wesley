@@ -17,6 +17,7 @@
 - **Period:** November 2019 - April 2024
 - **Duration:** 4 years and 5 months
 - **Location:** Rio de Janeiro, RJ
+- **Work mode:** On-site
 
 ## Responsibilities and Activities
 

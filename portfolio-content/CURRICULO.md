@@ -8,12 +8,13 @@
 - **Email:** <wcacorreia1995@gmail.com>
 - **Telefone:** +55 21 98386-6676
 - **WhatsApp:** [+55 21 98386-6676](https://wa.me/5521983866676)
+- **Portfólio:** [wmakeouthill.dev](https://wmakeouthill.dev)
 
 ## Resumo Profissional
 
-Especialista em Desenvolvimento Full Stack e Governança de TI, focado na arquitetura de sistemas distribuídos e modernização de ecossistemas críticos. Possuo experiência com RAG, inovações utilizando IA (como Visão Computacional), aplicações full stack e algoritmos de predição. Domino as stacks Java (Spring Boot) e Python (FastAPI), integrando backends robustos a interfaces em Angular e React, sob rigorosos padrões de observabilidade, CI/CD e conteinerização.
+Engenheiro Full Stack atuando do desenho da arquitetura ao monitoramento em produção, com foco em **eficiência operacional** e em produtos que geram **ganho real de produtividade no dia a dia das empresas**. Concentro a atuação em **automação de fluxos manuais**, **integração de IA aplicada** (LLMs, RAG, Visão Computacional + YOLO, modelos preditivos com Prophet) e **integrações com sistemas corporativos** (ERPs Sankhya/Microwork e SAP, Slack, Microsoft 365 / Outlook) — reduzindo retrabalho, evitando ruptura de estoque, acelerando decisão comercial e encurtando ciclos de venda.
 
-Entrego soluções escaláveis e automações de alto impacto, unindo forte visão analítica de dados e frameworks ágeis (Scrum) para otimizar indicadores de performance, garantir alta disponibilidade em ambientes de missão crítica e atuar com ritmo acelerado mediante uma alta curva de aprendizado (perfil autodidata).
+Entrego software escalável e cloud-native em **AWS** e **GCP** — e em **VPS dedicada** (Oracle Cloud Always Free) para cargas previsíveis 24/7 — com pipelines de CI/CD, containerização e **observabilidade ponta a ponta**, sob **Clean Architecture, SOLID** e código sustentável. Stack core: **Java + Spring Boot 3.x** e **Python (FastAPI, LangGraph)**, com Angular e React no front. Bacharel em Direito — base que agrega leitura analítica de regras de negócio e domínios regulatórios.
 
 ## Experiência Profissional
 
@@ -21,17 +22,18 @@ Entrego soluções escaláveis e automações de alto impacto, unindo forte vis�
 
 *Período: Fev 2026 - Presente | Remoto*
 
-- **Visão computacional e monitoramento com IA:** implementação de pipelines de visão computacional com Vision + LLM para monitoramento inteligente em tempo real, análise de imagens e geração de insights automatizados via RAG e LangGraph.
-- **Ingestão de PDF, embeddings e raspagem de dados:** ingestão de catálogos em PDF com IA para extração e indexação de dados de produtos; geração de embeddings com Gemini e armazenamento em bancos vetoriais (pgvector, FAISS) para busca semântica; scraping automatizado para alimentar pipelines e sistemas internos.
-- **Machine Learning e otimização de estoque:** algoritmos com a biblioteca Prophet para predição de demanda, otimização de estoque de vendas, transferências entre filiais e sugestão de produtos substitutos via algoritmo preditivo.
-- **Integrações ERP Sankhya:** integrações com o ERP Sankhya (Microwork) para geração de relatórios, orçamentos e otimização de fluxos operacionais de vendas.
-- **Infraestrutura cloud e IaaC:** provisionamento de infraestrutura como código (IaaC) em AWS (EC2) e GCP (Cloud Run); deploy via SSH com scripts automatizados, Docker e ambientes de alta performance.
-- **CI/CD e deploy em produção:** pipelines completos no GitHub Actions para build, testes e deploy seguro em produção em ambientes cloud (AWS e GCP).
-- **Frontends escaláveis em React:** desenvolvimento de interfaces modernas e escaláveis em React integradas a backends de IA, sob metodologias ágeis.
+- **Visão computacional e monitoramento com IA:** pipelines de Visão Computacional (Vision + YOLO) integrados a LLMs via LangGraph e RAG, para monitoramento em tempo real, análise de imagens e geração de insights automatizados.
+- **Ingestão de PDF, embeddings e busca semântica:** ingestão de catálogos PDF com extração assistida por IA, geração de embeddings (Gemini) e indexação em pgvector/FAISS para busca semântica de produtos e enriquecimento de pipelines internos / agentes de IA.
+- **Machine Learning e otimização de estoque:** algoritmos com Prophet para predição de demanda, otimização de estoque, transferências entre filiais e sugestão de produtos substitutos.
+- **Integrações ERP Sankhya/Microwork:** integrações via API para automação de relatórios, orçamentos e fluxos operacionais de vendas, eliminando tarefas manuais recorrentes.
+- **Plataforma B2B de gestão de pessoas, metas e RH:** atuação full cycle em produto usado por clientes corporativos — backend FastAPI + frontend React 19 + Vite — entregando ciclos de avaliação, gestão de OKRs/metas e administração do quadro de colaboradores.
+- **Integrações corporativas (Slack & Outlook/Microsoft 365):** notificações em tempo real e e-mails transacionais, conectando os sistemas aos canais de comunicação que as empresas já operam no dia a dia.
+- **Infraestrutura cloud (AWS, GCP) e VPS dedicada:** IaaC em AWS (EC2) e GCP (Cloud Run), deploy via SSH automatizado, Docker Compose e GitHub Actions; complementado por VPS dedicada (Oracle Cloud Always Free) para cargas previsíveis 24/7.
+- **CI/CD em produção:** pipelines completos no GitHub Actions para build, testes e deploy seguro em produção multi-cloud.
 
 ### Estagiário - Backend / FullStack / ScrumTeam - Anbima / Selic (Banco Central)
 
-*Período: Abr 2025 - Abr 2026 | Rio de Janeiro, RJ*
+*Período: Abr 2025 - Abr 2026 | Rio de Janeiro, RJ | Híbrido*
 
 - **Modernização de infraestrutura financeira / sistema crítico:** migração Selic mainframe (COBOL) para arquitetura Java (Novo-Selic).
 - **Observabilidade e monitoramento:** implementação de stack completa (Prometheus, Grafana, Actuator, Micrometer, Blackbox Exporter, Alertmanager), para análise de métricas de performance e healthcheck.
@@ -41,7 +43,7 @@ Entrego soluções escaláveis e automações de alto impacto, unindo forte vis�
 
 ### Estagiário - Projetos / Governança - Anbima / Selic (Banco Central)
 
-*Período: Abr 2024 - Abr 2025 | Rio de Janeiro, RJ*
+*Período: Abr 2024 - Abr 2025 | Rio de Janeiro, RJ | Híbrido*
 
 - **Gestão de Projetos:** ciclo de desenvolvimento de artefatos, relatórios executivos e controle de iniciativas estratégicas alinhadas ao PDTIC.
 - **Business Intelligence:** criação de dashboards Power BI (DAX) interativos para visualização de KPIs e suporte à tomada de decisão executiva.
@@ -52,7 +54,7 @@ Entrego soluções escaláveis e automações de alto impacto, unindo forte vis�
 
 ### Estagiário & Assistente Jurídico - Gondim, Albuquerque e Negreiros ADV
 
-*Período: Nov 2019 - Abr 2024 | Rio de Janeiro, RJ*
+*Período: Nov 2019 - Abr 2024 | Rio de Janeiro, RJ | Presencial*
 
 - **Diligências processuais e financeiras:** protocolos, questionamentos forenses, pagamentos de custas e depósitos judiciais, controle de pagamentos entre cliente-escritório e obrigações processuais.
 - **Automação de processos:** desenvolvimento em Python, VBA e Selenium para web scraping de dados de diversos tribunais do Brasil + RPA: integração automatizada entre sistema interno e plataformas judiciais.
@@ -61,7 +63,7 @@ Entrego soluções escaláveis e automações de alto impacto, unindo forte vis�
 
 ### Aprendiz - Analytics / SalesForce - Phillip Morris Internacional
 
-*Período: Out 2018 - Out 2019 | Rio de Janeiro, RJ*
+*Período: Out 2018 - Out 2019 | Rio de Janeiro, RJ | Presencial*
 
 - **Automação VBA/Excel:** automações VBA/Excel para coleta automatizada de dados, geração de relatórios e envio email gerencial.
 - **Controle de estoque:** gerenciei controle de estoque e distribuição de materiais promocionais (trade marketing) e de escritório.
@@ -69,7 +71,7 @@ Entrego soluções escaláveis e automações de alto impacto, unindo forte vis�
 
 ### Aprendiz - Auxiliar Administrativo / Produção - Liquigás / Petrobras Distribuidora S.A
 
-*Período: Abr 2017 - Set 2018 | Duque de Caxias, RJ*
+*Período: Abr 2017 - Set 2018 | Duque de Caxias, RJ | Presencial*
 
 - **Gestão operacional:** atuei com Excel na gestão operacional. Input e leitura de dados no SAP.
 - **Atendimento e apoio:** atendimento a clientes, ao centro de destrocas de botijões e fornecedor de GLP. Apoio na gestão de filas e suporte aos vendedores.
@@ -137,15 +139,17 @@ Entrego soluções escaláveis e automações de alto impacto, unindo forte vis�
 - **Java 17/21** - Linguagem principal com recursos modernos (LTS), uso em sistemas críticos
 - **Spring Boot 3.x** - Framework enterprise líder de mercado (3.2.3, 3.3.2, 3.5.5)
 - **Spring Framework** - Ecossistema completo (Web, Data JPA, Security, Validation, Mail, Actuator)
-- **Liquibase** - Controle de versão de schema, migrações de banco de dados
+- **Python 3.11+** - Linguagem para IA, dados, automação e backends
+- **FastAPI** - APIs Python de alta performance (validação via Pydantic)
+- **LangGraph** - Orquestração de fluxos agênticos com LLMs
+- **Node.js + Express** - Backend JavaScript / TypeScript
+- **C# / .NET 9** - APIs em ASP.NET Core (WebApi)
+- **Liquibase / Alembic** - Versionamento de schema de banco (Java / Python)
 - **Maven** - Gerenciamento de dependências e build
 - **Lombok** - Redução de boilerplate (@RequiredArgsConstructor, @Builder, etc.)
-- **MySQL 8.0+** - Banco relacional enterprise em produção
-- **PostgreSQL** - Banco relacional robusto (embarcado em aplicações desktop)
-- **Oracle Database** - Banco relacional enterprise (sistemas críticos)
-- **SQL** - Consultas, otimização e gestão de dados
 - **JPA/Hibernate** - ORM padrão da indústria
 - **REST APIs** - Arquitetura de comunicação padrão
+- **gRPC** - Comunicação binária de alta performance (LoL Fazenda Inhouse)
 - **Spring Security** - Autenticação e autorização (JWT)
 
 ### Frontend
@@ -161,6 +165,37 @@ Entrego soluções escaláveis e automações de alto impacto, unindo forte vis�
 - **Signals** - Sistema de reatividade moderno (Angular 18+)
 - **Reactive Forms** - Formulários reativos
 - **Angular Material** - Componentes UI seguindo Material Design
+
+### Mobile / Desktop
+
+- **Electron 27/28** - Aplicações desktop multiplataforma (LoL Matchmaking, Mercearia R&V)
+- **Ionic** - Apps híbridos web → iOS/Android
+- **React Native** - Apps nativos Android/iOS
+
+### IA & Dados
+
+- **LLMs (Gemini, OpenAI)** - Integração com modelos de linguagem
+- **RAG (Retrieval-Augmented Generation)** - Busca contextualizada em corpus próprio
+- **Embeddings** - Geração e indexação semântica (Gemini)
+- **FAISS** - Vector store em memória (Wesley Bot WhatsApp)
+- **pgvector** - Vector store em PostgreSQL (AutoU)
+- **LangGraph** - Orquestração de agentes com fluxo de estado
+- **Prophet (Facebook)** - Séries temporais e predição
+- **Visão Computacional (Vision + YOLO)** - Detecção de objetos e monitoramento por imagem
+- **OpenCV** - Processamento de imagem em pipelines
+- **DynamoDB** - NoSQL gerenciado AWS
+- **Firebase** - Banco realtime e auth (mobile/web)
+
+### Bancos de Dados
+
+- **Oracle Database** - Banco relacional enterprise (sistemas críticos)
+- **PostgreSQL** - Banco relacional robusto (embarcado em aplicações desktop, pgvector)
+- **MySQL 8.0+** - Banco relacional enterprise em produção
+- **Redis (Upstash)** - Cache distribuído cloud-native
+- **SQLite** - Banco embarcado (AA Space, dev_task_manager)
+- **DynamoDB** - NoSQL gerenciado AWS
+- **Firebase** - Banco realtime e auth
+- **SQL** - Consultas, otimização e gestão de dados
 
 ### DevOps/CI/CD
 
@@ -179,45 +214,58 @@ Entrego soluções escaláveis e automações de alto impacto, unindo forte vis�
 
 ### Infraestrutura e Observabilidade
 
-- **AWS (Amazon Web Services)** - Ambientes cloud, deploy e serviços gerenciados
-- **Google Cloud Platform** - Cloud computing e serviços gerenciados
+- **AWS (EC2, IAM, VPC, Security Groups, Secrets Manager)** - Ambientes cloud
+- **Google Cloud Platform (Cloud Run, Cloud Build, IAM)** - Cloud computing e serviços gerenciados
+- **VPS dedicada (Oracle Cloud Always Free)** - Cargas previsíveis 24/7
 - **Serverless Containers** - Arquitetura serverless (Cloud Run)
-- **Cloud Databases** - Bancos de dados gerenciados
-- **Redis (Upstash)** - Cache distribuído cloud-native
-- **Prometheus** - Coleta de métricas e monitoramento
-- **Grafana** - Visualização e dashboards de métricas
-- **Spring Actuator** - Health checks e métricas da aplicação
-- **Micrometer** - Métricas customizadas
-- **Alertmanager** - Gerenciamento de alertas
-- **Blackbox Exporter** - Monitoramento de endpoints externos
-- **Health Checks** - Monitoramento de saúde de sistemas
-- **Monitoring** - Observabilidade completa de sistemas críticos
+- **Prometheus / Grafana** - Coleta, visualização e dashboards de métricas
+- **Spring Actuator / Micrometer** - Health checks e métricas customizadas
+- **Alertmanager / Blackbox Exporter** - Alertas e monitoramento de endpoints externos
+- **Health Checks / Observabilidade** - Monitoramento ponta a ponta de sistemas críticos
 
-### Ferramentas e Outros
+### Segurança / DevSecOps
 
-- **Git** - Controle de versão (GitHub, GitLab)
-- **GitHub/GitLab** - Plataforma de desenvolvimento e colaboração
-- **Node.js** - Runtime JavaScript para backend e ferramentas
-- **Power BI/DAX** - Análise de dados, dashboards executivos e BI
-- **Selenium** - Automação de testes e web scraping
-- **OpenAI API** - Integração com IA (chatbots)
-- **Markdown** - Documentação técnica
-- **Electron** - Aplicações desktop multiplataforma (27, 28)
-- **Python** - Scripts de automação, análise de dados, web scraping e algoritmos preditivos (Prophet)
-- **Prophet (Facebook)** - Séries temporais e predição (Python)
+- **OWASP Top 10** - Prevenção de vulnerabilidades comuns (XSS, CSRF, injection)
+- **Spring Security** - Framework de autenticação/autorização
+- **JWT** - Tokens stateless para APIs
+- **OAuth 2.0** - Login federado (Google) e fluxos delegados
+- **RBAC** - Controle de acesso baseado em papéis
+- **CORS** - Políticas de origem cruzada
+- **API Key em header (X-API-Key)** - Autenticação de backends privados
+- **AWS IAM / GCP IAM** - Identidades, papéis e políticas em cloud
+- **VPC, Security Groups, Firewall, NAT** - Segurança de rede em cloud
+- **Secrets Manager** - Gestão de credenciais
+
+### Automação & BI
+
+- **Selenium + RPA** - Web scraping e automação de navegadores em larga escala
 - **VBA** - Automações em Excel e sistemas Microsoft
-- **SharePoint** - Desenvolvimento web corporativo
-- **Notion** - Gestão de conhecimento e documentação
-- **Salesforce** - CRM e gestão de relacionamento com clientes
+- **Power BI / DAX** - Análise de dados, dashboards executivos
+- **SharePoint** - Webparts customizados (governança corporativa)
+
+### Dev Tooling & AI Coding
+
+- **IntelliJ IDEA** - IDE principal Java
+- **VS Code** - Editor multiuso
+- **Cursor** - Editor com IA agêntica
+- **Antigravity** - IDE agêntica do Google
+- **Claude Code (CLI)** - Assistente de código via terminal
+- **Codex (CLI)** - Assistente de código OpenAI via terminal
+- **GitHub Copilot** - Sugestões inline e Copilot CLI
+- **Git, GitHub, GitLab** - Versionamento e colaboração
 
 ### Arquitetura e Metodologias
 
 - **Clean Architecture** - Arquitetura limpa e modular
-- **Domain-Driven Design** - Design orientado a domínio
-- **Modular Architecture** - Arquitetura modular
+- **Clean Code** - Código legível, sustentável e testável
+- **Design Patterns** - Padrões de projeto (Factory, Strategy, Observer, etc.)
+- **Domain-Driven Design (DDD)** - Design orientado a domínio
+- **Hexagonal Architecture (Ports & Adapters)** - Isolamento do domínio
+- **SOLID** - Princípios de design orientado a objetos
+- **DRY, KISS, YAGNI** - Princípios de redução de complexidade
+- **ACID** - Garantias transacionais em bancos relacionais
 - **Microservices patterns** - Padrões de microserviços
-- **RESTful APIs** - APIs RESTful
-- **WebSockets** - Comunicação em tempo real
+- **RESTful APIs / gRPC / WebSockets** - Comunicação síncrona, binária e em tempo real
 - **Event-driven architecture** - Arquitetura orientada a eventos
 
 ## Projetos Principais
