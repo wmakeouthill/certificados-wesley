@@ -59,6 +59,15 @@
     },
     "glm-4.7-down-config-pc-fraco": {
       "description": "Automated scripts to install and configure GLM-4.7 AI model on low-end PCs. Supports multiple quantizations (Q2-Q5), CPU/GPU offloading, and cross-platform setup (Windows/Linux/Mac). Optimized for limited hardware resources."
+    },
+    "lat_long_caminhoneiro": {
+      "description": "Real-time GPS tracking system for truck drivers with a background Android app (Expo/React Native) and live dashboard map (React/Leaflet) synced via FastAPI WebSockets."
+    },
+    "gerador-de-cracha": {
+      "description": "Hybrid desktop badge designer and high-resolution print generator. Uses a Python Pillow engine and local HTML5 Canvas preview server with zoom and drag-to-crop."
+    },
+    "desafio_tecnico_jitterbit": {
+      "description": "Enterprise Order Management REST API with Mongoose, MongoDB, JWT authentication, Swagger JSDoc UI, and a data translation mapper layer (PT-BR ↔ EN)."
     }
   },
   "certs": {
