@@ -1,3 +1,11 @@
+---
+title: Dashboard CX por jornada + MCP server Qualtrics
+client: Cliente corporativo
+category: freela
+status: Produção
+stack: [FastAPI, Angular, Gemini, Qualtrics]
+order: 6
+---
 # Case — Dash Qualtrics (Dashboard de CX por Jornada + MCP Server)
 
 **Tipo:** Freelance (cliente corporativo — área de Customer Experience)

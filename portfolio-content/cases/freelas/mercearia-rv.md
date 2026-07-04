@@ -1,3 +1,12 @@
+---
+title: Mercearia R&V — PDV desktop offline-first
+client: Mercearia R&V
+category: freela
+status: Produção
+stack: [Java 21, Spring Boot, Angular 20, Electron]
+order: 9
+gallery: mercearia-r-v
+---
 # Case — Mercearia R&V (Sistema Desktop de Gestão de Estoque e Vendas)
 
 **Tipo:** Produto próprio para cliente real (varejo — mercearia)

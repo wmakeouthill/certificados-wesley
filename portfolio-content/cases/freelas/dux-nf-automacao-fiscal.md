@@ -1,3 +1,11 @@
+---
+title: Automação fiscal de NF-e por e-mail com IA
+client: Dux Logistics
+category: freela
+status: Produção
+stack: [FastAPI, React, MS Graph, PostgreSQL]
+order: 4
+---
 # Case — Dux NF (Automação de Notas Fiscais por E-mail com IA)
 
 **Tipo:** Freelance (cliente: Dux Logistics — operação de coleta em concessionárias Fiat/Citroën, contexto Stellantis)

@@ -1,3 +1,11 @@
+---
+title: AOG Dux Truck — Operação logística emergencial
+client: Dux Logistics
+category: freela
+status: Produção
+stack: [Java 21, Spring Boot 3, Angular 20, Entra ID]
+order: 2
+---
 # Case — AOG Dux Truck (Sistema de Operação Logística Emergencial)
 
 **Tipo:** Freelance (cliente: Dux Logistics)

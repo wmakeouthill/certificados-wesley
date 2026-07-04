@@ -1,3 +1,10 @@
+---
+title: App de anotações + comparativo Vue/React/Angular
+category: freela
+status: Estudo
+stack: [Vue 3, Spring Boot, SQLite]
+order: 8
+---
 # Case — App de Anotações Vue 3 + Spring Boot (estudo/avaliação técnica)
 
 **Tipo:** Projeto de avaliação/estudo técnico (freela-workspace)

@@ -1,3 +1,11 @@
+---
+title: Entre Pontos — Renovação do frontend do integrador EDI logístico
+client: Entre Pontos
+category: freela
+status: Produção
+stack: [Next.js 16, React 19, Tailwind 4]
+order: 1
+---
 # Case — Entre Pontos Integrador (Renovação Visual do Frontend de Plataforma EDI)
 
 **Tipo:** Freelance (cliente: transportadora / operação Simpress-ESL)

@@ -1,3 +1,11 @@
+---
+title: Sol — Central omnichannel de atendimento de TI com IA
+client: Cliente corporativo
+category: freela
+status: Produção
+stack: [FastAPI, Angular 20, pgvector, Gemini]
+order: 5
+---
 # Case — Sol (Central Omnichannel de Atendimento de TI com IA e CRM)
 
 **Tipo:** Freelance (cliente corporativo — atendimento de TI interno)

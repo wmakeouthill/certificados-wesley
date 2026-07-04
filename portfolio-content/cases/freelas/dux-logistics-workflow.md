@@ -1,3 +1,11 @@
+---
+title: Dux Workflow — Plataforma de workflow logístico e documental
+client: Dux Logistics
+category: freela
+status: Homologação
+stack: [Java, Spring Boot, Angular, PostgreSQL]
+order: 3
+---
 # Case — Dux Logistics MVP (Plataforma de Workflow Logístico e Documental)
 
 **Tipo:** Freelance (cliente: Dux Logistics)

@@ -1,3 +1,12 @@
+---
+title: Experimenta AI — Gestão completa de lanchonete + delivery
+client: Soneca
+category: freela
+status: Produção
+stack: [Java, Spring Boot, Angular 17, Electron, MySQL]
+order: 10
+gallery: experimenta-ai---soneca
+---
 # Case — Experimenta AI (Soneca): Gestão de Lanchonete + Ecossistema de Delivery
 
 **Tipo:** Produto próprio para cliente real (food service — lanchonete)

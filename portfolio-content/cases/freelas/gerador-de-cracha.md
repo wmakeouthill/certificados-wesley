@@ -1,3 +1,11 @@
+---
+title: Gerador de crachás em lote
+client: Supermercados Rio Sul
+category: freela
+status: Entregue
+stack: [Python, PyInstaller]
+order: 7
+---
 # Case — Gerador de Crachás (Supermercados Rio Sul)
 
 **Tipo:** Freelance (cliente: Supermercados Rio Sul)
