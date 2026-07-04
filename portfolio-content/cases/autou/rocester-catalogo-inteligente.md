@@ -5,6 +5,7 @@ category: autou
 status: Produção
 stack: [FastAPI, React, Gemini Vision, pgvector]
 order: 6
+gallery: rocester
 ---
 
 # Case — Rocester (Catálogo Digital Inteligente de Peças Industriais)

@@ -5,6 +5,7 @@ category: autou
 status: Produção
 stack: [Python, Prophet, Flask, PostgreSQL]
 order: 1
+gallery: jgv
 ---
 
 # Case — JGV (Previsão de Demanda e Recomendação de Estoque para Rede de Autopeças)
