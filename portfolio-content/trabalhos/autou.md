@@ -54,6 +54,7 @@ A **AutoU** é uma startup que constrói soluções de **IA aplicada** para empr
 #### Site Institucional da AutoU (projeto solo)
 
 - Site completo feito sozinho: frontend React otimizado para **SEO** (blog, cases), backend FastAPI de leads e **CMS próprio** — no ar em Azure
+- **Integração de e-mail via Microsoft Graph** (app registrado no Azure): e-mails recebidos são registrados automaticamente no **funil do CRM**, no mesmo fluxo dos leads capturados pelo site
 
 #### Plataforma B2B de Gestão de Pessoas (Aura Central — monorepo DDD)
 

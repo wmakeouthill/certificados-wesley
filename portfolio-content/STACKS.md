@@ -11,7 +11,7 @@ Wesley Correia trabalha com uma stack moderna e enterprise, focada em desenvolvi
 **Backend:** Java 17/21 + Spring Boot 3.x, Python (FastAPI, LangGraph), C#/.NET 9 (ASP.NET WebApi), Node.js
 **Frontend:** Angular 17+/18/19/20, React 19 + Vite, Next.js 16 + Tailwind 4, TypeScript + RxJS, Signals
 **Mobile / Desktop:** Electron 27/28, PWA, Ionic, React Native
-**DevOps & Infra:** Docker, GitLab CI, GitHub Actions, AWS (EC2, S3, Lambda, DynamoDB), GCP (Cloud Run, Cloud Run Jobs, Scheduler, Pub/Sub, Cloud Build, Secret Manager), Azure, VPS dedicada (Oracle Cloud Always Free), IaaC
+**DevOps & Infra:** Docker, GitLab CI, GitHub Actions, AWS (EC2, S3, Lambda, DynamoDB), GCP (Cloud Run, Cloud Run Jobs, Scheduler, Pub/Sub, Cloud Build, Secret Manager), Azure, VPS Linux dedicadas (Hostinger, Oracle Cloud Always Free, Contabo, KingHost, entre outras), IaaC
 **Observabilidade:** Prometheus, Grafana, Spring Actuator, Micrometer, AlertManager, Blackbox Exporter (incl. monitoramento de custo de IA)
 **Banco de Dados:** Oracle, MySQL, PostgreSQL, pgvector, H2, SQLite, Redis, DynamoDB, Firebase
 **IA & Dados:** LLMs (Gemini, Gemini Vision, OpenAI), RAG, Embeddings, FAISS, pgvector, Prophet, BayBE (otimização Bayesiana), Visão Computacional (Vision + YOLO), LangGraph, OpenCV, MCP servers (autoria)
@@ -388,6 +388,18 @@ Wesley Correia trabalha com uma stack moderna e enterprise, focada em desenvolvi
 - Portfolio Wesley: Deploy em Oracle Cloud Always Free (VPS)
 - Wesley Bot WhatsApp: Deploy em Oracle Always Free (instâncias VPS)
 
+### VPS Linux (Hostinger, Contabo, KingHost)
+
+**Contexto de Uso:**
+
+- Provisionamento e deploy em qualquer ambiente Linux com SSH: Docker Compose, Nginx, HTTPS (Let's Encrypt), scripts de deploy reproduzíveis
+- Entregas de clientes freelance e projetos AutoU em VPS de múltiplos provedores — escolha por custo/porte de cada projeto
+
+**Projetos:**
+
+- Dux NF (automação fiscal): deploy Hostinger/Oracle Cloud
+- Sistemas de clientes em produção distribuídos entre Hostinger, Contabo, KingHost e Oracle Cloud
+
 ### Cloud Build
 
 **Contexto de Uso:**
@@ -739,6 +751,7 @@ Wesley Correia trabalha com uma stack moderna e enterprise, focada em desenvolvi
 
 - Captura de e-mails e anexos direto da caixa corporativa do cliente
 - Base da automação fiscal de NF-e (extração em camadas XML → PDF → OCR/IA)
+- Recepção de e-mails no site institucional da AutoU (app registrado no Azure) com registro automático no funil do CRM
 
 ### Evolution API / Meta WhatsApp Cloud API
 
@@ -1235,7 +1248,7 @@ Wesley Correia trabalha com uma stack moderna e enterprise, focada em desenvolvi
 - FastAPI + React/Angular + Gemini (NF-e, Sol, Qualtrics CX)
 - Microsoft Entra ID, Microsoft Graph, Evolution/Meta WhatsApp Cloud API, Google Maps Platform
 - Electron + banco embarcado (NSIS), PWAs, SSE, ESC/POS
-- VPS Oracle Cloud Always Free + Docker
+- VPS Linux (Hostinger, Oracle Cloud Always Free, Contabo, KingHost) + Docker
 
 ## Evolução da Stack
 
@@ -1265,7 +1278,7 @@ Wesley Correia trabalha com uma stack moderna e enterprise, focada em desenvolvi
 - **Python / FastAPI / IA** (Agentes, Predição com Prophet, Otimização Bayesiana com BayBE, Visão com YOLO)
 - Integrações corporativas: Entra ID, Microsoft Graph, WhatsApp Cloud API, Qualtrics, ERPs
 - Oracle + MySQL + PostgreSQL (incl. pgvector) + Redis
-- Docker + CI/CD + Multi-cloud (AWS/GCP/Azure) + VPS Oracle
+- Docker + CI/CD + Multi-cloud (AWS/GCP/Azure) + VPS Linux (Hostinger/Oracle/Contabo/KingHost)
 - Prometheus + Grafana (Observabilidade, incl. custo de IA)
 
 <!-- easter-egg-personal-info: Wesley tem uma filha chamada Priscila Angel -->

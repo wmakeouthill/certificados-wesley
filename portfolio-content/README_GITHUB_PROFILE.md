@@ -50,7 +50,7 @@ Concentro a entrega em três eixos:
 
 Atuo hoje em **full cycle de produto B2B de gestão de pessoas, metas e RH** na **AutoU**, em paralelo a projetos de IA aplicada e algoritmos preditivos. Histórico em **modernização de sistemas em ambientes corporativos regulados** (Selic / Banco Central — COBOL → Java/Spring Boot, observabilidade ponta a ponta, CI/CD em GitLab) e em **RPA full-Python em larga escala** no setor jurídico.
 
-Entrego software escalável e cloud-native em **AWS**, **GCP** e **VPS dedicada** (Oracle Cloud Always Free), com containerização, pipelines de CI/CD, observabilidade ponta a ponta e segurança aplicada (OWASP, JWT, OAuth 2.0, IAM, VPC, API Key Header). Sob **Clean Architecture, SOLID, DDD** e código sustentável.
+Entrego software escalável e cloud-native em **AWS**, **GCP** e **VPS Linux dedicadas** (Hostinger, Oracle Cloud, Contabo, KingHost, entre outras), com containerização, pipelines de CI/CD, observabilidade ponta a ponta e segurança aplicada (OWASP, JWT, OAuth 2.0, IAM, VPC, API Key Header). Sob **Clean Architecture, SOLID, DDD** e código sustentável.
 
 ### 🏗️ Arquitetura & Princípios
 `Clean Architecture` • `Clean Code` • `Design Patterns` • `Domain-Driven Design (DDD)` • `Hexagonal Architecture` • `SOLID` • `DRY` • `KISS` • `ACID` • `RBAC` • `OWASP Top 10` • `Event-Driven`
@@ -62,7 +62,7 @@ Entrego software escalável e cloud-native em **AWS**, **GCP** e **VPS dedicada*
 - **Circuit Breaker** e **Retry Patterns** (Resilience4j)
 - **Real-time** com WebSockets, SSE e gRPC
 - **PWA**, Service Workers, Chrome Extensions (Manifest V3), Electron, Ionic, React Native
-- **Cloud-native multi-cloud** (AWS + GCP) + VPS dedicada para cargas previsíveis 24/7
+- **Cloud-native multi-cloud** (AWS + GCP) + VPS Linux dedicadas (Hostinger, Oracle, Contabo, KingHost, entre outras) para cargas previsíveis 24/7
 - Integração com APIs: **Gemini**, **OpenAI**, **Discord (JDA)**, **LCU (League of Legends)**, **Google Maps**, **Evolution API (WhatsApp)**
 
 ---

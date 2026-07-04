@@ -37,10 +37,10 @@ Desde 2025, atuo em paralelo como **freelancer full cycle**: proposta comercial 
 - Sistema desktop de estoque/vendas/PDV: **Electron orquestrando Spring Boot + PostgreSQL embarcados** num único instalador NSIS
 - PDV, caixa, fidelidade, relatórios em PDF; **uso diário na operação do cliente com custo recorrente zero**
 
-### Experimenta AI — Soneca (POS completo; delivery em homologação)
+### Experimenta AI — Soneca (gestão em produção; delivery construído, entrando no ar)
 
-- Gestão de lanchonete com **impressão de cupons ESC/POS multiplataforma** (Windows Spooler, USB direto, CUPS)
-- Ecossistema de **delivery próprio**: PWAs de cliente e motoboy, **rastreamento em tempo real** (GPS → cache TTL → Server-Sent Events), Google Maps Platform e OAuth Google
+- Gestão completa de lanchonete **em produção**: balcão, **pedido na mesa via QR code**, **totem de autoatendimento** e **impressão de cupons ESC/POS multiplataforma** (Windows Spooler, USB direto, CUPS)
+- Ecossistema de **delivery próprio** construído, em homologação final: PWAs de cliente e motoboy, **rastreamento em tempo real** (GPS → cache TTL → Server-Sent Events), Google Maps Platform e OAuth Google
 - **Java + Spring Boot multi-module (Clean Architecture) + Angular 17 + MySQL**
 
 ## Em Homologação / Entregas Pontuais
@@ -63,5 +63,5 @@ Desde 2025, atuo em paralelo como **freelancer full cycle**: proposta comercial 
 - **Full cycle de verdade**: da proposta comercial (incluindo PPTX de venda) à operação em produção
 - **Poliglota**: Java/Spring Clean Architecture, Python/FastAPI, Node, e os três grandes frontends (Angular, React, Vue)
 - **Integrações corporativas**: Microsoft Entra ID, Microsoft Graph, Evolution API / Meta WhatsApp Cloud API, Teams, Qualtrics
-- **Engenharia de custo**: VPS Oracle Cloud Always Free, apps desktop com banco embarcado — infraestrutura certa para o porte de cada cliente
+- **Engenharia de custo**: VPS Linux do provedor certo para cada porte (Hostinger, Oracle Cloud Always Free, Contabo, KingHost — qualquer ambiente Linux com SSH), apps desktop com banco embarcado — infraestrutura certa para o porte de cada cliente
 - **Produtos que ficam no ar**: clientes operando diariamente nos sistemas, com suporte e evolução contínua

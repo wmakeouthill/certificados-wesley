@@ -17,7 +17,7 @@ Cases criados a partir da análise dos workspaces reais (`D:\freela-workspace` e
 | [gerador-de-cracha](freelas/gerador-de-cracha.md) | Gerador de crachás em lote (Supermercados Rio Sul) | Python + PyInstaller | Entregue |
 | [notas-vue-spring](freelas/notas-vue-spring.md) | App de anotações + comparativo técnico Vue/React/Angular | Vue 3 + Spring Boot + SQLite | Estudo |
 | [mercearia-rv](freelas/mercearia-rv.md) | Mercearia R&V — sistema desktop offline-first de estoque/vendas (PDV, caixa, fidelidade) | Java 21 + Spring Boot + Angular 20 + Electron + Postgres embarcado | Produção |
-| [experimenta-ai-soneca](freelas/experimenta-ai-soneca.md) | Experimenta AI (Soneca) — POS de lanchonete com impressão ESC/POS + ecossistema delivery (rastreamento tempo real) | Java + Spring multi-module + Angular 17 + Electron + MySQL + Google Maps/OAuth | POS completo; delivery em homologação |
+| [experimenta-ai-soneca](freelas/experimenta-ai-soneca.md) | Experimenta AI (Soneca) — gestão completa de lanchonete (balcão, mesa via QR code, totem de autoatendimento, impressão ESC/POS) + ecossistema delivery (rastreamento tempo real) | Java + Spring multi-module + Angular 17 + Electron + MySQL + Google Maps/OAuth | Gestão em produção; delivery construído, entrando no ar |
 
 Não viraram case (sem implementação): `pricing-end` (só escopo em PDF) e `proposta comercial` (PPTXs de venda — mas evidenciam atuação comercial/pré-venda como freelancer, útil pro texto do currículo).
 
@@ -44,13 +44,13 @@ Padrões que se repetem e sustentam o posicionamento de **Engenheiro Full Stack 
 1. **Full cycle real**: proposta comercial → discovery → arquitetura → código → deploy → operação, em dezenas de projetos, sozinho (freelas) e em time (AutoU)
 2. **Poliglota comprovado**: Java/Spring (Clean Architecture), Python/FastAPI (async), Node/Fastify, e os três frontends (Angular 20 Signals, React 18/19, Vue 3) — com comparativo técnico escrito
 3. **IA aplicada com juízo de engenharia**: IA como fallback (Dux NF), com fallback (LIS), com curadoria humana (Rocester), com governança de fontes (Oxiquímica), com loop de retraining (Pulse) — nunca "IA porque sim"
-4. **Multi-cloud operacional**: AWS (S3/Lambda/DynamoDB), GCP (Cloud Run Jobs, Scheduler, Pub/Sub, VMs), Azure (Entra ID, Graph), Oracle Cloud (VPS free tier para MVPs de custo zero)
+4. **Multi-cloud operacional**: AWS (S3/Lambda/DynamoDB), GCP (Cloud Run Jobs, Scheduler, Pub/Sub, VMs), Azure (Entra ID, Graph), VPS Linux de múltiplos provedores (Hostinger, Oracle Cloud free tier, Contabo, KingHost — qualquer ambiente Linux com SSH)
 5. **Clientes enterprise**: Saint-Gobain — exposição direta em ambiente de startup acelerada (Itaú foi demo de pré-venda e Libbs é demo para edital ainda em andamento — nenhum dos dois é cliente; os clientes exibidos no site da AutoU incluem L'Oréal, Stellantis, Nestlé, B3, PRIO, Petrobras, Embraer etc., mas o Wesley só cita nos materiais os que ele atendeu diretamente)
 6. **Dados e ML clássico além de LLM**: Prophet (séries temporais), YOLO (visão), BayBE (otimização Bayesiana), pgvector/FAISS (embeddings)
 
 ## Próximas fases (combinadas)
 
 1. ✅ Cases criados (esta pasta)
-2. ✅ Validação do Wesley: statuses confirmados (AutoU todos no ar; NF/AOG no ar; workflow em homologação; Mercearia em produção; Soneca em homologação final) — métricas `[A CONFIRMAR]` e anonimização ainda pendentes
+2. ✅ Validação do Wesley: statuses confirmados (AutoU todos no ar; NF/AOG no ar; workflow em homologação; Mercearia em produção; Soneca: gestão da lanchonete em produção — balcão, mesa QR code, totem — e delivery construído em homologação final) — métricas `[A CONFIRMAR]` e anonimização ainda pendentes
 3. ✅ Currículo (`Curriculo-Wesley-Pleno.html` + PDF), markdowns de RAG (`CURRICULO.md`, `STACKS.md`, `trabalhos/`, versões -english) atualizados em 03/07/2026
 4. ⬜ Refatorar seção de projetos do portfólio: aba **Profissionais** (destaque, alimentada por estes cases) + aba **Pessoais** (atual)

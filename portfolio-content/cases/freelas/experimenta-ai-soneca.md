@@ -2,7 +2,7 @@
 
 **Tipo:** Produto próprio para cliente real (food service — lanchonete)
 **Papel:** Desenvolvedor Full Stack — autoria completa (POS desktop + plataforma de delivery)
-**Status:** POS de balcão completo; ecossistema delivery em homologação final para entrar no ar
+**Status:** Gestão completa da lanchonete **em produção** (balcão, pedido na mesa via QR code, totem de autoatendimento); ecossistema delivery construído, em homologação final para entrar no ar
 **Stack:** Java 17 + Spring Boot 3.2 (Maven multi-module, Clean Architecture), Angular 17+ (Standalone Components), Electron (POS + print server), MySQL 8 + Liquibase, impressão térmica ESC/POS, Google Maps Platform (Directions/Geocoding/Places), Google OAuth, SSE, PWA, Docker Compose
 
 ## Contexto e problema
@@ -13,11 +13,12 @@ Uma lanchonete precisava sair do papel/WhatsApp para uma operação organizada: 
 
 Ecossistema em duas fases sobre a mesma base Clean Architecture:
 
-**Fase 1 — POS de balcão (completo):**
+**Fase 1 — Gestão completa da lanchonete (em produção):**
 - Gestão de pedidos, cardápio, clientes e autenticação em app desktop Electron
+- **Pedido na mesa via QR code** e **totem de autoatendimento**, além do fluxo de balcão — múltiplos canais de pedido convergindo na mesma operação
 - **Impressão de cupons ESC/POS** via print server no Electron: suporte a Windows Spooler, USB direto, CUPS (Linux) e impressoras de rede — testado com EPSON TM-T20 e DARUMA DR-800
 
-**Fase 2 — Delivery (em homologação para ir ao ar):**
+**Fase 2 — Delivery (construído; em homologação para ir ao ar):**
 - **App do cliente (PWA)**: cardápio, pedido, endereços com autocomplete do Google Places, favoritos/re-pedido, timeline de status e **rastreamento do motoboy em tempo real no mapa**
 - **App do motoboy (PWA)**: auto-cadastro por link público com aprovação do admin, login Google OAuth, Kanban das próprias entregas, envio de posição GPS
 - **Painel do gestor**: gestão de pedidos delivery e de motoboys
@@ -39,10 +40,10 @@ Ecossistema em duas fases sobre a mesma base Clean Architecture:
 
 ## Resultados e impacto
 
-- POS de balcão completo operando o fluxo pedido→cupom da lanchonete [tempo de uso A CONFIRMAR]
-- Plataforma de delivery própria em homologação final — canal direto sem taxa de marketplace
+- Gestão completa da lanchonete **em produção** — balcão (pedido→cupom em segundos), pedido na mesa via QR code e totem de autoatendimento [tempo de uso A CONFIRMAR]
+- Plataforma de delivery própria construída, em homologação final para entrar no ar — canal direto sem taxa de marketplace
 - Base modular comprovada: o delivery reusou domínio, autenticação e cardápio da fase 1
 
 ## Destaques para entrevista (STAR resumido)
 
-- **S/T:** lanchonete operando no papel queria pedidos organizados com cupom impresso e, depois, delivery próprio sem taxas de marketplace. **A:** construí o ecossistema completo — POS desktop com print server ESC/POS multiplataforma, e a extensão de delivery com PWAs para cliente e motoboy, rastreamento em tempo real (GPS → cache TTL → SSE), OAuth Google híbrido e Clean Architecture multi-module que permitiu o delivery nascer como extensão. **R:** balcão informatizado de ponta a ponta e plataforma de delivery própria em homologação final para produção.
+- **S/T:** lanchonete operando no papel queria pedidos organizados com cupom impresso e, depois, delivery próprio sem taxas de marketplace. **A:** construí o ecossistema completo — POS desktop com print server ESC/POS multiplataforma, pedido na mesa via QR code, totem de autoatendimento, e a extensão de delivery com PWAs para cliente e motoboy, rastreamento em tempo real (GPS → cache TTL → SSE), OAuth Google híbrido e Clean Architecture multi-module que permitiu o delivery nascer como extensão. **R:** gestão da lanchonete em produção de ponta a ponta (balcão, mesa e totem) e plataforma de delivery própria construída, prestes a entrar no ar.

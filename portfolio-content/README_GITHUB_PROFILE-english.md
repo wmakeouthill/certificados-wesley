@@ -50,7 +50,7 @@ I concentrate my delivery on three fronts:
 
 I currently work at **AutoU**, full cycle on a **B2B platform for people, goals, and HR management**, in parallel with applied AI and predictive algorithm projects. Background in **modernization of systems in regulated corporate environments** (Selic / Central Bank — COBOL → Java/Spring Boot, end-to-end observability, GitLab CI/CD) and in **large-scale full-Python RPA** in the legal sector.
 
-I deliver scalable, cloud-native software on **AWS**, **GCP**, and **dedicated VPS** (Oracle Cloud Always Free), with containerization, CI/CD pipelines, end-to-end observability, and applied security (OWASP, JWT, OAuth 2.0, IAM, VPC, API Key Header). Under **Clean Architecture, SOLID, DDD**, and sustainable code.
+I deliver scalable, cloud-native software on **AWS**, **GCP**, and **dedicated Linux VPSs** (Hostinger, Oracle Cloud, Contabo, KingHost, among others), with containerization, CI/CD pipelines, end-to-end observability, and applied security (OWASP, JWT, OAuth 2.0, IAM, VPC, API Key Header). Under **Clean Architecture, SOLID, DDD**, and sustainable code.
 
 ### 🏗️ Architecture & Principles
 `Clean Architecture` • `Clean Code` • `Design Patterns` • `Domain-Driven Design (DDD)` • `Hexagonal Architecture` • `SOLID` • `DRY` • `KISS` • `ACID` • `RBAC` • `OWASP Top 10` • `Event-Driven`
@@ -62,7 +62,7 @@ I deliver scalable, cloud-native software on **AWS**, **GCP**, and **dedicated V
 - **Circuit Breaker** and **Retry Patterns** (Resilience4j)
 - **Real-time** with WebSockets, SSE, and gRPC
 - **PWA**, Service Workers, Chrome Extensions (Manifest V3), Electron, Ionic, React Native
-- **Multi-cloud cloud-native** (AWS + GCP) + dedicated VPS for predictable 24/7 workloads
+- **Multi-cloud cloud-native** (AWS + GCP) + dedicated Linux VPSs (Hostinger, Oracle, Contabo, KingHost, among others) for predictable 24/7 workloads
 - API Integrations: **Gemini**, **OpenAI**, **Discord (JDA)**, **LCU (League of Legends)**, **Google Maps**, **Evolution API (WhatsApp)**
 
 ---

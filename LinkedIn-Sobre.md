@@ -12,7 +12,7 @@ Concentro a entrega em três frentes de impacto direto no negócio:
 
 Atuo hoje em **full cycle de produto B2B de gestão de pessoas, metas e RH** para clientes corporativos, em paralelo a projetos de IA aplicada e algoritmos preditivos em ambiente de startup com alta exposição a clientes. Tenho histórico em **modernização de sistemas em ambientes corporativos regulados** e em **RPA full-Python em larga escala** no setor jurídico.
 
-Entrego software escalável e cloud-native em **AWS**, **GCP** e **VPS dedicada** (Oracle Cloud Always Free, para cargas previsíveis 24/7), com containerização Docker, pipelines de CI/CD (GitHub Actions / GitLab), observabilidade ponta a ponta e segurança aplicada (OWASP Top 10, Spring Security, JWT, OAuth 2.0, IAM, VPC, API Key em header). Sob **Clean Architecture, SOLID, DDD** e código sustentável.
+Entrego software escalável e cloud-native em **AWS**, **GCP** e **VPS Linux dedicadas** (Hostinger, Oracle Cloud, Contabo, KingHost, entre outras — qualquer ambiente Linux com SSH, para cargas previsíveis 24/7), com containerização Docker, pipelines de CI/CD (GitHub Actions / GitLab), observabilidade ponta a ponta e segurança aplicada (OWASP Top 10, Spring Security, JWT, OAuth 2.0, IAM, VPC, API Key em header). Sob **Clean Architecture, SOLID, DDD** e código sustentável.
 
 Uso IA no workflow diário (Claude Code, Codex, Cursor, GitHub Copilot) para acelerar a entrega sem abrir mão de revisão, testes e qualidade.
 

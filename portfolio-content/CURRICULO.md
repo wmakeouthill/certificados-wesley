@@ -14,7 +14,7 @@
 
 Engenheiro Full Stack atuando do desenho da arquitetura ao monitoramento em produção, com foco em **eficiência operacional** e em produtos que geram **ganho real de produtividade no dia a dia das empresas**. Concentro a atuação em **automação de fluxos manuais**, **integração de IA aplicada** (LLMs, RAG, Visão Computacional + YOLO, modelos preditivos com Prophet, otimização Bayesiana com BayBE) e **integrações com sistemas corporativos** (ERPs Sankhya/Microwork e SAP, Slack, Microsoft 365 / Outlook / Graph, Microsoft Entra ID) — reduzindo retrabalho, evitando ruptura de estoque, acelerando decisão comercial e encurtando ciclos de venda.
 
-Atuo em duas frentes profissionais simultâneas: na **AutoU** (startup de IA aplicada, projetos para clientes enterprise) e como **freelancer full cycle**, com múltiplos sistemas próprios **em produção** para clientes reais — da proposta comercial ao deploy e operação, sozinho. Entrego software escalável e cloud-native em **AWS**, **GCP** e **Azure** — e em **VPS dedicada** (Oracle Cloud Always Free) para cargas previsíveis 24/7 — com pipelines de CI/CD, containerização e **observabilidade ponta a ponta** (Prometheus/Grafana, incluindo monitoramento de custo de IA), sob **Clean Architecture, SOLID** e código sustentável. Stack core: **Java + Spring Boot 3.x** e **Python (FastAPI, LangGraph)**, com **Angular** e **React** no front (e Vue no repertório). Bacharel em Direito — base que agrega leitura analítica de regras de negócio e domínios regulatórios.
+Atuo em duas frentes: na **AutoU** (startup de IA aplicada, projetos para clientes enterprise) e como **freelancer full cycle**, com múltiplos sistemas próprios **em produção** para clientes reais — da proposta comercial ao deploy e operação, sozinho. Entrego software escalável e cloud-native em **AWS**, **GCP** e **Azure** — e em **VPS Linux dedicadas** (Hostinger, Oracle Cloud, Contabo, KingHost, entre outras — qualquer ambiente Linux com SSH) para cargas previsíveis 24/7 — com pipelines de CI/CD, containerização e **observabilidade ponta a ponta** (Prometheus/Grafana, incluindo monitoramento de custo de IA), sob **Clean Architecture, SOLID** e código sustentável. Stack core: **Java + Spring Boot 3.x** e **Python (FastAPI, LangGraph)**, com **Angular** e **React** no front (e Vue no repertório). Bacharel em Direito — base que agrega leitura analítica de regras de negócio e domínios regulatórios.
 
 ## Experiência Profissional
 
@@ -31,7 +31,7 @@ Projetos de IA aplicada para clientes enterprise (Saint-Gobain, entre outros) �
 - **Pipeline de replicação de projetos de savings (Saint-Gobain):** Cloud Run Jobs + Scheduler com sincronização idempotente por hash, auditoria e rollback — execução diária em produção.
 - **Assistente de triagem SAC com IA (demo para edital de farmacêutica, em andamento):** MVP solo — chat público com triagem por Gemini e fallback determinístico por regras, portal interno de tickets — no ar como demonstração.
 - **Ingestão de PDF, embeddings e busca semântica:** participação na fundação de plataforma de catálogo inteligente — extração de catálogos PDF com Gemini Vision, score de confiança com curadoria humana, pgvector para busca semântica.
-- **Site institucional da AutoU (solo):** frontend React otimizado para SEO, backend FastAPI de leads e CMS próprio de artigos/cases — no ar em Azure.
+- **Site institucional da AutoU (solo):** frontend React otimizado para SEO, backend FastAPI de leads, CMS próprio de artigos/cases e integração de e-mail via Microsoft Graph (app registrado no Azure) alimentando o funil do CRM — no ar em Azure.
 - **Plataforma B2B de gestão de pessoas (monorepo DDD):** feature de notificações (serviço dedicado consumindo eventos dos bounded contexts) e sistema de logs, respeitando database-per-service e comunicação assíncrona por Pub/Sub.
 - **Frontend de demo enterprise (Itaú):** interface pixel-perfect a partir de Figma com mapas interativos (React 19 + Leaflet), em dupla, sob prazo de pré-venda.
 - **Integrações corporativas (ERP Sankhya/Microwork, Slack & Outlook/Microsoft 365):** automação de relatórios, orçamentos, notificações em tempo real e e-mails transacionais.
@@ -49,7 +49,7 @@ Atuação **full cycle real**: proposta comercial → discovery → arquitetura 
 - **Dashboard CX Qualtrics (em produção):** dashboard de experiência do cliente por jornada (FastAPI + Angular + Gemini) + MCP server TypeScript para Qualtrics; build desktop portátil Windows com auto-update via GitHub Releases.
 - **Plataforma de workflow logístico (completa, em homologação):** substitui BPM corporativo estilo Fluig — solicitações, filas por grupo, aprovações multi-etapa, documentos e SLAs — Java + Spring + Angular.
 - **Mercearia R&V (em produção):** sistema desktop offline-first de estoque/vendas/PDV — Electron orquestrando Spring Boot + PostgreSQL embarcados em instalador único NSIS; uso diário na operação do cliente com custo recorrente zero.
-- **Experimenta AI — Soneca (POS completo; delivery em homologação):** gestão de lanchonete com impressão de cupons ESC/POS multiplataforma + ecossistema de delivery próprio com PWAs de cliente e motoboy, rastreamento em tempo real (GPS → SSE) e Google Maps/OAuth.
+- **Experimenta AI — Soneca (gestão em produção; delivery entrando no ar):** gestão completa de lanchonete — balcão, pedido na mesa via QR code, totem de autoatendimento e impressão de cupons ESC/POS multiplataforma — + ecossistema de delivery próprio com PWAs de cliente e motoboy, rastreamento em tempo real (GPS → SSE) e Google Maps/OAuth.
 - **Renovação de frontend de integrador EDI logístico:** refatoração visual completa em Next.js 16 + React 19 + Tailwind 4.
 - **Gerador de crachás em lote:** ferramenta Python empacotada em executável para cliente de varejo (Supermercados Rio Sul).
 
@@ -238,7 +238,7 @@ Atuação **full cycle real**: proposta comercial → discovery → arquitetura 
 
 - **AWS (EC2, IAM, VPC, Security Groups, Secrets Manager)** - Ambientes cloud
 - **Google Cloud Platform (Cloud Run, Cloud Build, IAM)** - Cloud computing e serviços gerenciados
-- **VPS dedicada (Oracle Cloud Always Free)** - Cargas previsíveis 24/7
+- **VPS Linux dedicadas (Hostinger, Oracle Cloud Always Free, Contabo, KingHost, entre outras)** - Provisionamento e deploy em qualquer ambiente Linux com SSH; cargas previsíveis 24/7
 - **Serverless Containers** - Arquitetura serverless (Cloud Run)
 - **Prometheus / Grafana** - Coleta, visualização e dashboards de métricas
 - **Spring Actuator / Micrometer** - Health checks e métricas customizadas
@@ -392,7 +392,7 @@ Calculadora de investimentos em Angular 18 com projeções de juros compostos, s
 
 - Sistemas próprios em produção para clientes reais: logística emergencial (AOG), automação fiscal NF-e, central omnichannel com IA (Sol), dashboard CX, varejo (Mercearia R&V), food service (Experimenta AI — Soneca)
 - Ciclo completo sozinho: proposta comercial, discovery, arquitetura, código, deploy, operação e suporte
-- Java/Spring Clean Architecture, Python/FastAPI, Node, Angular/React/Vue, deploy em VPS Oracle Cloud
+- Java/Spring Clean Architecture, Python/FastAPI, Node, Angular/React/Vue, deploy em VPS Linux (Hostinger, Oracle Cloud, Contabo, KingHost, entre outras)
 
 **2026-Atual:** Desenvolvimento Full-Stack em startup de IA aplicada (AutoU)
 

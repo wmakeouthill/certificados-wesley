@@ -11,7 +11,7 @@ Wesley Correia works with a modern, enterprise stack focused on full-stack devel
 **Backend:** Java 17/21 + Spring Boot 3.x, Python (FastAPI, LangGraph), C#/.NET 9 (ASP.NET WebApi), Node.js
 **Frontend:** Angular 17+/18/19/20, React 19 + Vite, Next.js 16 + Tailwind 4, TypeScript + RxJS, Signals
 **Mobile / Desktop:** Electron 27/28, PWA, Ionic, React Native
-**DevOps & Infra:** Docker, GitLab CI, GitHub Actions, AWS (EC2, S3, Lambda, DynamoDB), GCP (Cloud Run, Cloud Run Jobs, Scheduler, Pub/Sub, Cloud Build, Secret Manager), Azure, dedicated VPS (Oracle Cloud Always Free), IaaC
+**DevOps & Infra:** Docker, GitLab CI, GitHub Actions, AWS (EC2, S3, Lambda, DynamoDB), GCP (Cloud Run, Cloud Run Jobs, Scheduler, Pub/Sub, Cloud Build, Secret Manager), Azure, dedicated Linux VPSs (Hostinger, Oracle Cloud Always Free, Contabo, KingHost, among others), IaaC
 **Observability:** Prometheus, Grafana, Spring Actuator, Micrometer, AlertManager, Blackbox Exporter (incl. AI cost monitoring)
 **Databases:** Oracle, MySQL, PostgreSQL, pgvector, H2, SQLite, Redis, DynamoDB, Firebase
 **AI & Data:** LLMs (Gemini, Gemini Vision, OpenAI), RAG, Embeddings, FAISS, pgvector, Prophet, BayBE (Bayesian optimization), Computer Vision (Vision + YOLO), LangGraph, OpenCV, MCP servers (authorship)
@@ -366,6 +366,18 @@ Wesley Correia works with a modern, enterprise stack focused on full-stack devel
 - Wesley Portfolio: Deploy on Oracle Cloud Always Free (VPS)
 - Wesley Bot WhatsApp: Deploy on Oracle Always Free (VPS instances)
 
+### Linux VPS (Hostinger, Contabo, KingHost)
+
+**Usage Context:**
+
+- Provisioning and deploys on any Linux environment with SSH: Docker Compose, Nginx, HTTPS (Let's Encrypt), reproducible deploy scripts
+- Freelance client deliveries and AutoU projects on VPSs from multiple providers — chosen by cost/size of each project
+
+**Projects:**
+
+- Dux NF (tax automation): Hostinger/Oracle Cloud deploy
+- Client systems in production distributed across Hostinger, Contabo, KingHost, and Oracle Cloud
+
 ### Cloud Build
 
 **Usage Context:**
@@ -717,6 +729,7 @@ Wesley Correia works with a modern, enterprise stack focused on full-stack devel
 
 - Capturing emails and attachments directly from the client's corporate mailbox
 - Foundation of the NF-e tax automation (layered extraction XML → PDF → OCR/AI)
+- Inbound email handling on the AutoU institutional website (Azure app registration) with automatic recording in the CRM funnel
 
 ### Evolution API / Meta WhatsApp Cloud API
 
@@ -1150,7 +1163,7 @@ Wesley Correia works with a modern, enterprise stack focused on full-stack devel
 - FastAPI + React/Angular + Gemini (NF-e, Sol, Qualtrics CX)
 - Microsoft Entra ID, Microsoft Graph, Evolution/Meta WhatsApp Cloud API, Google Maps Platform
 - Electron + embedded database (NSIS), PWAs, SSE, ESC/POS
-- Oracle Cloud Always Free VPS + Docker
+- Linux VPSs (Hostinger, Oracle Cloud Always Free, Contabo, KingHost) + Docker
 
 **Experimenta AI - Soneca:**
 
@@ -1201,5 +1214,5 @@ Wesley Correia works with a modern, enterprise stack focused on full-stack devel
 - **Python / FastAPI / AI** (agents, Prophet forecasting, BayBE Bayesian optimization, YOLO vision)
 - Enterprise integrations: Entra ID, Microsoft Graph, WhatsApp Cloud API, Qualtrics, ERPs
 - Oracle + MySQL + PostgreSQL (incl. pgvector) + Redis
-- Docker + CI/CD + Multi-cloud (AWS/GCP/Azure) + Oracle VPS
+- Docker + CI/CD + Multi-cloud (AWS/GCP/Azure) + Linux VPSs (Hostinger/Oracle/Contabo/KingHost)
 - Prometheus + Grafana (observability, incl. AI cost)

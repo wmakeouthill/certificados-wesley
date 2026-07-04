@@ -37,10 +37,10 @@ Since 2025, I have worked in parallel as a **full cycle freelancer**: commercial
 - Desktop inventory/sales/POS system: **Electron orchestrating embedded Spring Boot + PostgreSQL** in a single NSIS installer
 - POS, cash register, loyalty, PDF reports; **daily use in the client's operation with zero recurring cost**
 
-### Experimenta AI — Soneca (POS complete; delivery in final homologation)
+### Experimenta AI — Soneca (management in production; delivery built, about to go live)
 
-- Snack bar management with **cross-platform ESC/POS receipt printing** (Windows Spooler, direct USB, CUPS)
-- **Own delivery ecosystem**: customer and courier PWAs, **real-time tracking** (GPS → TTL cache → Server-Sent Events), Google Maps Platform and Google OAuth
+- Complete snack bar management **in production**: counter, **table ordering via QR code**, **self-service kiosk**, and **cross-platform ESC/POS receipt printing** (Windows Spooler, direct USB, CUPS)
+- **Own delivery ecosystem** built, in final homologation: customer and courier PWAs, **real-time tracking** (GPS → TTL cache → Server-Sent Events), Google Maps Platform and Google OAuth
 - **Java + Spring Boot multi-module (Clean Architecture) + Angular 17 + MySQL**
 
 ## In Homologation / One-Off Deliveries
@@ -63,5 +63,5 @@ Since 2025, I have worked in parallel as a **full cycle freelancer**: commercial
 - **Real full cycle**: from the commercial proposal (including sales decks) to production operation
 - **Polyglot**: Java/Spring Clean Architecture, Python/FastAPI, Node, and the three major frontends (Angular, React, Vue)
 - **Corporate integrations**: Microsoft Entra ID, Microsoft Graph, Evolution API / Meta WhatsApp Cloud API, Teams, Qualtrics
-- **Cost engineering**: Oracle Cloud Always Free VPS, desktop apps with embedded databases — the right infrastructure for each client's size
+- **Cost engineering**: Linux VPS from the right provider for each size (Hostinger, Oracle Cloud Always Free, Contabo, KingHost — any Linux environment with SSH), desktop apps with embedded databases — the right infrastructure for each client's size
 - **Products that stay live**: clients operating daily on these systems, with ongoing support and evolution

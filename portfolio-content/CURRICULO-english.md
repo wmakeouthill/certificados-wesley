@@ -14,7 +14,7 @@
 
 Full Stack Engineer working full cycle — from architecture design to production monitoring — focused on **operational efficiency** and on products that deliver **real productivity gains in companies' day-to-day operations**. My work concentrates on **manual workflow automation**, **applied AI integration** (LLMs, RAG, Computer Vision + YOLO, predictive models with Prophet, Bayesian optimization with BayBE), and **integrations with corporate systems** (ERPs Sankhya/Microwork and SAP, Slack, Microsoft 365 / Outlook / Graph, Microsoft Entra ID) — reducing rework, preventing stock-outs, accelerating commercial decisions, and shortening sales cycles.
 
-I work on two simultaneous professional fronts: at **AutoU** (applied AI startup, projects for enterprise clients) and as a **full cycle freelancer**, with multiple own systems **in production** for real clients — from commercial proposal to deploy and operation, alone. I deliver scalable, cloud-native software on **AWS**, **GCP**, and **Azure** — and on **dedicated VPS** (Oracle Cloud Always Free) for predictable 24/7 workloads — with CI/CD pipelines, containerization, and **end-to-end observability** (Prometheus/Grafana, including AI cost monitoring), under **Clean Architecture, SOLID**, and sustainable code. Core stack: **Java + Spring Boot 3.x** and **Python (FastAPI, LangGraph)**, with **Angular** and **React** on the frontend (and Vue in the repertoire). Bachelor of Laws — formation that adds analytical reading of business rules and regulated domains.
+I work on two fronts: at **AutoU** (applied AI startup, projects for enterprise clients) and as a **full cycle freelancer**, with multiple systems of my own **in production** for real clients — from commercial proposal to deploy and operation, alone. I deliver scalable, cloud-native software on **AWS**, **GCP**, and **Azure** — and on **dedicated Linux VPSs** (Hostinger, Oracle Cloud, Contabo, KingHost, among others — any Linux environment with SSH) for predictable 24/7 workloads — with CI/CD pipelines, containerization, and **end-to-end observability** (Prometheus/Grafana, including AI cost monitoring), under **Clean Architecture, SOLID**, and sustainable code. Core stack: **Java + Spring Boot 3.x** and **Python (FastAPI, LangGraph)**, with **Angular** and **React** on the frontend (and Vue in the repertoire). Bachelor of Laws — formation that adds analytical reading of business rules and regulated domains.
 
 ## Professional Experience
 
@@ -31,7 +31,7 @@ Applied AI projects for enterprise clients (Saint-Gobain, among others) — all 
 - **Savings replication pipeline (Saint-Gobain):** Cloud Run Jobs + Scheduler with hash-based idempotent sync, auditing, and rollback — daily production runs.
 - **AI ticket triage assistant (demo for an ongoing pharma bid/RFP):** solo MVP — public chat with Gemini triage and deterministic rule-based fallback, internal ticket portal — live as a demo.
 - **PDF ingestion, embeddings, and semantic search:** foundation participation on an intelligent catalog platform — PDF catalog extraction with Gemini Vision, confidence scores with human curation, pgvector for semantic search.
-- **AutoU institutional website (solo):** SEO-optimized React frontend, FastAPI leads backend, and a custom articles/cases CMS — live on Azure.
+- **AutoU institutional website (solo):** SEO-optimized React frontend, FastAPI leads backend, custom articles/cases CMS, and email integration via Microsoft Graph (Azure app registration) feeding the CRM funnel — live on Azure.
 - **B2B people management platform (DDD monorepo):** notifications feature (dedicated service consuming bounded-context events) and logging system, respecting database-per-service and async Pub/Sub communication.
 - **Enterprise demo frontend (Itaú):** pixel-perfect Figma implementation with interactive maps (React 19 + Leaflet), in a two-person team, under a pre-sales deadline.
 - **Corporate integrations (Sankhya/Microwork ERP, Slack & Outlook/Microsoft 365):** automation of reports, quotes, real-time notifications, and transactional emails.
@@ -48,7 +48,7 @@ Full cycle work as the sole developer — commercial proposal, architecture, cod
 - **Sol — omnichannel IT service desk with AI (in production):** WhatsApp, Teams, web, and email in a single hub; AI satisfaction thermometer with per-department verdicts; full ticket management panel and an integrated CRM module — FastAPI + Angular 20 + pgvector + Gemini + Evolution/Meta WhatsApp Cloud API.
 - **Qualtrics CX dashboard (in production):** customer-journey experience dashboard (FastAPI + Angular + Gemini), TypeScript MCP server for the Qualtrics API, portable Windows desktop build with auto-update via GitHub Releases.
 - **Mercearia R&V (in production):** offline-first retail desktop system — Electron orchestrating embedded Spring Boot + PostgreSQL in a single NSIS installer; POS, cash register, loyalty, PDF reports — daily use in the client's operation.
-- **Experimenta AI — Soneca (POS complete; delivery ecosystem in final homologation):** snack bar management with cross-platform ESC/POS printing; own delivery ecosystem with customer/courier PWAs, real-time tracking (GPS → TTL cache → SSE), and Google Maps Platform.
+- **Experimenta AI — Soneca (management in production; delivery about to go live):** complete snack bar management — counter, table ordering via QR code, self-service kiosk, and cross-platform ESC/POS printing — plus an own delivery ecosystem with customer/courier PWAs, real-time tracking (GPS → TTL cache → SSE), and Google Maps Platform.
 - **Logistics workflow platform (complete, in homologation):** corporate BPM replacement — typed requests, group queues, multi-step approvals, SLAs, dashboard (Java + Spring + Angular + PostgreSQL, Oracle Cloud VPS).
 - **Frontend renovation — EDI logistics integrator:** complete visual refactor in Next.js 16 + React 19 + Tailwind 4.
 - **Batch badge generator (delivered):** Python tool packaged as an executable (PyInstaller) for a retail client.
@@ -252,7 +252,7 @@ Full cycle work as the sole developer — commercial proposal, architecture, cod
 
 - **AWS (EC2, IAM, VPC, Security Groups, Secrets Manager)** — cloud environments
 - **Google Cloud Platform (Cloud Run, Cloud Build, IAM)** — cloud computing/managed services
-- **Dedicated VPS (Oracle Cloud Always Free)** — predictable 24/7 workloads
+- **Dedicated Linux VPSs (Hostinger, Oracle Cloud Always Free, Contabo, KingHost, among others)** — provisioning and deploys on any Linux environment with SSH; predictable 24/7 workloads
 - **Serverless Containers** — Cloud Run
 - **Prometheus / Grafana** — metrics collection, visualization, dashboards
 - **Spring Actuator / Micrometer** — health checks and custom metrics

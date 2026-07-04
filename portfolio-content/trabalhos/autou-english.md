@@ -54,6 +54,7 @@
 #### AutoU Institutional Website (solo project)
 
 - Complete site built alone: SEO-optimized React frontend (blog, cases), FastAPI leads backend, and a **custom CMS** — live on Azure
+- **Email integration via Microsoft Graph** (Azure app registration): incoming emails are automatically recorded in the **CRM funnel**, in the same flow as leads captured through the site
 
 #### B2B People Management Platform (Aura Central — DDD monorepo)
 
