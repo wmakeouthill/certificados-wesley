@@ -5,6 +5,7 @@ category: freela
 status: Homologação
 stack: [Java, Spring Boot, Angular, PostgreSQL]
 order: 3
+gallery: dux-logistics
 ---
 # Case — Dux Logistics MVP (Plataforma de Workflow Logístico e Documental)
 

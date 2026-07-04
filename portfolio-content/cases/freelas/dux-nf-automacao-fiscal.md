@@ -5,6 +5,7 @@ category: freela
 status: Produção
 stack: [FastAPI, React, MS Graph, PostgreSQL]
 order: 4
+gallery: dux-logistics
 ---
 # Case — Dux NF (Automação de Notas Fiscais por E-mail com IA)
 

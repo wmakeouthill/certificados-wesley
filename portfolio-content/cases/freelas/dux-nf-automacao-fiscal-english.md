@@ -5,6 +5,7 @@ category: freela
 status: Production
 stack: [FastAPI, React, MS Graph, PostgreSQL]
 order: 4
+gallery: dux-logistics
 ---
 # Case — Dux NF (AI-Powered Invoice Automation via E-mail)
 

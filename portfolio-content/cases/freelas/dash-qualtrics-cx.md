@@ -1,6 +1,6 @@
 ---
 title: Dashboard CX por jornada + MCP server Qualtrics
-client: Cliente corporativo
+client: A5 Solutions
 category: freela
 status: Produção
 stack: [FastAPI, Angular, Gemini, Qualtrics]
@@ -8,7 +8,7 @@ order: 6
 ---
 # Case — Dash Qualtrics (Dashboard de CX por Jornada + MCP Server)
 
-**Tipo:** Freelance (cliente corporativo — área de Customer Experience)
+**Tipo:** Freelance (cliente: A5 Solutions — área de Customer Experience)
 **Papel:** Desenvolvedor Full Stack (autoria completa; inclui um MCP server em TypeScript)
 **Status:** Em produção (VPS Oracle) + versão desktop portátil
 **Stack:** Python, FastAPI, Angular, PostgreSQL/SQLite, Gemini (`google-genai`), JWT, Docker Compose, Nginx + Let's Encrypt, Oracle Cloud VPS, TypeScript (MCP server), Qualtrics API

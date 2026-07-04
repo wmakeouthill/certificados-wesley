@@ -5,6 +5,7 @@ category: freela
 status: UAT
 stack: [Java, Spring Boot, Angular, PostgreSQL]
 order: 3
+gallery: dux-logistics
 ---
 # Case — Dux Logistics MVP (Logistics & Document Workflow Platform)
 

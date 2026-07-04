@@ -1,6 +1,6 @@
 ---
 title: CX journey dashboard + Qualtrics MCP server
-client: Cliente corporativo
+client: A5 Solutions
 category: freela
 status: Production
 stack: [FastAPI, Angular, Gemini, Qualtrics]
