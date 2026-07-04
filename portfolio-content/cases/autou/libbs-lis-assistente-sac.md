@@ -1,3 +1,12 @@
+---
+title: LIS — Triagem de tickets SAC com IA (demo)
+client: Libbs (demo — edital em andamento)
+category: autou
+status: Demo no ar
+stack: [FastAPI, React 19, Gemini]
+order: 4
+---
+
 # Case — LIS (demo para edital da Libbs: Assistente de Triagem de Tickets SAC com IA)
 
 **Tipo:** AutoU (demo para edital da Libbs — indústria farmacêutica; edital ainda em andamento, a Libbs **não é cliente** da AutoU)

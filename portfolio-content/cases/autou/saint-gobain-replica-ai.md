@@ -1,3 +1,12 @@
+---
+title: Réplica AI — Replicação de projetos de savings entre fábricas
+client: Saint-Gobain
+category: autou
+status: Produção
+stack: [FastAPI, Cloud Run, Firestore, Pub/Sub]
+order: 3
+---
+
 # Case — Replica AI (Saint-Gobain: Replicação de Projetos de Savings entre Fábricas)
 
 **Tipo:** AutoU (cliente: Saint-Gobain — Quartzolit / Brasilit)

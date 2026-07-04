@@ -1,3 +1,12 @@
+---
+title: Site institucional AutoU — SEO, blog, leads e CMS próprio
+client: AutoU
+category: autou
+status: No ar
+stack: [React, FastAPI, Azure]
+order: 8
+---
+
 # Case — AutoU Website (Site Institucional com SEO e Captura de Leads)
 
 **Tipo:** AutoU (produto interno — presença digital da empresa)

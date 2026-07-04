@@ -1,3 +1,12 @@
+---
+title: Pulse — Conformidade de postos com visão computacional
+client: Rede São Roque
+category: autou
+status: Produção
+stack: [YOLO, FastAPI, LangGraph, Gemini, AWS]
+order: 2
+---
+
 # Case — Pulse (Conformidade de Postos de Combustível com Visão Computacional)
 
 **Tipo:** AutoU (cliente: Rede São Roque — rede de postos de combustível)

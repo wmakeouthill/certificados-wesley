@@ -1,3 +1,12 @@
+---
+title: Catálogo inteligente de peças com ingestão de PDF por IA
+client: Rocester
+category: autou
+status: Produção
+stack: [FastAPI, React, Gemini Vision, pgvector]
+order: 6
+---
+
 # Case — Rocester (Catálogo Digital Inteligente de Peças Industriais)
 
 **Tipo:** AutoU (cliente: Rocester — peças industriais)

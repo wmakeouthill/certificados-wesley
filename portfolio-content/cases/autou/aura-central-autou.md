@@ -1,3 +1,12 @@
+---
+title: Aura Central — Notificações e logs em plataforma B2B
+client: AutoU
+category: autou
+status: Produção
+stack: [FastAPI, React, Pub/Sub]
+order: 7
+---
+
 # Case — Aura Central (Ecossistema Interno AutoU: Plataforma de Gestão de Pessoas, Metas e RH)
 
 **Tipo:** AutoU (produto interno usado por clientes corporativos B2B)

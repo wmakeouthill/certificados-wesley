@@ -1,3 +1,12 @@
+---
+title: JGV — Previsão de demanda e recomendação de estoque
+client: JGV
+category: autou
+status: Produção
+stack: [Python, Prophet, Flask, PostgreSQL]
+order: 1
+---
+
 # Case — JGV (Previsão de Demanda e Recomendação de Estoque para Rede de Autopeças)
 
 **Tipo:** AutoU (cliente: JGV — rede de autopeças multi-filial)

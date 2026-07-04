@@ -1,3 +1,12 @@
+---
+title: Colibri — P&D de formulações com otimização Bayesiana
+client: Oxiquímica
+category: autou
+status: Produção
+stack: [FastAPI, React 19, Vertex AI, BayBE]
+order: 5
+---
+
 # Case — Oxiquímica (Plataforma de P&D de Formulações com Otimização Bayesiana)
 
 **Tipo:** AutoU (cliente: Oxiquímica — indústria química/fertilizantes)

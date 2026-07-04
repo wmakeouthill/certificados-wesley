@@ -1,3 +1,12 @@
+---
+title: Demo de pré-venda — mapas interativos
+client: Itaú (demo de pré-venda)
+category: autou
+status: Entregue (demo)
+stack: [React 19, Tailwind 4, Leaflet]
+order: 9
+---
+
 # Case — Demo Itaú (Frontend de Demonstração com Mapas)
 
 **Tipo:** AutoU (pré-venda/demonstração para o Itaú)
