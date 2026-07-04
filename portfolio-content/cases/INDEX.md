@@ -53,4 +53,4 @@ Padrões que se repetem e sustentam o posicionamento de **Engenheiro Full Stack 
 1. ✅ Cases criados (esta pasta)
 2. ✅ Validação do Wesley: statuses confirmados (AutoU todos no ar; NF/AOG no ar; workflow em homologação; Mercearia em produção; Soneca: gestão da lanchonete em produção — balcão, mesa QR code, totem — e delivery construído em homologação final) — métricas `[A CONFIRMAR]` e anonimização ainda pendentes
 3. ✅ Currículo (`Curriculo-Wesley-Pleno.html` + PDF), markdowns de RAG (`CURRICULO.md`, `STACKS.md`, `trabalhos/`, versões -english) atualizados em 03/07/2026
-4. ⬜ Refatorar seção de projetos do portfólio: aba **Profissionais** (destaque, alimentada por estes cases) + aba **Pessoais** (atual)
+4. ✅ Refatorar seção de projetos do portfólio: aba **Profissionais** (destaque, alimentada por estes cases) + aba **Pessoais** (atual)
