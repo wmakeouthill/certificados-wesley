@@ -22,14 +22,14 @@ I work on two simultaneous professional fronts: at **AutoU** (applied AI startup
 
 **Period:** February 2026 - Present | Remote
 
-Applied AI projects for enterprise clients (Saint-Gobain, Libbs, among others) — all **in production** — plus a pre-sales demo for Itaú:
+Applied AI projects for enterprise clients (Saint-Gobain, among others) — all **in production** — plus enterprise demos: a pre-sales demo for Itaú and a demo for an ongoing Libbs bid (RFP):
 
 - **24/7 computer vision in production:** Computer Vision pipelines (YOLO at the edge) integrated with LLMs via LangGraph and RAG for compliance monitoring across a fuel station chain — image analysis, automated insights, and a retraining loop fed by user feedback (AWS S3/Lambda/DynamoDB + GCP).
 - **Observability implemented by me (Prometheus + Grafana):** AI cost, usage, and infrastructure monitoring in production across the computer vision and chemical R&D projects.
 - **Machine Learning and inventory optimization:** Prophet algorithms for demand forecasting, inventory optimization, branch-to-branch transfers, and substitute product recommendations, integrated with the Sankhya ERP (auto-parts chain).
 - **R&D platform with Bayesian optimization:** chemical formulation platform with BayBE (Merck's framework) and the "Colibri" AI agent — in production for a fertilizer manufacturer.
 - **Savings replication pipeline (Saint-Gobain):** Cloud Run Jobs + Scheduler with hash-based idempotent sync, auditing, and rollback — daily production runs.
-- **AI ticket triage assistant (pharma):** solo MVP — public chat with Gemini triage and deterministic rule-based fallback, internal ticket portal — delivered and live.
+- **AI ticket triage assistant (demo for an ongoing pharma bid/RFP):** solo MVP — public chat with Gemini triage and deterministic rule-based fallback, internal ticket portal — live as a demo.
 - **PDF ingestion, embeddings, and semantic search:** foundation participation on an intelligent catalog platform — PDF catalog extraction with Gemini Vision, confidence scores with human curation, pgvector for semantic search.
 - **AutoU institutional website (solo):** SEO-optimized React frontend, FastAPI leads backend, and a custom articles/cases CMS — live on Azure.
 - **B2B people management platform (DDD monorepo):** notifications feature (dedicated service consuming bounded-context events) and logging system, respecting database-per-service and async Pub/Sub communication.

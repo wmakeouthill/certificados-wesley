@@ -2,7 +2,7 @@
 
 ## Sobre a AutoU
 
-A **AutoU** é uma startup que constrói soluções de **IA aplicada** para empresas — visão computacional, agentes de IA, modelos preditivos e plataformas de dados — com projetos para clientes enterprise como **Saint-Gobain, Libbs, Rocester, Oxiquímica e redes de varejo/combustíveis** (além de demos de pré-venda, como a feita para o Itaú). O ambiente é acelerado, com alta exposição a clientes e foco em entrega com qualidade e ritmo veloz.
+A **AutoU** é uma startup que constrói soluções de **IA aplicada** para empresas — visão computacional, agentes de IA, modelos preditivos e plataformas de dados — com projetos para clientes enterprise como **Saint-Gobain, Rocester, Oxiquímica e redes de varejo/combustíveis** (além de demos enterprise, como a de pré-venda para o Itaú e a construída para concorrer a edital da Libbs, ainda em andamento). O ambiente é acelerado, com alta exposição a clientes e foco em entrega com qualidade e ritmo veloz.
 
 ### Contexto de Atuação
 
@@ -41,10 +41,10 @@ A **AutoU** é uma startup que constrói soluções de **IA aplicada** para empr
 - **Cloud Run Jobs + Cloud Scheduler** com sincronização **idempotente por hash**, auditoria e rollback
 - Backend FastAPI de administração; execução diária em produção
 
-#### Assistente de Triagem SAC com IA (Libbs — projeto solo)
+#### Assistente de Triagem SAC com IA (demo para edital da Libbs — projeto solo, edital em andamento)
 
-- MVP full stack feito sozinho: chat público com **triagem por Gemini e fallback determinístico por regras**, transbordo humano, portal interno com timeline de tickets
-- Uma aplicação servindo dois domínios (chat público + portal interno) — no ar
+- MVP full stack feito sozinho como demo para concorrer a edital da farmacêutica: chat público com **triagem por Gemini e fallback determinístico por regras**, transbordo humano, portal interno com timeline de tickets
+- Uma aplicação servindo dois domínios (chat público + portal interno) — demo no ar; edital ainda em andamento
 
 #### Catálogo Inteligente de Peças (Rocester — fundação do projeto)
 
@@ -85,5 +85,5 @@ A **AutoU** é uma startup que constrói soluções de **IA aplicada** para empr
 - **Todos os projetos em que atuei estão em produção** — de visão computacional 24/7 a pipelines diários de dados
 - IA aplicada com juízo de engenharia: fallback determinístico, curadoria humana, governança de fontes e loop de retraining — nunca "IA porque sim"
 - Observabilidade de produção (Prometheus/Grafana) implementada por iniciativa própria, incluindo monitoramento de **custo de IA**
-- Exposição direta a clientes enterprise (Saint-Gobain, Libbs) e a pré-venda enterprise (demo Itaú) em ambiente de startup acelerada
+- Exposição direta a clientes enterprise (Saint-Gobain) e a pré-venda/editais enterprise (demos para Itaú e para edital da Libbs) em ambiente de startup acelerada
 - ML além de LLMs: séries temporais (Prophet), visão computacional (YOLO) e otimização Bayesiana (BayBE)

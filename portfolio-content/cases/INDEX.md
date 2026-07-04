@@ -28,7 +28,7 @@ Não viraram case (sem implementação): `pricing-end` (só escopo em PDF) e `pr
 | [jgv-previsao-demanda](autou/jgv-previsao-demanda.md) | JGV — previsão de demanda e recomendação de estoque (autopeças) | Python + Prophet + Flask + Sankhya + Postgres | Produção |
 | [pulse-visao-computacional](autou/pulse-visao-computacional.md) | Rede São Roque — conformidade de postos com visão computacional | YOLO + FastAPI + LangGraph/Gemini + AWS + GCP | Produção |
 | [saint-gobain-replica-ai](autou/saint-gobain-replica-ai.md) | Saint-Gobain — replicação de projetos de savings entre fábricas | FastAPI + Cloud Run Jobs + Firestore/GCS/PubSub | Produção |
-| [libbs-lis-assistente-sac](autou/libbs-lis-assistente-sac.md) | Libbs — triagem de tickets SAC com IA | FastAPI + React 19 + Gemini c/ fallback | Produção |
+| [libbs-lis-assistente-sac](autou/libbs-lis-assistente-sac.md) | Libbs — triagem de tickets SAC com IA (demo para edital em andamento) | FastAPI + React 19 + Gemini c/ fallback | Demo no ar (edital em andamento) |
 | [oxiquimica-plataforma-ped](autou/oxiquimica-plataforma-ped.md) | Oxiquímica — P&D de formulações com otimização Bayesiana (BayBE) | FastAPI + React 19 + Vertex AI + BayBE | Produção |
 | [rocester-catalogo-inteligente](autou/rocester-catalogo-inteligente.md) | Rocester — catálogo de peças com ingestão de PDF por IA | FastAPI + React + Gemini Vision + pgvector | Produção |
 | [aura-central-autou](autou/aura-central-autou.md) | Aura Central — feature de notificações e logs em plataforma B2B (monorepo DDD) | FastAPI + React + eventos + database-per-service | Produção |
@@ -45,7 +45,7 @@ Padrões que se repetem e sustentam o posicionamento de **Engenheiro Full Stack 
 2. **Poliglota comprovado**: Java/Spring (Clean Architecture), Python/FastAPI (async), Node/Fastify, e os três frontends (Angular 20 Signals, React 18/19, Vue 3) — com comparativo técnico escrito
 3. **IA aplicada com juízo de engenharia**: IA como fallback (Dux NF), com fallback (LIS), com curadoria humana (Rocester), com governança de fontes (Oxiquímica), com loop de retraining (Pulse) — nunca "IA porque sim"
 4. **Multi-cloud operacional**: AWS (S3/Lambda/DynamoDB), GCP (Cloud Run Jobs, Scheduler, Pub/Sub, VMs), Azure (Entra ID, Graph), Oracle Cloud (VPS free tier para MVPs de custo zero)
-5. **Clientes enterprise**: Saint-Gobain, Libbs — exposição direta em ambiente de startup acelerada (Itaú foi demo de pré-venda, não cliente; os clientes exibidos no site da AutoU incluem L'Oréal, Stellantis, Nestlé, B3, PRIO, Petrobras, Embraer etc., mas o Wesley só cita nos materiais os que ele atendeu diretamente)
+5. **Clientes enterprise**: Saint-Gobain — exposição direta em ambiente de startup acelerada (Itaú foi demo de pré-venda e Libbs é demo para edital ainda em andamento — nenhum dos dois é cliente; os clientes exibidos no site da AutoU incluem L'Oréal, Stellantis, Nestlé, B3, PRIO, Petrobras, Embraer etc., mas o Wesley só cita nos materiais os que ele atendeu diretamente)
 6. **Dados e ML clássico além de LLM**: Prophet (séries temporais), YOLO (visão), BayBE (otimização Bayesiana), pgvector/FAISS (embeddings)
 
 ## Próximas fases (combinadas)

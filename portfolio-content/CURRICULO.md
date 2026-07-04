@@ -22,14 +22,14 @@ Atuo em duas frentes profissionais simultâneas: na **AutoU** (startup de IA apl
 
 *Período: Fev 2026 - Presente | Remoto*
 
-Projetos de IA aplicada para clientes enterprise (Saint-Gobain, Libbs, entre outros) — todos **em produção** — além de demo de pré-venda para o Itaú:
+Projetos de IA aplicada para clientes enterprise (Saint-Gobain, entre outros) — todos **em produção** — além de demos enterprise: pré-venda para o Itaú e edital em andamento para a Libbs:
 
 - **Visão computacional em produção 24/7:** pipelines de Visão Computacional (YOLO em edge) integrados a LLMs via LangGraph e RAG para monitoramento de conformidade em rede de postos — análise de imagens, insights automatizados e loop de retraining alimentado por feedback dos usuários (AWS S3/Lambda/DynamoDB + GCP).
 - **Observabilidade implementada por mim (Prometheus + Grafana):** monitoramento de custo de IA, consumo e infraestrutura em produção nos projetos de visão computacional e P&D químico.
 - **Machine Learning e otimização de estoque:** algoritmos com Prophet para predição de demanda, otimização de estoque, transferências entre filiais e sugestão de produtos substitutos, integrados ao ERP Sankhya (rede de autopeças).
 - **Plataforma de P&D com otimização Bayesiana:** plataforma de formulações químicas com BayBE (framework da Merck) e agente de IA "Colibri" — em produção para indústria de fertilizantes.
 - **Pipeline de replicação de projetos de savings (Saint-Gobain):** Cloud Run Jobs + Scheduler com sincronização idempotente por hash, auditoria e rollback — execução diária em produção.
-- **Assistente de triagem SAC com IA (farmacêutica):** MVP solo — chat público com triagem por Gemini e fallback determinístico por regras, portal interno de tickets — entregue e no ar.
+- **Assistente de triagem SAC com IA (demo para edital de farmacêutica, em andamento):** MVP solo — chat público com triagem por Gemini e fallback determinístico por regras, portal interno de tickets — no ar como demonstração.
 - **Ingestão de PDF, embeddings e busca semântica:** participação na fundação de plataforma de catálogo inteligente — extração de catálogos PDF com Gemini Vision, score de confiança com curadoria humana, pgvector para busca semântica.
 - **Site institucional da AutoU (solo):** frontend React otimizado para SEO, backend FastAPI de leads e CMS próprio de artigos/cases — no ar em Azure.
 - **Plataforma B2B de gestão de pessoas (monorepo DDD):** feature de notificações (serviço dedicado consumindo eventos dos bounded contexts) e sistema de logs, respeitando database-per-service e comunicação assíncrona por Pub/Sub.
@@ -396,7 +396,7 @@ Calculadora de investimentos em Angular 18 com projeções de juros compostos, s
 
 **2026-Atual:** Desenvolvimento Full-Stack em startup de IA aplicada (AutoU)
 
-- Projetos em produção para clientes enterprise (Saint-Gobain, Libbs e outros) e demo de pré-venda para o Itaú
+- Projetos em produção para clientes enterprise (Saint-Gobain e outros) e demos enterprise (pré-venda Itaú, edital Libbs em andamento)
 - IA aplicada com juízo de engenharia: visão computacional (YOLO), LangGraph/RAG, Prophet, otimização Bayesiana (BayBE), sempre com fallbacks e curadoria humana
 - Observabilidade Prometheus/Grafana implementada em produção (custo de IA, uso e infraestrutura)
 - Multi-cloud (AWS, GCP, Azure); GitHub Actions, Docker Compose; entrega veloz e alta exposição a clientes

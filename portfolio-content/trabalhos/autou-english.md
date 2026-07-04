@@ -2,7 +2,7 @@
 
 ## About AutoU
 
-**AutoU** is a startup building **applied AI** solutions for companies — computer vision, AI agents, predictive models, and data platforms — with projects for enterprise clients such as **Saint-Gobain, Libbs, Rocester, Oxiquímica, and retail/fuel chains** (plus pre-sales demos, such as the one built for Itaú). The environment is fast-paced, with high client exposure and a focus on quality delivery at high velocity.
+**AutoU** is a startup building **applied AI** solutions for companies — computer vision, AI agents, predictive models, and data platforms — with projects for enterprise clients such as **Saint-Gobain, Rocester, Oxiquímica, and retail/fuel chains** (plus enterprise demos, such as the pre-sales demo built for Itaú and the demo built to compete in an ongoing Libbs bid/RFP). The environment is fast-paced, with high client exposure and a focus on quality delivery at high velocity.
 
 ### Work Context
 
@@ -41,10 +41,10 @@
 - **Cloud Run Jobs + Cloud Scheduler** with **hash-based idempotent synchronization**, auditing, and rollback
 - FastAPI admin backend; daily execution in production
 
-#### AI Ticket Triage Assistant (Libbs — solo project)
+#### AI Ticket Triage Assistant (demo for an ongoing Libbs bid/RFP — solo project)
 
-- Full-stack MVP built alone: public chat with **Gemini-powered triage and deterministic rule-based fallback**, human handoff, internal portal with ticket timeline
-- One application serving two domains (public chat + internal portal) — live
+- Full-stack MVP built alone as a demo to compete in the pharma company's bid: public chat with **Gemini-powered triage and deterministic rule-based fallback**, human handoff, internal portal with ticket timeline
+- One application serving two domains (public chat + internal portal) — demo live; bid still in progress
 
 #### Intelligent Parts Catalog (Rocester — project foundation)
 
@@ -85,5 +85,5 @@
 - **Every project I worked on is in production** — from 24/7 computer vision to daily data pipelines
 - Applied AI with engineering judgment: deterministic fallbacks, human curation, source governance, and retraining loops — never "AI for AI's sake"
 - Production observability (Prometheus/Grafana) implemented on my own initiative, including **AI cost monitoring**
-- Direct exposure to enterprise clients (Saint-Gobain, Libbs) and enterprise pre-sales (Itaú demo) in a fast-paced startup environment
+- Direct exposure to enterprise clients (Saint-Gobain) and enterprise pre-sales/bids (Itaú demo and Libbs bid demo) in a fast-paced startup environment
 - ML beyond LLMs: time series (Prophet), computer vision (YOLO), and Bayesian optimization (BayBE)
