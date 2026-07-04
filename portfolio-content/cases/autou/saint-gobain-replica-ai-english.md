@@ -1,0 +1,55 @@
+---
+title: Replica AI — Replicating savings projects across plants
+client: Saint-Gobain
+category: autou
+status: Production
+stack: [FastAPI, Cloud Run, Firestore, Pub/Sub]
+order: 3
+---
+
+# Case — Replica AI (Saint-Gobain: Replicating Savings Projects Across Plants)
+
+**Type:** AutoU (client: Saint-Gobain — Quartzolit / Brasilit)
+**Role:** Full Stack Developer — backend, recommendation pipeline and integrations
+**Status:** In production (daily pipeline via Cloud Scheduler)
+**Stack:** Python, FastAPI, Flask, Google Cloud (Cloud Run Jobs/Service, Cloud Scheduler, Firestore, Cloud Storage, Pub/Sub, Cloud Tasks, Cloud Logging), PostgreSQL, Pandas/OpenPyXL, PyJWT, Bubble (legacy frontend) with a React migration plan, SAID integration (Saint-Gobain corporate API), Pytest, Docker
+
+> Confidentiality note: AutoU client project — validate what can be made public before exposing name/details.
+
+## Context and problem
+
+Saint-Gobain runs thousands of savings projects (industrial cost reduction) across its plants. A project that worked at one Quartzolit plant is likely to work at another in the same cluster — but there was no systematic replication mechanism: discovery depended on meetings and tribal knowledge. In addition, the savings database migrated from spreadsheet/Bubble control to the corporate SAID system, requiring the pipeline to be re-integrated.
+
+## Solution
+
+A project-replication recommendation platform:
+
+- **Recommendation pipeline** that reads the savings base from SAID (`V_PROJECT_SAVINGS_BRAZIL`), normalizes and filters it (business line, difficulty, CP), computes project recommendations by **plant cluster** for Quartzolit and Brasilit and writes the cross-matrix to Postgres
+- **Runs as a Cloud Run Job** triggered daily (Mon–Fri 06:00) by Cloud Scheduler, with a thin Flask Service (same image) exposing endpoints for manual triggering, isolated sync and status polling by the frontend
+- **Platform backend (FastAPI)**: authentication, dynamic CRUD for operational collections, XLSX extraction with an async worker, LRM00 analytics (labor, maintenance, RMP, other), operation **auditing and rollback**
+
+## Architecture and technical decisions
+
+- **Job and Service split in the same image**: no pipeline runs inside the HTTP process — POSTs only trigger Cloud Run Job executions and respond `202` immediately; `409` if an execution is already in progress (concurrency lock)
+- **Hash-based idempotent sync** at the SAID stage (upsert), with flags to filter status and deactivate records that disappeared from the source
+- **Bubble→SAID migration without breaking operations**: environment feature flags (`SAID_SYNC_ENABLED`, `BUBBLE_ENABLED`) allowed a gradual transition while keeping the Bubble front end working
+- **Auditing and rollback as first-class citizens** in the FastAPI backend — reversible operations on critical operational data
+- **Asynchronous processing** of XLSX extractions via an internal worker + Pub/Sub/Cloud Tasks
+- **A real local environment**: a script that copies the production Postgres (read-only) into a local container and runs the entire pipeline offline — safe debugging of a production pipeline
+- Pytest suite with Firebase/GCP mocks; app-token authentication (`X-App-Token`) on trigger endpoints
+
+## Challenges and solutions
+
+- **Data source in migration (spreadsheet → Bubble → SAID)**: pipeline designed to swap the source without touching the calculation, with sync decoupled from recalculation
+- **Security in HTTP job triggers**: application token, single-execution lock and status readable via polling
+- **Industrial analytics (LRM00)** with rules per cost category implemented as separate, tested modules
+
+## Results and impact
+
+- Replication recommendations automatically recalculated every business day, with no manual intervention
+- SAID migration completed while maintaining operational continuity [dates/volume TO CONFIRM]
+- Operation with auditing/rollback: load errors are no longer irreversible
+
+## Interview highlights (STAR summary)
+
+- **S/T:** an industrial multinational with no systematic mechanism to replicate savings projects across plants, and with the database migrating from Bubble to the corporate SAID system. **A:** I worked on the per-cluster recommendation pipeline as a daily Cloud Run Job with a thin control Service (trigger/status), hash-based idempotent sync with transition feature flags, and on the FastAPI backend with auditing, rollback and cost analytics. **R:** automatic daily recommendation in production and a data-source migration completed with no interruption to operations.
