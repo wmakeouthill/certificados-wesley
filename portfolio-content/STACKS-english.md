@@ -9,12 +9,13 @@ Wesley Correia works with a modern, enterprise stack focused on full-stack devel
 ### Current Main Stack
 
 **Backend:** Java 17/21 + Spring Boot 3.x, Python (FastAPI, LangGraph), C#/.NET 9 (ASP.NET WebApi), Node.js
-**Frontend:** Angular 17+/18/19/20, React 19 + Vite, TypeScript + RxJS, Signals
-**Mobile / Desktop:** Electron 27/28, Ionic, React Native
-**DevOps & Infra:** Docker, GitLab CI, GitHub Actions, AWS (EC2), GCP (Cloud Run, Cloud Build, Secret Manager), dedicated VPS (Oracle Cloud Always Free), IaaC
-**Observability:** Prometheus, Grafana, Spring Actuator, Micrometer, AlertManager, Blackbox Exporter
+**Frontend:** Angular 17+/18/19/20, React 19 + Vite, Next.js 16 + Tailwind 4, TypeScript + RxJS, Signals
+**Mobile / Desktop:** Electron 27/28, PWA, Ionic, React Native
+**DevOps & Infra:** Docker, GitLab CI, GitHub Actions, AWS (EC2, S3, Lambda, DynamoDB), GCP (Cloud Run, Cloud Run Jobs, Scheduler, Pub/Sub, Cloud Build, Secret Manager), Azure, dedicated VPS (Oracle Cloud Always Free), IaaC
+**Observability:** Prometheus, Grafana, Spring Actuator, Micrometer, AlertManager, Blackbox Exporter (incl. AI cost monitoring)
 **Databases:** Oracle, MySQL, PostgreSQL, pgvector, H2, SQLite, Redis, DynamoDB, Firebase
-**AI & Data:** LLMs (Gemini, OpenAI), RAG, Embeddings, FAISS, pgvector, Prophet, Computer Vision (Vision + YOLO), LangGraph, OpenCV
+**AI & Data:** LLMs (Gemini, Gemini Vision, OpenAI), RAG, Embeddings, FAISS, pgvector, Prophet, BayBE (Bayesian optimization), Computer Vision (Vision + YOLO), LangGraph, OpenCV, MCP servers (authorship)
+**Enterprise Integrations:** Microsoft Entra ID, Microsoft Graph, Evolution API / Meta WhatsApp Cloud API, Google Maps Platform, Qualtrics, ERPs (Sankhya/Microwork, SAP), Slack
 **Security / DevSecOps:** OWASP Top 10, Spring Security, JWT, OAuth 2.0, RBAC, CORS, API Key (X-Header), AWS IAM, GCP IAM, VPC, Security Groups, Firewall, NAT, Secrets Manager
 **Dev Tooling & AI Coding:** IntelliJ IDEA, VS Code, Cursor, Antigravity, Claude Code (CLI), Codex (CLI), GitHub Copilot
 
@@ -22,8 +23,8 @@ Wesley Correia works with a modern, enterprise stack focused on full-stack devel
 
 1. **Full-Stack Development (Full Cycle)** - End-to-end delivery (Frontend, Backend, Infra)
 2. **Manual Workflow Automation** - RPA, API integration, rework elimination
-3. **Applied AI** - LLMs, RAG, Embeddings, Vector Search, Computer Vision (YOLO), Predictive Algorithms (Prophet)
-4. **Enterprise Integrations** - ERPs (Sankhya/Microwork, SAP), Slack, Microsoft 365 / Outlook
+3. **Applied AI** - LLMs, RAG, Embeddings, Vector Search, Computer Vision (YOLO), Predictive Algorithms (Prophet), Bayesian Optimization (BayBE)
+4. **Enterprise Integrations** - ERPs (Sankhya/Microwork, SAP), Slack, Microsoft 365 / Outlook / Graph, Microsoft Entra ID, Evolution API / Meta WhatsApp Cloud API, Qualtrics
 5. **Architecture & Principles** - Clean Architecture, Clean Code, SOLID, DDD, DRY/KISS/YAGNI, Design Patterns, OWASP Top 10, ACID, Hexagonal
 6. **Observability & Monitoring** - Prometheus, Grafana, Micrometer, AlertManager
 7. **DevOps, Cloud & Containerization** - Docker, CI/CD, AWS EC2, GCP Cloud Run, dedicated VPS, IaaC
@@ -501,6 +502,27 @@ Wesley Correia works with a modern, enterprise stack focused on full-stack devel
 - Predictive models with time series
 - Demand forecasting, inventory optimization, and recommendations at AutoU
 
+### BayBE (Bayesian Back End — Merck)
+
+**Usage Context:**
+
+- Bayesian optimization for guided experimentation (design of experiments)
+- Suggesting the next chemical formulation to test on an R&D platform (AutoU / chemical industry) — fewer physical test cycles
+
+### Gemini Vision
+
+**Usage Context:**
+
+- Structured data extraction from PDFs and images (technical catalogs)
+- Pipeline with per-item confidence scores and bulk human curation (AutoU / Rocester)
+
+### MCP Servers (Model Context Protocol — authorship)
+
+**Usage Context:**
+
+- Building custom MCP servers in TypeScript to expose APIs to AI agents
+- MCP server for the Qualtrics API (CX dashboard in production)
+
 ### Computer Vision (Vision + YOLO)
 
 **Usage Context:**
@@ -681,6 +703,48 @@ Wesley Correia works with a modern, enterprise stack focused on full-stack devel
 **Projects:**
 
 - LoL Matchmaking Fazenda: Full integration with League of Legends
+
+### Microsoft Entra ID
+
+**Usage Context:**
+
+- Corporate authentication (SSO) in systems for enterprise clients
+- Applied on AOG Dux Truck (freelance system in production)
+
+### Microsoft Graph
+
+**Usage Context:**
+
+- Capturing emails and attachments directly from the client's corporate mailbox
+- Foundation of the NF-e tax automation (layered extraction XML → PDF → OCR/AI)
+
+### Evolution API / Meta WhatsApp Cloud API
+
+**Usage Context:**
+
+- Sending and receiving WhatsApp messages in production
+- Sol omnichannel service desk (support + CRM) and Wesley Bot WhatsApp
+
+### Google Maps Platform (Directions, Geocoding, Places)
+
+**Usage Context:**
+
+- Real-time delivery tracking and route calculation
+- Experimenta AI — Soneca delivery ecosystem (customer and courier PWAs)
+
+### Qualtrics API
+
+**Usage Context:**
+
+- Extracting customer experience (CX) survey data
+- CX dashboard in production + TypeScript MCP server
+
+### ESC/POS Thermal Printing
+
+**Usage Context:**
+
+- Receipt printing on thermal printers (EPSON TM-T20, DARUMA DR-800)
+- Cross-platform: Windows Spooler, direct USB, and CUPS (Experimenta AI — Soneca)
 
 ## Specific Libraries and Tools
 
@@ -1074,10 +1138,19 @@ Wesley Correia works with a modern, enterprise stack focused on full-stack devel
 
 **AutoU (Startup Experience):**
 
-- Python + Prophet (Prediction)
+- Python (FastAPI, LangGraph) + Prophet + BayBE + YOLO + Gemini/Gemini Vision
 - React 19 + Vite
-- AWS + Google Cloud
-- GitHub Actions + Vercel
+- AWS (S3, Lambda, DynamoDB) + Google Cloud (Cloud Run, Jobs, Scheduler, Pub/Sub) + Azure
+- Prometheus + Grafana (observability and AI cost)
+- GitHub Actions
+
+**Freelance (Products in Production):**
+
+- Java 21 + Spring Boot 3 (Clean Architecture) + Angular 20 (AOG, workflow, Mercearia R&V)
+- FastAPI + React/Angular + Gemini (NF-e, Sol, Qualtrics CX)
+- Microsoft Entra ID, Microsoft Graph, Evolution/Meta WhatsApp Cloud API, Google Maps Platform
+- Electron + embedded database (NSIS), PWAs, SSE, ESC/POS
+- Oracle Cloud Always Free VPS + Docker
 
 **Experimenta AI - Soneca:**
 
@@ -1120,10 +1193,13 @@ Wesley Correia works with a modern, enterprise stack focused on full-stack devel
 - Power BI, DAX, JavaScript, SharePoint
 - Dashboards and corporate web development
 
-### 2025-Present (Full-Stack Enterprise)
+### 2025-Present (Full-Stack Enterprise, Startup & Freelance)
 
-- Java 17/21 + Spring Boot 3.x
-- Angular 17+/18 + TypeScript
-- Oracle + Liquibase
-- Docker + CI/CD
-- Prometheus + Grafana (complete observability)
+- **Java 17/21** + Spring Boot 3.x (critical systems and freelance products in production)
+- **Angular 17-21** + TypeScript (enterprise frontend)
+- **React 19 + Vite 7** and **Next.js 16 + Tailwind 4** (dashboards, AutoU startup & freelance)
+- **Python / FastAPI / AI** (agents, Prophet forecasting, BayBE Bayesian optimization, YOLO vision)
+- Enterprise integrations: Entra ID, Microsoft Graph, WhatsApp Cloud API, Qualtrics, ERPs
+- Oracle + MySQL + PostgreSQL (incl. pgvector) + Redis
+- Docker + CI/CD + Multi-cloud (AWS/GCP/Azure) + Oracle VPS
+- Prometheus + Grafana (observability, incl. AI cost)

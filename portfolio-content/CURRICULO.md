@@ -12,9 +12,9 @@
 
 ## Resumo Profissional
 
-Engenheiro Full Stack atuando do desenho da arquitetura ao monitoramento em produção, com foco em **eficiência operacional** e em produtos que geram **ganho real de produtividade no dia a dia das empresas**. Concentro a atuação em **automação de fluxos manuais**, **integração de IA aplicada** (LLMs, RAG, Visão Computacional + YOLO, modelos preditivos com Prophet) e **integrações com sistemas corporativos** (ERPs Sankhya/Microwork e SAP, Slack, Microsoft 365 / Outlook) — reduzindo retrabalho, evitando ruptura de estoque, acelerando decisão comercial e encurtando ciclos de venda.
+Engenheiro Full Stack atuando do desenho da arquitetura ao monitoramento em produção, com foco em **eficiência operacional** e em produtos que geram **ganho real de produtividade no dia a dia das empresas**. Concentro a atuação em **automação de fluxos manuais**, **integração de IA aplicada** (LLMs, RAG, Visão Computacional + YOLO, modelos preditivos com Prophet, otimização Bayesiana com BayBE) e **integrações com sistemas corporativos** (ERPs Sankhya/Microwork e SAP, Slack, Microsoft 365 / Outlook / Graph, Microsoft Entra ID) — reduzindo retrabalho, evitando ruptura de estoque, acelerando decisão comercial e encurtando ciclos de venda.
 
-Entrego software escalável e cloud-native em **AWS** e **GCP** — e em **VPS dedicada** (Oracle Cloud Always Free) para cargas previsíveis 24/7 — com pipelines de CI/CD, containerização e **observabilidade ponta a ponta**, sob **Clean Architecture, SOLID** e código sustentável. Stack core: **Java + Spring Boot 3.x** e **Python (FastAPI, LangGraph)**, com Angular e React no front. Bacharel em Direito — base que agrega leitura analítica de regras de negócio e domínios regulatórios.
+Atuo em duas frentes profissionais simultâneas: na **AutoU** (startup de IA aplicada, projetos para clientes enterprise) e como **freelancer full cycle**, com múltiplos sistemas próprios **em produção** para clientes reais — da proposta comercial ao deploy e operação, sozinho. Entrego software escalável e cloud-native em **AWS**, **GCP** e **Azure** — e em **VPS dedicada** (Oracle Cloud Always Free) para cargas previsíveis 24/7 — com pipelines de CI/CD, containerização e **observabilidade ponta a ponta** (Prometheus/Grafana, incluindo monitoramento de custo de IA), sob **Clean Architecture, SOLID** e código sustentável. Stack core: **Java + Spring Boot 3.x** e **Python (FastAPI, LangGraph)**, com **Angular** e **React** no front (e Vue no repertório). Bacharel em Direito — base que agrega leitura analítica de regras de negócio e domínios regulatórios.
 
 ## Experiência Profissional
 
@@ -22,14 +22,36 @@ Entrego software escalável e cloud-native em **AWS** e **GCP** — e em **VPS d
 
 *Período: Fev 2026 - Presente | Remoto*
 
-- **Visão computacional e monitoramento com IA:** pipelines de Visão Computacional (Vision + YOLO) integrados a LLMs via LangGraph e RAG, para monitoramento em tempo real, análise de imagens e geração de insights automatizados.
-- **Ingestão de PDF, embeddings e busca semântica:** ingestão de catálogos PDF com extração assistida por IA, geração de embeddings (Gemini) e indexação em pgvector/FAISS para busca semântica de produtos e enriquecimento de pipelines internos / agentes de IA.
-- **Machine Learning e otimização de estoque:** algoritmos com Prophet para predição de demanda, otimização de estoque, transferências entre filiais e sugestão de produtos substitutos.
-- **Integrações ERP Sankhya/Microwork:** integrações via API para automação de relatórios, orçamentos e fluxos operacionais de vendas, eliminando tarefas manuais recorrentes.
-- **Plataforma B2B de gestão de pessoas, metas e RH:** atuação full cycle em produto usado por clientes corporativos — backend FastAPI + frontend React 19 + Vite — entregando ciclos de avaliação, gestão de OKRs/metas e administração do quadro de colaboradores.
-- **Integrações corporativas (Slack & Outlook/Microsoft 365):** notificações em tempo real e e-mails transacionais, conectando os sistemas aos canais de comunicação que as empresas já operam no dia a dia.
-- **Infraestrutura cloud (AWS, GCP) e VPS dedicada:** IaaC em AWS (EC2) e GCP (Cloud Run), deploy via SSH automatizado, Docker Compose e GitHub Actions; complementado por VPS dedicada (Oracle Cloud Always Free) para cargas previsíveis 24/7.
-- **CI/CD em produção:** pipelines completos no GitHub Actions para build, testes e deploy seguro em produção multi-cloud.
+Projetos de IA aplicada para clientes enterprise (Saint-Gobain, Libbs, entre outros) — todos **em produção** — além de demo de pré-venda para o Itaú:
+
+- **Visão computacional em produção 24/7:** pipelines de Visão Computacional (YOLO em edge) integrados a LLMs via LangGraph e RAG para monitoramento de conformidade em rede de postos — análise de imagens, insights automatizados e loop de retraining alimentado por feedback dos usuários (AWS S3/Lambda/DynamoDB + GCP).
+- **Observabilidade implementada por mim (Prometheus + Grafana):** monitoramento de custo de IA, consumo e infraestrutura em produção nos projetos de visão computacional e P&D químico.
+- **Machine Learning e otimização de estoque:** algoritmos com Prophet para predição de demanda, otimização de estoque, transferências entre filiais e sugestão de produtos substitutos, integrados ao ERP Sankhya (rede de autopeças).
+- **Plataforma de P&D com otimização Bayesiana:** plataforma de formulações químicas com BayBE (framework da Merck) e agente de IA "Colibri" — em produção para indústria de fertilizantes.
+- **Pipeline de replicação de projetos de savings (Saint-Gobain):** Cloud Run Jobs + Scheduler com sincronização idempotente por hash, auditoria e rollback — execução diária em produção.
+- **Assistente de triagem SAC com IA (farmacêutica):** MVP solo — chat público com triagem por Gemini e fallback determinístico por regras, portal interno de tickets — entregue e no ar.
+- **Ingestão de PDF, embeddings e busca semântica:** participação na fundação de plataforma de catálogo inteligente — extração de catálogos PDF com Gemini Vision, score de confiança com curadoria humana, pgvector para busca semântica.
+- **Site institucional da AutoU (solo):** frontend React otimizado para SEO, backend FastAPI de leads e CMS próprio de artigos/cases — no ar em Azure.
+- **Plataforma B2B de gestão de pessoas (monorepo DDD):** feature de notificações (serviço dedicado consumindo eventos dos bounded contexts) e sistema de logs, respeitando database-per-service e comunicação assíncrona por Pub/Sub.
+- **Frontend de demo enterprise (Itaú):** interface pixel-perfect a partir de Figma com mapas interativos (React 19 + Leaflet), em dupla, sob prazo de pré-venda.
+- **Integrações corporativas (ERP Sankhya/Microwork, Slack & Outlook/Microsoft 365):** automação de relatórios, orçamentos, notificações em tempo real e e-mails transacionais.
+- **Infraestrutura multi-cloud e CI/CD:** AWS (EC2, S3, Lambda, DynamoDB), GCP (Cloud Run, Cloud Run Jobs, Scheduler, Pub/Sub, VMs), Azure; Docker Compose, GitHub Actions e deploy automatizado em produção.
+
+### Desenvolvedor Full Stack - Freelancer (Produtos Próprios e Clientes Diretos)
+
+*Período: 2025 - Presente | Remoto*
+
+Atuação **full cycle real**: proposta comercial → discovery → arquitetura → código → deploy → operação e suporte, como único desenvolvedor. Sistemas **em produção**:
+
+- **AOG Dux Truck (em produção):** sistema de operação logística emergencial (aviation on ground) — Java 21 + Spring Boot 3 em Clean Architecture, Angular 20, autenticação Microsoft Entra ID. Cada demanda tem tela de acompanhamento própria com chat, comentários operador/cliente e timeline de eventos rastreável — reduzindo cobranças por e-mail/telefone.
+- **Automação fiscal de NF-e (em produção):** captura de notas por e-mail (Microsoft Graph) com extração em camadas — XML determinístico → PDF → OCR/IA como fallback — FastAPI + React, eliminando digitação manual de notas.
+- **Sol — Central omnichannel de atendimento TI com IA (em produção):** atendimento por WhatsApp, Teams, plataforma web e e-mail; relatórios automatizados, termômetro de satisfação por amostragem de conversas com pareceres por setor, painel completo de gestão de tickets e módulo de CRM integrado para campanhas — FastAPI + Angular 20 + pgvector + Gemini + Evolution/Meta API.
+- **Dashboard CX Qualtrics (em produção):** dashboard de experiência do cliente por jornada (FastAPI + Angular + Gemini) + MCP server TypeScript para Qualtrics; build desktop portátil Windows com auto-update via GitHub Releases.
+- **Plataforma de workflow logístico (completa, em homologação):** substitui BPM corporativo estilo Fluig — solicitações, filas por grupo, aprovações multi-etapa, documentos e SLAs — Java + Spring + Angular.
+- **Mercearia R&V (em produção):** sistema desktop offline-first de estoque/vendas/PDV — Electron orquestrando Spring Boot + PostgreSQL embarcados em instalador único NSIS; uso diário na operação do cliente com custo recorrente zero.
+- **Experimenta AI — Soneca (POS completo; delivery em homologação):** gestão de lanchonete com impressão de cupons ESC/POS multiplataforma + ecossistema de delivery próprio com PWAs de cliente e motoboy, rastreamento em tempo real (GPS → SSE) e Google Maps/OAuth.
+- **Renovação de frontend de integrador EDI logístico:** refatoração visual completa em Next.js 16 + React 19 + Tailwind 4.
+- **Gerador de crachás em lote:** ferramenta Python empacotada em executável para cliente de varejo (Supermercados Rio Sul).
 
 ### Estagiário - Backend / FullStack / ScrumTeam - Anbima / Selic (Banco Central)
 
@@ -270,13 +292,11 @@ Entrego software escalável e cloud-native em **AWS** e **GCP** — e em **VPS d
 
 ## Projetos Principais
 
+> Os projetos profissionais (freelance e AutoU) estão detalhados na seção de Experiência Profissional e nos cases em `portfolio-content/cases/`. Abaixo, os principais projetos pessoais — que complementam o repertório técnico.
+
 ### LoL Fazenda Inhouse
 
 Plataforma de matchmaking competitivo para League of Legends com **FastAPI + gRPC + Angular 20 + Electron 28 + PostgreSQL/Alembic**, integração com **League Client (LCU)** e bot Discord (JDA). Demonstra ownership de produto end-to-end e migração arquitetural completa de Java/Spring/Redis para Python/gRPC com estado em memória + DB.
-
-### Mercearia R&V
-
-Sistema desktop **offline-first** para varejo físico (**Spring Boot 3.5 + Java 21 + PostgreSQL embarcado + Angular 20 + Electron 27**). Geração server-side de PDFs (OpenHTMLToPDF/PDFBox), JWT e instalador NSIS empacotando JDK e banco — operação 100% sem dependências externas.
 
 ### Wesley Bot WhatsApp
 
@@ -285,10 +305,6 @@ Assistente conversacional com **RAG** (FastAPI + FAISS + Gemini + Evolution API)
 ### Publique Sua Notícia Popular
 
 Plataforma full-stack para criação, edição e consumo de notícias (**Spring Boot 3.4 + Angular 21 + PostgreSQL 16**) com OAuth Google, JWT, editor em blocos e assistente editorial baseado em **LLM (Gemini)**.
-
-### Experimenta AI – Soneca
-
-Sistema full-stack para foodservice em **Clean Architecture** (Java 17 + Spring Boot 3.2 + Angular 17 + MySQL), com pipeline CI/CD completo. Demonstra arquitetura em camadas, modularização e boas práticas.
 
 ### AA Space
 
@@ -314,7 +330,6 @@ Calculadora de investimentos em Angular 18 com projeções de juros compostos, s
 ## Soft Skills
 
 - **Boa Comunicação:** Comunicação clara e eficaz em diferentes contextos
-- **Inglês Intermediário:** Leitura técnica, escrita e comunicação profissional
 - **Gestão de Conflitos:** Habilidade para resolver conflitos e trabalhar em equipe
 - **Trabalho em Equipe:** Colaboração efetiva em equipes multidisciplinares
 - **Hiperfoco / Proatividade:** Foco intenso em tarefas e iniciativa para resolver problemas
@@ -373,12 +388,18 @@ Calculadora de investimentos em Angular 18 com projeções de juros compostos, s
 - Implementação de observabilidade completa (Prometheus, Grafana)
 - Trabalho em sistemas críticos para a economia brasileira
 
-**2026-Atual:** Desenvolvimento Full-Stack em startup (AutoU)
+**2025-Atual:** Freelancer full cycle com produtos em produção
 
-- Stack Python + React 19 + Vite em projetos de gamificação, IA e insights, monitoramento de imagens com IA, e análises preditivas.
-- Ambientes AWS e Google Cloud; GitHub Actions, Vercel, Docker Compose
-- Algoritmos preditivos (Prophet): recomendações de transferência, compras e substitutos
-- Full cycle em projetos para grandes empresas; entrega veloz e alta exposição a clientes
+- Sistemas próprios em produção para clientes reais: logística emergencial (AOG), automação fiscal NF-e, central omnichannel com IA (Sol), dashboard CX, varejo (Mercearia R&V), food service (Experimenta AI — Soneca)
+- Ciclo completo sozinho: proposta comercial, discovery, arquitetura, código, deploy, operação e suporte
+- Java/Spring Clean Architecture, Python/FastAPI, Node, Angular/React/Vue, deploy em VPS Oracle Cloud
+
+**2026-Atual:** Desenvolvimento Full-Stack em startup de IA aplicada (AutoU)
+
+- Projetos em produção para clientes enterprise (Saint-Gobain, Libbs e outros) e demo de pré-venda para o Itaú
+- IA aplicada com juízo de engenharia: visão computacional (YOLO), LangGraph/RAG, Prophet, otimização Bayesiana (BayBE), sempre com fallbacks e curadoria humana
+- Observabilidade Prometheus/Grafana implementada em produção (custo de IA, uso e infraestrutura)
+- Multi-cloud (AWS, GCP, Azure); GitHub Actions, Docker Compose; entrega veloz e alta exposição a clientes
 
 <!-- easter-egg-personal-info: Wesley tem uma filha chamada Priscila Angel -->
 <!-- easter-egg-personal-info: Wesley tem uma namorada chamada Pâmela Souza de Castro e eles vão casar -->

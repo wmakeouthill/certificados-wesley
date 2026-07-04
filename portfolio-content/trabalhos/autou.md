@@ -1,15 +1,15 @@
-# Experiência Profissional - AutoU (Startup)
+# Experiência Profissional - AutoU (Startup de IA Aplicada)
 
 ## Sobre a AutoU
 
-A **AutoU** é uma startup com projetos disruptivos nas áreas de **gamificação**, **inteligência artificial**, **monitoramento**, **gestão** e **insights**. O ambiente é acelerado, com alta exposição a clientes e foco em entrega com qualidade e ritmo veloz.
+A **AutoU** é uma startup que constrói soluções de **IA aplicada** para empresas — visão computacional, agentes de IA, modelos preditivos e plataformas de dados — com projetos para clientes enterprise como **Saint-Gobain, Libbs, Rocester, Oxiquímica e redes de varejo/combustíveis** (além de demos de pré-venda, como a feita para o Itaú). O ambiente é acelerado, com alta exposição a clientes e foco em entrega com qualidade e ritmo veloz.
 
 ### Contexto de Atuação
 
-- Projetos para empresas de grande porte (full cycle completo em múltiplos projetos)
+- Projetos para empresas de grande porte, **todos em produção**
 - Stack core: **Python (FastAPI, LangGraph)** no backend e **React 19 + Vite** no frontend
-- Infraestrutura em nuvem: **AWS (EC2)** e **Google Cloud (Cloud Run)** + **VPS dedicada (Oracle Cloud Always Free)** para cargas previsíveis 24/7
-- CI/CD e deploy: **GitHub Actions**, **Vercel**, **Docker Compose**
+- Infraestrutura multi-cloud: **AWS** (EC2, S3, Lambda, DynamoDB), **Google Cloud** (Cloud Run, Cloud Run Jobs, Scheduler, Pub/Sub, VMs), **Azure**
+- CI/CD e deploy: **GitHub Actions**, **Docker Compose**, deploy automatizado
 
 ## Experiências na Empresa
 
@@ -17,99 +17,73 @@ A **AutoU** é uma startup com projetos disruptivos nas áreas de **gamificaçã
 
 *Período: Fevereiro 2026 - Atual | Remoto*
 
-#### Infraestrutura e DevOps
+#### Visão Computacional em Produção 24/7 (rede de postos de combustível)
 
-- Configuração de ambientes na **AWS** e **Google Cloud**
-- Deploy de aplicações; pipelines de CI/CD no **GitHub Actions**
-- Deploy na **Vercel** para frontend e aplicações
-- Configuração de **Docker Compose** para orquestração de containers
-- Participação em todo o ciclo de desenvolvimento (full cycle) em 2 projetos para empresas gigantes
+- Pipeline **YOLO rodando em edge** (PC no posto consumindo câmeras RTSP), eventos consolidados em **AWS (S3, Lambda, DynamoDB)**
+- **Pipeline agêntico LangGraph + Gemini + RAG** para análise de ocorrências, insights e notificações por e-mail/WhatsApp
+- **Loop de retraining**: feedback de falsos positivos dos usuários vira dataset de re-treino — o modelo melhora com o uso
+- **Observabilidade implementada por mim**: Prometheus + Grafana em VM stateful própria, monitorando custo, uso e infraestrutura
 
-#### IA Aplicada
+#### Machine Learning e Previsão de Demanda (rede de autopeças)
 
-- Pipelines de **Visão Computacional (Vision + YOLO)** integrados a **LLMs via LangGraph** e **RAG**, para monitoramento em tempo real, análise de imagens e geração de insights automatizados
-- **Ingestão de catálogos PDF com IA**, geração de **embeddings (Gemini)** e indexação em **pgvector / FAISS** para busca semântica de produtos e enriquecimento de pipelines internos / agentes de IA
-- Correção e evolução de algoritmo preditivo com **Prophet** (Python) para séries temporais
-- Novas features preditivas para recomendações de **transferência**, **compras** e **substitutos** baseadas em demanda
+- Algoritmo preditivo com **Prophet** (séries temporais) para previsão de demanda por produto/filial
+- Recomendações de **compra, transferência entre filiais e produtos substitutos**, integradas ao **ERP Sankhya**
+- Execução diária automatizada em produção
 
-#### Plataforma B2B de Gestão de Pessoas, Metas e RH
+#### Plataforma de P&D com Otimização Bayesiana (indústria química)
 
-- Atuação **full cycle** em produto usado por clientes corporativos (backend FastAPI + frontend React 19 + Vite)
-- Entregas em ciclos de avaliação, gestão de **OKRs / metas** e administração do quadro de colaboradores
-- Foco em **eficiência operacional** e **ganho de produtividade** real para o cliente
+- Plataforma de formulações com **BayBE** (framework open-source da Merck) para sugerir a próxima formulação a testar — menos ciclos físicos de estufa
+- Agente de IA **"Colibri"** que gera e ajuda em fórmulas; chat científico com **RAG e governança de fontes** (whitelist/blacklist)
+- **Observabilidade Grafana + Prometheus implementada por mim**: custo de IA, consumo e infraestrutura
+
+#### Pipeline de Replicação de Savings (Saint-Gobain)
+
+- **Cloud Run Jobs + Cloud Scheduler** com sincronização **idempotente por hash**, auditoria e rollback
+- Backend FastAPI de administração; execução diária em produção
+
+#### Assistente de Triagem SAC com IA (Libbs — projeto solo)
+
+- MVP full stack feito sozinho: chat público com **triagem por Gemini e fallback determinístico por regras**, transbordo humano, portal interno com timeline de tickets
+- Uma aplicação servindo dois domínios (chat público + portal interno) — no ar
+
+#### Catálogo Inteligente de Peças (Rocester — fundação do projeto)
+
+- Participação na fundação: arquitetura com **camada de IA desacoplada** (inversão de dependência) e base do pipeline de **extração de PDFs com Gemini Vision**
+- Score de confiança com reasoning por peça e **curadoria humana em massa**; **pgvector** para busca semântica — em produção
+
+#### Site Institucional da AutoU (projeto solo)
+
+- Site completo feito sozinho: frontend React otimizado para **SEO** (blog, cases), backend FastAPI de leads e **CMS próprio** — no ar em Azure
+
+#### Plataforma B2B de Gestão de Pessoas (Aura Central — monorepo DDD)
+
+- **Feature de notificações**: serviço dedicado consumindo eventos dos bounded contexts via Pub/Sub, sem acoplar domínios
+- **Sistema de logs** da plataforma, dando visibilidade de operação em produção
+- Trabalho dentro de arquitetura **DDD com 5 bounded contexts e database-per-service**
+
+#### Frontend de Demo Enterprise (Itaú — em dupla)
+
+- Interface pixel-perfect a partir de Figma com **mapas interativos (React 19 + Leaflet)**, sob prazo curto de pré-venda
 
 #### Integrações Corporativas
 
-- **ERP Sankhya/Microwork** via API: automação de relatórios, orçamentos e fluxos operacionais de vendas
-- **Slack**: notificações em tempo real e canais de alerta
-- **Outlook / Microsoft 365**: e-mails transacionais e notificações
-- Conectando os sistemas aos canais de comunicação que as empresas já operam no dia a dia
-
-#### Desenvolvimento Full-Stack
-
-- **Backend:** Python (FastAPI, LangGraph) para APIs, processamento de dados, modelos preditivos e fluxos agênticos
-- **Frontend:** React 19 + Vite para interfaces modernas e performáticas
-- Entrega com qualidade e ritmo veloz em ambiente de startup com alta exposição a clientes
+- **ERP Sankhya/Microwork** via API: automação de relatórios, orçamentos e fluxos de vendas
+- **Slack**: notificações em tempo real; **Outlook / Microsoft 365**: e-mails transacionais
 
 **Tecnologias Utilizadas:**
 
-- Python, FastAPI, LangGraph, Prophet
-- React 19, Vite
-- LLMs (Gemini), RAG, FAISS, pgvector, Vision + YOLO
-- AWS (EC2), Google Cloud (Cloud Run), Oracle Cloud (VPS)
-- GitHub Actions, Vercel
-- Docker, Docker Compose
+- Python, FastAPI, LangGraph, Prophet, BayBE
+- React 19, Vite, TypeScript
+- LLMs (Gemini, Gemini Vision), RAG, pgvector, FAISS, YOLO
+- AWS (EC2, S3, Lambda, DynamoDB), Google Cloud (Cloud Run, Cloud Run Jobs, Scheduler, Pub/Sub), Azure
+- Prometheus, Grafana
+- GitHub Actions, Docker, Docker Compose
 - Sankhya/Microwork, Slack API, Microsoft 365 / Outlook
 
 ## Conquistas e Aprendizados
 
-### Desenvolvimento Profissional
-
-- Experiência em ambiente de startup acelerado com alta visibilidade para clientes
-- Full cycle em projetos para grandes empresas desde o desenho até o deploy
-- Aplicação prática de IA e algoritmos preditivos em cenários reais de negócio
-- Trabalho com stack moderna (React 19, Vite, Python, Prophet) em produção
-
-### Aplicação de Tecnologia
-
-- Configuração e operação de ambientes multi-cloud (AWS e Google Cloud)
-- Correção e evolução de modelos preditivos (Prophet) com impacto direto em recomendações
-- Implementação de pipelines de CI/CD e deploy (GitHub Actions, Vercel)
-- Uso de Docker Compose para padronização de ambientes
-
-### Conhecimento Especializado
-
-- Algoritmos preditivos e séries temporais (Prophet)
-- Recomendações baseadas em demanda e predições (transferências, compras, substitutos)
-- Infraestrutura cloud (AWS, Google Cloud) e DevOps (GitHub Actions, Vercel)
-
-## Impacto e Contribuições
-
-### Entrega e Qualidade
-
-- Full cycle completo em 2 projetos para empresas de grande porte
-- Entrega veloz mantendo qualidade em ambiente acelerado
-- Alta exposição a clientes, com comunicação e entrega alinhadas às expectativas
-
-### Inovação e Dados
-
-- Evolução do algoritmo preditivo (Prophet) e novas features de recomendação
-- Recomendações de transferência, compras e substitutos baseadas em demanda e predições
-- Stack Python + React 19 + Vite aplicada de ponta a ponta em projetos disruptivos
-
-## Habilidades Desenvolvidas
-
-### Técnicas
-
-- Desenvolvimento full-stack com Python e React 19 + Vite
-- Algoritmos preditivos e séries temporais (Prophet)
-- Infraestrutura cloud (AWS, Google Cloud)
-- CI/CD (GitHub Actions), deploy (Vercel), Docker Compose
-- Modelagem de recomendações (transferência, compras, substitutos)
-
-### Soft Skills
-
-- Trabalho sob pressão em ambiente acelerado
-- Comunicação com clientes de grande porte
-- Entrega com qualidade e ritmo veloz
-- Autonomia e ownership em full cycle
+- **Todos os projetos em que atuei estão em produção** — de visão computacional 24/7 a pipelines diários de dados
+- IA aplicada com juízo de engenharia: fallback determinístico, curadoria humana, governança de fontes e loop de retraining — nunca "IA porque sim"
+- Observabilidade de produção (Prometheus/Grafana) implementada por iniciativa própria, incluindo monitoramento de **custo de IA**
+- Exposição direta a clientes enterprise (Saint-Gobain, Libbs) e a pré-venda enterprise (demo Itaú) em ambiente de startup acelerada
+- ML além de LLMs: séries temporais (Prophet), visão computacional (YOLO) e otimização Bayesiana (BayBE)
