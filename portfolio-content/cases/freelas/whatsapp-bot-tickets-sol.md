@@ -1,6 +1,6 @@
 ---
 title: Sol — Central omnichannel de atendimento de TI com IA
-client: Cliente corporativo
+client: Mirassol
 category: freela
 status: Produção
 stack: [FastAPI, Angular 20, pgvector, Gemini]
@@ -8,7 +8,7 @@ order: 5
 ---
 # Case — Sol (Central Omnichannel de Atendimento de TI com IA e CRM)
 
-**Tipo:** Freelance (cliente corporativo — atendimento de TI interno)
+**Tipo:** Freelance (cliente: Mirassol — atendimento de TI interno)
 **Papel:** Desenvolvedor Full Stack (autoria completa: produto, backend, frontend, IA, infra e deploy)
 **Status:** Em produção (com ambiente de homologação separado)
 **Stack:** Python 3.11, FastAPI, SQLAlchemy async, Alembic, Angular 20 (standalone + Signals, TypeScript strict), PostgreSQL 16 + pgvector, Redis, Evolution API / Meta WhatsApp Cloud API, Microsoft Teams app, e-mail (mensagens), Gemini (`google-genai`) com migração planejada p/ Vertex AI, Docker Compose, deploy em VPS + Google Cloud

@@ -1,6 +1,6 @@
 ---
 title: Sol — Omnichannel IT service desk with AI
-client: Cliente corporativo
+client: Mirassol
 category: freela
 status: Production
 stack: [FastAPI, Angular 20, pgvector, Gemini]
@@ -8,7 +8,7 @@ order: 5
 ---
 # Case — Sol (Omnichannel IT Service Desk with AI and CRM)
 
-**Type:** Freelance (corporate client — internal IT support)
+**Type:** Freelance (client: Mirassol — internal IT support)
 **Role:** Full Stack Developer (full authorship: product, backend, frontend, AI, infrastructure and deployment)
 **Status:** In production (with a separate UAT environment)
 **Stack:** Python 3.11, FastAPI, async SQLAlchemy, Alembic, Angular 20 (standalone + Signals, strict TypeScript), PostgreSQL 16 + pgvector, Redis, Evolution API / Meta WhatsApp Cloud API, Microsoft Teams app, e-mail (messages), Gemini (`google-genai`) with a planned migration to Vertex AI, Docker Compose, deployment on a VPS + Google Cloud
