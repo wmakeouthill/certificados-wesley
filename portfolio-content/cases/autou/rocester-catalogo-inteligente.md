@@ -47,7 +47,7 @@ Plataforma que transforma PDFs de catálogo em base de dados pesquisável com IA
 
 ## Resultados e impacto
 
-- Catálogos em PDF viram base pesquisável sem digitação manual [nº de peças/catálogos A CONFIRMAR]
+- Catálogos em PDF viram base pesquisável sem digitação manual
 - Orçamento montado no mesmo fluxo da busca — menos alternância de ferramenta para o vendedor
 - Curadoria em massa reduz o custo humano de validar a extração da IA
 

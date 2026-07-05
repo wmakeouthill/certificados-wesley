@@ -404,6 +404,17 @@
           width: 210mm;
           min-height: 297mm;
           overflow: visible;
+          /* na impressao o Chromium pode encurtar o fundo da coluna de grid
+             esticada — pinta a faixa da sidebar (+ filete dourado) no .page
+             pra dark ir ate o rodape sem faixa branca */
+          background: linear-gradient(
+            90deg,
+            #0f0f0f 0,
+            #0f0f0f calc(60mm - 2px),
+            var(--accent-dark) calc(60mm - 2px),
+            var(--accent-dark) 60mm,
+            var(--bg) 60mm
+          );
         }
         .xp,
         .proj,
@@ -801,25 +812,40 @@
               combinando <b>Visão Computacional (YOLO em edge) + LLM</b> via
               <code>LangGraph</code> e <code>RAG</code> para rede de postos de
               combustível, com <b>loop de retraining</b> alimentado por feedback
-              dos usuários (AWS S3/Lambda/DynamoDB + GCP).
+              dos usuários (AWS S3/Lambda/DynamoDB + GCP) e captura via
+              <b>RTSP direto do DVR Intelbras do cliente</b> (porta externa
+              segura via NAT, aproveitando o hardware existente) — piloto no ar com
+              <b>2 postos monitorados</b> e expansão prevista para os
+              <b>~50 da rede</b>.
             </li>
             <li>
               Implementei <b>observabilidade de produção por iniciativa
               própria</b> (<code>Prometheus</code> + <code>Grafana</code>),
-              monitorando <b>custo de IA</b>, uso e infraestrutura nos projetos
-              de visão computacional e P&amp;D químico.
+              monitorando <b>custo de IA e orçamento computacional</b>, uso e
+              infraestrutura nos projetos de visão computacional e P&amp;D
+              químico.
             </li>
             <li>
               Evoluí algoritmos preditivos com <b>Prophet</b> (séries temporais)
-              para predição de demanda, otimização de estoque, transferências
-              entre filiais e sugestão de produtos substitutos, integrados ao
-              <b>ERP Sankhya</b> — execução diária em produção.
+              para predição de demanda e recomendação diária de compras, com
+              <b>algoritmo próprio de transferência entre filiais</b> (respeita
+              a necessidade histórica de cada filial) e resolução de produtos
+              substitutos, integrados ao <b>ERP Sankhya</b> — em produção,
+              gerando economia diária.
             </li>
             <li>
-              Desenvolvi plataforma de P&amp;D químico com
-              <b>otimização Bayesiana (BayBE)</b> e agente de IA "Colibri" —
-              menos ciclos físicos de teste, em produção para indústria de
-              fertilizantes.
+              Refiz o pipeline de replicação de savings entre plantas
+              (Saint-Gobain): automatizei integrações antes manuais via
+              planilha, criei API e corrigi falhas do legado, como Cloud Run
+              Jobs + Scheduler em produção diária — recomendações que já
+              geraram <b>~R$ 13–15 milhões em savings</b>.
+            </li>
+            <li>
+              Modernizei o processo de P&amp;D químico antes manual
+              (tentativa e erro em estufa) para plataforma automatizada com
+              assistência de IA — agente "Colibri" e recomendação de
+              estabilidade via <b>otimização Bayesiana (BayBE)</b> — em
+              produção para indústria de fertilizantes.
             </li>
             <li>
               Construí <b>sozinho</b> a demo de assistente de triagem SAC com
@@ -832,7 +858,9 @@
             <li>
               Em <b>monorepo DDD</b> (5 bounded contexts, database-per-service),
               entreguei a <b>feature de notificações</b> (serviço dedicado
-              consumindo eventos via Pub/Sub) e o <b>sistema de logs</b> da
+              consumindo eventos via Pub/Sub) com entrega via
+              <b>Slack e Outlook</b> — integrações minhas, usadas por todos os
+              funcionários da empresa — e o <b>sistema de logs</b> da
               plataforma B2B de gestão de pessoas.
             </li>
             <li>
@@ -849,6 +877,14 @@
               Lambda, DynamoDB), GCP (Cloud Run, Jobs, Scheduler, Pub/Sub) e
               Azure — com <code>Docker Compose</code> e
               <code>GitHub Actions</code>, garantindo entrega contínua.
+            </li>
+            <li>
+              Atuei como <b>líder técnico de frentes</b> nos projetos em
+              equipe (P&amp;D químico e visão computacional), em
+              <b>contato constante com os clientes</b> — pontos semanais e
+              alinhamentos pontuais, com feedback positivo pela parceria — e
+              ativo no fluxo de <b>code review</b>, nos ritos ágeis (Jira em
+              dia) e no apoio ao programa de PDI da empresa.
             </li>
           </ul>
         </article>
@@ -883,17 +919,19 @@
               <b>Automação fiscal de NF-e</b> (em produção) — captura de notas
               por e-mail via <b>Microsoft Graph</b> com extração em camadas
               (XML determinístico → PDF → OCR/IA como fallback), eliminando
-              digitação manual (<b>FastAPI + React</b>).
+              digitação manual — <b>20 a 100 NF-e/dia</b>, milhares já
+              processadas (<b>FastAPI + React</b>).
             </li>
             <li>
               <b>Sol</b> (em produção) — central omnichannel de atendimento TI
-              com IA: <b>WhatsApp, Teams, web e e-mail</b>, termômetro de
+              com IA: <b>WhatsApp, Teams, web e e-mail</b>,
+              <b>20–50 chamados/dia</b>, termômetro de
               satisfação por amostragem de conversas, gestão de tickets e
               <b>CRM integrado</b> (FastAPI + Angular 20 + pgvector + Gemini +
               Evolution/Meta WhatsApp Cloud API).
             </li>
             <li>
-              <b>Dashboard CX Qualtrics</b> (em produção) — experiência do
+              <b>Dashboard CX Qualtrics</b> (em uso na operação) — experiência do
               cliente por jornada, com <b>MCP server em TypeScript</b> para a
               API do Qualtrics e build desktop portátil com auto-update.
             </li>
@@ -905,7 +943,8 @@
               zero.
             </li>
             <li>
-              <b>Experimenta AI – Soneca</b> (gestão em produção; delivery
+              <b>Experimenta AI – Soneca</b> (em produção há ~3 meses,
+              <b>~R$ 300 mil/mês em vendas</b>; delivery
               entrando no ar) — gestão completa de lanchonete: balcão,
               <b>pedido na mesa via QR code</b>,
               <b>totem de autoatendimento</b> e impressão

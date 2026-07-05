@@ -30,7 +30,7 @@ Monorepo com **cinco bounded contexts** (DDD), cada um com backend e frontends p
 | Projects | Alocação, timesheet, tarefas, casebook |
 | Performance | Avaliação 360, feedbacks, OKRs/metas, reconhecimento |
 
-Minha atuação: desenvolvi a **feature de notificações** (serviço `aura-notifications`, transversal aos contextos) e o **sistema de logs** da plataforma — trabalhando dentro da arquitetura DDD/event-driven do monorepo, respeitando database-per-service e comunicação por eventos.
+Minha atuação: desenvolvi a **feature de notificações** (serviço `aura-notifications`, transversal aos contextos) — incluindo a entrega via **Slack e Outlook**, integrações feitas por mim — e o **sistema de logs** da plataforma, trabalhando dentro da arquitetura DDD/event-driven do monorepo, respeitando database-per-service e comunicação por eventos.
 
 ## Arquitetura e decisões técnicas
 
@@ -47,7 +47,7 @@ Minha atuação: desenvolvi a **feature de notificações** (serviço `aura-noti
 
 ## Resultados e impacto
 
-- Plataforma B2B em produção usada por clientes corporativos [nº de clientes/usuários A CONFIRMAR]
+- Plataforma em produção usada por **todos os funcionários da empresa**, que recebem as notificações também via **Slack e Outlook** — integrações implementadas por mim
 - Notificações transversais aos contextos entregues via eventos, sem acoplar domínios
 - Logs estruturados dando visibilidade de operação para o time em produção
 

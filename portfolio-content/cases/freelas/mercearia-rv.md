@@ -44,7 +44,7 @@ Aplicação desktop **offline-first** que embarca o stack enterprise inteiro num
 
 ## Resultados e impacto
 
-- Sistema em produção operando o dia a dia da mercearia (vendas, caixa, estoque) [tempo em produção / volume de vendas A CONFIRMAR]
+- Sistema em produção operando 100% do dia a dia de uma mercearia de bairro — todas as vendas, o caixa e o estoque passam pelo sistema (dezenas de cupons por dia no PDV)
 - Custo recorrente zero para o cliente — sem servidor, sem assinatura
 - Ciclo completo de produto: levantamento com o cliente → desenvolvimento → instalador → operação e suporte
 

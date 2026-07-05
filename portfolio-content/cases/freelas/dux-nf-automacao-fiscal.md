@@ -49,9 +49,9 @@ Dashboard operacional com recortes de qualidade e custo: total recebido, sucesso
 
 ## Resultados e impacto
 
-- Eliminou digitação manual de NFs na planilha operacional [volume/dia A CONFIRMAR]
+- Eliminou a digitação manual de NFs na planilha operacional — processa entre **20 e 100 NF-e por dia**, conforme o fluxo da operação, com milhares já processadas desde a entrada em produção
 - Auditoria completa: toda NF processada tem origem, método de extração e resultado registrados
-- Custo de IA controlado: maioria dos documentos resolvida por parsing determinístico [percentual A CONFIRMAR no dashboard]
+- Custo de IA controlado: a maioria dos documentos é resolvida por parsing determinístico sem chamada de LLM — o recorte é acompanhado no dashboard próprio de qualidade/custo
 
 ## Destaques para entrevista (STAR resumido)
 

@@ -29,4 +29,4 @@ Demonstração de produto construída para apresentação ao Itaú: interface im
 ## Destaques para entrevista
 
 - Exposição direta a cliente enterprise do setor financeiro em contexto de pré-venda
-- Velocidade de entrega: demo navegável publicada para decisão comercial [prazo A CONFIRMAR]
+- Velocidade de entrega: demo navegável publicada em **1 dia**, refinada em 2–3 dias para a demonstração comercial do MVP

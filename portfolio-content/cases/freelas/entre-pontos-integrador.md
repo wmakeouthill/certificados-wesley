@@ -34,7 +34,7 @@ Renovação visual completa com refatoração do frontend em Next.js 16 + React 
 ## Resultados e impacto
 
 - Interface operacional modernizada mantendo o backend e os fluxos existentes intactos
-- Leitura de estado do pipeline e investigação de falhas mais rápidas para o operador [feedback A CONFIRMAR]
+- Leitura de estado do pipeline e investigação de falhas mais rápidas para o operador — feedback do cliente: o rebranding "ficou excelente"
 - Base de design documentada que mantém consistência em evoluções futuras da UI
 
 ## Destaques para entrevista (STAR resumido)

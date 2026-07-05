@@ -48,7 +48,7 @@ Produto web corporativo de workflow operacional para logística, projetado a par
 
 ## Resultados e impacto
 
-- Substituição de licença BPM corporativa por produto próprio especializado [economia A CONFIRMAR]
+- Substituição de licença BPM corporativa por produto próprio especializado — desenvolvimento concluído, em homologação aguardando a desativação do sistema legado para entrar no ar e integrar a operação
 - Processos com rastreabilidade completa e SLAs visíveis para gestão
 - Base parametrizável que permite ao cliente criar novos tipos de solicitação sem desenvolvimento
 

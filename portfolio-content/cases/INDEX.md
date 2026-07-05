@@ -2,7 +2,7 @@
 
 Cases criados a partir da análise dos workspaces reais (`D:\freela-workspace` e `D:\AutoU_workspace`) em 03/07/2026. Servem de fonte para: currículo, RAG do portfólio e a futura aba de **Projetos Profissionais** do site.
 
-> Marcadores `[A CONFIRMAR]` indicam métricas que só o Wesley pode validar (volumes, prazos, percentuais). Cases de clientes AutoU têm nota de confidencialidade — validar o que pode ser exibido publicamente (nome do cliente vs. "grande banco", "farmacêutica nacional" etc.).
+> Métricas confirmadas com o Wesley em 04/07/2026 — **todas resolvidas**: Soneca ~R$ 300 mil/mês há ~3 meses; Dux NF 20–100 NF-e/dia; Sol 20–50 chamados/dia; Pulse piloto com 2 postos → escala p/ ~50; demo Itaú em 1 dia; Saint-Gobain **~R$ 13–15 milhões em savings** gerados pelas recomendações; Oxiquímica = modernização do processo (sem meta por enquanto); Libbs = projeções de discovery documentadas no case (não são medições — nunca citar como resultado). Cases de clientes AutoU têm nota de confidencialidade — validar o que pode ser exibido publicamente (nome do cliente vs. "grande banco", "farmacêutica nacional" etc.).
 
 ## Freelance (full cycle: proposta → produto → deploy; exceção: entre-pontos, atuação só no frontend)
 
@@ -13,7 +13,7 @@ Cases criados a partir da análise dos workspaces reais (`D:\freela-workspace` e
 | [dux-logistics-workflow](freelas/dux-logistics-workflow.md) | Plataforma de workflow logístico/documental (substitui BPM Fluig-like) | Java + Spring + Angular + Postgres | Completo, em homologação |
 | [dux-nf-automacao-fiscal](freelas/dux-nf-automacao-fiscal.md) | Automação de NF-e por e-mail com IA em camadas | FastAPI + React + MS Graph + Postgres | Produção |
 | [whatsapp-bot-tickets-sol](freelas/whatsapp-bot-tickets-sol.md) | Sol — central omnichannel de atendimento TI (WhatsApp/Teams/web/e-mail) com IA, termômetro de satisfação e CRM integrado | FastAPI + Angular 20 + pgvector + Gemini + Evolution/Meta API | Produção |
-| [dash-qualtrics-cx](freelas/dash-qualtrics-cx.md) | Dashboard CX por jornada + MCP server Qualtrics | FastAPI + Angular + Gemini + TS (MCP) | Produção |
+| [dash-qualtrics-cx](freelas/dash-qualtrics-cx.md) | Dashboard CX por jornada + MCP server Qualtrics | FastAPI + Angular + Gemini + TS (MCP) | Em uso (execução local) |
 | [gerador-de-cracha](freelas/gerador-de-cracha.md) | Gerador de crachás em lote (Supermercados Rio Sul) | Python + PyInstaller | Entregue |
 | [notas-vue-spring](freelas/notas-vue-spring.md) | App de anotações + comparativo técnico Vue/React/Angular | Vue 3 + Spring Boot + SQLite | Estudo |
 | [mercearia-rv](freelas/mercearia-rv.md) | Mercearia R&V — sistema desktop offline-first de estoque/vendas (PDV, caixa, fidelidade) | Java 21 + Spring Boot + Angular 20 + Electron + Postgres embarcado | Produção |
@@ -51,6 +51,6 @@ Padrões que se repetem e sustentam o posicionamento de **Engenheiro Full Stack 
 ## Próximas fases (combinadas)
 
 1. ✅ Cases criados (esta pasta)
-2. ✅ Validação do Wesley: statuses confirmados (AutoU todos no ar; NF/AOG no ar; workflow em homologação; Mercearia em produção; Soneca: gestão da lanchonete em produção — balcão, mesa QR code, totem — e delivery construído em homologação final) — métricas `[A CONFIRMAR]` e anonimização ainda pendentes
+2. ✅ Validação do Wesley: statuses confirmados (AutoU todos no ar; NF/AOG no ar; workflow em homologação; Mercearia em produção; Soneca: gestão da lanchonete em produção — balcão, mesa QR code, totem — e delivery construído em homologação final); métricas confirmadas em 04/07/2026 e aplicadas nos cases — **todas resolvidas** (incl. Saint-Gobain R$ 13–15 mi, Oxiquímica como modernização e Libbs como projeções de discovery)
 3. ✅ Currículo (`Curriculo-Wesley-Pleno.html` + PDF), markdowns de RAG (`CURRICULO.md`, `STACKS.md`, `trabalhos/`, versões -english) atualizados em 03/07/2026
 4. ✅ Refatorar seção de projetos do portfólio: aba **Profissionais** (destaque, alimentada por estes cases) + aba **Pessoais** (atual)

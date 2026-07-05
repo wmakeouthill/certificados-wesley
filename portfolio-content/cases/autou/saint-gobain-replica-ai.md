@@ -46,10 +46,11 @@ Plataforma de recomendação de replicação de projetos:
 
 ## Resultados e impacto
 
+- **~R$ 13–15 milhões em savings já gerados** pelas recomendações de replicação de projetos entre plantas
 - Recomendações de replicação recalculadas automaticamente todo dia útil, sem intervenção manual
-- Migração para o SAID concluída mantendo continuidade da operação [datas/volume A CONFIRMAR]
+- Migração para o SAID concluída mantendo continuidade da operação — pipeline refeito, integrações antes manuais via planilha automatizadas, API criada, falhas do legado corrigidas e arquitetura mais rápida, mais econômica e mais assertiva
 - Operação com auditoria/rollback: erros de carga deixam de ser irreversíveis
 
 ## Destaques para entrevista (STAR resumido)
 
-- **S/T:** multinacional industrial sem mecanismo sistemático de replicar projetos de savings entre fábricas, e com a base migrando de Bubble para o sistema corporativo SAID. **A:** trabalhei no pipeline de recomendação por cluster como Cloud Run Job diário com Service fino de controle (disparo/status), sync idempotente por hash com feature flags de transição, e no backend FastAPI com auditoria, rollback e analytics de custos. **R:** recomendação diária automática em produção e migração de fonte de dados concluída sem interrupção da operação.
+- **S/T:** multinacional industrial sem mecanismo sistemático de replicar projetos de savings entre fábricas, e com a base migrando de Bubble para o sistema corporativo SAID. **A:** trabalhei no pipeline de recomendação por cluster como Cloud Run Job diário com Service fino de controle (disparo/status), sync idempotente por hash com feature flags de transição, e no backend FastAPI com auditoria, rollback e analytics de custos. **R:** recomendação diária automática em produção, migração de fonte de dados concluída sem interrupção da operação — e ~R$ 13–15 milhões em savings já gerados pelas recomendações de replicação.

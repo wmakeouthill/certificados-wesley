@@ -10,7 +10,7 @@ order: 5
 # Case — Oxiquímica (Plataforma de P&D de Formulações com Otimização Bayesiana)
 
 **Tipo:** AutoU (cliente: Oxiquímica — indústria química/fertilizantes)
-**Papel:** Discovery técnico, arquitetura e prototipagem — tradução de processo de laboratório em produto de software
+**Papel:** Discovery técnico, arquitetura e prototipagem — tradução de processo de laboratório em produto de software; liderança técnica de frentes do projeto (em equipe), com contato direto com o cliente em pontos semanais e alinhamentos pontuais
 **Status:** No ar (em produção)
 **Stack (definida):** Python 3.13, FastAPI, React 19 + TypeScript, Vertex AI (Google Cloud), BayBE (otimização Bayesiana, open-source da Merck), RAG com governança de fontes, PostgreSQL
 
@@ -44,9 +44,9 @@ Plataforma de P&D com agente de IA ("Colibri") que gera/ajuda em fórmulas e red
 - **IA com responsabilidade**: em ambiente industrial confidencial, o RAG web tem governança explícita de fontes — recomendação de bloquear por padrão
 - **Discovery guiado por protótipo**: dúvidas abertas documentadas e endereçadas ao cliente em vez de suposições silenciosas
 
-## Resultados e impacto (esperados)
+## Resultados e impacto
 
-- Redução do número de iterações físicas por formulação via otimização Bayesiana [baseline: 4.2 iterações médias no protótipo; meta A CONFIRMAR]
+- Modernização do processo de P&D que já existia: fluxo antes manual/tentativa-e-erro virou plataforma automatizada com assistência de IA e **recomendação de estabilidade via otimização Bayesiana (BayBE)** — em produção
 - Conhecimento de laboratório capturado em base consultável (RAG) em vez de conhecimento tribal
 - Ciclo de estufa acompanhado digitalmente com interrupção informada
 

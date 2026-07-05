@@ -66,7 +66,7 @@ Engenheiro Full Stack atuando em ciclo completo (arquitetura → desenvolvimento
 ## Formação Acadêmica
 
 - **Ciências da Computação** — Faculdade GRAN · Fev/2024 – Ago/2027 *(em andamento)*
-- **Pós-Graduação — Full Stack Java Developer** — FACINT · Jun/2025 – Fev/2026
+- **Pós-Graduação — Full Stack Java Developer** — FACINT · Jun/2025 – Fev/2026 *(concluída)*
 - **Pós-Graduação — Gestão de Projetos** — Unigama · Jan/2025 – Dez/2025
 - **Bacharel em Direito** — Unigama · Fev/2018 – Dez/2022 *(concluído)* — base analítica para regras de negócio complexas, redação técnica e domínios regulatórios.
 

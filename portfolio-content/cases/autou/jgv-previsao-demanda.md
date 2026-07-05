@@ -45,7 +45,7 @@ Pipeline batch diário de ponta a ponta + API de gestão de recomendações:
 
 ## Resultados e impacto
 
-- Recomendações diárias automáticas de compra e transferência por filial, considerando substitutos [redução de ruptura/estoque parado A CONFIRMAR]
+- Recomendações diárias automáticas de compra baseadas no histórico real de demanda, e de transferência entre filiais via algoritmo próprio — identifica excessos considerando as necessidades históricas de cada filial (para a transferência não atrapalhar a compra), com resolução de substitutos; rodando em produção e gerando economia todos os dias
 - Correção do fluxo de transferências eliminou pendências fantasma no ERP
 - Comprador passou de planilha/intuição para fila de recomendações aceitáveis em um clique no front
 

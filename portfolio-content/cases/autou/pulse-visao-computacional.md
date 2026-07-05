@@ -10,7 +10,7 @@ order: 2
 # Case — Pulse (Conformidade de Postos de Combustível com Visão Computacional)
 
 **Tipo:** AutoU (cliente: Rede São Roque — rede de postos de combustível)
-**Papel:** Desenvolvedor Full Stack / IA — pipeline de visão computacional, backend, deploy e observabilidade
+**Papel:** Desenvolvedor Full Stack / IA — pipeline de visão computacional, backend, deploy e observabilidade; liderança técnica de frentes do projeto (em equipe), com contato direto com o cliente em pontos semanais e alinhamentos pontuais
 **Status:** Em produção (edge agent 24/7 nos postos)
 **Stack:** Python, YOLO (detecção), FastAPI, React, PostgreSQL, LangGraph + Gemini (pipeline agêntico), RAG, AWS (S3, Lambda, DynamoDB), Google Cloud (2 VMs), RTSP stream-worker, Prometheus + Grafana, Caddy, Docker Compose, Roboflow + Google Colab (retraining)
 
@@ -34,8 +34,8 @@ Sistema de monitoramento contínuo com ciclo completo de melhoria do modelo:
 
 - **Edge + cloud híbrido**: inferência YOLO no posto (largura de banda e latência mínimas — sobe evento, não vídeo), consolidação e IA generativa na nuvem
 - **Multi-cloud pragmático**: AWS para armazenamento/eventos (S3/Lambda/DynamoDB), GCP para aplicação (deploy em 2 VMs com papéis separados — app e stateful/observabilidade)
-- **Stream-worker dedicado** para captura RTSP desacoplada do backend
-- **Observabilidade de verdade (implementada por mim)**: Prometheus + Grafana em VM stateful própria — monitoramento de custo, uso e infraestrutura — com snapshots e plano de deploy versionado
+- **Stream-worker dedicado** para captura RTSP desacoplada do backend — decisão arquitetural de captura: consumo direto do DVR Intelbras já existente no posto via RTSP, com **porta externa segura configurada via NAT no DVR do cliente** — aproveitando o hardware de câmeras que o posto já tinha, sem custo de equipamento novo
+- **Observabilidade de verdade (implementada por mim)**: Prometheus + Grafana em VM stateful própria — monitoramento de custos e orçamento computacional, uso e infraestrutura — com snapshots e plano de deploy versionado
 - **Otimização do pipeline agêntico** documentada e executada (`PLANO_OTIMIZACAO_PIPELINE_AGENTICO.md`) — custo e latência de LLM controlados
 - **Cache global** planejado/implementado para reduzir reprocessamento (`plano-cache-global.md`)
 - Migração single-shot documentada, seeds de RAG versionadas, scripts de sync local→GCP/EC2
@@ -48,10 +48,10 @@ Sistema de monitoramento contínuo com ciclo completo de melhoria do modelo:
 
 ## Resultados e impacto
 
-- Detecção contínua 24/7 em produção substituindo fiscalização presencial esporádica [nº de postos/câmeras A CONFIRMAR]
+- Detecção contínua 24/7 em produção substituindo fiscalização presencial esporádica — piloto no ar com **2 postos monitorados** e expansão prevista para os **~50 postos da rede**
 - Ciclo de melhoria contínua do modelo com dados reais da operação
 - Gerência com dashboard consolidado de ocorrências, tratativas e falsos positivos
 
 ## Destaques para entrevista (STAR resumido)
 
-- **S/T:** rede de postos sem monitoramento contínuo de conformidade visual. **A:** participei da construção do sistema edge-to-cloud — YOLO rodando no posto, eventos em AWS, pipeline agêntico LangGraph+Gemini com RAG para análise e notificações, dashboard React, observabilidade Prometheus/Grafana e loop de retraining alimentado pelo feedback dos usuários. **R:** sistema em produção detectando ocorrências 24/7, com modelo que melhora continuamente e operação de deploy reproduzível em GCP.
+- **S/T:** rede de postos sem monitoramento contínuo de conformidade visual. **A:** participei da construção do sistema edge-to-cloud — captura via RTSP direto do DVR Intelbras do cliente (porta externa segura via NAT), YOLO rodando no posto, eventos em AWS, pipeline agêntico LangGraph+Gemini com RAG para análise e notificações, dashboard React, observabilidade Prometheus/Grafana com controle de custo/orçamento computacional e loop de retraining alimentado pelo feedback dos usuários. **R:** sistema em produção detectando ocorrências 24/7, com modelo que melhora continuamente e operação de deploy reproduzível em GCP.

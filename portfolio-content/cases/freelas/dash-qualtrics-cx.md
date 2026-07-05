@@ -41,7 +41,7 @@ Duas frentes complementares:
 ## Resultados e impacto
 
 - Visão por jornada disponível em tempo real, sem exportação manual do Qualtrics
-- Parecer automático por IA encurtou o ciclo de leitura das pesquisas [tempo A CONFIRMAR]
+- Parecer automático por IA encurtou o ciclo de leitura das pesquisas — em uso real (hoje rodando local/portátil) para puxar dados da Qualtrics, acompanhar tickets e abrir as pesquisas com as métricas que importam
 - Distribuição dupla (web + desktop portátil) cobriu tanto a operação central quanto usuários com TI restrita
 
 ## Destaques para entrevista (STAR resumido)

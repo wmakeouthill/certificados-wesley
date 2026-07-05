@@ -43,9 +43,22 @@ Portal LIS com duas superfícies na mesma aplicação:
 
 ## Resultados e impacto
 
-- Triagem automática de tickets SAC com classificação assistida por IA e fallback determinístico [volume/precisão A CONFIRMAR]
+- Triagem automática de tickets SAC com classificação assistida por IA e fallback determinístico
 - Canal público de atendimento e portal interno entregues como um único deploy
 - Demo funcional apresentada no edital com custo de infraestrutura zero — resultado do edital ainda em andamento
+
+## Indicadores projetados no discovery (projeções do business case — não medições)
+
+Base de referência levantada com os stakeholders: **~50 chamados/dia (~18–20 mil/ano)**, sendo **80% simples**; tempo atual de **7 min/chamado** (5 de formulação de resposta + 2 de tabulação), com prazo de resposta de até 24h. Projeções apresentadas:
+
+- **Resolução automática:** ~72% dos chamados sem intervenção humana (~36/dia) — a IA resolve ~90% dos simples; os complexos seguem para humano com contexto pré-coletado
+- **Tempo médio de atendimento:** de 7 min para ~2 min (**redução de ~71%**) — simples respondidos na hora, complexos em ~4 min porque o contexto já chega estruturado
+- **Escalonamento correto:** ~90% dos casos sensíveis direcionados certo ao humano, tendendo a 95%+ com o ciclo de feedback
+- **Carga operacional:** ~4,2h/dia economizadas (~1.050h/ano), **economia estimada de ~R$ 26 mil/ano** — sem contar qualidade e retrabalho
+- **Acurácia da classificação de intenção:** ~82% no go-live → ~90% após o 1º ciclo de feedback → ~95% na operação madura (diferencial: governança contínua da base de conhecimento e feedback dos atendentes)
+- **NPS:** ganho estimado de +25 a +30 pontos vs. SAC tradicional
+
+> Automação com critério, não SAC 100% automatizado: simples (currículo, desconto, dúvida institucional) resolvidos na hora com respostas aprovadas; sensíveis (evento adverso, desvio de qualidade, reclamação técnica) identificados, coletados e transbordados com segurança — respeitando farmacovigilância, LGPD e CDC.
 
 ## Destaques para entrevista (STAR resumido)
 

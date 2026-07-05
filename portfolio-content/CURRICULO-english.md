@@ -24,18 +24,19 @@ I work on two fronts: at **AutoU** (applied AI startup, projects for enterprise 
 
 Applied AI projects for enterprise clients (Saint-Gobain, among others) — all **in production** — plus enterprise demos: a pre-sales demo for Itaú and a demo for an ongoing Libbs bid (RFP):
 
-- **24/7 computer vision in production:** Computer Vision pipelines (YOLO at the edge) integrated with LLMs via LangGraph and RAG for compliance monitoring across a fuel station chain — image analysis, automated insights, and a retraining loop fed by user feedback (AWS S3/Lambda/DynamoDB + GCP).
-- **Observability implemented by me (Prometheus + Grafana):** AI cost, usage, and infrastructure monitoring in production across the computer vision and chemical R&D projects.
-- **Machine Learning and inventory optimization:** Prophet algorithms for demand forecasting, inventory optimization, branch-to-branch transfers, and substitute product recommendations, integrated with the Sankhya ERP (auto-parts chain).
-- **R&D platform with Bayesian optimization:** chemical formulation platform with BayBE (Merck's framework) and the "Colibri" AI agent — in production for a fertilizer manufacturer.
-- **Savings replication pipeline (Saint-Gobain):** Cloud Run Jobs + Scheduler with hash-based idempotent sync, auditing, and rollback — daily production runs.
+- **24/7 computer vision in production:** Computer Vision pipelines (YOLO at the edge) integrated with LLMs via LangGraph and RAG for compliance monitoring across a fuel station chain — image analysis, automated insights, and a retraining loop fed by user feedback (AWS S3/Lambda/DynamoDB + GCP), with capture via RTSP straight from the client's Intelbras DVR (secure external port configured via NAT, reusing existing hardware) — live pilot monitoring 2 stations, with rollout planned for the chain's ~50 stations.
+- **Observability implemented by me (Prometheus + Grafana):** AI cost and compute budget, usage, and infrastructure monitoring in production across the computer vision and chemical R&D projects.
+- **Machine Learning and inventory optimization:** Prophet algorithms for demand forecasting and daily purchase recommendations, with a proprietary branch-to-branch transfer algorithm (spots excess stock while respecting each branch's historical needs) and substitute product resolution, integrated with the Sankhya ERP (auto-parts chain) — in production, generating savings every day.
+- **R&D platform with Bayesian optimization:** modernized a previously manual R&D process (trial-and-error greenhouse cycles) into an automated, AI-assisted workflow — the "Colibri" agent plus stability recommendations via BayBE (Merck's framework) — in production for a fertilizer manufacturer.
+- **Savings replication pipeline (Saint-Gobain):** pipeline rebuilt by me — previously manual spreadsheet-based integrations automated, API created, legacy bugs fixed — as Cloud Run Jobs + Scheduler with hash-based idempotent sync, auditing, and rollback; daily production runs, faster and cheaper than the legacy setup — recommendations that have already generated **~R$ 13–15 million in savings** across plants.
 - **AI ticket triage assistant (demo for an ongoing pharma bid/RFP):** solo MVP — public chat with Gemini triage and deterministic rule-based fallback, internal ticket portal — live as a demo.
 - **PDF ingestion, embeddings, and semantic search:** foundation participation on an intelligent catalog platform — PDF catalog extraction with Gemini Vision, confidence scores with human curation, pgvector for semantic search.
 - **AutoU institutional website (solo):** SEO-optimized React frontend, FastAPI leads backend, custom articles/cases CMS, and email integration via Microsoft Graph (Azure app registration) feeding the CRM funnel — live on Azure.
-- **B2B people management platform (DDD monorepo):** notifications feature (dedicated service consuming bounded-context events) and logging system, respecting database-per-service and async Pub/Sub communication.
-- **Enterprise demo frontend (Itaú):** pixel-perfect Figma implementation with interactive maps (React 19 + Leaflet), in a two-person team, under a pre-sales deadline.
+- **B2B people management platform (DDD monorepo):** notifications feature (dedicated service consuming bounded-context events) delivered via Slack and Outlook — integrations I implemented, used by every employee in the company — plus the logging system, respecting database-per-service and async Pub/Sub communication.
+- **Enterprise demo frontend (Itaú):** pixel-perfect Figma implementation with interactive maps (React 19 + Leaflet), in a two-person team — navigable demo delivered in 1 day and polished within 2–3 days for the commercial presentation.
 - **Corporate integrations (Sankhya/Microwork ERP, Slack & Outlook/Microsoft 365):** automation of reports, quotes, real-time notifications, and transactional emails.
 - **Multi-cloud infrastructure and CI/CD:** AWS (EC2, S3, Lambda, DynamoDB), GCP (Cloud Run, Cloud Run Jobs, Scheduler, Pub/Sub, VMs), Azure; Docker Compose, GitHub Actions, and automated production deploys.
+- **Technical leadership and collaboration:** technical lead of workstreams on team projects (chemical R&D and computer vision); constant client contact — weekly checkpoints and ad-hoc alignment sessions to make sure the solution met the real need, with positive feedback for the partnership in shaping tailored solutions; active in the team's code review/PR workflow and supporting the company's individual development plan (PDI) program; disciplined with the agile process — ceremonies (daily, planning, refinement, retro) and Jira task management always up to date.
 
 ### Full Stack Developer — Freelancer (Own Products and Direct Clients)
 
@@ -44,12 +45,12 @@ Applied AI projects for enterprise clients (Saint-Gobain, among others) — all 
 Full cycle work as the sole developer — commercial proposal, architecture, code, deploy, and ongoing support — with multiple systems **in production** for real clients:
 
 - **AOG Dux Truck (in production):** emergency aircraft-parts logistics system — Java 21 + Spring Boot 3 (Clean Architecture), Angular 20, Microsoft Entra ID; each demand has its own tracking screen with chat and a traceable operator/client event timeline, cutting email/phone follow-ups.
-- **NF-e tax automation (in production):** invoice capture from email via Microsoft Graph with layered extraction (deterministic XML → PDF → OCR/AI only as fallback) — FastAPI + React; eliminates manual invoice data entry.
-- **Sol — omnichannel IT service desk with AI (in production):** WhatsApp, Teams, web, and email in a single hub; AI satisfaction thermometer with per-department verdicts; full ticket management panel and an integrated CRM module — FastAPI + Angular 20 + pgvector + Gemini + Evolution/Meta WhatsApp Cloud API.
-- **Qualtrics CX dashboard (in production):** customer-journey experience dashboard (FastAPI + Angular + Gemini), TypeScript MCP server for the Qualtrics API, portable Windows desktop build with auto-update via GitHub Releases.
+- **NF-e tax automation (in production):** invoice capture from email via Microsoft Graph with layered extraction (deterministic XML → PDF → OCR/AI only as fallback) — FastAPI + React; eliminates manual invoice data entry, processing 20–100 invoices per day with thousands processed to date.
+- **Sol — omnichannel IT service desk with AI (in production):** WhatsApp, Teams, web, and email in a single hub — around 20–50 tickets/day, with a much larger message volume across ticket handling and the groups module; AI satisfaction thermometer with per-department verdicts; full ticket management panel and an integrated CRM module — FastAPI + Angular 20 + pgvector + Gemini + Evolution/Meta WhatsApp Cloud API.
+- **Qualtrics CX dashboard (in active use):** customer-journey experience dashboard (FastAPI + Angular + Gemini), TypeScript MCP server for the Qualtrics API; currently running as the portable Windows desktop build (auto-update via GitHub Releases), pulling data straight from Qualtrics.
 - **Mercearia R&V (in production):** offline-first retail desktop system — Electron orchestrating embedded Spring Boot + PostgreSQL in a single NSIS installer; POS, cash register, loyalty, PDF reports — daily use in the client's operation.
-- **Experimenta AI — Soneca (management in production; delivery about to go live):** complete snack bar management — counter, table ordering via QR code, self-service kiosk, and cross-platform ESC/POS printing — plus an own delivery ecosystem with customer/courier PWAs, real-time tracking (GPS → TTL cache → SSE), and Google Maps Platform.
-- **Logistics workflow platform (complete, in homologation):** corporate BPM replacement — typed requests, group queues, multi-step approvals, SLAs, dashboard (Java + Spring + Angular + PostgreSQL, Oracle Cloud VPS).
+- **Experimenta AI — Soneca (management in production for ~3 months, handling ~R$ 300K/month in sales; delivery about to go live):** complete snack bar management — counter, table ordering via QR code, self-service kiosk, and cross-platform ESC/POS printing — plus an own delivery ecosystem with customer/courier PWAs, real-time tracking (GPS → TTL cache → SSE), and Google Maps Platform.
+- **Logistics workflow platform (complete, in homologation):** corporate BPM replacement — typed requests, group queues, multi-step approvals, SLAs, dashboard (Java + Spring + Angular + PostgreSQL, Oracle Cloud VPS); awaiting decommissioning of the legacy system to go live.
 - **Frontend renovation — EDI logistics integrator:** complete visual refactor in Next.js 16 + React 19 + Tailwind 4.
 - **Batch badge generator (delivered):** Python tool packaged as an executable (PyInstaller) for a retail client.
 
@@ -123,7 +124,7 @@ Full cycle work as the sole developer — commercial proposal, architecture, cod
 
 ### Postgraduate
 
-- **Postgraduate in Fullstack Java Development** — In progress
+- **Postgraduate in Full Stack Java Development** — FACINT · 2025–2026 (Completed)
 - **MBA in Project Management** — In progress
 
 ## Technical Skills

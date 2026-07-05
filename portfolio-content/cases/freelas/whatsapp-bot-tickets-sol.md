@@ -49,7 +49,7 @@ Central de atendimento **omnichannel** com IA, gestão completa e CRM integrado:
 
 ## Resultados e impacto
 
-- Chamados de TI passam a nascer estruturados de qualquer canal (WhatsApp, Teams, e-mail, web), com fila e histórico unificados [volume A CONFIRMAR]
+- Chamados de TI passam a nascer estruturados de qualquer canal (WhatsApp, Teams, e-mail, web), com fila e histórico unificados — na casa de **20–50 chamados por dia**, com volume de mensagens muito maior nas tratativas dos tickets e no módulo de grupos
 - Gestão com visão de qualidade: termômetro de satisfação, pareceres por setor e relatórios automáticos — antes não existia medição nenhuma
 - CRM integrado transforma o mesmo canal de suporte em canal de campanhas e captação de contatos
 - Operação com ambiente de homologação, migrações versionadas e typing/lint estritos — manutenível por terceiros

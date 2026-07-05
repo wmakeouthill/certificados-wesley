@@ -49,10 +49,10 @@ Ecossistema em duas fases sobre a mesma base Clean Architecture:
 
 ## Resultados e impacto
 
-- Gestão completa da lanchonete **em produção** — balcão (pedido→cupom em segundos), pedido na mesa via QR code e totem de autoatendimento [tempo de uso A CONFIRMAR]
+- Gestão completa da lanchonete **em produção há ~3 meses**, movimentando cerca de **R$ 300 mil/mês em vendas** — balcão (pedido→cupom em segundos), pedido na mesa via QR code e totem de autoatendimento
 - Plataforma de delivery própria construída, em homologação final para entrar no ar — canal direto sem taxa de marketplace
 - Base modular comprovada: o delivery reusou domínio, autenticação e cardápio da fase 1
 
 ## Destaques para entrevista (STAR resumido)
 
-- **S/T:** lanchonete operando no papel queria pedidos organizados com cupom impresso e, depois, delivery próprio sem taxas de marketplace. **A:** construí o ecossistema completo — POS desktop com print server ESC/POS multiplataforma, pedido na mesa via QR code, totem de autoatendimento, e a extensão de delivery com PWAs para cliente e motoboy, rastreamento em tempo real (GPS → cache TTL → SSE), OAuth Google híbrido e Clean Architecture multi-module que permitiu o delivery nascer como extensão. **R:** gestão da lanchonete em produção de ponta a ponta (balcão, mesa e totem) e plataforma de delivery própria construída, prestes a entrar no ar.
+- **S/T:** lanchonete operando no papel queria pedidos organizados com cupom impresso e, depois, delivery próprio sem taxas de marketplace. **A:** construí o ecossistema completo — POS desktop com print server ESC/POS multiplataforma, pedido na mesa via QR code, totem de autoatendimento, e a extensão de delivery com PWAs para cliente e motoboy, rastreamento em tempo real (GPS → cache TTL → SSE), OAuth Google híbrido e Clean Architecture multi-module que permitiu o delivery nascer como extensão. **R:** gestão da lanchonete em produção de ponta a ponta (balcão, mesa e totem) movimentando ~R$ 300 mil/mês em vendas, e plataforma de delivery própria construída, prestes a entrar no ar.
