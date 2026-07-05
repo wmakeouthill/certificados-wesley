@@ -37,10 +37,10 @@ Desde 2025, atuo em paralelo como **freelancer full cycle**: proposta comercial 
 - Sistema desktop de estoque/vendas/PDV: **Electron orquestrando Spring Boot + PostgreSQL embarcados** num único instalador NSIS
 - PDV, caixa, fidelidade, relatórios em PDF; **uso diário na operação do cliente com custo recorrente zero**
 
-### Experimenta AI — Soneca (gestão em produção; delivery construído, entrando no ar)
+### Experimenta AI — Soneca (gestão em produção; delivery construído em Java 17 + Angular 20+, atualmente desativado)
 
 - Gestão completa de lanchonete **em produção**: balcão, **pedido na mesa via QR code**, **totem de autoatendimento** e **impressão de cupons ESC/POS multiplataforma** (Windows Spooler, USB direto, CUPS)
-- Ecossistema de **delivery próprio** construído, em homologação final: PWAs de cliente e motoboy, **rastreamento em tempo real** (GPS → cache TTL → Server-Sent Events), Google Maps Platform e OAuth Google
+- Ecossistema de **delivery próprio** construído em Java 17 + Angular 20+, atualmente desativado: PWAs de cliente e motoboy, **rastreamento em tempo real** (GPS → cache TTL → Server-Sent Events), Google Maps Platform e OAuth Google
 - **Java + Spring Boot multi-module (Clean Architecture) + Angular 17 + MySQL**
 
 ## Em Homologação / Entregas Pontuais

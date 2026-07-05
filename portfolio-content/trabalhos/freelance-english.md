@@ -37,10 +37,10 @@ Since 2025, I have worked in parallel as a **full cycle freelancer**: commercial
 - Desktop inventory/sales/POS system: **Electron orchestrating embedded Spring Boot + PostgreSQL** in a single NSIS installer
 - POS, cash register, loyalty, PDF reports; **daily use in the client's operation with zero recurring cost**
 
-### Experimenta AI — Soneca (management in production; delivery built, about to go live)
+### Experimenta AI — Soneca (management in production; delivery built with Java 17 + Angular 20+, currently deactivated)
 
 - Complete snack bar management **in production**: counter, **table ordering via QR code**, **self-service kiosk**, and **cross-platform ESC/POS receipt printing** (Windows Spooler, direct USB, CUPS)
-- **Own delivery ecosystem** built, in final homologation: customer and courier PWAs, **real-time tracking** (GPS → TTL cache → Server-Sent Events), Google Maps Platform and Google OAuth
+- **Own delivery ecosystem** built with Java 17 + Angular 20+, currently deactivated: customer and courier PWAs, **real-time tracking** (GPS → TTL cache → Server-Sent Events), Google Maps Platform and Google OAuth
 - **Java + Spring Boot multi-module (Clean Architecture) + Angular 17 + MySQL**
 
 ## In Homologation / One-Off Deliveries
