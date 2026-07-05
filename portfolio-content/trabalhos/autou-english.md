@@ -7,7 +7,7 @@
 ### Work Context
 
 - Projects for large enterprises, **all in production**
-- Core stack: **Python (FastAPI, LangGraph)** in the backend and **React 19 + Vite** in the frontend
+- Core stack: **Python (FastAPI, google-genai, LangGraph)** in the backend and **React 19 + Vite** in the frontend — direct LLM integration via the **google-genai SDK / Responses API** as the main day-to-day approach, alongside LangGraph orchestration
 - Multi-cloud infrastructure: **AWS** (EC2, S3, Lambda, DynamoDB), **Google Cloud** (Cloud Run, Cloud Run Jobs, Scheduler, Pub/Sub, VMs), **Azure**
 - CI/CD and deploy: **GitHub Actions**, **Docker Compose**, automated deployments
 
@@ -20,7 +20,7 @@
 #### 24/7 Computer Vision in Production (fuel station chain)
 
 - **YOLO pipeline running at the edge** (on-site PC consuming RTSP cameras), events consolidated in **AWS (S3, Lambda, DynamoDB)**
-- **Agentic pipeline with LangGraph + Gemini + RAG** for incident analysis, insights, and email/WhatsApp notifications
+- **Agentic pipeline with LangGraph + Gemini (via google-genai) + RAG**: analysis of detected occurrences and insight generation with GenAI, plus email/WhatsApp notifications
 - **Retraining loop**: user false-positive feedback becomes retraining dataset — the model improves with use
 - **Observability implemented by me**: Prometheus + Grafana on a dedicated stateful VM, monitoring cost, usage, and infrastructure
 
@@ -33,7 +33,7 @@
 #### R&D Platform with Bayesian Optimization (chemical industry)
 
 - Formulation platform using **BayBE** (Merck's open-source framework) to suggest the next formulation to test — fewer physical greenhouse cycles
-- AI agent **"Colibri"** that generates and assists with formulas; scientific chat with **RAG and source governance** (whitelist/blacklist)
+- Generative AI agent **"Colibri"** (Gemini via google-genai) that generates and assists with formulas; scientific chat with **RAG and source governance** (whitelist/blacklist)
 - **Grafana + Prometheus observability implemented by me**: AI cost, consumption, and infrastructure
 
 #### Savings Replication Pipeline (Saint-Gobain)
@@ -73,7 +73,7 @@
 
 **Technologies Used:**
 
-- Python, FastAPI, LangGraph, Prophet, BayBE
+- Python, FastAPI, google-genai / Responses API, LangGraph, Prophet, BayBE
 - React 19, Vite, TypeScript
 - LLMs (Gemini, Gemini Vision), RAG, pgvector, FAISS, YOLO
 - AWS (EC2, S3, Lambda, DynamoDB), Google Cloud (Cloud Run, Cloud Run Jobs, Scheduler, Pub/Sub), Azure

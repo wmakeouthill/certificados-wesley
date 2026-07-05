@@ -24,10 +24,10 @@ Atuo em duas frentes: na **AutoU** (startup de IA aplicada, projetos para client
 
 Projetos de IA aplicada para clientes enterprise (Saint-Gobain, entre outros) — todos **em produção** — além de demos enterprise: pré-venda para o Itaú e edital em andamento para a Libbs:
 
-- **Visão computacional em produção 24/7:** pipelines de Visão Computacional (YOLO em edge) integrados a LLMs via LangGraph e RAG para monitoramento de conformidade em rede de postos — análise de imagens, insights automatizados e loop de retraining alimentado por feedback dos usuários (AWS S3/Lambda/DynamoDB + GCP), com captura via RTSP direto do DVR Intelbras do cliente (porta externa segura configurada via NAT, aproveitando o hardware existente) — piloto no ar com 2 postos monitorados e expansão prevista para os ~50 da rede.
+- **Visão computacional em produção 24/7:** pipelines de Visão Computacional (YOLO em edge) integrados a LLMs via google-genai, LangGraph e RAG para monitoramento de conformidade em rede de postos — análise das ocorrências detectadas e insights gerados com GenAI (Gemini), loop de retraining alimentado por feedback dos usuários (AWS S3/Lambda/DynamoDB + GCP), com captura via RTSP direto do DVR Intelbras do cliente (porta externa segura configurada via NAT, aproveitando o hardware existente) — piloto no ar com 2 postos monitorados e expansão prevista para os ~50 da rede.
 - **Observabilidade implementada por mim (Prometheus + Grafana):** monitoramento de custo de IA e orçamento computacional, consumo e infraestrutura em produção nos projetos de visão computacional e P&D químico.
 - **Machine Learning e otimização de estoque:** algoritmos com Prophet para predição de demanda e recomendações diárias de compra, com algoritmo próprio de transferência entre filiais (identifica excessos respeitando a necessidade histórica de cada filial) e resolução de produtos substitutos, integrados ao ERP Sankhya (rede de autopeças) — em produção, gerando economia diária.
-- **Plataforma de P&D com otimização Bayesiana:** modernização do processo de P&D antes manual (tentativa e erro em ciclos de estufa) para fluxo automatizado com assistência de IA — agente "Colibri" e recomendação de estabilidade via BayBE (framework da Merck) — em produção para indústria de fertilizantes.
+- **Plataforma de P&D com otimização Bayesiana:** modernização do processo de P&D antes manual (tentativa e erro em ciclos de estufa) para fluxo automatizado com assistência de IA generativa (Gemini via google-genai) — agente "Colibri" — e recomendação de estabilidade via BayBE (framework da Merck) — em produção para indústria de fertilizantes.
 - **Pipeline de replicação de projetos de savings (Saint-Gobain):** pipeline refeito por mim — integrações antes manuais via planilha automatizadas, API criada, falhas do legado corrigidas — como Cloud Run Jobs + Scheduler com sincronização idempotente por hash, auditoria e rollback; execução diária em produção, mais rápida e mais econômica — recomendações que já geraram **~R$ 13–15 milhões em savings** entre plantas.
 - **Assistente de triagem SAC com IA (demo para edital de farmacêutica, em andamento):** MVP solo — chat público com triagem por Gemini e fallback determinístico por regras, portal interno de tickets — no ar como demonstração.
 - **Ingestão de PDF, embeddings e busca semântica:** participação na fundação de plataforma de catálogo inteligente — extração de catálogos PDF com Gemini Vision, score de confiança com curadoria humana, pgvector para busca semântica.
@@ -50,7 +50,7 @@ Atuação **full cycle real**: proposta comercial → discovery → arquitetura 
 - **Dashboard CX Qualtrics (em uso na operação):** dashboard de experiência do cliente por jornada (FastAPI + Angular + Gemini) + MCP server TypeScript para Qualtrics; roda hoje na versão desktop portátil Windows (auto-update via GitHub Releases) puxando dados direto da Qualtrics.
 - **Plataforma de workflow logístico (completa, em homologação):** substitui BPM corporativo estilo Fluig — solicitações, filas por grupo, aprovações multi-etapa, documentos e SLAs — Java + Spring + Angular; aguardando a desativação do sistema legado para entrar no ar.
 - **Mercearia R&V (em produção):** sistema desktop offline-first de estoque/vendas/PDV — Electron orquestrando Spring Boot + PostgreSQL embarcados em instalador único NSIS; uso diário na operação do cliente com custo recorrente zero.
-- **Experimenta AI — Soneca (gestão em produção há ~3 meses, movimentando ~R$ 300 mil/mês em vendas; delivery entrando no ar):** gestão completa de lanchonete — balcão, pedido na mesa via QR code, totem de autoatendimento e impressão de cupons ESC/POS multiplataforma — + ecossistema de delivery próprio com PWAs de cliente e motoboy, rastreamento em tempo real (GPS → SSE) e Google Maps/OAuth.
+- **Experimenta AI — Soneca (gestão em produção há ~3 meses, movimentando ~R$ 300 mil/mês em vendas):** gestão completa de lanchonete — balcão, pedido na mesa via QR code, totem de autoatendimento e impressão de cupons ESC/POS multiplataforma — + ecossistema de delivery próprio construído em Java 17 + Angular 20 (PWAs de cliente e motoboy, rastreamento em tempo real GPS → SSE, Google Maps/OAuth), atualmente desativado.
 - **Renovação de frontend de integrador EDI logístico:** refatoração visual completa em Next.js 16 + React 19 + Tailwind 4.
 - **Gerador de crachás em lote:** ferramenta Python empacotada em executável para cliente de varejo (Supermercados Rio Sul).
 
@@ -198,6 +198,7 @@ Atuação **full cycle real**: proposta comercial → discovery → arquitetura 
 ### IA & Dados
 
 - **LLMs (Gemini, OpenAI)** - Integração com modelos de linguagem
+- **SDK google-genai / Responses API** - Integração direta com LLMs em produção — uso principal no dia a dia, além de orquestração com LangGraph
 - **RAG (Retrieval-Augmented Generation)** - Busca contextualizada em corpus próprio
 - **Embeddings** - Geração e indexação semântica (Gemini)
 - **FAISS** - Vector store em memória (Wesley Bot WhatsApp)
@@ -398,7 +399,7 @@ Calculadora de investimentos em Angular 18 com projeções de juros compostos, s
 **2026-Atual:** Desenvolvimento Full-Stack em startup de IA aplicada (AutoU)
 
 - Projetos em produção para clientes enterprise (Saint-Gobain e outros) e demos enterprise (pré-venda Itaú, edital Libbs em andamento)
-- IA aplicada com juízo de engenharia: visão computacional (YOLO), LangGraph/RAG, Prophet, otimização Bayesiana (BayBE), sempre com fallbacks e curadoria humana
+- IA aplicada com juízo de engenharia: visão computacional (YOLO), google-genai/Responses API, LangGraph/RAG, Prophet, otimização Bayesiana (BayBE), sempre com fallbacks e curadoria humana
 - Observabilidade Prometheus/Grafana implementada em produção (custo de IA, uso e infraestrutura)
 - Multi-cloud (AWS, GCP, Azure); GitHub Actions, Docker Compose; entrega veloz e alta exposição a clientes
 - Liderança técnica de frentes em projetos em equipe (Oxiquímica, Pulse); pontos semanais com clientes; code review/PRs, ritos ágeis/Jira em dia e apoio ao PDI da empresa

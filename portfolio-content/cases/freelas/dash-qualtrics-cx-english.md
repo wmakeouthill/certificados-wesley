@@ -41,7 +41,7 @@ Two complementary fronts:
 ## Results and impact
 
 - Journey-level view available in real time, with no manual Qualtrics export
-- Automatic AI assessment shortened the survey-reading cycle [time TO CONFIRM]
+- Automatic AI assessment shortened the survey-reading cycle — in real use (currently running locally/portable) to pull Qualtrics data, track tickets and open the surveys with the metrics that matter
 - Dual distribution (web + portable desktop) covered both the central operation and users with restricted IT
 
 ## Interview highlights (STAR summary)

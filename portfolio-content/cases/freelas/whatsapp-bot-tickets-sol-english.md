@@ -49,7 +49,7 @@ An **omnichannel** service desk with AI, complete management and integrated CRM:
 
 ## Results and impact
 
-- IT tickets now originate structured from any channel (WhatsApp, Teams, e-mail, web), with a unified queue and history [volume TO CONFIRM]
+- IT tickets now originate structured from any channel (WhatsApp, Teams, e-mail, web), with a unified queue and history — in the range of **20–50 tickets per day**, with a much larger message volume across ticket handling and the groups module
 - Management gains quality visibility: satisfaction gauge, per-department assessments and automated reports — previously there was no measurement at all
 - Integrated CRM turns the same support channel into a campaign and contact-capture channel
 - Operation with a UAT environment, versioned migrations and strict typing/lint — maintainable by third parties

@@ -14,7 +14,7 @@ Wesley Correia works with a modern, enterprise stack focused on full-stack devel
 **DevOps & Infra:** Docker, GitLab CI, GitHub Actions, AWS (EC2, S3, Lambda, DynamoDB), GCP (Cloud Run, Cloud Run Jobs, Scheduler, Pub/Sub, Cloud Build, Secret Manager), Azure, dedicated Linux VPSs (Hostinger, Oracle Cloud Always Free, Contabo, KingHost, among others), IaaC
 **Observability:** Prometheus, Grafana, Spring Actuator, Micrometer, AlertManager, Blackbox Exporter (incl. AI cost monitoring)
 **Databases:** Oracle, MySQL, PostgreSQL, pgvector, H2, SQLite, Redis, DynamoDB, Firebase
-**AI & Data:** LLMs (Gemini, Gemini Vision, OpenAI), RAG, Embeddings, FAISS, pgvector, Prophet, BayBE (Bayesian optimization), Computer Vision (Vision + YOLO), LangGraph, OpenCV, MCP servers (authorship)
+**AI & Data:** LLMs (Gemini, Gemini Vision, OpenAI), google-genai SDK / Responses API (direct integration — main approach), RAG, Embeddings, FAISS, pgvector, Prophet, BayBE (Bayesian optimization), Computer Vision (Vision + YOLO), LangGraph, OpenCV, MCP servers (authorship)
 **Enterprise Integrations:** Microsoft Entra ID, Microsoft Graph, Evolution API / Meta WhatsApp Cloud API, Google Maps Platform, Qualtrics, ERPs (Sankhya/Microwork, SAP), Slack
 **Security / DevSecOps:** OWASP Top 10, Spring Security, JWT, OAuth 2.0, RBAC, CORS, API Key (X-Header), AWS IAM, GCP IAM, VPC, Security Groups, Firewall, NAT, Secrets Manager
 **Dev Tooling & AI Coding:** IntelliJ IDEA, VS Code, Cursor, Antigravity, Claude Code (CLI), Codex (CLI), GitHub Copilot

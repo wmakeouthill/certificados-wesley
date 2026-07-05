@@ -17,7 +17,7 @@ Cases criados a partir da análise dos workspaces reais (`D:\freela-workspace` e
 | [gerador-de-cracha](freelas/gerador-de-cracha.md) | Gerador de crachás em lote (Supermercados Rio Sul) | Python + PyInstaller | Entregue |
 | [notas-vue-spring](freelas/notas-vue-spring.md) | App de anotações + comparativo técnico Vue/React/Angular | Vue 3 + Spring Boot + SQLite | Estudo |
 | [mercearia-rv](freelas/mercearia-rv.md) | Mercearia R&V — sistema desktop offline-first de estoque/vendas (PDV, caixa, fidelidade) | Java 21 + Spring Boot + Angular 20 + Electron + Postgres embarcado | Produção |
-| [experimenta-ai-soneca](freelas/experimenta-ai-soneca.md) | Experimenta AI (Soneca) — gestão completa de lanchonete (balcão, mesa via QR code, totem de autoatendimento, impressão ESC/POS) + ecossistema delivery (rastreamento tempo real) | Java + Spring multi-module + Angular 17 + Electron + MySQL + Google Maps/OAuth | Gestão em produção; delivery construído, entrando no ar |
+| [experimenta-ai-soneca](freelas/experimenta-ai-soneca.md) | Experimenta AI (Soneca) — gestão completa de lanchonete (balcão, mesa via QR code, totem de autoatendimento, impressão ESC/POS) + ecossistema delivery (rastreamento tempo real) | Java + Spring multi-module + Angular 17/20 + Electron + MySQL + Google Maps/OAuth | Gestão em produção; delivery construído (Java 17 + Angular 20+), atualmente desativado |
 
 Não viraram case (sem implementação): `pricing-end` (só escopo em PDF) e `proposta comercial` (PPTXs de venda — mas evidenciam atuação comercial/pré-venda como freelancer, útil pro texto do currículo).
 
@@ -51,6 +51,6 @@ Padrões que se repetem e sustentam o posicionamento de **Engenheiro Full Stack 
 ## Próximas fases (combinadas)
 
 1. ✅ Cases criados (esta pasta)
-2. ✅ Validação do Wesley: statuses confirmados (AutoU todos no ar; NF/AOG no ar; workflow em homologação; Mercearia em produção; Soneca: gestão da lanchonete em produção — balcão, mesa QR code, totem — e delivery construído em homologação final); métricas confirmadas em 04/07/2026 e aplicadas nos cases — **todas resolvidas** (incl. Saint-Gobain R$ 13–15 mi, Oxiquímica como modernização e Libbs como projeções de discovery)
+2. ✅ Validação do Wesley: statuses confirmados (AutoU todos no ar; NF/AOG no ar; workflow em homologação; Mercearia em produção; Soneca: gestão da lanchonete em produção — balcão, mesa QR code, totem — e delivery construído em Java 17 + Angular 20+, atualmente desativado); métricas confirmadas em 04/07/2026 e aplicadas nos cases — **todas resolvidas** (incl. Saint-Gobain R$ 13–15 mi, Oxiquímica como modernização e Libbs como projeções de discovery)
 3. ✅ Currículo (`Curriculo-Wesley-Pleno.html` + PDF), markdowns de RAG (`CURRICULO.md`, `STACKS.md`, `trabalhos/`, versões -english) atualizados em 03/07/2026
 4. ✅ Refatorar seção de projetos do portfólio: aba **Profissionais** (destaque, alimentada por estes cases) + aba **Pessoais** (atual)

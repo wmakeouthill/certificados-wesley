@@ -10,9 +10,9 @@ order: 5
 # Case — Oxiquímica (R&D Formulation Platform with Bayesian Optimization)
 
 **Type:** AutoU (client: Oxiquímica — chemical/fertilizer industry)
-**Role:** Technical discovery, architecture and prototyping — translating a lab process into a software product
+**Role:** Technical discovery, architecture and prototyping — translating a lab process into a software product; technical lead of project workstreams (team project), with direct client contact in weekly checkpoints and ad-hoc alignment sessions
 **Status:** Live (in production)
-**Stack (defined):** Python 3.13, FastAPI, React 19 + TypeScript, Vertex AI (Google Cloud), BayBE (Bayesian optimization, Merck's open-source project), RAG with source governance, PostgreSQL
+**Stack (defined):** Python 3.13, FastAPI, React 19 + TypeScript, Vertex AI (Google Cloud), Gemini via `google-genai`, BayBE (Bayesian optimization, Merck's open-source project), RAG with source governance, PostgreSQL
 
 > Confidentiality note: AutoU client project — validate what can be made public before exposing name/details.
 
@@ -22,7 +22,7 @@ Oxiquímica's R&D lab develops formulations (fertilizers and the like) by trial 
 
 ## Solution (designed product)
 
-An R&D platform with an AI agent ("Colibri") that generates/assists formulas and reduces physical iterations:
+An R&D platform with a generative AI agent ("Colibri", Gemini via `google-genai`) that generates/assists formulas and reduces physical iterations:
 
 - **Formulation Management Hub**: KPIs (success rate, average iterations), cards per formulation with stability probability and a countdown for the climate test
 - **Reactive composition table**: autocomplete from the raw-materials database, auto-filled guaranteed content, suggested average purity (editable per batch) and **real-time computed guarantee** (`concentration × purity`) — computed on the front end and revalidated on the backend
@@ -44,9 +44,9 @@ An R&D platform with an AI agent ("Colibri") that generates/assists formulas and
 - **Responsible AI**: in a confidential industrial environment, the web RAG has explicit source governance — recommendation to block by default
 - **Prototype-driven discovery**: open questions documented and addressed with the client instead of silent assumptions
 
-## Results and impact (expected)
+## Results and impact
 
-- Reduction in the number of physical iterations per formulation via Bayesian optimization [baseline: 4.2 average iterations in the prototype; target TO CONFIRM]
+- Modernization of the R&D process that already existed: a previously manual, trial-and-error flow became an automated platform with AI assistance and **stability recommendation via Bayesian optimization (BayBE)** — in production
 - Lab knowledge captured in a queryable base (RAG) instead of tribal knowledge
 - Greenhouse cycle tracked digitally with informed interruption
 

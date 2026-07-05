@@ -35,11 +35,11 @@ A monorepo with a public, SEO-optimized frontend, a lean backend and a CMS — b
 - **Deployment on Azure on the Aura infrastructure** (an explicit decision to move away from Vercel), with local Docker Compose and CI on GitHub Actions
 - Feature-based frontend architecture with atomic design; backend in DDD-light modules
 
-## Results and impact (expected)
+## Results and impact
 
-- Institutional website with indexable blog/cases feeding the sales funnel [SEO/lead metrics TO CONFIRM]
+- Institutional website with indexable blog/cases feeding the sales funnel — significant daily traffic and recurring lead generation (internal company figures)
 - Leads integrated directly into the internal ecosystem's Postgres (Aura CRM)
-- E-mails received automatically registered in the CRM funnel (via Microsoft Graph), with no manual inbox triage [volume TO CONFIRM]
+- E-mails received automatically registered in the CRM funnel (via Microsoft Graph), with no manual inbox triage
 
 ## Interview highlights (STAR summary)
 

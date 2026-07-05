@@ -45,7 +45,7 @@ An end-to-end daily batch pipeline + recommendation management API:
 
 ## Results and impact
 
-- Automatic daily purchase and transfer recommendations per branch, accounting for substitutes [reduction in stockouts/idle stock TO CONFIRM]
+- Automatic daily purchase recommendations based on real demand history, and inter-branch transfer recommendations via an in-house algorithm — it identifies surpluses while respecting each branch's historical needs (so transfers don't undermine purchasing), with substitute-product resolution; running in production and generating savings every day
 - Fixing the transfer flow eliminated phantom pending items in the ERP
 - The buyer moved from spreadsheet/intuition to a queue of recommendations acceptable in one click on the front end
 

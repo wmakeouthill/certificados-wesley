@@ -29,4 +29,4 @@ A product demonstration built for a presentation to Itaú: an interface implemen
 ## Interview highlights
 
 - Direct exposure to an enterprise client in the financial sector in a pre-sales context
-- Delivery speed: a navigable demo published for a commercial decision [timeline TO CONFIRM]
+- Delivery speed: a navigable demo published in **1 day**, refined over 2–3 days for the MVP's commercial demonstration

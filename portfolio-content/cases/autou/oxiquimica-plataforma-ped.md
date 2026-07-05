@@ -12,7 +12,7 @@ order: 5
 **Tipo:** AutoU (cliente: Oxiquímica — indústria química/fertilizantes)
 **Papel:** Discovery técnico, arquitetura e prototipagem — tradução de processo de laboratório em produto de software; liderança técnica de frentes do projeto (em equipe), com contato direto com o cliente em pontos semanais e alinhamentos pontuais
 **Status:** No ar (em produção)
-**Stack (definida):** Python 3.13, FastAPI, React 19 + TypeScript, Vertex AI (Google Cloud), BayBE (otimização Bayesiana, open-source da Merck), RAG com governança de fontes, PostgreSQL
+**Stack (definida):** Python 3.13, FastAPI, React 19 + TypeScript, Vertex AI (Google Cloud), Gemini via `google-genai`, BayBE (otimização Bayesiana, open-source da Merck), RAG com governança de fontes, PostgreSQL
 
 > Nota de confidencialidade: projeto de cliente da AutoU — validar o que pode ser público antes de expor nome/detalhes.
 
@@ -22,7 +22,7 @@ O laboratório de P&D da Oxiquímica desenvolve formulações (fertilizantes e a
 
 ## Solução (produto desenhado)
 
-Plataforma de P&D com agente de IA ("Colibri") que gera/ajuda em fórmulas e reduz iterações físicas:
+Plataforma de P&D com agente de IA generativa ("Colibri", Gemini via `google-genai`) que gera/ajuda em fórmulas e reduz iterações físicas:
 
 - **Hub de Gestão de Formulações**: KPIs (taxa de sucesso, iterações médias), cards por formulação com probabilidade de estabilidade e contagem regressiva do teste climático
 - **Tabela de composição reativa**: autocomplete do banco de matérias-primas, garantia atendida auto-preenchida, pureza média sugerida (editável por lote) e **garantia calculada em tempo real** (`concentração × pureza`) — calculada no front e revalidada no backend

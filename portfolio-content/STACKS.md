@@ -14,7 +14,7 @@ Wesley Correia trabalha com uma stack moderna e enterprise, focada em desenvolvi
 **DevOps & Infra:** Docker, GitLab CI, GitHub Actions, AWS (EC2, S3, Lambda, DynamoDB), GCP (Cloud Run, Cloud Run Jobs, Scheduler, Pub/Sub, Cloud Build, Secret Manager), Azure, VPS Linux dedicadas (Hostinger, Oracle Cloud Always Free, Contabo, KingHost, entre outras), IaaC
 **Observabilidade:** Prometheus, Grafana, Spring Actuator, Micrometer, AlertManager, Blackbox Exporter (incl. monitoramento de custo de IA)
 **Banco de Dados:** Oracle, MySQL, PostgreSQL, pgvector, H2, SQLite, Redis, DynamoDB, Firebase
-**IA & Dados:** LLMs (Gemini, Gemini Vision, OpenAI), RAG, Embeddings, FAISS, pgvector, Prophet, BayBE (otimização Bayesiana), Visão Computacional (Vision + YOLO), LangGraph, OpenCV, MCP servers (autoria)
+**IA & Dados:** LLMs (Gemini, Gemini Vision, OpenAI), SDK google-genai / Responses API (integração direta — uso principal), RAG, Embeddings, FAISS, pgvector, Prophet, BayBE (otimização Bayesiana), Visão Computacional (Vision + YOLO), LangGraph, OpenCV, MCP servers (autoria)
 **Integrações Corporativas:** Microsoft Entra ID, Microsoft Graph, Evolution API / Meta WhatsApp Cloud API, Google Maps Platform, Qualtrics, ERPs (Sankhya/Microwork, SAP), Slack
 **Segurança / DevSecOps:** OWASP Top 10, Spring Security, JWT, OAuth 2.0, RBAC, CORS, API Key (X-Header), AWS IAM, GCP IAM, VPC, Security Groups, Firewall, NAT, Secrets Manager
 **Dev Tooling & AI Coding:** IntelliJ IDEA, VS Code, Cursor, Antigravity, Claude Code (CLI), Codex (CLI), GitHub Copilot

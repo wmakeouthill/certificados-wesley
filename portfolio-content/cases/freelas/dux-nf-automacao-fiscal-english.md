@@ -49,9 +49,9 @@ Operational dashboard with quality and cost breakdowns: total received, success 
 
 ## Results and impact
 
-- Eliminated manual invoice entry into the operational spreadsheet [volume/day TO CONFIRM]
+- Eliminated manual invoice entry into the operational spreadsheet — processes between **20 and 100 NF-e (electronic invoices) per day**, depending on the operation's flow, with thousands processed since going live
 - Full auditing: every processed invoice has its origin, extraction method and result recorded
-- Controlled AI cost: most documents resolved via deterministic parsing [percentage TO CONFIRM on the dashboard]
+- Controlled AI cost: most documents are resolved via deterministic parsing with no LLM call — the split is tracked in the product's own quality/cost dashboard
 
 ## Interview highlights (STAR summary)
 

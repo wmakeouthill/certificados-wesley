@@ -12,7 +12,7 @@ order: 2
 **Tipo:** AutoU (cliente: Rede São Roque — rede de postos de combustível)
 **Papel:** Desenvolvedor Full Stack / IA — pipeline de visão computacional, backend, deploy e observabilidade; liderança técnica de frentes do projeto (em equipe), com contato direto com o cliente em pontos semanais e alinhamentos pontuais
 **Status:** Em produção (edge agent 24/7 nos postos)
-**Stack:** Python, YOLO (detecção), FastAPI, React, PostgreSQL, LangGraph + Gemini (pipeline agêntico), RAG, AWS (S3, Lambda, DynamoDB), Google Cloud (2 VMs), RTSP stream-worker, Prometheus + Grafana, Caddy, Docker Compose, Roboflow + Google Colab (retraining)
+**Stack:** Python, YOLO (detecção), FastAPI, React, PostgreSQL, LangGraph + Gemini via `google-genai` (pipeline agêntico), RAG, AWS (S3, Lambda, DynamoDB), Google Cloud (2 VMs), RTSP stream-worker, Prometheus + Grafana, Caddy, Docker Compose, Roboflow + Google Colab (retraining)
 
 > Nota de confidencialidade: projeto de cliente da AutoU — validar o que pode ser público antes de expor nome/detalhes.
 
@@ -26,7 +26,7 @@ Sistema de monitoramento contínuo com ciclo completo de melhoria do modelo:
 
 - **Edge Agent (PC no posto)**: consome câmeras via RTSP, roda YOLO 24/7, valida detecções e faz upload dos eventos
 - **Backend cloud**: armazena eventos e fotos (S3, retenção 1 ano; DynamoDB para eventos/feedback), API REST com fluxos de `resolve`, `false-positive` e dashboard
-- **Pipeline agêntico (LangGraph + Gemini + RAG)**: análise das ocorrências, geração de insights e tratativas, integração com fluxo de e-mail/WhatsApp para notificação
+- **Pipeline agêntico (LangGraph + Gemini via `google-genai` + RAG)**: análise das ocorrências detectadas e geração de insights com GenAI, tratativas, integração com fluxo de e-mail/WhatsApp para notificação
 - **Dashboard React**: gerência aprova/resolve ocorrências e marca falsos positivos
 - **Loop de retraining**: feedback dos usuários vira dataset (script de coleta), re-treino em Colab com Roboflow, novo modelo volta ao edge — o sistema melhora com o uso
 

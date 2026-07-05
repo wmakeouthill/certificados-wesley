@@ -47,7 +47,7 @@ My contribution: I developed the **notifications feature** (the `aura-notificati
 
 ## Results and impact
 
-- B2B platform in production used by corporate clients [number of clients/users TO CONFIRM]
+- Platform in production used by **all of the company's employees**, who also receive the notifications via **Slack and Outlook** — integrations implemented by me
 - Cross-context notifications delivered via events, without coupling domains
 - Structured logs giving the team operational visibility in production
 

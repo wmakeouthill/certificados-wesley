@@ -11,8 +11,8 @@ gallery: experimenta-ai---soneca
 
 **Tipo:** Produto próprio para cliente real (food service — lanchonete)
 **Papel:** Desenvolvedor Full Stack — autoria completa (POS desktop + plataforma de delivery)
-**Status:** Gestão completa da lanchonete **em produção** (balcão, pedido na mesa via QR code, totem de autoatendimento); ecossistema delivery construído, em homologação final para entrar no ar
-**Stack:** Java 17 + Spring Boot 3.2 (Maven multi-module, Clean Architecture), Angular 17+ (Standalone Components), Electron (POS + print server), MySQL 8 + Liquibase, impressão térmica ESC/POS, Google Maps Platform (Directions/Geocoding/Places), Google OAuth, SSE, PWA, Docker Compose
+**Status:** Gestão completa da lanchonete **em produção** (balcão, pedido na mesa via QR code, totem de autoatendimento); ecossistema delivery construído (Java 17 + Angular 20+), atualmente desativado
+**Stack:** Java 17 + Spring Boot 3.2 (Maven multi-module, Clean Architecture), Angular 17+ na gestão e Angular 20+ no delivery (Standalone Components), Electron (POS + print server), MySQL 8 + Liquibase, impressão térmica ESC/POS, Google Maps Platform (Directions/Geocoding/Places), Google OAuth, SSE, PWA, Docker Compose
 
 ## Contexto e problema
 
@@ -27,7 +27,7 @@ Ecossistema em duas fases sobre a mesma base Clean Architecture:
 - **Pedido na mesa via QR code** e **totem de autoatendimento**, além do fluxo de balcão — múltiplos canais de pedido convergindo na mesma operação
 - **Impressão de cupons ESC/POS** via print server no Electron: suporte a Windows Spooler, USB direto, CUPS (Linux) e impressoras de rede — testado com EPSON TM-T20 e DARUMA DR-800
 
-**Fase 2 — Delivery (construído; em homologação para ir ao ar):**
+**Fase 2 — Delivery (construído em Java 17 + Angular 20+; atualmente desativado):**
 - **App do cliente (PWA)**: cardápio, pedido, endereços com autocomplete do Google Places, favoritos/re-pedido, timeline de status e **rastreamento do motoboy em tempo real no mapa**
 - **App do motoboy (PWA)**: auto-cadastro por link público com aprovação do admin, login Google OAuth, Kanban das próprias entregas, envio de posição GPS
 - **Painel do gestor**: gestão de pedidos delivery e de motoboys
@@ -50,9 +50,9 @@ Ecossistema em duas fases sobre a mesma base Clean Architecture:
 ## Resultados e impacto
 
 - Gestão completa da lanchonete **em produção há ~3 meses**, movimentando cerca de **R$ 300 mil/mês em vendas** — balcão (pedido→cupom em segundos), pedido na mesa via QR code e totem de autoatendimento
-- Plataforma de delivery própria construída, em homologação final para entrar no ar — canal direto sem taxa de marketplace
+- Plataforma de delivery própria construída (Java 17 + Angular 20+) — canal direto sem taxa de marketplace; atualmente desativada, pronta para reativação quando o cliente quiser
 - Base modular comprovada: o delivery reusou domínio, autenticação e cardápio da fase 1
 
 ## Destaques para entrevista (STAR resumido)
 
-- **S/T:** lanchonete operando no papel queria pedidos organizados com cupom impresso e, depois, delivery próprio sem taxas de marketplace. **A:** construí o ecossistema completo — POS desktop com print server ESC/POS multiplataforma, pedido na mesa via QR code, totem de autoatendimento, e a extensão de delivery com PWAs para cliente e motoboy, rastreamento em tempo real (GPS → cache TTL → SSE), OAuth Google híbrido e Clean Architecture multi-module que permitiu o delivery nascer como extensão. **R:** gestão da lanchonete em produção de ponta a ponta (balcão, mesa e totem) movimentando ~R$ 300 mil/mês em vendas, e plataforma de delivery própria construída, prestes a entrar no ar.
+- **S/T:** lanchonete operando no papel queria pedidos organizados com cupom impresso e, depois, delivery próprio sem taxas de marketplace. **A:** construí o ecossistema completo — POS desktop com print server ESC/POS multiplataforma, pedido na mesa via QR code, totem de autoatendimento, e a extensão de delivery com PWAs para cliente e motoboy, rastreamento em tempo real (GPS → cache TTL → SSE), OAuth Google híbrido e Clean Architecture multi-module que permitiu o delivery nascer como extensão. **R:** gestão da lanchonete em produção de ponta a ponta (balcão, mesa e totem) movimentando ~R$ 300 mil/mês em vendas, e plataforma de delivery própria construída (Java 17 + Angular 20+), hoje desativada e pronta para reativação.

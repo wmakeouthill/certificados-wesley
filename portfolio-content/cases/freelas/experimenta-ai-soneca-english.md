@@ -11,8 +11,8 @@ gallery: experimenta-ai---soneca
 
 **Type:** In-house product for a real client (food service — snack bar)
 **Role:** Full Stack Developer — full authorship (desktop POS + delivery platform)
-**Status:** Full restaurant management **in production** (counter, table ordering via QR code, self-service kiosk); delivery ecosystem built, in final UAT before going live
-**Stack:** Java 17 + Spring Boot 3.2 (Maven multi-module, Clean Architecture), Angular 17+ (Standalone Components), Electron (POS + print server), MySQL 8 + Liquibase, ESC/POS thermal printing, Google Maps Platform (Directions/Geocoding/Places), Google OAuth, SSE, PWA, Docker Compose
+**Status:** Full restaurant management **in production** (counter, table ordering via QR code, self-service kiosk); delivery ecosystem built (Java 17 + Angular 20+), currently deactivated
+**Stack:** Java 17 + Spring Boot 3.2 (Maven multi-module, Clean Architecture), Angular 17+ for management and Angular 20+ for delivery (Standalone Components), Electron (POS + print server), MySQL 8 + Liquibase, ESC/POS thermal printing, Google Maps Platform (Directions/Geocoding/Places), Google OAuth, SSE, PWA, Docker Compose
 
 ## Context and problem
 
@@ -27,7 +27,7 @@ A two-phase ecosystem built on the same Clean Architecture foundation:
 - **Table ordering via QR code** and a **self-service kiosk**, in addition to the counter flow — multiple order channels converging into the same operation
 - **ESC/POS receipt printing** via an Electron print server: support for Windows Spooler, direct USB, CUPS (Linux) and network printers — tested with EPSON TM-T20 and DARUMA DR-800
 
-**Phase 2 — Delivery (built; in UAT before going live):**
+**Phase 2 — Delivery (built with Java 17 + Angular 20+; currently deactivated):**
 - **Customer app (PWA)**: menu, ordering, addresses with Google Places autocomplete, favorites/reorder, status timeline and **real-time courier tracking on the map**
 - **Courier app (PWA)**: self-registration via a public link with admin approval, Google OAuth login, Kanban of own deliveries, GPS position reporting
 - **Manager panel**: management of delivery orders and couriers
@@ -49,10 +49,10 @@ A two-phase ecosystem built on the same Clean Architecture foundation:
 
 ## Results and impact
 
-- Full restaurant management **in production** — counter (order→receipt in seconds), table ordering via QR code and self-service kiosk [usage time TO CONFIRM]
-- Own delivery platform built, in final UAT before going live — a direct channel with no marketplace fee
+- Full restaurant management **in production for ~3 months**, handling around **R$ 300k/month in sales** — counter (order→receipt in seconds), table ordering via QR code and self-service kiosk
+- Own delivery platform built (Java 17 + Angular 20+) — a direct channel with no marketplace fee; currently deactivated, ready for reactivation whenever the client wants
 - Proven modular foundation: delivery reused domain, authentication and menu from phase 1
 
 ## Interview highlights (STAR summary)
 
-- **S/T:** a paper-based snack bar wanted organized orders with printed receipts and, later, its own delivery with no marketplace fees. **A:** I built the complete ecosystem — a desktop POS with a cross-platform ESC/POS print server, table ordering via QR code, a self-service kiosk, and the delivery extension with PWAs for customer and courier, real-time tracking (GPS → TTL cache → SSE), hybrid Google OAuth and a multi-module Clean Architecture that let delivery be born as an extension. **R:** end-to-end restaurant management in production (counter, table and kiosk) and an own delivery platform built, about to go live.
+- **S/T:** a paper-based snack bar wanted organized orders with printed receipts and, later, its own delivery with no marketplace fees. **A:** I built the complete ecosystem — a desktop POS with a cross-platform ESC/POS print server, table ordering via QR code, a self-service kiosk, and the delivery extension with PWAs for customer and courier, real-time tracking (GPS → TTL cache → SSE), hybrid Google OAuth and a multi-module Clean Architecture that let delivery be born as an extension. **R:** end-to-end restaurant management in production (counter, table and kiosk) handling ~R$ 300k/month in sales, and an own delivery platform built (Java 17 + Angular 20+), currently deactivated and ready for reactivation.

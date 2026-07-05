@@ -43,9 +43,22 @@ The LIS portal with two surfaces in the same application:
 
 ## Results and impact
 
-- Automatic SAC ticket triage with AI-assisted classification and deterministic fallback [volume/accuracy TO CONFIRM]
+- Automatic SAC ticket triage with AI-assisted classification and deterministic fallback
 - Public support channel and internal portal delivered as a single deployment
 - Functional demo presented in the bid at zero infrastructure cost — bid outcome still in progress
+
+## Discovery-projected indicators (business-case projections — not measurements)
+
+Baseline gathered with the stakeholders: **~50 tickets/day (~18–20k/year)**, of which **80% are simple**; current handling time of **7 min/ticket** (5 min drafting the answer + 2 min logging), with a response SLA of up to 24h. Projections presented:
+
+- **Automatic resolution:** ~72% of tickets with no human intervention (~36/day) — the AI resolves ~90% of the simple ones; complex cases go to a human with pre-collected context
+- **Average handling time:** from 7 min to ~2 min (**~71% reduction**) — simple cases answered instantly, complex ones in ~4 min because the context arrives already structured
+- **Correct escalation:** ~90% of sensitive cases routed correctly to a human, trending to 95%+ with the feedback loop
+- **Operational load:** ~4.2h/day saved (~1,050h/year), **estimated savings of ~R$ 26k/year** — not counting quality and rework
+- **Intent-classification accuracy:** ~82% at go-live → ~90% after the 1st feedback cycle → ~95% in mature operation (differentiator: continuous knowledge-base governance and agent feedback)
+- **NPS:** estimated gain of +25 to +30 points vs. traditional SAC
+
+> Automation with judgment, not a 100% automated SAC: simple cases (résumé, discount, institutional questions) resolved instantly with approved answers; sensitive ones (adverse event, quality deviation, technical complaint) identified, collected and safely escalated — respecting pharmacovigilance, LGPD and consumer-protection law.
 
 ## Interview highlights (STAR summary)
 

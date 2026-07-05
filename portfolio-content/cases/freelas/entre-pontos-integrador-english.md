@@ -34,7 +34,7 @@ Complete visual renewal with a frontend refactor in Next.js 16 + React 19 + Tail
 ## Results and impact
 
 - Modernized operational interface while keeping the existing backend and flows intact
-- Faster reading of pipeline state and failure investigation for the operator [feedback TO CONFIRM]
+- Faster reading of pipeline state and failure investigation for the operator — client feedback: the rebranding "came out excellent"
 - Documented design foundation that keeps consistency across future UI evolutions
 
 ## Interview highlights (STAR summary)

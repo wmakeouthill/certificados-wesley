@@ -47,7 +47,7 @@ A platform that turns catalog PDFs into an AI-searchable database:
 
 ## Results and impact
 
-- PDF catalogs become a searchable base with no manual data entry [number of parts/catalogs TO CONFIRM]
+- PDF catalogs become a searchable base with no manual data entry
 - Quotes assembled in the same flow as the search — less tool-switching for the seller
 - Bulk curation reduces the human cost of validating AI extraction
 

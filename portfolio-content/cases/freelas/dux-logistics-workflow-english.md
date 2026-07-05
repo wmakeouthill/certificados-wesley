@@ -48,7 +48,7 @@ A corporate web product for logistics operational workflow, designed by reverse-
 
 ## Results and impact
 
-- Replacement of a corporate BPM license with a specialized in-house product [savings TO CONFIRM]
+- Replacement of a corporate BPM license with a specialized in-house product — development complete, in UAT awaiting the legacy system's deactivation to go live and integrate the operation
 - Processes with full traceability and SLAs visible to management
 - Parameterizable foundation that lets the client create new request types without development work
 

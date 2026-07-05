@@ -44,7 +44,7 @@ An **offline-first** desktop application that embeds the entire enterprise stack
 
 ## Results and impact
 
-- System in production running the grocery store's day-to-day operations (sales, cash register, inventory) [time in production / sales volume TO CONFIRM]
+- System in production running 100% of a neighborhood grocery store's day-to-day — every sale, the cash register and the inventory go through the system (dozens of receipts per day at the POS)
 - Zero recurring cost for the client — no server, no subscription
 - Complete product cycle: requirements gathering with the client → development → installer → operation and support
 

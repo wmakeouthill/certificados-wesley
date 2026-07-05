@@ -7,7 +7,7 @@ A **AutoU** é uma startup que constrói soluções de **IA aplicada** para empr
 ### Contexto de Atuação
 
 - Projetos para empresas de grande porte, **todos em produção**
-- Stack core: **Python (FastAPI, LangGraph)** no backend e **React 19 + Vite** no frontend
+- Stack core: **Python (FastAPI, google-genai, LangGraph)** no backend e **React 19 + Vite** no frontend — integração direta com LLMs via **SDK google-genai / Responses API** como abordagem principal do dia a dia, além de orquestração com LangGraph
 - Infraestrutura multi-cloud: **AWS** (EC2, S3, Lambda, DynamoDB), **Google Cloud** (Cloud Run, Cloud Run Jobs, Scheduler, Pub/Sub, VMs), **Azure**
 - CI/CD e deploy: **GitHub Actions**, **Docker Compose**, deploy automatizado
 
@@ -20,7 +20,7 @@ A **AutoU** é uma startup que constrói soluções de **IA aplicada** para empr
 #### Visão Computacional em Produção 24/7 (rede de postos de combustível)
 
 - Pipeline **YOLO rodando em edge** (PC no posto consumindo câmeras RTSP), eventos consolidados em **AWS (S3, Lambda, DynamoDB)**
-- **Pipeline agêntico LangGraph + Gemini + RAG** para análise de ocorrências, insights e notificações por e-mail/WhatsApp
+- **Pipeline agêntico LangGraph + Gemini (via google-genai) + RAG**: análise das ocorrências detectadas e geração de insights com GenAI, além de notificações por e-mail/WhatsApp
 - **Loop de retraining**: feedback de falsos positivos dos usuários vira dataset de re-treino — o modelo melhora com o uso
 - **Observabilidade implementada por mim**: Prometheus + Grafana em VM stateful própria, monitorando custo, uso e infraestrutura
 
@@ -33,7 +33,7 @@ A **AutoU** é uma startup que constrói soluções de **IA aplicada** para empr
 #### Plataforma de P&D com Otimização Bayesiana (indústria química)
 
 - Plataforma de formulações com **BayBE** (framework open-source da Merck) para sugerir a próxima formulação a testar — menos ciclos físicos de estufa
-- Agente de IA **"Colibri"** que gera e ajuda em fórmulas; chat científico com **RAG e governança de fontes** (whitelist/blacklist)
+- Agente de IA generativa **"Colibri"** (Gemini via google-genai) que gera e ajuda em fórmulas; chat científico com **RAG e governança de fontes** (whitelist/blacklist)
 - **Observabilidade Grafana + Prometheus implementada por mim**: custo de IA, consumo e infraestrutura
 
 #### Pipeline de Replicação de Savings (Saint-Gobain)
@@ -73,7 +73,7 @@ A **AutoU** é uma startup que constrói soluções de **IA aplicada** para empr
 
 **Tecnologias Utilizadas:**
 
-- Python, FastAPI, LangGraph, Prophet, BayBE
+- Python, FastAPI, google-genai / Responses API, LangGraph, Prophet, BayBE
 - React 19, Vite, TypeScript
 - LLMs (Gemini, Gemini Vision), RAG, pgvector, FAISS, YOLO
 - AWS (EC2, S3, Lambda, DynamoDB), Google Cloud (Cloud Run, Cloud Run Jobs, Scheduler, Pub/Sub), Azure
