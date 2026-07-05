@@ -47,6 +47,12 @@ HERE = Path(__file__).resolve().parent
 HTML_DEFAULT = HERE / "Curriculo-Wesley-Pleno.html"
 PDF_DEFAULT = HERE / "Wesley-Correia-CV.pdf"
 
+# pares (html, pdf) gerados quando nao se passa --html/--out
+TARGETS = [
+    (HTML_DEFAULT, PDF_DEFAULT),
+    (HERE / "Curriculo-Wesley-Pleno-english.html", HERE / "Wesley-Correia-CV-EN.pdf"),
+]
+
 # A4 em pixels CSS (96 DPI)
 A4_W_PX = 794   # 210mm
 A4_H_PX = 1123  # 297mm
@@ -173,21 +179,28 @@ def main() -> None:
     parser.add_argument(
         "--html",
         type=Path,
-        default=HTML_DEFAULT,
-        help=f"HTML de entrada (padrao: {HTML_DEFAULT.name})",
+        default=None,
+        help=f"HTML de entrada (padrao: gera PT + EN — {HTML_DEFAULT.name} e a versao english)",
     )
     parser.add_argument(
         "--out",
         type=Path,
-        default=PDF_DEFAULT,
-        help=f"PDF de saida (padrao: {PDF_DEFAULT.name})",
+        default=None,
+        help=f"PDF de saida (padrao: {PDF_DEFAULT.name} / Wesley-Correia-CV-EN.pdf)",
     )
     args = parser.parse_args()
 
     mode = "a4" if args.a4 else "single"
-    out, info = render(args.html, args.out, mode=mode)
-    print(f"OK PDF gerado: {out}")
-    print(f"   {info}")
+
+    if args.html is not None or args.out is not None:
+        targets = [(args.html or HTML_DEFAULT, args.out or PDF_DEFAULT)]
+    else:
+        targets = TARGETS
+
+    for html_path, pdf_path in targets:
+        out, info = render(html_path, pdf_path, mode=mode)
+        print(f"OK PDF gerado: {out}")
+        print(f"   {info}")
 
 
 if __name__ == "__main__":
